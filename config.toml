@@ -1,4 +1,4 @@
-baseurl = "/home/"
+baseurl = "/"
 title = "ABJ"
 theme = "hugo-universal-theme"
 languageCode = "en-us"
@@ -9,7 +9,7 @@ googleAnalytics = "UA-76479958-2"
 paginate = 10
 
 [params]
-    viewMorePostLink = "/blog/"
+    viewMorePostLink = "/home/blog/"
     author = "ABJ"
 
     # Style options: default (light-blue), blue, green, marsala, pink, red, turquoise, violet
