@@ -1,4 +1,4 @@
-baseurl = "/"
+baseurl = "/home/"
 title = "ABJ"
 theme = "hugo-universal-theme"
 languageCode = "en-us"
