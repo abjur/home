@@ -29,7 +29,7 @@ paginate = 10
     #
     # Enable the contact form by entering your Formspree.io email
     
-    email = "j@abj.org.br"
+    email = "jtrecenti@abjur.org.br"
     about_us = "<p>Associação Brasileira de Jurimetria. Direito na medida.</p>"
     copyright = "Copyright (c) 2011 - 2017, ABJ; all rights reserved."
     date_format = "2006-01-02"
