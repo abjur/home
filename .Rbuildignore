@@ -1,0 +1,11 @@
+^\.travis\.yml$
+^archetypes$
+^blogdown$
+^content$
+^data$
+^public$
+^static$
+^themes$
+^config\.toml$
+^home\.Rproj$
+^\.Rproj\.user$
