@@ -1,4 +1,4 @@
 # install hugo & build site
-blogdown::install_hugo(version = "0.17")
+blogdown::install_hugo()
 blogdown::build_site()
 
