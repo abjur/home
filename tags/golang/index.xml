@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ABJ</title>
-    <link>/home/tags/golang/index.xml</link>
+    <link>/tags/golang/index.xml</link>
     <description>Recent content on ABJ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright (c) 2011 - 2017, ABJ; all rights reserved.</copyright>
-    <atom:link href="/home/tags/golang/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/golang/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Linked post</title>
-      <link>/home/blog/2015/10/02/linked-post/</link>
+      <link>/blog/2015/10/02/linked-post/</link>
       <pubDate>Fri, 02 Oct 2015 21:49:20 +0200</pubDate>
       
-      <guid>/home/blog/2015/10/02/linked-post/</guid>
+      <guid>/blog/2015/10/02/linked-post/</guid>
       <description>&lt;p&gt;I&amp;rsquo;m a linked post in the menu. You can add other posts by adding the following line to the frontmatter:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;menu = &amp;quot;main&amp;quot;

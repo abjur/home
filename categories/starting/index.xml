@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ABJ</title>
-    <link>/home/categories/starting/index.xml</link>
+    <link>/categories/starting/index.xml</link>
     <description>Recent content on ABJ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright (c) 2011 - 2017, ABJ; all rights reserved.</copyright>
-    <atom:link href="/home/categories/starting/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/categories/starting/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Creating a new theme</title>
-      <link>/home/blog/2015/06/24/creating-a-new-theme/</link>
+      <link>/blog/2015/06/24/creating-a-new-theme/</link>
       <pubDate>Wed, 24 Jun 2015 13:50:46 +0200</pubDate>
       
-      <guid>/home/blog/2015/06/24/creating-a-new-theme/</guid>
+      <guid>/blog/2015/06/24/creating-a-new-theme/</guid>
       <description>
 
 &lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
