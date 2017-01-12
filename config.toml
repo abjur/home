@@ -33,7 +33,7 @@ paginate = 10
     about_us = "<p>Associação Brasileira de Jurimetria. Direito na medida.</p>"
     copyright = "Copyright (c) 2011 - 2017, ABJ; all rights reserved."
     date_format = "2006-01-02"
-    logo = "img/abj_logo_cut.png"
+    logo = "img/logo.png"
     address = """<p><strong>Associação Brasileira de Jurimetria.</strong>
         <br>Rua Leopoldo Couto Magalhães Júnior, 146
         <br>11 andar, CEP 04542-000.
