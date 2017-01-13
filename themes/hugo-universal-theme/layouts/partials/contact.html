@@ -71,7 +71,7 @@
 
 {{ if isset .Site.Params "latitude" }}
   {{ if isset .Site.Params "longitude" }}
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyByJ_J1KfXBkY7KAr2oxQ0mMwrRXZiJMCg&callback=initMap"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyByJ_J1KfXBkY7KAr2oxQ0mMwrRXZiJMCg" type="text/javascript"></script>
     <div class="hidden">
       <input id="gmap-lat" value="{{ .Site.Params.latitude }}" />
       <input id="gmap-lng" value="{{ .Site.Params.longitude }}" />
