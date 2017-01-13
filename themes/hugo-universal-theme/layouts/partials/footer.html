@@ -6,7 +6,8 @@
             <h4>About us</h4>
 
             {{ .Site.Params.about_us | safeHTML }}
-
+            
+            
             <hr class="hidden-md hidden-lg hidden-sm">
 
         </div>
@@ -35,7 +36,6 @@
                 </div>
                 {{ end }}
             </div>
-
             <hr class="hidden-md hidden-lg">
 
         </div>
@@ -43,12 +43,18 @@
 
         {{ if isset .Site.Params "address" }}
         <div class="col-md-4 col-sm-6">
+          
+          <div id="newsletter-544e8e1c17c3532ac386"></div>
+<script type="text/javascript" src="https://d335luupugsy2.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js"></script>
+<script type="text/javascript">
+  new RDStationForms('newsletter-544e8e1c17c3532ac386-html', 'UA-76479958-2').createForm();
+</script>
 
-            <h4>Contact</h4>
+            <!--<h4>Contact</h4>
 
             {{ .Site.Params.address | safeHTML }}
 
-            <a href="/contact" class="btn btn-small btn-template-main">Go to contact page</a>
+            <a href="/contact" class="btn btn-small btn-template-main">Go to contact page</a>-->
 
             <hr class="hidden-md hidden-lg hidden-sm">
 
