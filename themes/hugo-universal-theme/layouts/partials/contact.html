@@ -75,8 +75,7 @@
       <input id="gmap-lat" value="{{ .Site.Params.latitude }}" />
       <input id="gmap-lng" value="{{ .Site.Params.longitude }}" />
     </div>
-    <script>
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyByJ_J1KfXBkY7KAr2oxQ0mMwrRXZiJMCg&callback=initMap">
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyByJ_J1KfXBkY7KAr2oxQ0mMwrRXZiJMCg&callback=initMap">
     </script>
     <div id="map"></div>
   {{ end }}
