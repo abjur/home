@@ -6,29 +6,12 @@ disqusShortname = "abjur"
 googleAnalytics = "UA-76479958-2"
 
 # Define the number of posts per page
-paginate = 10
+paginate = 8
 
 [params]
     viewMorePostLink = "/home/blog/"
     author = "ABJ"
-
-    # Style options: default (light-blue), blue, green, marsala, pink, red, turquoise, violet
     style = "blue"
-
-    # Since this template is static, the contact form uses www.formspree.io as a
-    # proxy. The form makes a POST request to their servers to send the actual
-    # email. Visitors can send up to a 1000 emails each month for free.
-    #
-    # What you need to do for the setup?
-    #
-    # - set your email address under 'email' below
-    # - upload the generated site to your server
-    # - send a dummy email yourself to confirm your account
-    # - click the confirm link in the email from www.formspree.io
-    # - you're done. Happy mailing!
-    #
-    # Enable the contact form by entering your Formspree.io email
-    
     email = "jtrecenti@abjur.org.br"
     about_us = "<p>Associação Brasileira de Jurimetria. Direito na medida.</p>"
     copyright = "Copyright (c) 2011 - 2017, ABJ; all rights reserved."
@@ -49,27 +32,27 @@ paginate = 10
     blog = "/blog/:year/:month/:day/:filename/"
 
 [[params.menu]]
-    name = "Home"
+    name = "home"
     url  = "/"
     weight = 1
 
 [[params.menu]]
-    name = "Institucional"
+    name = "institucional"
     url  = "/about/"
     weight = 3
 
 [[params.menu]]
-    name = "Jurimetria"
+    name = "jurimetria"
     url  = "/jurimetrics/"
     weight = 3
 
 [[params.menu]]
-    name = "Blog"
+    name = "blog"
     url  = "/blog/"
     weight = 2
 
 [[params.menu]]
-    name = "Contato"
+    name = "contato"
     url  = "/contact/"
     weight = 5
 
@@ -117,5 +100,5 @@ paginate = 10
 
 [params.recent_posts]
     enable = true
-    title = "Blog direito na medida"
+    title = "Blog"
     subtitle = ""
