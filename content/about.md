@@ -2,7 +2,6 @@
 title = "Sobre a ABJ"
 id = "about"
 layout = "page" 
-date = ''
 comment = "false"
 disqus = 'false'
 +++
@@ -16,4 +15,5 @@ A ABJ tem três missões principais. A primeira é reunir e incentivar pesquisad
 #### Conselho Científico
 
 #### Estatuto
+
 
