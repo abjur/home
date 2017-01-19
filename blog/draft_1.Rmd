@@ -51,13 +51,13 @@ Entretanto, no dia a dia da jurimetria corriqueiramente encontramos alguns probl
 
 Para ilustrar essa diferença, vamos produzir simular um pequeno exemplo em que os seus efeitos tornam-se evidentes. Considere que desejamos avaliar um tempo de duração que possui as características abaixo:
 
-```{r tab1, fig.cap = "Medidas descritivas do tempo de duração simulado."}
+```{r tab1}
 
 N <- 5000
 amostra <- rweibull(N, a, b)
 
 data_frame(`Média` = mean(amostra), `Desvio Padrão` = sd(amostra)) %>% 
-  knitr::kable(digits = 2)
+  knitr::kable(digits = 2, align = 'c', caption = "Medidas descritivas do tempo de duração simulado.")
 
 ```
 
@@ -83,9 +83,9 @@ Agora suponha que duas instituições de pesquisa propõem estudos para medi-lo.
 
 Um exemplo da realização das pesquisas é descrito na figura \@ref(fig:graph2). Cada linha representa o ciclo de vida de um dos processos sendo estudados e as cores representam a sua presença ou ausência nos planos amostrais de cada uma das instituições de pesquisa. A linha tracejada representa a data de corte para a inclusão de processos na amostra da Instituição 2. Pelo gráfico, é evidente que a instituição 2 não leva em conta nenhum processo que ainda não tenha acabado.
 
-As diferenças nas estimativas obtidas está ilustrada na \@ref(tab:tab2) e na \@ref(fig:graph3). Como se vê, as médias obtidas pela instituição 2 são muito menores e, além disso, a cauda da distribuição do tempo de duração é mais leve do que a verdadeira.
+As diferenças nas estimativas obtidas está ilustrada na Tabela \@ref(tab:tab2) e na Figura \@ref(fig:graph3). Como se vê, as médias obtidas pela instituição 2 são muito menores e, além disso, a cauda da distribuição do tempo de duração é mais leve do que a verdadeira.
 
-```{r graph2, fig.cap='Curva de sobrevivência dos tempos acumulados gastos em decisões e despachos (dias).'}
+```{r graph2, fig.cap='Comparação dos processos observados por cada uma das instituições.'}
 
 shape_data_final <- c("Fim do processo", "Começo do processo")
 
@@ -140,10 +140,11 @@ tabela_resumo <- data_frame(` ` =  c("Instituição 1", "Instituição 2", "Valo
                             `Média` = c(media_1, media_2, media_real),
                             `Desvio padrão` = c(sd_1, sd_2, sd_real))
 
-knitr::kable(tabela_resumo, digits = 2)
+knitr::kable(tabela_resumo, digits = 2, align = 'c',
+             caption = 'Comparação entre os valores reais e as estimativas produzidas por cada instituição.')
 ```
 
-```{r graph3}
+```{r graph3, fig.cap='Curva de sobrevivência dos tempos acumulados gastos em decisões e despachos (dias).'}
 
 N <- 60000
 
