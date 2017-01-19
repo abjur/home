@@ -1943,8 +1943,8 @@ $ vi themes/zafta/layouts/_default/single.html
 
 /BLOGDOWN-BODY-BEFORE --&gt;
 
-&lt;p&gt;Calcular a duração média de um determinado tipo de processo é um problema comum em jurimetria e isso normalmente é feito utilizando Análise de Sobrevivência&lt;a href=&#34;#fn1&#34; class=&#34;footnoteRef&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;. Entretanto, os textos desse assunto não costumam mencionar o fato de que as estimativas de duração produzidas por estudos retrospectivos&lt;a href=&#34;#fn2&#34; class=&#34;footnoteRef&#34; id=&#34;fnref2&#34;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt; são menores do que as estimativas produzidas por estudos prospectivos.&lt;/p&gt;
-&lt;p&gt;Para ilustrar essa diferença, vamos simular um pequeno exemplo em que essa diferença torna-se evidente. Considere que desejamos avaliar um tempo de duração que possui as características abaixo:&lt;/p&gt;
+&lt;p&gt;Calcular a duração média de um determinado tipo de processo é um problema comum em jurimetria e isso normalmente é feito utilizando Análise de Sobrevivência&lt;a href=&#34;#fn1&#34; class=&#34;footnoteRef&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;. Entretanto, os textos desse assunto não costumam mencionar o fato de que as estimativas usuais de duração média produzidas por estudos retrospectivos&lt;a href=&#34;#fn2&#34; class=&#34;footnoteRef&#34; id=&#34;fnref2&#34;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt; podem ser incorretas, ao passo que as mesmas estimativas produzidas por estudos prospectivos não.&lt;/p&gt;
+&lt;p&gt;Vamos simular um pequeno exemplo em que essa diferença se torna evidente. Considere que desejamos avaliar um tempo de duração que possui as características abaixo:&lt;/p&gt;
 &lt;table&gt;
 &lt;caption&gt;&lt;span id=&#34;tab:tab1&#34;&gt;Table 1: &lt;/span&gt;Medidas descritivas do tempo de duração simulado.&lt;/caption&gt;
 &lt;thead&gt;
@@ -1955,8 +1955,8 @@ $ vi themes/zafta/layouts/_default/single.html
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr class=&#34;odd&#34;&gt;
-&lt;td align=&#34;center&#34;&gt;464.6&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;488.41&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;465.75&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;483.07&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -1966,8 +1966,8 @@ $ vi themes/zafta/layouts/_default/single.html
 Figure 1: Histograma do tempo de duração simulado.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;p&gt;Agora suponha que duas instituições de pesquisa propõem estudos para medi-lo. As duas obterão um conjunto de processos, medirão as suas respectivas durações e tirarão conclusões a partir daí, sendo a diferença entre os dois estudos apenas a forma com que as amostras serão escolhidas. A primeira sugere que sejam analisados todos os processos distribuídos desde 11/12/2012, o começo dos registros disponíveis na nossa situação hipotético, até hoje 19/01/2017. Essa formulação caracteriza o estudo da instituição 1 como um estudo prospectivo. Já a segunda instituição sugere uma análise que abranja os processos terminados até hoje desde 11/12/2012, caracterizando um estudo retrospectivo. Em ambos os casos, caso sejam observados processos não terminados, as instituições concordam que eles devem ser analisados utilizando técnicas de análise de sobrevivência.&lt;/p&gt;
-&lt;p&gt;Um exemplo da realização das pesquisas é descrito na figura &lt;a href=&#34;#fig:graph2&#34;&gt;2&lt;/a&gt;. Cada linha representa o ciclo de vida de um dos processos sendo estudados e as cores representam a sua presença ou ausência nos planos amostrais de cada uma das instituições de pesquisa. A linha tracejada representa a data de corte para a inclusão de processos na amostra da Instituição 2. Pelo gráfico, é evidente que a instituição 2 não leva em conta nenhum processo que ainda não tenha acabado.&lt;/p&gt;
+&lt;p&gt;Agora suponha que duas instituições de pesquisa propõem estudos para medir o tempo de duração descritos acima. As duas obterão um conjunto de processos, medirão as suas respectivas durações e tirarão conclusões a partir daí, sendo a diferença entre os dois estudos apenas a forma com que as amostras serão escolhidas. A primeira sugere que sejam analisados todos os processos distribuídos desde 11/12/2012, o começo dos registros disponíveis na nossa situação hipotética, até hoje 19/01/2017. Essa formulação caracteriza o estudo da instituição 1 como um estudo prospectivo. Já a segunda instituição sugere uma análise que abranja os processos terminados até hoje desde 11/12/2012, caracterizando um estudo retrospectivo. Em ambos os casos, caso sejam observados processos não terminados, as instituições concordam que eles devem ser analisados utilizando técnicas de análise de sobrevivência.&lt;/p&gt;
+&lt;p&gt;Um exemplo da realização das pesquisas é descrito na figura &lt;a href=&#34;#fig:graph2&#34;&gt;2&lt;/a&gt;. Cada linha representa o ciclo de vida de um dos processos sendo estudados e as cores representam a sua presença ou ausência nos planos amostrais de cada uma das instituições de pesquisa. A linha tracejada representa a data de corte para a inclusão de processos na amostra da Instituição 2. Pelo gráfico, observa-se que a instituição 2 deixa de fora os processos que ainda não acabaram.&lt;/p&gt;
 &lt;p&gt;As diferenças nas estimativas obtidas está ilustrada na Tabela &lt;a href=&#34;#tab:tab2&#34;&gt;2&lt;/a&gt; e na Figura &lt;a href=&#34;#fig:graph3&#34;&gt;3&lt;/a&gt;. Como se vê, as médias obtidas pela instituição 2 são muito menores e, além disso, a cauda da distribuição do tempo de duração é mais leve do que a verdadeira.&lt;/p&gt;
 &lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:graph2&#34;&gt;&lt;/span&gt;
 &lt;img src=&#34;/blog/1/01/01/draft_1/figures/graph2-1.png&#34; alt=&#34;Comparação dos processos observados por cada uma das instituições.&#34; width=&#34;672&#34; /&gt;
@@ -1987,13 +1987,13 @@ Figure 2: Comparação dos processos observados por cada uma das instituições.
 &lt;tbody&gt;
 &lt;tr class=&#34;odd&#34;&gt;
 &lt;td align=&#34;left&#34;&gt;Instituição 1&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;486.48&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;666.44&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;379.40&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;324.42&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr class=&#34;even&#34;&gt;
 &lt;td align=&#34;left&#34;&gt;Instituição 2&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;294.31&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;295.37&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;294.56&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;250.72&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr class=&#34;odd&#34;&gt;
 &lt;td align=&#34;left&#34;&gt;Valores reais&lt;/td&gt;
@@ -2008,7 +2008,7 @@ Figure 2: Comparação dos processos observados por cada uma das instituições.
 Figure 3: Curva de sobrevivência dos tempos acumulados gastos em decisões e despachos (dias).
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;p&gt;Evidentemente essa simulação não busca sugerir que estudos retrospectivos de tempo de duração de processos judiciais são inadequados. Muitas vezes, essa é a única ferramenta disponível e factível em tempo hábil da qual o jurimetrista dispõe e fornece sim informação relevante que pode ser utilizada em prognósticos. Na verdade, nossa argumentação é um apelo para que se analise os resultados de pesquisa prestando atenção na metodologia de pesquisa, já que o produto de um estudo retrospectivo pode ser interpretado corretamente como um limitante inferior para uma determinada quantidade de interesse.&lt;/p&gt;
+&lt;p&gt;Evidentemente essa simulação não busca sugerir que estudos retrospectivos de tempo de duração de processos judiciais são inadequados. Muitas vezes, essa é a única ferramenta disponível em tempo hábil. Na verdade, nossa argumentação é um apelo para que se analise os resultados de pesquisa prestando atenção na metodologia, já que o produto de um estudo retrospectivo pode ser interpretado corretamente como um limitante inferior para uma determinada quantidade de interesse.&lt;/p&gt;
 &lt;div class=&#34;footnotes&#34;&gt;
 &lt;hr /&gt;
 &lt;ol&gt;
