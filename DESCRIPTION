@@ -8,6 +8,7 @@ Depends:
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
+Imports: dplyr, tidyr, ggplot2, knitr
 Remotes: rstudio/blogdown
 Imports:
     blogdown
