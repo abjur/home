@@ -1956,8 +1956,8 @@ $ vi themes/zafta/layouts/_default/single.html
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr class=&#34;odd&#34;&gt;
-&lt;td align=&#34;center&#34;&gt;462.54&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;489.6&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;462.58&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;486.75&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -1967,7 +1967,7 @@ $ vi themes/zafta/layouts/_default/single.html
 Figure 1: Histograma do tempo de duração simulado.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;p&gt;Agora suponha que duas instituições de pesquisa propõem estudos para medi-lo. As duas obterão um conjunto de processos, medirão as suas respectivas durações e tirarão conclusões a partir daí, sendo a diferença entre os dois estudos apenas a forma com que as amostras serão escolhidas. A primeira sugere que sejam analisados todos os processos distribuídos desde 27/02/1880, o começo dos registros disponíveis na nossa situação hipotético, até hoje 19/01/2017. Essa formulação caracteriza o estudo da instituição 1 como um estudo prospectivo. Já a segunda instituição sugere uma análise que abranja os processos terminados até hoje desde 27/02/1880, caracterizando um estudo retrospectivo. Em ambos os casos, caso sejam observados processos não terminados, as instituições concordam que eles devem ser analisados utilizando técnicas de análise de sobrevivência.&lt;/p&gt;
+&lt;p&gt;Agora suponha que duas instituições de pesquisa propõem estudos para medi-lo. As duas obterão um conjunto de processos, medirão as suas respectivas durações e tirarão conclusões a partir daí, sendo a diferença entre os dois estudos apenas a forma com que as amostras serão escolhidas. A primeira sugere que sejam analisados todos os processos distribuídos desde 11/12/2012, o começo dos registros disponíveis na nossa situação hipotético, até hoje 19/01/2017. Essa formulação caracteriza o estudo da instituição 1 como um estudo prospectivo. Já a segunda instituição sugere uma análise que abranja os processos terminados até hoje desde 11/12/2012, caracterizando um estudo retrospectivo. Em ambos os casos, caso sejam observados processos não terminados, as instituições concordam que eles devem ser analisados utilizando técnicas de análise de sobrevivência.&lt;/p&gt;
 &lt;p&gt;Um exemplo da realização das pesquisas é descrito na figura &lt;a href=&#34;#fig:graph2&#34;&gt;2&lt;/a&gt;. Cada linha representa o ciclo de vida de um dos processos sendo estudados e as cores representam a sua presença ou ausência nos planos amostrais de cada uma das instituições de pesquisa. A linha tracejada representa a data de corte para a inclusão de processos na amostra da Instituição 2. Pelo gráfico, é evidente que a instituição 2 não leva em conta nenhum processo que ainda não tenha acabado.&lt;/p&gt;
 &lt;p&gt;As diferenças nas estimativas obtidas está ilustrada na Tabela &lt;a href=&#34;#tab:tab2&#34;&gt;2&lt;/a&gt; e na Figura &lt;a href=&#34;#fig:graph3&#34;&gt;3&lt;/a&gt;. Como se vê, as médias obtidas pela instituição 2 são muito menores e, além disso, a cauda da distribuição do tempo de duração é mais leve do que a verdadeira.&lt;/p&gt;
 &lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:graph2&#34;&gt;&lt;/span&gt;
@@ -1988,13 +1988,13 @@ Figure 2: Comparação dos processos observados por cada uma das instituições.
 &lt;tbody&gt;
 &lt;tr class=&#34;odd&#34;&gt;
 &lt;td align=&#34;left&#34;&gt;Instituição 1&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;461.16&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;389.55&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;470.92&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;563.37&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr class=&#34;even&#34;&gt;
 &lt;td align=&#34;left&#34;&gt;Instituição 2&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;325.93&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;285.61&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;301.27&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;301.22&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr class=&#34;odd&#34;&gt;
 &lt;td align=&#34;left&#34;&gt;Valores reais&lt;/td&gt;

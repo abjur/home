@@ -53,8 +53,8 @@ Para ilustrar essa diferença, vamos produzir simular um pequeno exemplo em que 
 
 ```{r tab1}
 
-N <- 5000
-amostra <- rweibull(N, a, b)
+N2 <- 5000
+amostra <- rweibull(N2, a, b)
 
 data_frame(`Média` = mean(amostra), `Desvio Padrão` = sd(amostra)) %>% 
   knitr::kable(digits = 2, align = 'c', caption = "Medidas descritivas do tempo de duração simulado.")
