@@ -1833,9 +1833,8 @@ $ vi themes/zafta/layouts/_default/single.html
 
 /BLOGDOWN-BODY-BEFORE --&gt;
 
-&lt;p&gt;Em alguns estudos realizados pela ABJ foi necessário, ou no mínimo interessante, calcular a duração média de um determinado tipo de processo. Para fazer essas contas, como bons estatísticos que somos, sempre seguimos a risca o recomendado pelos manuais de Análise de Sobrevivência&lt;a href=&#34;#fn1&#34; class=&#34;footnoteRef&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt; e, por conta disso, frequentemente os resultados foram satisfatórios.&lt;/p&gt;
-&lt;p&gt;Entretanto, no dia a dia da jurimetria corriqueiramente encontramos alguns problemas que não estão descritos na literatura. O principal desses problemas, que será o tema deste texto, refere-se a diferença qualitativa entre as estimativas de duração produzidas por estudos prospectivos e retrospectivos&lt;a href=&#34;#fn2&#34; class=&#34;footnoteRef&#34; id=&#34;fnref2&#34;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;. Resumidamente, o ponto central aqui é que estudos retrospectivos tendem a distorcer as estimativas de duração. Isso acontece por muitos motivos, mas em particular por causa de uma exclusão sistemática de processos muito longos.&lt;/p&gt;
-&lt;p&gt;Para ilustrar essa diferença, vamos produzir simular um pequeno exemplo em que os seus efeitos tornam-se evidentes. Considere que desejamos avaliar um tempo de duração que possui as características abaixo:&lt;/p&gt;
+&lt;p&gt;Calcular a duração média de um determinado tipo de processo é um problema comum em jurimetria e isso normalmente é feito utilizando Análise de Sobrevivência&lt;a href=&#34;#fn1&#34; class=&#34;footnoteRef&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;. Entretanto, os textos desse assunto não costumam mencionar o fato de que as estimativas de duração produzidas por estudos retrospectivos&lt;a href=&#34;#fn2&#34; class=&#34;footnoteRef&#34; id=&#34;fnref2&#34;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt; são menores do que as estimativas produzidas por estudos prospectivos.&lt;/p&gt;
+&lt;p&gt;Para ilustrar essa diferença, vamos simular um pequeno exemplo em que essa diferença torna-se evidente. Considere que desejamos avaliar um tempo de duração que possui as características abaixo:&lt;/p&gt;
 &lt;table&gt;
 &lt;caption&gt;&lt;span id=&#34;tab:tab1&#34;&gt;Table 1: &lt;/span&gt;Medidas descritivas do tempo de duração simulado.&lt;/caption&gt;
 &lt;thead&gt;
@@ -1846,8 +1845,8 @@ $ vi themes/zafta/layouts/_default/single.html
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr class=&#34;odd&#34;&gt;
-&lt;td align=&#34;center&#34;&gt;462.58&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;486.75&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;464.6&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;488.41&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -1878,13 +1877,13 @@ Figure 2: Comparação dos processos observados por cada uma das instituições.
 &lt;tbody&gt;
 &lt;tr class=&#34;odd&#34;&gt;
 &lt;td align=&#34;left&#34;&gt;Instituição 1&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;470.92&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;563.37&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;486.48&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;666.44&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr class=&#34;even&#34;&gt;
 &lt;td align=&#34;left&#34;&gt;Instituição 2&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;301.27&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;301.22&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;294.31&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;295.37&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr class=&#34;odd&#34;&gt;
 &lt;td align=&#34;left&#34;&gt;Valores reais&lt;/td&gt;
@@ -1899,13 +1898,12 @@ Figure 2: Comparação dos processos observados por cada uma das instituições.
 Figure 3: Curva de sobrevivência dos tempos acumulados gastos em decisões e despachos (dias).
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;p&gt;Evidentemente essa simulação não busca sugerir que estudos retrospectivos de tempo de duração de processos judiciais são inadequados e por isso devem ser evitados. Muitas vezes, essa é a única ferramenta disponível e factível em tempo hábil da qual o jurimetrista dispõe e fornece sim informação relevante que pode ser utilizada em prognósticos.&lt;/p&gt;
-&lt;p&gt;Na verdade, nossa argumentação procura aletar para uma dificuldade muito frequente nas bases de dados do direito. É um apelo para que se analise os resultados de pesquisa prestando atenção na metodologia de pesquisa, já que o produto de um estudo retrospectivo pode ser interpretado corretamente como um limitante inferior para uma determinada quantidade de interesse.&lt;/p&gt;
+&lt;p&gt;Evidentemente essa simulação não busca sugerir que estudos retrospectivos de tempo de duração de processos judiciais são inadequados. Muitas vezes, essa é a única ferramenta disponível e factível em tempo hábil da qual o jurimetrista dispõe e fornece sim informação relevante que pode ser utilizada em prognósticos. Na verdade, nossa argumentação é um apelo para que se analise os resultados de pesquisa prestando atenção na metodologia de pesquisa, já que o produto de um estudo retrospectivo pode ser interpretado corretamente como um limitante inferior para uma determinada quantidade de interesse.&lt;/p&gt;
 &lt;div class=&#34;footnotes&#34;&gt;
 &lt;hr /&gt;
 &lt;ol&gt;
-&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;Análise de Sobrevivência é a área da Estatística historicamente associada ao cálculo de tempos de duração de eventos, com uma ampla gama de aplicações. Aplicações típicas sã&lt;a href=&#34;#fnref1&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id=&#34;fn2&#34;&gt;&lt;p&gt;Na nossa classificação de pesquisas jurimétricas, estudos restropectivos são aqueles em que as observações de um determinado evento de interesse são escolhidas considerando os casos em que o evento efetivamente ocorreu. Por isso, se existe interesse em estudar o tempo de duração dos processos, selecionar suas observações como “o conjunto de processos com sentenças proferidas no ano de 2015” tornará o estudo retrospectivo, pois exclui os processos em que o fim do processo ainda não aconteceu. Estudos prospectivos, por outro lado, são aqueles em que a seleção de quais casos serão observados é feita “de trás pra frente”. No nosso exemplo anterior, se o estudo definisse seu conjunto de observações como “processos distribuídos no ano de 2015” ele poderia ser chamado de estudo prospectivo, pois há a possibilidade de observar processos que ainda não acabaram.&lt;a href=&#34;#fnref2&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;Análise de Sobrevivência é a área da Estatística historicamente associada ao cálculo de tempos de duração de eventos, com uma ampla gama de aplicações.&lt;a href=&#34;#fnref1&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn2&#34;&gt;&lt;p&gt;Estudos restropectivos são aqueles em que as observações de um determinado evento de interesse são escolhidas considerando os casos em que o evento efetivamente ocorreu. Se existe interesse em estudar o tempo de duração dos processos, selecionar suas observações como “o conjunto de processos com sentenças proferidas no ano de 2015” tornará o estudo retrospectivo, pois exclui os processos em que o fim do processo ainda não aconteceu. Estudos prospectivos são aqueles em que a seleção de quais casos serão observados é feita “de trás pra frente”. No nosso exemplo anterior, se o estudo definisse seu conjunto de observações como “processos distribuídos no ano de 2015” ele poderia ser chamado de estudo prospectivo, pois há a possibilidade de observar processos que ainda não acabaram.&lt;a href=&#34;#fnref2&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
 
