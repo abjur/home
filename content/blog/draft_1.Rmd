@@ -57,7 +57,7 @@ N <- 5000
 amostra <- rweibull(N, a, b)
 
 data_frame(`Média` = mean(amostra), `Desvio Padrão` = sd(amostra)) %>% 
-  knitr::kable(digits = 2, align = 'center', caption = "Medidas descritivas do tempo de duração simulado.")
+  knitr::kable(digits = 2, align = 'c', caption = "Medidas descritivas do tempo de duração simulado.")
 
 ```
 
@@ -140,7 +140,7 @@ tabela_resumo <- data_frame(` ` =  c("Instituição 1", "Instituição 2", "Valo
                             `Média` = c(media_1, media_2, media_real),
                             `Desvio padrão` = c(sd_1, sd_2, sd_real))
 
-knitr::kable(tabela_resumo, digits = 2, align = 'center',
+knitr::kable(tabela_resumo, digits = 2, align = 'c',
              caption = 'Comparação entre os valores reais e as estimativas produzidas por cada instituição.')
 ```
 
