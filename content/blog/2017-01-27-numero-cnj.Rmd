@@ -8,9 +8,9 @@ banner: "img/banners/banner-10.png"
 
 A definição da *unidade amostral* é essencial para a realização de qualquer pesquisa empírica. Trata-se do elemento indivisível de uma amostra, de onde se medem as características que serão utilizadas na análise estatística.
 
-Na jurimetria usualmente consideramos o *litígio* como unidade amostral. O litígio é chamado de *processo judicial* quando tramita na esfera judicial. Cada processo judicial possui um número identificador cadastrado nos sistemas do Tribunal, o que facilita a busca por casos específicos.
+Na jurimetria é usual considerar o *litígio* como unidade amostral. O litígio é chamado de *processo judicial* quando tramita na esfera judicial. Cada processo possui um número identificador cadastrado nos sistemas do Tribunal, o que facilita a busca por casos específicos.
 
-A [Resolução 65 do CNJ](https://goo.gl/IX4PuX) (*Número CNJ*), é um marco na identificação de processos judiciais. Até 2008, a forma de numeração dos processos era definida pelo Tribunal responsável pela tramitação, o que deu origem a diversos formatos distintos. Com a Resolução, os processos passaram a receber um formato de numeração único para todos os Tribunais nas justiças Estadual, Trabalhista, Federal, Militar, Eleitoral e Superiores.
+A [Resolução 65 do CNJ](https://goo.gl/IX4PuX) (*Número CNJ*), é um marco na identificação de processos judiciais. Até 2008, a forma de numeração dos processos era definida pelo Tribunal responsável pela tramitação, o que dava origem a diversos formatos distintos. Com a Resolução, os processos passaram a receber um formato de numeração único para todos os Tribunais nas justiças Estadual, Trabalhista, Federal, Militar, Eleitoral e Superiores.
 
 A Resolução define o padrão `NNNNNNN-DD.AAAA.J.TR.OOOO`, em que:
 
