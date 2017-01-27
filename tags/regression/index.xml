@@ -33,9 +33,9 @@
 &lt;/ul&gt;
 &lt;div id=&#34;gerando-numeros-aleatorios&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Gerando números aleatórios&lt;/h2&gt;
-&lt;p&gt;Um aspecto de interesse na especificação do número CNJ é a possibilidade de gerar todos os possíveis números de processos. Para cada configuração de ano, justiça, tribunal e órgão de origem, temos exatamente dez milhões de números distintos. Por exemplo, considerando somente processos ajuizados em 2009, nas &lt;a href=&#34;http://tjal.jus.br/apmp/jurisdicaocomarcas09102015.pdf&#34;&gt;55 comarcas do Tribunal de Justiça de Alagoas&lt;/a&gt; e considerando um por comarca, teríamos 550 milhões de números distintos. Esses números poderiam ser utilizados para pesquisar diretamente todos os processos de um tribunal.&lt;/p&gt;
-&lt;p&gt;No entanto, pesquisar 550 milhões de números é uma tarefa demorada e onerosa para os tribunais, por dois motivos. Primeiro, no exemplo, se realizássemos 10 pesquisas por segundo, demoraríamos 637 dias para acessar todos os números. Além disso, nem todos os números correspondem a processos de fato. Nos tribunais, os números são gerados conforme a demanda e, portanto, apenas uma parcela dos números seria realmente manifesta.&lt;/p&gt;
-&lt;p&gt;Nessa situação uma alternativa via amostragem parece viável. Ao invés de pesquisar todos os processos, geramos uma amostra aleatória de números e pesquisamos diretamente nas ferramentas de pesquisa dos tribunais. A quantidade de processos necessários para isso é definida estudando-se a probabilidade de manifestação de um número de processo. Usualmente isso é feito a partir de uma amostra piloto.&lt;/p&gt;
+&lt;p&gt;Um aspecto de interesse na especificação do número CNJ é a possibilidade de gerar todos os possíveis números de processos. Para cada configuração de ano, justiça, tribunal e órgão de origem, são exatamente dez milhões de números distintos. Por exemplo, considerando somente processos ajuizados em 2009, nas &lt;a href=&#34;http://tjal.jus.br/apmp/jurisdicaocomarcas09102015.pdf&#34;&gt;55 comarcas do Tribunal de Justiça de Alagoas&lt;/a&gt; e um foro por comarca, teríamos 550 milhões de números distintos. Esses números podem ser utilizados para pesquisar todos os processos de um tribunal.&lt;/p&gt;
+&lt;p&gt;No entanto, pesquisar 550 milhões de números é uma tarefa demorada e onerosa para os tribunais. No exemplo, com 10 pesquisas por segundo, seriam necessários 637 dias para acessar todos os números. Além disso, nem todos os números correspondem a processos de fato, pois são gerados conforme a demanda e apenas uma parcela dos números é realmente manifesta.&lt;/p&gt;
+&lt;p&gt;Nessa situação uma alternativa via amostragem se torna viável. Ao invés de pesquisar todos os processos, gera-se uma amostra aleatória de números, acessando diretamente nas ferramentas de pesquisa dos tribunais. A quantidade de processos necessários para isso é definida estudando-se a probabilidade de manifestação de um número de processo. Usualmente isso é feito a partir de uma amostra piloto.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;r-session&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;&lt;code&gt;R session&lt;/code&gt;&lt;/h2&gt;
@@ -55,11 +55,11 @@ sample_cnj(n = 5,
 &lt;pre&gt;&lt;code&gt;## # A tibble: 5 × 1
 ##             n_processo
 ##                  &amp;lt;chr&amp;gt;
-## 1 06649097720158260001
-## 2 02584165220158260001
-## 3 06342181720148260001
-## 4 06393269020158260001
-## 5 02769556620158260001&lt;/code&gt;&lt;/pre&gt;
+## 1 07738860320148260001
+## 2 01748158520148260001
+## 3 01113093820148260001
+## 4 09140631720148260001
+## 5 06656727820158260001&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
 
