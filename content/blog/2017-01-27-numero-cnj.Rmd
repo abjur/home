@@ -3,7 +3,7 @@ title: "Número CNJ"
 author: "Julio Trecenti"
 date: 2017-01-27T09:23:47-02:00
 tags: ["R Markdown", "plot", "regression"]
-banner = "img/banners/banner-10.jpg"
+banner: "img/banners/banner-10.jpg"
 ---
 
 A definição da *unidade amostral* é essencial para a realização de qualquer pesquisa empírica. Trata-se do elemento indivisível de uma amostra, de onde se medem as características que serão utilizadas na análise estatística.

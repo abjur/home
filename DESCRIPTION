@@ -15,5 +15,6 @@ Imports:
     tidyr,
     ggplot2,
     knitr,
-    abjutils
+    abjutils,
+    rmarkdown
 RoxygenNote: 5.0.1
