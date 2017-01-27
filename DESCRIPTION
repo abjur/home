@@ -10,5 +10,9 @@ Encoding: UTF-8
 LazyData: true
 Remotes: rstudio/blogdown
 Imports:
-    blogdown
+    blogdown,
+    dplyr,
+    tidyr,
+    ggplot2,
+    knitr
 RoxygenNote: 5.0.1

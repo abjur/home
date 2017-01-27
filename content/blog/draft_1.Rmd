@@ -1,0 +1,168 @@
+---
+title: "Nuances no cálculo de tempos processuais"
+author: "ABJ"
+date: "17 de janeiro de 2017"
+output: pdf_document
+---
+
+```{r knit-setup, echo = F}
+
+knitr::opts_chunk$set(echo = F,
+                      warning = F,
+                      message = F,
+                      fig.align = 'center')
+
+```
+
+```{r setup, echo = F}
+
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+
+a <- 0.95
+b <- 450
+N <- 150
+amostra <- rweibull(N, a, b)
+
+datas <- sort(sample(seq(Sys.Date()-N*10, Sys.Date(), 1), N))
+
+d0 <- data.frame(datas, amostra) %>% 
+  mutate(data_final = datas+floor(amostra),
+         id = factor(1:n()),
+         obs = data_final > Sys.Date(),
+         tempo = Sys.Date() - datas,
+         censor = !obs,
+         tempo = ifelse(obs, tempo, amostra))
+
+observados <- d0$amostra[!d0$obs]
+
+d <- d0%>% 
+  gather(tipo, datas, contains("data")) %>% 
+  select(-amostra)
+
+```
+
+Calcular a duração média de um determinado tipo de processo é um problema comum em jurimetria e isso normalmente é feito utilizando Análise de Sobrevivência[^sobrv]. Entretanto, os textos desse assunto não costumam mencionar o fato de que as estimativas usuais de duração média produzidas por estudos retrospectivos[^tipos] podem ser incorretas, ao passo que as mesmas estimativas produzidas por estudos prospectivos não.
+
+[^sobrv]: Análise de Sobrevivência é a área da Estatística historicamente associada ao cálculo de tempos de duração de eventos, com uma ampla gama de aplicações.
+
+[^tipos]: Estudos restropectivos são aqueles em que as observações de um determinado evento de interesse são escolhidas considerando os casos em que o evento efetivamente ocorreu. Se existe interesse em estudar o tempo de duração dos processos, selecionar suas observações como "o conjunto de processos com sentenças proferidas no ano de 2015" tornará o estudo retrospectivo, pois exclui os processos em que o fim do processo ainda não aconteceu. Estudos prospectivos são aqueles em que a seleção de quais casos serão observados é feita "de trás pra frente". No nosso exemplo anterior, se o estudo definisse seu conjunto de observações como "processos distribuídos no ano de 2015" ele poderia ser chamado de estudo prospectivo, pois há a possibilidade de observar processos que ainda não acabaram.
+
+Vamos simular um pequeno exemplo em que essa diferença se torna evidente. Considere que desejamos avaliar um tempo de duração que possui as características abaixo:
+
+```{r tab1}
+
+N2 <- 5000
+amostra <- rweibull(N2, a, b)
+
+data_frame(`Média` = mean(amostra), `Desvio Padrão` = sd(amostra)) %>% 
+  knitr::kable(digits = 2, align = 'c', caption = "Medidas descritivas do tempo de duração simulado.")
+
+```
+
+```{r graph1, fig.cap = "Histograma do tempo de duração simulado."}
+
+N2 <- 5000
+amostra <- rweibull(N2, a, b)
+
+data_frame(tempo = amostra) %>% 
+  ggplot(aes(x = tempo)) +
+  geom_histogram(fill = 'royalblue',
+                 color = 'darkgrey') +
+  theme_bw(15) +
+  xlab("Tempo (dias)") +
+  ylab("Frequência")
+
+comeco <- format(Sys.Date() - 10*N, '%d/%m/%Y')
+hoje <- format(Sys.Date(), '%d/%m/%Y')
+
+```
+
+Agora suponha que duas instituições de pesquisa propõem estudos para medir o tempo de duração descritos acima. As duas obterão um conjunto de processos, medirão as suas respectivas durações e tirarão conclusões a partir daí, sendo a diferença entre os dois estudos apenas a forma com que as amostras serão escolhidas. A primeira sugere que sejam analisados todos os processos distribuídos desde `r comeco`, o começo dos registros disponíveis na nossa situação hipotética, até hoje `r hoje`. Essa formulação caracteriza o estudo da instituição 1 como um estudo prospectivo. Já a segunda instituição sugere uma análise que abranja os processos terminados até hoje desde `r comeco`, caracterizando um estudo retrospectivo. Em ambos os casos, caso sejam observados processos não terminados, as instituições concordam que eles devem ser analisados utilizando técnicas de análise de sobrevivência.
+
+Um exemplo da realização das pesquisas é descrito na figura \@ref(fig:graph2). Cada linha representa o ciclo de vida de um dos processos sendo estudados e as cores representam a sua presença ou ausência nos planos amostrais de cada uma das instituições de pesquisa. A linha tracejada representa a data de corte para a inclusão de processos na amostra da Instituição 2. Pelo gráfico, observa-se que a instituição 2 deixa de fora os processos que ainda não acabaram.
+
+As diferenças nas estimativas obtidas está ilustrada na Tabela \@ref(tab:tab2) e na Figura \@ref(fig:graph3). Como se vê, as médias obtidas pela instituição 2 são muito menores e, além disso, a cauda da distribuição do tempo de duração é mais leve do que a verdadeira.
+
+```{r graph2, fig.cap='Comparação dos processos observados por cada uma das instituições.'}
+
+shape_data_final <- c("Fim do processo", "Começo do processo")
+
+hoje <- Sys.Date()
+
+d %>% 
+  mutate(obs = ifelse(obs, "Analisados apenas\npela instituição 1",
+                      "Analisados pelas\ninstituições 1 e 2"),
+         tipo = ifelse(tipo == 'data_final',
+                       shape_data_final[1],
+                       shape_data_final[2])) %>% 
+  ggplot(aes(x = id, y = datas, group = id,
+             shape = tipo, color = obs)) +
+  geom_path() +
+  geom_point() +
+  geom_hline(yintercept = as.numeric(hoje), linetype = 4) +
+  coord_flip() +
+  theme_bw(15) +
+  scale_color_hue(name = '') +
+  scale_shape_manual(name = '', values = c(16,4)) +
+  theme(axis.ticks = element_blank(),
+        axis.text.y = element_blank(),
+        axis.title.y = element_blank(),
+        legend.key.size = unit(2, 'lines'))
+
+```
+
+```{r tab2}
+
+library(survival)
+
+d0 <- filter(d0, tempo > 0)
+
+fit1 <- survreg(Surv(tempo, censor) ~ 1, dist = 'weibull', data = d0)
+  
+fit2 <- survreg(Surv(observados) ~ 1, dist = 'weibull')
+
+a_1 <- 1/fit1$scale 
+a_2 <- 1/fit2$scale
+b_1 <- exp(fit1$coefficients[1])
+b_2 <- exp(fit2$coefficients[1])
+
+media_1 <- b_1*gamma(1+1/a_1)
+media_2 <- b_2*gamma(1+1/a_2)
+sd_1 <- sqrt(b_1^2*(gamma(1+2/a_1)-gamma(1+1/a_1))^2)
+sd_2 <- sqrt(b_2^2*(gamma(1+2/a_2)-gamma(1+1/a_2))^2)
+
+media_real <- b*gamma(1+1/a)
+sd_real <- sqrt(b^2*(gamma(1+2/a)-gamma(1+1/a))^2)
+  
+tabela_resumo <- data_frame(` ` =  c("Instituição 1", "Instituição 2", "Valores reais"),
+                            `Média` = c(media_1, media_2, media_real),
+                            `Desvio padrão` = c(sd_1, sd_2, sd_real))
+
+knitr::kable(tabela_resumo, digits = 2, align = 'c',
+             caption = 'Comparação entre os valores reais e as estimativas produzidas por cada instituição.')
+```
+
+```{r graph3, fig.cap='Curva de sobrevivência dos tempos acumulados gastos em decisões e despachos (dias).'}
+
+N <- 60000
+
+obs <- c(rweibull(floor(N/3), a_1, b_1),
+         rweibull(floor(N/3), a_2, b_2),
+         rweibull(floor(N/3), a, b))
+
+grps <- rep(c("Instituição 1", "Instituição 2", "Valores verdadeiros"),
+            each = floor(N/3))
+
+data_frame(obs, grps) %>% 
+  ggplot(aes(x = obs, color = grps)) +
+  geom_density() +
+  theme_bw(15) +
+  xlab("Tempo (dias)") +
+  ylab("Densidade") +
+  scale_color_hue(name = "")
+
+```
+
+Evidentemente essa simulação não busca sugerir que estudos retrospectivos de tempo de duração de processos judiciais são inadequados. Muitas vezes, essa é a única ferramenta disponível em tempo hábil. Na verdade, nossa argumentação é um apelo para que se analise os resultados de pesquisa prestando atenção na metodologia, já que o produto de um estudo retrospectivo pode ser interpretado corretamente como um limitante inferior para uma determinada quantidade de interesse.
