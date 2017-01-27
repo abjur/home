@@ -21,8 +21,8 @@
 /BLOGDOWN-BODY-BEFORE --&gt;
 
 &lt;p&gt;A definição da &lt;em&gt;unidade amostral&lt;/em&gt; é essencial para a realização de qualquer pesquisa empírica. Trata-se do elemento indivisível de uma amostra, de onde se medem as características que serão utilizadas na análise estatística.&lt;/p&gt;
-&lt;p&gt;Na jurimetria usualmente consideramos o &lt;em&gt;litígio&lt;/em&gt; como unidade amostral. O litígio é chamado de &lt;em&gt;processo judicial&lt;/em&gt; quando tramita na esfera judicial. Cada processo judicial possui um número identificador cadastrado nos sistemas do Tribunal, o que facilita a busca por casos específicos.&lt;/p&gt;
-&lt;p&gt;A &lt;a href=&#34;https://goo.gl/IX4PuX&#34;&gt;Resolução 65 do CNJ&lt;/a&gt; (&lt;em&gt;Número CNJ&lt;/em&gt;), é um marco na identificação de processos judiciais. Até 2008, a forma de numeração dos processos era definida pelo Tribunal responsável pela tramitação, o que deu origem a diversos formatos distintos. Com a Resolução, os processos passaram a receber um formato de numeração único para todos os Tribunais nas justiças Estadual, Trabalhista, Federal, Militar, Eleitoral e Superiores.&lt;/p&gt;
+&lt;p&gt;Na jurimetria é usual considerar o &lt;em&gt;litígio&lt;/em&gt; como unidade amostral. O litígio é chamado de &lt;em&gt;processo judicial&lt;/em&gt; quando tramita na esfera judicial. Cada processo possui um número identificador cadastrado nos sistemas do Tribunal, o que facilita a busca por casos específicos.&lt;/p&gt;
+&lt;p&gt;A &lt;a href=&#34;https://goo.gl/IX4PuX&#34;&gt;Resolução 65 do CNJ&lt;/a&gt; (&lt;em&gt;Número CNJ&lt;/em&gt;), é um marco na identificação de processos judiciais. Até 2008, a forma de numeração dos processos era definida pelo Tribunal responsável pela tramitação, o que dava origem a diversos formatos distintos. Com a Resolução, os processos passaram a receber um formato de numeração único para todos os Tribunais nas justiças Estadual, Trabalhista, Federal, Militar, Eleitoral e Superiores.&lt;/p&gt;
 &lt;p&gt;A Resolução define o padrão &lt;code&gt;NNNNNNN-DD.AAAA.J.TR.OOOO&lt;/code&gt;, em que:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;NNNNNNN&lt;/code&gt;: Número identificador do processo.&lt;/li&gt;
@@ -56,11 +56,11 @@ sample_cnj(n = 5,
 &lt;pre&gt;&lt;code&gt;## # A tibble: 5 × 1
 ##             n_processo
 ##                  &amp;lt;chr&amp;gt;
-## 1 07738860320148260001
-## 2 01748158520148260001
-## 3 01113093820148260001
-## 4 09140631720148260001
-## 5 06656727820158260001&lt;/code&gt;&lt;/pre&gt;
+## 1 00558467720158260001
+## 2 02360695920148260001
+## 3 00229723920158260001
+## 4 05889097020148260001
+## 5 01608630520158260001&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
 
@@ -223,8 +223,8 @@ sample_cnj(n = 5,
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr class=&#34;odd&#34;&gt;
-&lt;td align=&#34;center&#34;&gt;446.89&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;471.47&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;454.62&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;472.64&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -255,13 +255,13 @@ Figure 2: Comparação dos processos observados por cada uma das instituições.
 &lt;tbody&gt;
 &lt;tr class=&#34;odd&#34;&gt;
 &lt;td align=&#34;left&#34;&gt;Instituição 1&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;458.80&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;508.86&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;473.93&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;806.91&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr class=&#34;even&#34;&gt;
 &lt;td align=&#34;left&#34;&gt;Instituição 2&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;297.24&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;322.12&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;265.87&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;333.83&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr class=&#34;odd&#34;&gt;
 &lt;td align=&#34;left&#34;&gt;Valores reais&lt;/td&gt;
