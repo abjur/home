@@ -3,7 +3,7 @@ title: "A importância da administração de dados"
 author: "Luiz Resende"
 date: 2017-01-19T09:23:47-02:00
 tags: ["R Markdown", "plot", "regression"]
-banner: "img/banners/banner-11.jpg"
+banner: "img/banners/banner-11.png"
 ---
 
 A administração de dados está em todo lugar: é inerente à existência organizacional, independente de sua formação orgânica. Isto acontece porque tudo que é "organizado" envolve, por conceito, delimitação de informações, sendo algumas tangíveis e outras intangíveis. Neste círculo de informações, é possível diferenciar uma boa de uma má administração com base na utilização dos dados em decisões estratégicas da organização em prol de seus ideais.
