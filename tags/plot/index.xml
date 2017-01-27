@@ -10,53 +10,56 @@
     <atom:link href="/tags/plot/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Hello R Markdown</title>
-      <link>/blog/2015/07/23/2015-07-23-r-rmarkdown/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
+      <title>Número CNJ</title>
+      <link>/blog/2017/01/27/2017-01-27-numero-cnj/</link>
+      <pubDate>Fri, 27 Jan 2017 09:23:47 -0200</pubDate>
       
-      <guid>/blog/2015/07/23/2015-07-23-r-rmarkdown/</guid>
+      <guid>/blog/2017/01/27/2017-01-27-numero-cnj/</guid>
       <description>&lt;!-- BLOGDOWN-BODY-BEFORE
 
 /BLOGDOWN-BODY-BEFORE --&gt;
 
-&lt;div id=&#34;r-markdown&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;R Markdown&lt;/h1&gt;
-&lt;p&gt;This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see &lt;a href=&#34;http://rmarkdown.rstudio.com&#34; class=&#34;uri&#34;&gt;http://rmarkdown.rstudio.com&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;You can embed an R code chunk like this:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;summary(cars)
-##      speed           dist       
-##  Min.   : 4.0   Min.   :  2.00  
-##  1st Qu.:12.0   1st Qu.: 26.00  
-##  Median :15.0   Median : 36.00  
-##  Mean   :15.4   Mean   : 42.98  
-##  3rd Qu.:19.0   3rd Qu.: 56.00  
-##  Max.   :25.0   Max.   :120.00
-fit &amp;lt;- lm(dist ~ speed, data = cars)
-fit
-## 
-## Call:
-## lm(formula = dist ~ speed, data = cars)
-## 
-## Coefficients:
-## (Intercept)        speed  
-##     -17.579        3.932&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;A definição da &lt;em&gt;unidade amostral&lt;/em&gt; é essencial para a realização de qualquer pesquisa empírica. Trata-se do elemento indivisível de uma amostra, de onde se medem as características que serão utilizadas na análise estatística.&lt;/p&gt;
+&lt;p&gt;Na jurimetria usualmente consideramos o &lt;em&gt;litígio&lt;/em&gt; como unidade amostral. O litígio é chamado de &lt;em&gt;processo judicial&lt;/em&gt; quando tramita na esfera judicial. Cada processo judicial possui um número identificador cadastrado nos sistemas do Tribunal, o que facilita a busca por casos específicos.&lt;/p&gt;
+&lt;p&gt;A &lt;a href=&#34;https://goo.gl/IX4PuX&#34;&gt;Resolução 65 do CNJ&lt;/a&gt; (&lt;em&gt;Número CNJ&lt;/em&gt;), é um marco na identificação de processos judiciais. Até 2008, a forma de numeração dos processos era definida pelo Tribunal responsável pela tramitação, o que deu origem a diversos formatos distintos. Com a Resolução, os processos passaram a receber um formato de numeração único para todos os Tribunais nas justiças Estadual, Trabalhista, Federal, Militar, Eleitoral e Superiores.&lt;/p&gt;
+&lt;p&gt;A Resolução define o padrão &lt;code&gt;NNNNNNN-DD.AAAA.J.TR.OOOO&lt;/code&gt;, em que:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;NNNNNNN&lt;/code&gt;: Número identificador do processo.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;DD&lt;/code&gt;: Dígito verificador gerado a partir da aplicação do algoritmo Módulo 97 Base 10, conforme Norma ISO 7064:2003.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;AAAA&lt;/code&gt;: Ano do ajuizamento do processo.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;J&lt;/code&gt;: Segmento do poder judiciário. Por exemplo, &lt;code&gt;8&lt;/code&gt; indica Justiça Estadual.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;TR&lt;/code&gt;: Identifica o tribunal. Por exemplo, &lt;code&gt;26&lt;/code&gt; indica Tribunal de Justiça de São Paulo.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;OOOO&lt;/code&gt;: Identifica a unidade de origem (foro) do processo. Na maioria dos casos, o número também identifica a comarca, pois existem poucas comarcas com mais de um foro (ex. a comarca de São Paulo, que possui mais de dez foros regionais).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div id=&#34;gerando-numeros-aleatorios&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Gerando números aleatórios&lt;/h2&gt;
+&lt;p&gt;Um aspecto de interesse na especificação do número CNJ é a possibilidade de gerar todos os possíveis números de processos. Para cada configuração de ano, justiça, tribunal e órgão de origem, temos exatamente dez milhões de números distintos. Por exemplo, considerando somente processos ajuizados em 2009, nas &lt;a href=&#34;http://tjal.jus.br/apmp/jurisdicaocomarcas09102015.pdf&#34;&gt;55 comarcas do Tribunal de Justiça de Alagoas&lt;/a&gt; e considerando um por comarca, teríamos 550 milhões de números distintos. Esses números poderiam ser utilizados para pesquisar diretamente todos os processos de um tribunal.&lt;/p&gt;
+&lt;p&gt;No entanto, pesquisar 550 milhões de números é uma tarefa demorada e onerosa para os tribunais, por dois motivos. Primeiro, no exemplo, se realizássemos 10 pesquisas por segundo, demoraríamos 637 dias para acessar todos os números. Além disso, nem todos os números correspondem a processos de fato. Nos tribunais, os números são gerados conforme a demanda e, portanto, apenas uma parcela dos números seria realmente manifesta.&lt;/p&gt;
+&lt;p&gt;Nessa situação uma alternativa via amostragem parece viável. Ao invés de pesquisar todos os processos, geramos uma amostra aleatória de números e pesquisamos diretamente nas ferramentas de pesquisa dos tribunais. A quantidade de processos necessários para isso é definida estudando-se a probabilidade de manifestação de um número de processo. Usualmente isso é feito a partir de uma amostra piloto.&lt;/p&gt;
 &lt;/div&gt;
-&lt;div id=&#34;including-plots&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;Including Plots&lt;/h1&gt;
-&lt;p&gt;You can also embed plots. See Figure &lt;a href=&#34;#fig:pie&#34;&gt;1&lt;/a&gt; for example:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;par(mar = c(0, 1, 0, 1))
-pie(
-  c(280, 60, 20),
-  c(&amp;#39;Sky&amp;#39;, &amp;#39;Sunny side of pyramid&amp;#39;, &amp;#39;Shady side of pyramid&amp;#39;),
-  col = c(&amp;#39;#0292D8&amp;#39;, &amp;#39;#F7EA39&amp;#39;, &amp;#39;#C4B632&amp;#39;),
-  init.angle = -50, border = NA
-)&lt;/code&gt;&lt;/pre&gt;
-&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:pie&#34;&gt;&lt;/span&gt;
-&lt;img src=&#34;/blog/2015/07/23/2015-07-23-r-rmarkdown/figures/pie-1.png&#34; alt=&#34;A fancy pie chart.&#34; width=&#34;672&#34; /&gt;
-&lt;p class=&#34;caption&#34;&gt;
-Figure 1: A fancy pie chart.
-&lt;/p&gt;
-&lt;/div&gt;
+&lt;div id=&#34;r-session&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;code&gt;R session&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;No pacote &lt;code&gt;abjutils&lt;/code&gt; criado pela ABJ, é possível basta utilizar a função &lt;code&gt;sample_cnj&lt;/code&gt; abaixo. É necessário informar a quantidade de processos, os foros, os anos, o segmento de justiça e o tribunal, com os seguintes parâmetros:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;n&lt;/code&gt;: quantidade de processos a ser gerada.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;foros&lt;/code&gt;: vetor de códigos de foro.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;anos&lt;/code&gt;: vetor de anos de distribuição dos processos.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;orgao&lt;/code&gt;: vetor de segmentos de justiça.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;tr&lt;/code&gt;: vetor de tribunais.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;No exemplo abaixo, geramos cinco processos aleatoriamente.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(abjutils)
+sample_cnj(n = 5, 
+           foros = &amp;quot;0001&amp;quot;, anos = c(2014, 2015), orgao = 8, tr = 26,
+           first_dig = &amp;quot;0&amp;quot;, sample_pars = TRUE, return_df = TRUE)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 5 × 1
+##             n_processo
+##                  &amp;lt;chr&amp;gt;
+## 1 04577705820158260001
+## 2 05914200720158260001
+## 3 02105967120148260001
+## 4 03847402420148260001
+## 5 08168146620148260001&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
 
@@ -66,6 +69,24 @@ Figure 1: A fancy pie chart.
 
 
 /BLOGDOWN-HEAD --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A importância da administração de dados</title>
+      <link>/blog/2017/01/19/importancia-da-administracao-de-dados/</link>
+      <pubDate>Thu, 19 Jan 2017 09:23:47 -0200</pubDate>
+      
+      <guid>/blog/2017/01/19/importancia-da-administracao-de-dados/</guid>
+      <description>&lt;p&gt;A administração de dados está em todo lugar: é inerente à existência organizacional, independente de sua formação orgânica. Isto acontece porque tudo que é &amp;ldquo;organizado&amp;rdquo; envolve, por conceito, delimitação de informações, sendo algumas tangíveis e outras intangíveis. Neste círculo de informações, é possível diferenciar uma boa de uma má administração com base na utilização dos dados em decisões estratégicas da organização em prol de seus ideais.&lt;/p&gt;
+
+&lt;p&gt;&amp;ldquo;Não é possível gerenciar o que não se mede&amp;rdquo;, afirmou William Edwards Deming, referência em melhoria da qualidade organizacional no século XX. Deming realizava esta divisão entre boa e má administração ao segmentar as organizações entre as que se preocupam em entender o que acontece ao seu redor e as que não se preocupam. Ressaltava também, a incapacidade de sobrevivência das empresas que não medem suas atuações, uma vez que se torna impossível gerir ou competir sem referência alguma.&lt;/p&gt;
+
+&lt;p&gt;Dentro da esfera pública, o &lt;a href=&#34;http://www.ibge.gov.br&#34; title=&#34;Site do IBGE&#34;&gt;Instituto Brasileiro de Geografia e Estatística (IBGE)&lt;/a&gt; é a principal referência no levantamento de dados. As informações do país norteiam as decisões de investimentos que atendem às necessidades dos mais diversos segmentos da sociedade civil, bem como dos órgãos das esferas governamentais federal, estadual e municipal. Por isso, a estrutura do IBGE está vinculada ao Ministério do Planejamento, Orçamento e Gestão do governo federal. Além do IBGE, também podemos destacar relevância na atuação do Tribunal Superior Eleitoral (TSE), o Departamento de Informática do SUS (DATASUS), Fundação Instituto de Pesquisas Econômicas (FIPE), entre outros.&lt;/p&gt;
+
+&lt;p&gt;Ao considerar a importância destes dados na administração pública, ressalta-se também a validade dos mesmos. É possível imaginar os enormes prejuízos causados por dados incorretos ou inconsistentes, uma vez que as repercussões de dados imprecisos originam enormes custos para a população. A &lt;em&gt;mensuração&lt;/em&gt; é a maneira como avalia-se a atuação pública atual em relação às anteriores, bem como norteia o destino do orçamento público, visando as áreas mais necessidades da rede pública.&lt;/p&gt;
+
+&lt;p&gt;Além de prover atributos essenciais para a análise da saúde administrativa, a disponibilidade de indicadores válidos facilita também o monitoramento real dos órgãos públicos e o estabelecimento de novas metas para o futuro.&lt;/p&gt;
 </description>
     </item>
     
