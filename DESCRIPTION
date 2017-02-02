@@ -8,7 +8,9 @@ Depends:
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
-Remotes: rstudio/blogdown
+Remotes: 
+    rstudio/blogdown,
+    abjur/abjData
 Imports:
     blogdown,
     dplyr,
@@ -18,5 +20,6 @@ Imports:
     abjutils,
     rmarkdown,
     stringr,
-    leaflet
+    leaflet,
+    abjData
 RoxygenNote: 5.0.1
