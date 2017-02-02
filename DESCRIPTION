@@ -16,5 +16,7 @@ Imports:
     ggplot2,
     knitr,
     abjutils,
-    rmarkdown
+    rmarkdown,
+    stringr,
+    leaflet
 RoxygenNote: 5.0.1
