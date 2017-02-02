@@ -8,7 +8,10 @@ banner: "img/banners/banner-12.png"
 
 ```{r echo=FALSE, warning=FALSE, message=FALSE}
 library(abjData)
-library(tidyverse)
+library(dplyr)
+library(ggplot2)
+library(stringr)
+library(tidyr)
 aj <- dados_aj
 
 aj_uf1 <- aj %>% 
