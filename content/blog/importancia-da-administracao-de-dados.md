@@ -2,7 +2,7 @@
 title: "A importância da administração de dados"
 author: "Luiz Resende"
 date: 2017-01-19T09:23:47-02:00
-tags: ["R Markdown", "plot", "regression"]
+tags: ['administração', 'divulgação']
 banner: "img/banners/banner-11.png"
 ---
 
