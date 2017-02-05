@@ -1,8 +1,9 @@
 ---
 title: "Nuances no cálculo de tempos processuais"
-author: "ABJ"
-date: "17 de janeiro de 2017"
-output: pdf_document
+author: "Fernando Corrêa"
+date: 2016-12-31T09:23:47-02:00
+tags: ['R', 'metodologia']
+banner: "img/banners/banner-09.png"
 ---
 
 ```{r knit-setup, echo = F}
