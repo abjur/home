@@ -23,5 +23,6 @@ Imports:
     stringr,
     leaflet,
     abjData,
-    tpur
+    tpur,
+    DiagrammeR
 RoxygenNote: 5.0.1
