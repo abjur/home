@@ -2,7 +2,7 @@
 title: "Número CNJ"
 author: "Julio Trecenti"
 date: 2017-01-27T09:23:47-02:00
-tags: ["R Markdown", "plot", "regression"]
+tags: ['R', 'metodologia', 'administração']
 banner: "img/banners/banner-10.png"
 ---
 
@@ -42,9 +42,10 @@ No pacote `abjutils` criado pela ABJ, é possível basta utilizar a função `sa
 No exemplo abaixo, geramos cinco processos aleatoriamente.
 
 ```{r eval=FALSE, echo=FALSE}
+library(ggplot2)
 lab <- data.frame(lab = "NNNNNNN-DD.AAAA.J.TR.OOOO", cyl = 6, am = .5)
 p <- ggplot(mtcars, aes(x = cyl, y = am)) + 
-  # geom_text(aes(label = lab), data = lab, size = 30) +
+  geom_text(aes(label = lab), data = lab, size = 30) +
   theme_bw() +
   theme(axis.title = element_blank(),
         axis.text = element_blank())
