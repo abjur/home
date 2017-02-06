@@ -1,0 +1,159 @@
+---
+title: "Assuntos processuais: a cifra oculta"
+author: "Julio Trecenti"
+date: 2017-01-27T09:23:47-02:00
+tags: ["R", 'metodologia', 'administração']
+banner: "img/banners/banner-13.png"
+---
+
+O volume de processos judiciais no Brasil é colossal. Segundo o relatório [Justiça em Números 2016](http://www.cnj.jus.br/files/conteudo/arquivo/2016/10/b8f46be3dbbff344931a933579915488.pdf), temos mais de 59 milhões de processos pendentes, somente na Justiça Estadual. Compreender o perfil das demandas é indispensável para a gestão eficiente dos Tribunais. Uma forma natural de identificar esses perfis é classificando os casos em "tipos", que são grupos de processos com características comuns.
+
+Atualmente, a forma mais direta de identificar tipos de processos judiciais é utilizando os chamados *assuntos processuais*. Esses assuntos nada mais são do que as matérias discutidas em cada caso. Por exemplo, um caso cível de indenização por dano moral poderia ter um assunto "Indenização por dano moral", enquanto um processo falimentar de uma empresa em Recuperação Judicial poderia ser classificado como "Convolação de Recuperação Judicial em Falência".
+
+Nesse contexto, um importante passo foi dado com a [Resolução 46/2007 do CNJ](http://www.cnj.jus.br/images/stories/docs_cnj/resolucao/rescnj_46.pdf), que criou as Tabelas Processuais Unificadas do CNJ (TPUs). As TPUs são uma documentação oficial de todas as classes, assuntos e movimentações dos processos. As TPUs foram implantada em todas as Justiças, o que facilita muito na realização de análises que comparam diferentes tribunais. Por esse motivo, as TPUs podem ser consideradas uma revolução na gestão judiciária.
+
+Infelizmente, apenas a definição unificada de assuntos não garante que os processos sejam corretamente classificados. Mas para entender esse problema, precisamos primeiro entender como as TPUs funcionam na prática.
+
+## Estrutura das TPUs
+
+As TPUs são estruturadas em formato de árvore. Isso significa que temos assuntos genéricos e assuntos específicos, sendo que o assunto específico é um "filho" do assunto genérico. As TPUs podem ter até seis níveis hierárquicos de assuntos.
+
+A Figura \@ref(fig:tpu) mostra uma parte da árvore de assuntos relativa ao Direito do Consumidor. Os números da imagem são códigos identificadores dos assuntos. Note que, por exemplo, "Inclusão Indevida em Cadastro de Inadimplentes" é um filho de "Indenização por Dano Moral", que por sua vez é filho de "Responsabilidade do Fornecedor".
+
+```{r tpu, fig.cap = 'Árvore de assuntos relacionada ao Direito do Consumidor (parcial). Imagem obtida [nesse link](https://www.cnj.jus.br/sgt/consulta_publica_assuntos.php).', echo=FALSE}
+knitr::include_graphics('/blog/tpu.png')
+```
+
+O problema enfrentado atualmente é que, na prática, nem sempre os processos são classificados com assuntos específicos. Assim, podemos ter um caso que discute sobre "Análise de Crédito" classificado como "Responsabilidade do Fornecedor", ou ainda "Direito do Consumidor". 
+
+A existência de casos de classificados com assuntos genéricos implica num problema para o levantamento do volume processual por assunto. Por exemplo, considere que há interesse em conhecer o volume de processos envolvendo "Análise de Crédito". Se considerarmos somente os casos classificados corretamente, estaríamos subestimando o real volume de processos, pois estaríamos ignorando os casos classificados em assuntos genéricos. Por outro lado, se considerarmos no levantamento todos os casos, incluindo os genéricos, estaríamos superestimanto o real volume.
+
+A possibilidade de subestimação do volume real de processos de um certo tipo configura o que chamamos de **cifra oculta**. Dado um assunto específico, esse número pode ser definido como a quantidade de processos com esse assunto, mas classificados em assuntos genéricos.
+
+## Estimação da cifra oculta
+
+Felizmente, a cifra oculta pode ser estimada usando jurimetria. Para isso, no entanto, é necessário fazer algumas suposições ou utilizar conhecimentos a priori sobre o tema.
+
+A forma mais simples de estimar a cifra oculta é realizando uma espécie de "regra de três". No exemplo da análise de crédito, considere que temos uma base de dados com todos os casos classificados com assuntos dentro da árvore do Direito do Consumidor. Suponha também que todos os processos de análise de crédito foram classificados ou corretamente, ou incorretamente como "Direito do Consumidor". Utilizando somente a parte da base que foi classificada com assuntos específicos, calculamos a proporção de casos $p$ classificados como "Análise de Crédito". Assim, uma estimativa do volume de processos de análise de crédito é dada por
+
+$$
+N = N_A + N_T \times p
+$$
+
+, onde
+
+- $N_A$ é o volume de casos classificados corretamente como "Análise de Crédito".
+- $N_T$ é o volume total de casos classificados como "Direito do Consumidor". $N_T \times p$ é a estimativa da cifra oculta.
+
+Essa estimativa, no entanto, faz uma suposição forte sobre as classificações. Nesse cálculo, assumimos que o fato de um processo ser classificado de forma genérica não tem relação alguma com o fato desse processo tratar de análise de crédito. Esse é um conceito estatístico denominado *independência* e pode ou não ser válido nesse exemplo concreto. Na sessão \@ref(stats) discutimos esse problema em maior detalhe.
+
+## Conclusão
+
+Nesse artigo discutimos a existência das TPUs e apresentamos sua estrutura. Também apresentamos o problema da *cifra oculta*, presente em todos os tribunais, que atrapalha substancialmente o cálculo de volume processual por assunto. Finalmente, apresentamos uma solução para esse problema, que depende de algumas suposições, mas que poderia ser rapidamente implementado em sistemas e relatórios gerenciais. Um caso importante é o próprio Justiça em Números, que até o momento mostra o volume processual somente para os três níveis mais genéricos das TPUs.
+
+---------------------------------------------------------------------
+
+## $Stats session$ {#stats}
+
+Essa sessão é voltada para nerds em estatística!
+
+O problema da cifra oculta é essencialmente um caso de omissão de dados. Quando um estudo envolve omissão, a primeira preocupação que devemos ter é se existe algum mecanismo para a produção dos dados, e se esse mecanismo estaria relacionado com os dados observados ou não observados. Ignorar esse mecanismo pode gerar viés nos resultados.
+
+Podemos classificar os dados omissos em três tipos principais:
+
+- Missing completamente aleatório (MCAR). Não depende de nenhuma outra variável.
+- Missing aleatório (MAR). A probabilidade de omissão depende somente das informações observadas.
+- Missing não aleatório (MNAR). Outros casos.
+
+Aqui, vamos lidar apenas com MCAR e MAR. Nesses casos, podemos tratar os dados omissos como parâmetros a serem estimados no modelo. Para trabalhar o caso MNAR é necessário utilizar informações a priori sobre o problema específico ou plugar informações de levantamentos anteriores (e.g. uma amostra de processos com assuntos classificados manualmente).
+
+### Caso MCAR
+
+O caso MCAR é equivalente à aplicação da "regra de três" definida acima. A única complicação é que o cálculo precisa ser realizado para cada nível de generalização do assunto. Felizmente, é possível estruturar as contas utilizando uma classe de modelos estatísticos denominada *rede Bayesiana*.
+
+Uma rede Bayesiana é uma forma gráfica de representar a dependência de variáveis aleatórias. No nosso caso, consideramos como variáveis aleatórias cada um dos níveis da árvore da TPU, digamos, $N_1, N_2, \dots, N_6$, em que $N_1$ é o nível mais genérico (e.g. Direito do Consumidor) e $N_6$ é o nível mais específico (e.g. Análise de Crédito). Nos casos em que o nível mais específico não ocorre no sexto nível, fazemos cópias do último nível disponível até $N_6$. 
+
+A rede da Figura \@ref(fig:rb) representa a hierarquia dos níveis das TPUs. Trata-se de uma rede bastante simples, que pode ser utilizada diretamente para o cálculo dos volumes processuais. Mostraremos como fazer isso na Seção \@ref(rsession).
+
+```{r rb, echo=FALSE, fig.height=2, fig.cap='Rede Bayesiana representando a hierarquia dos níveis das TPUs.'}
+library(DiagrammeR)
+DiagrammeR::grViz("
+digraph rmarkdown {
+rankdir=LR;
+node [shape = circle, fixedsize = true, width = 0.9]
+N₁, N₂, N₃, N₄, N₅, N₆ 
+
+N₁ -> N₂ -> N₃ -> N₄ -> N₅ -> N₆
+}
+")
+```
+
+### Caso MAR
+
+No caso MAR, podemos utilizar todos os dados disponíveis dos processos para predizer o assunto real do processo. Para isso, qualquer técnica de modelagem preditiva poderia ser utilizada.
+
+Uma forma natural de realizar montar esses modelos é estendendo a rede Bayesiana da Figura \@ref(fig:rb). Por exemplo, a rede da Figura \@ref(fig:rb2) considera que a classificação específica ou genérica de determinado assunto processual depende da vara em que o processo é distribuído. Outras variáveis poderiam ser consideradas para construir um modelo mais completo. 
+
+```{r rb2, echo=FALSE, fig.height=2, fig.cap='Rede Bayesiana representando a hierarquia dos níveis das TPUs, considerando também a vara.'}
+library(DiagrammeR)
+DiagrammeR::grViz("
+digraph rmarkdown {
+rankdir=LR;
+node [shape = circle, fixedsize = true, width = 0.9]
+Vara, N₁, N₂, N₃, N₄, N₅, N₆ 
+
+N₁ -> N₂ -> N₃ -> N₄ -> N₅ -> N₆
+Vara -> {N₁, N₂, N₃, N₄, N₅, N₆}
+}
+")
+```
+
+## `R session` {#rsession}
+
+Essa sessão é voltada para nerds em R!
+
+O pacote `tpur`, desenvolvido pela ABJ, pode ser utilizado para executar duas tarefas:
+
+- Baixar e estruturar as TPUs diretamente da [fonte oficial do CNJ](https://www.cnj.jus.br/sgt/versoes.php). 
+- A partir de uma base de dados de processos, estimar o volume processual de um conjunto de assuntos com base em um modelo de redes Bayesianas.
+
+Observe a estrutura de uma TPU usando o `tpur`. As colunas de `n1` até `n6` mostram os assuntos e as demais mostram informações como código, dispositivo legal por trás do assunto, artigo de lei, informações sobre alterações e glossário. A coluna `folha` indica se o assunto é específico (`TRUE`) ou genérico (`FALSE`).
+
+```{r warning=FALSE, message=FALSE}
+library(dplyr)
+library(tpur)
+tpu <- build_table(download_table('assunto', 'estadual', '1 grau'))
+glimpse(tpu)
+```
+
+Usando o pacote `tjsp` (que será assunto de outro post!), baixamos 1005 processos da Consulta de Julgados de Primeiro Grau do TJSP (CJPG).
+
+```{r eval=FALSE}
+s <- tjsp::cjpg_session()
+p <- tjsp::cjpg_parms(s, data_inicial = '2016-01-01', data_final = '2016-12-31')
+res <- tjsp::cjpg(s, p, max_pag = 100)
+d_tjsp <- tjsp::parse_cjpg(dir('data-raw/cjpg', full.names = TRUE))
+```
+
+```{r echo=FALSE}
+d_tjsp <- readRDS('d_tjsp.rds')
+leafs <- c('Indenização por Dano Moral', 'Fornecimento de Medicamentos')
+```
+
+A base apresenta as seguintes informações:
+
+```{r}
+glimpse(d_tjsp)
+```
+
+Digamos que nosso interesse seja estimar o volume de processos relativos aos assuntos "Indenização por Dano Moral" e "Fornecimento de Medicamentos". Na base de dados baixada, temos exatamente `sum(d_tjsp$assunto %in% leafs)` processos classificados com esse assunto.
+
+Para isso, utilizamos a função `tpu_assunto_prob`. Essa função assume o modelo MCAR como base. Futuramente teremos um pacote próprio para esses cálculos, que acomodarão outras especificações.
+
+```{r}
+leafs <- c('Indenização por Dano Moral', 'Fornecimento de Medicamentos')
+result <- tpu_assunto_prob(d_tjsp, leafs, tpu)
+round(sum(result$p))
+```
+
+Como resultado, observamos uma cifra oculta de 10 processos, um aumento de 12,5% do valor inicial. 
