@@ -1,8 +1,8 @@
-baseurl = "/"
+baseurl = "http://www.abj.org.br/"
 title = "ABJ"
 theme = "hugo-universal-theme"
 languageCode = "en-us"
-disqusShortname = "abjur"
+disqusShortname = "jurimetria"
 googleAnalytics = "UA-76479958-2"
 
 # Define the number of posts per page
