@@ -241,8 +241,8 @@ N = N_A + N_T \times p
 <p>Uma rede Bayesiana é uma forma gráfica de representar a dependência de variáveis aleatórias. No nosso caso, consideramos como variáveis aleatórias cada um dos níveis da árvore da TPU, digamos, <span class="math inline">\(N_1, N_2, \dots, N_6\)</span>, em que <span class="math inline">\(N_1\)</span> é o nível mais genérico (e.g. Direito do Consumidor) e <span class="math inline">\(N_6\)</span> é o nível mais específico (e.g. Análise de Crédito). Nos casos em que o nível mais específico não ocorre no sexto nível, fazemos cópias do último nível disponível até <span class="math inline">\(N_6\)</span>.</p>
 <p>A rede da Figura <a href="#fig:rb">2</a> representa a hierarquia dos níveis das TPUs. Trata-se de uma rede bastante simples, que pode ser utilizada diretamente para o cálculo dos volumes processuais. Mostraremos como fazer isso na Seção <a href="#rsession"><strong>??</strong></a>.</p>
 <div class="figure"><span id="fig:rb"></span>
-<div id="htmlwidget-068c1e976d393c7d043c" style="width:672px;height:192px;" class="grViz html-widget"></div>
-<script type="application/json" data-for="htmlwidget-068c1e976d393c7d043c">{"x":{"diagram":"\ndigraph rmarkdown {\nrankdir=LR;\nnode [shape = circle, fixedsize = true, width = 0.9]\nN₁, N₂, N₃, N₄, N₅, N₆ \n\nN₁ -> N₂ -> N₃ -> N₄ -> N₅ -> N₆\n}\n","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-48d2396daef81e6b67d7" style="width:672px;height:192px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-48d2396daef81e6b67d7">{"x":{"diagram":"\ndigraph rmarkdown {\nrankdir=LR;\nnode [shape = circle, fixedsize = true, width = 0.9]\nN₁, N₂, N₃, N₄, N₅, N₆ \n\nN₁ -> N₂ -> N₃ -> N₄ -> N₅ -> N₆\n}\n","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
 <p class="caption">
 Figure 2: Rede Bayesiana representando a hierarquia dos níveis das TPUs.
 </p>
@@ -253,8 +253,8 @@ Figure 2: Rede Bayesiana representando a hierarquia dos níveis das TPUs.
 <p>No caso MAR, podemos utilizar todos os dados disponíveis dos processos para predizer o assunto real do processo. Para isso, qualquer técnica de modelagem preditiva poderia ser utilizada.</p>
 <p>Uma forma natural de realizar montar esses modelos é estendendo a rede Bayesiana da Figura <a href="#fig:rb">2</a>. Por exemplo, a rede da Figura <a href="#fig:rb2">3</a> considera que a classificação específica ou genérica de determinado assunto processual depende da vara em que o processo é distribuído. Outras variáveis poderiam ser consideradas para construir um modelo mais completo.</p>
 <div class="figure"><span id="fig:rb2"></span>
-<div id="htmlwidget-9451a18569d15838fa41" style="width:672px;height:192px;" class="grViz html-widget"></div>
-<script type="application/json" data-for="htmlwidget-9451a18569d15838fa41">{"x":{"diagram":"\ndigraph rmarkdown {\nrankdir=LR;\nnode [shape = circle, fixedsize = true, width = 0.9]\nVara, N₁, N₂, N₃, N₄, N₅, N₆ \n\nN₁ -> N₂ -> N₃ -> N₄ -> N₅ -> N₆\nVara -> {N₁, N₂, N₃, N₄, N₅, N₆}\n}\n","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-11e9f5160133bd60dfd7" style="width:672px;height:192px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-11e9f5160133bd60dfd7">{"x":{"diagram":"\ndigraph rmarkdown {\nrankdir=LR;\nnode [shape = circle, fixedsize = true, width = 0.9]\nVara, N₁, N₂, N₃, N₄, N₅, N₆ \n\nN₁ -> N₂ -> N₃ -> N₄ -> N₅ -> N₆\nVara -> {N₁, N₂, N₃, N₄, N₅, N₆}\n}\n","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
 <p class="caption">
 Figure 3: Rede Bayesiana representando a hierarquia dos níveis das TPUs, considerando também a vara.
 </p>
@@ -309,7 +309,7 @@ d_tjsp &lt;- tjsp::parse_cjpg(dir(&#39;data-raw/cjpg&#39;, full.names = TRUE))</
 ## $ magistrado               &lt;chr&gt; &quot;José Antonio Lavouras Haicki&quot;, &quot;José...
 ## $ vara                     &lt;chr&gt; &quot;6ª Vara Cível&quot;, &quot;1ª Vara da Fazenda ...
 ## $ result                   &lt;chr&gt; &quot;OK&quot;, &quot;OK&quot;, &quot;OK&quot;, &quot;OK&quot;, &quot;OK&quot;, &quot;OK&quot;, &quot;...</code></pre>
-<p>Digamos que nosso interesse seja estimar o volume de processos relativos aos assuntos “Indenização por Dano Moral” e “Fornecimento de Medicamentos”. Na base de dados baixada, temos exatamente <code>sum(d_tjsp$assunto %in% leafs)</code> processos classificados com esse assunto.</p>
+<p>Digamos que nosso interesse seja estimar o volume de processos relativos aos assuntos “Indenização por Dano Moral” e “Fornecimento de Medicamentos”. Na base de dados baixada, temos exatamente 80 processos classificados com esse assunto.</p>
 <p>Para isso, utilizamos a função <code>tpu_assunto_prob</code>. Essa função assume o modelo MCAR como base. Futuramente teremos um pacote próprio para esses cálculos, que acomodarão outras especificações.</p>
 <pre class="r"><code>leafs &lt;- c(&#39;Indenização por Dano Moral&#39;, &#39;Fornecimento de Medicamentos&#39;)
 result &lt;- tpu_assunto_prob(d_tjsp, leafs, tpu)

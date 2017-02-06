@@ -146,7 +146,7 @@ A base apresenta as seguintes informações:
 glimpse(d_tjsp)
 ```
 
-Digamos que nosso interesse seja estimar o volume de processos relativos aos assuntos "Indenização por Dano Moral" e "Fornecimento de Medicamentos". Na base de dados baixada, temos exatamente `sum(d_tjsp$assunto %in% leafs)` processos classificados com esse assunto.
+Digamos que nosso interesse seja estimar o volume de processos relativos aos assuntos "Indenização por Dano Moral" e "Fornecimento de Medicamentos". Na base de dados baixada, temos exatamente `r sum(d_tjsp$assunto %in% leafs)` processos classificados com esse assunto.
 
 Para isso, utilizamos a função `tpu_assunto_prob`. Essa função assume o modelo MCAR como base. Futuramente teremos um pacote próprio para esses cálculos, que acomodarão outras especificações.
 
