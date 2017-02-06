@@ -37,10 +37,8 @@ Felizmente, a cifra oculta pode ser estimada usando jurimetria. Para isso, no en
 A forma mais simples de estimar a cifra oculta é realizando uma espécie de "regra de três". No exemplo da análise de crédito, considere que temos uma base de dados com todos os casos classificados com assuntos dentro da árvore do Direito do Consumidor. Suponha também que todos os processos de análise de crédito foram classificados ou corretamente, ou incorretamente como "Direito do Consumidor". Utilizando somente a parte da base que foi classificada com assuntos específicos, calculamos a proporção de casos $p$ classificados como "Análise de Crédito". Assim, uma estimativa do volume de processos de análise de crédito é dada por
 
 $$
-N = N_A + N_T \times p
+N = N_A + N_T \times p\text{, onde}
 $$
-
-, onde
 
 - $N_A$ é o volume de casos classificados corretamente como "Análise de Crédito".
 - $N_T$ é o volume total de casos classificados como "Direito do Consumidor". $N_T \times p$ é a estimativa da cifra oculta.
@@ -53,7 +51,7 @@ Nesse artigo discutimos a existência das TPUs e apresentamos sua estrutura. Tam
 
 ---------------------------------------------------------------------
 
-## $Stats session$ {#stats}
+## $Stats\ session$ {#stats}
 
 Essa sessão é voltada para nerds em estatística!
 

@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ABJ</title>
-    <link>/tags/metodologia/index.xml</link>
+    <link>http://www.abj.org.br/tags/metodologia/index.xml</link>
     <description>Recent content on ABJ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright (c) 2011 - 2017, ABJ; all rights reserved.</copyright>
-    <atom:link href="/tags/metodologia/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://www.abj.org.br/tags/metodologia/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Assuntos processuais: a cifra oculta</title>
-      <link>/blog/2017/01/27/2017-01-28-assuntos/</link>
+      <link>http://www.abj.org.br/blog/2017/01/27/2017-01-28-assuntos/</link>
       <pubDate>Fri, 27 Jan 2017 09:23:47 -0200</pubDate>
       
-      <guid>/blog/2017/01/27/2017-01-28-assuntos/</guid>
+      <guid>http://www.abj.org.br/blog/2017/01/27/2017-01-28-assuntos/</guid>
       <description>&lt;!-- BLOGDOWN-BODY-BEFORE
 
 /BLOGDOWN-BODY-BEFORE --&gt;
@@ -28,7 +28,7 @@
 &lt;p&gt;As TPUs são estruturadas em formato de árvore. Isso significa que temos assuntos genéricos e assuntos específicos, sendo que o assunto específico é um “filho” do assunto genérico. As TPUs podem ter até seis níveis hierárquicos de assuntos.&lt;/p&gt;
 &lt;p&gt;A Figura &lt;a href=&#34;#fig:tpu&#34;&gt;1&lt;/a&gt; mostra uma parte da árvore de assuntos relativa ao Direito do Consumidor. Os números da imagem são códigos identificadores dos assuntos. Note que, por exemplo, “Inclusão Indevida em Cadastro de Inadimplentes” é um filho de “Indenização por Dano Moral”, que por sua vez é filho de “Responsabilidade do Fornecedor”.&lt;/p&gt;
 &lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:tpu&#34;&gt;&lt;/span&gt;
-&lt;img src=&#34;/blog/tpu.png&#34; alt=&#34;Árvore de assuntos relacionada ao Direito do Consumidor (parcial). Imagem obtida [nesse link](https://www.cnj.jus.br/sgt/consulta_publica_assuntos.php).&#34;  /&gt;
+&lt;img src=&#34;http://www.abj.org.br/blog/tpu.png&#34; alt=&#34;Árvore de assuntos relacionada ao Direito do Consumidor (parcial). Imagem obtida [nesse link](https://www.cnj.jus.br/sgt/consulta_publica_assuntos.php).&#34;  /&gt;
 &lt;p class=&#34;caption&#34;&gt;
 Figure 1: Árvore de assuntos relacionada ao Direito do Consumidor (parcial). Imagem obtida &lt;a href=&#34;https://www.cnj.jus.br/sgt/consulta_publica_assuntos.php&#34;&gt;nesse link&lt;/a&gt;.
 &lt;/p&gt;
@@ -42,9 +42,8 @@ Figure 1: Árvore de assuntos relacionada ao Direito do Consumidor (parcial). Im
 &lt;p&gt;Felizmente, a cifra oculta pode ser estimada usando jurimetria. Para isso, no entanto, é necessário fazer algumas suposições ou utilizar conhecimentos a priori sobre o tema.&lt;/p&gt;
 &lt;p&gt;A forma mais simples de estimar a cifra oculta é realizando uma espécie de “regra de três”. No exemplo da análise de crédito, considere que temos uma base de dados com todos os casos classificados com assuntos dentro da árvore do Direito do Consumidor. Suponha também que todos os processos de análise de crédito foram classificados ou corretamente, ou incorretamente como “Direito do Consumidor”. Utilizando somente a parte da base que foi classificada com assuntos específicos, calculamos a proporção de casos &lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt; classificados como “Análise de Crédito”. Assim, uma estimativa do volume de processos de análise de crédito é dada por&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
-N = N_A + N_T \times p
+N = N_A + N_T \times p\text{, onde}
 \]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;, onde&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;span class=&#34;math inline&#34;&gt;\(N_A\)&lt;/span&gt; é o volume de casos classificados corretamente como “Análise de Crédito”.&lt;/li&gt;
 &lt;li&gt;&lt;span class=&#34;math inline&#34;&gt;\(N_T\)&lt;/span&gt; é o volume total de casos classificados como “Direito do Consumidor”. &lt;span class=&#34;math inline&#34;&gt;\(N_T \times p\)&lt;/span&gt; é a estimativa da cifra oculta.&lt;/li&gt;
@@ -57,7 +56,7 @@ N = N_A + N_T \times p
 &lt;hr /&gt;
 &lt;/div&gt;
 &lt;div id=&#34;stats&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;&lt;span class=&#34;math inline&#34;&gt;\(Stats session\)&lt;/span&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;span class=&#34;math inline&#34;&gt;\(Stats\ session\)&lt;/span&gt;&lt;/h2&gt;
 &lt;p&gt;Essa sessão é voltada para nerds em estatística!&lt;/p&gt;
 &lt;p&gt;O problema da cifra oculta é essencialmente um caso de omissão de dados. Quando um estudo envolve omissão, a primeira preocupação que devemos ter é se existe algum mecanismo para a produção dos dados, e se esse mecanismo estaria relacionado com os dados observados ou não observados. Ignorar esse mecanismo pode gerar viés nos resultados.&lt;/p&gt;
 &lt;p&gt;Podemos classificar os dados omissos em três tipos principais:&lt;/p&gt;
@@ -73,8 +72,8 @@ N = N_A + N_T \times p
 &lt;p&gt;Uma rede Bayesiana é uma forma gráfica de representar a dependência de variáveis aleatórias. No nosso caso, consideramos como variáveis aleatórias cada um dos níveis da árvore da TPU, digamos, &lt;span class=&#34;math inline&#34;&gt;\(N_1, N_2, \dots, N_6\)&lt;/span&gt;, em que &lt;span class=&#34;math inline&#34;&gt;\(N_1\)&lt;/span&gt; é o nível mais genérico (e.g. Direito do Consumidor) e &lt;span class=&#34;math inline&#34;&gt;\(N_6\)&lt;/span&gt; é o nível mais específico (e.g. Análise de Crédito). Nos casos em que o nível mais específico não ocorre no sexto nível, fazemos cópias do último nível disponível até &lt;span class=&#34;math inline&#34;&gt;\(N_6\)&lt;/span&gt;.&lt;/p&gt;
 &lt;p&gt;A rede da Figura &lt;a href=&#34;#fig:rb&#34;&gt;2&lt;/a&gt; representa a hierarquia dos níveis das TPUs. Trata-se de uma rede bastante simples, que pode ser utilizada diretamente para o cálculo dos volumes processuais. Mostraremos como fazer isso na Seção &lt;a href=&#34;#rsession&#34;&gt;&lt;strong&gt;??&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:rb&#34;&gt;&lt;/span&gt;
-&lt;div id=&#34;htmlwidget-bcc177246579ca6c3b18&#34; style=&#34;width:672px;height:192px;&#34; class=&#34;grViz html-widget&#34;&gt;&lt;/div&gt;
-&lt;script type=&#34;application/json&#34; data-for=&#34;htmlwidget-bcc177246579ca6c3b18&#34;&gt;{&#34;x&#34;:{&#34;diagram&#34;:&#34;\ndigraph rmarkdown {\nrankdir=LR;\nnode [shape = circle, fixedsize = true, width = 0.9]\nN₁, N₂, N₃, N₄, N₅, N₆ \n\nN₁ -&gt; N₂ -&gt; N₃ -&gt; N₄ -&gt; N₅ -&gt; N₆\n}\n&#34;,&#34;config&#34;:{&#34;engine&#34;:&#34;dot&#34;,&#34;options&#34;:null}},&#34;evals&#34;:[],&#34;jsHooks&#34;:[]}&lt;/script&gt;
+&lt;div id=&#34;htmlwidget-69e3cdc94a09c96041cc&#34; style=&#34;width:672px;height:192px;&#34; class=&#34;grViz html-widget&#34;&gt;&lt;/div&gt;
+&lt;script type=&#34;application/json&#34; data-for=&#34;htmlwidget-69e3cdc94a09c96041cc&#34;&gt;{&#34;x&#34;:{&#34;diagram&#34;:&#34;\ndigraph rmarkdown {\nrankdir=LR;\nnode [shape = circle, fixedsize = true, width = 0.9]\nN₁, N₂, N₃, N₄, N₅, N₆ \n\nN₁ -&gt; N₂ -&gt; N₃ -&gt; N₄ -&gt; N₅ -&gt; N₆\n}\n&#34;,&#34;config&#34;:{&#34;engine&#34;:&#34;dot&#34;,&#34;options&#34;:null}},&#34;evals&#34;:[],&#34;jsHooks&#34;:[]}&lt;/script&gt;
 &lt;p class=&#34;caption&#34;&gt;
 Figure 2: Rede Bayesiana representando a hierarquia dos níveis das TPUs.
 &lt;/p&gt;
@@ -85,8 +84,8 @@ Figure 2: Rede Bayesiana representando a hierarquia dos níveis das TPUs.
 &lt;p&gt;No caso MAR, podemos utilizar todos os dados disponíveis dos processos para predizer o assunto real do processo. Para isso, qualquer técnica de modelagem preditiva poderia ser utilizada.&lt;/p&gt;
 &lt;p&gt;Uma forma natural de realizar montar esses modelos é estendendo a rede Bayesiana da Figura &lt;a href=&#34;#fig:rb&#34;&gt;2&lt;/a&gt;. Por exemplo, a rede da Figura &lt;a href=&#34;#fig:rb2&#34;&gt;3&lt;/a&gt; considera que a classificação específica ou genérica de determinado assunto processual depende da vara em que o processo é distribuído. Outras variáveis poderiam ser consideradas para construir um modelo mais completo.&lt;/p&gt;
 &lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:rb2&#34;&gt;&lt;/span&gt;
-&lt;div id=&#34;htmlwidget-98858386c28023664017&#34; style=&#34;width:672px;height:192px;&#34; class=&#34;grViz html-widget&#34;&gt;&lt;/div&gt;
-&lt;script type=&#34;application/json&#34; data-for=&#34;htmlwidget-98858386c28023664017&#34;&gt;{&#34;x&#34;:{&#34;diagram&#34;:&#34;\ndigraph rmarkdown {\nrankdir=LR;\nnode [shape = circle, fixedsize = true, width = 0.9]\nVara, N₁, N₂, N₃, N₄, N₅, N₆ \n\nN₁ -&gt; N₂ -&gt; N₃ -&gt; N₄ -&gt; N₅ -&gt; N₆\nVara -&gt; {N₁, N₂, N₃, N₄, N₅, N₆}\n}\n&#34;,&#34;config&#34;:{&#34;engine&#34;:&#34;dot&#34;,&#34;options&#34;:null}},&#34;evals&#34;:[],&#34;jsHooks&#34;:[]}&lt;/script&gt;
+&lt;div id=&#34;htmlwidget-d709f73e617fccb06f5c&#34; style=&#34;width:672px;height:192px;&#34; class=&#34;grViz html-widget&#34;&gt;&lt;/div&gt;
+&lt;script type=&#34;application/json&#34; data-for=&#34;htmlwidget-d709f73e617fccb06f5c&#34;&gt;{&#34;x&#34;:{&#34;diagram&#34;:&#34;\ndigraph rmarkdown {\nrankdir=LR;\nnode [shape = circle, fixedsize = true, width = 0.9]\nVara, N₁, N₂, N₃, N₄, N₅, N₆ \n\nN₁ -&gt; N₂ -&gt; N₃ -&gt; N₄ -&gt; N₅ -&gt; N₆\nVara -&gt; {N₁, N₂, N₃, N₄, N₅, N₆}\n}\n&#34;,&#34;config&#34;:{&#34;engine&#34;:&#34;dot&#34;,&#34;options&#34;:null}},&#34;evals&#34;:[],&#34;jsHooks&#34;:[]}&lt;/script&gt;
 &lt;p class=&#34;caption&#34;&gt;
 Figure 3: Rede Bayesiana representando a hierarquia dos níveis das TPUs, considerando também a vara.
 &lt;/p&gt;
@@ -166,10 +165,10 @@ round(sum(result$p))&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>Número CNJ</title>
-      <link>/blog/2017/01/27/2017-01-27-numero-cnj/</link>
+      <link>http://www.abj.org.br/blog/2017/01/27/2017-01-27-numero-cnj/</link>
       <pubDate>Fri, 27 Jan 2017 09:23:47 -0200</pubDate>
       
-      <guid>/blog/2017/01/27/2017-01-27-numero-cnj/</guid>
+      <guid>http://www.abj.org.br/blog/2017/01/27/2017-01-27-numero-cnj/</guid>
       <description>&lt;!-- BLOGDOWN-BODY-BEFORE
 
 /BLOGDOWN-BODY-BEFORE --&gt;
@@ -210,11 +209,11 @@ sample_cnj(n = 5,
 &lt;pre&gt;&lt;code&gt;## # A tibble: 5 × 1
 ##             n_processo
 ##                  &amp;lt;chr&amp;gt;
-## 1 09226988420148260001
-## 2 04923830720158260001
-## 3 00418651520148260001
-## 4 03911206320148260001
-## 5 06369264020148260001&lt;/code&gt;&lt;/pre&gt;
+## 1 07583253620148260001
+## 2 07481140420158260001
+## 3 08723399620158260001
+## 4 06078896520148260001
+## 5 02008444120158260001&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
 
@@ -229,10 +228,10 @@ sample_cnj(n = 5,
     
     <item>
       <title>Nuances no cálculo de tempos processuais</title>
-      <link>/blog/2016/12/31/2016-12-31-tempos/</link>
+      <link>http://www.abj.org.br/blog/2016/12/31/2016-12-31-tempos/</link>
       <pubDate>Sat, 31 Dec 2016 09:23:47 -0200</pubDate>
       
-      <guid>/blog/2016/12/31/2016-12-31-tempos/</guid>
+      <guid>http://www.abj.org.br/blog/2016/12/31/2016-12-31-tempos/</guid>
       <description>&lt;!-- BLOGDOWN-BODY-BEFORE
 
 /BLOGDOWN-BODY-BEFORE --&gt;
@@ -249,13 +248,13 @@ sample_cnj(n = 5,
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr class=&#34;odd&#34;&gt;
-&lt;td align=&#34;center&#34;&gt;452.45&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;468.31&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;480.51&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;499.49&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:graph1&#34;&gt;&lt;/span&gt;
-&lt;img src=&#34;/blog/2016/12/31/2016-12-31-tempos/figures/graph1-1.png&#34; alt=&#34;Histograma do tempo de duração simulado.&#34; width=&#34;672&#34; /&gt;
+&lt;img src=&#34;http://www.abj.org.br/blog/2016/12/31/2016-12-31-tempos/figures/graph1-1.png&#34; alt=&#34;Histograma do tempo de duração simulado.&#34; width=&#34;672&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;
 Figure 1: Histograma do tempo de duração simulado.
 &lt;/p&gt;
@@ -264,7 +263,7 @@ Figure 1: Histograma do tempo de duração simulado.
 &lt;p&gt;Um exemplo da realização das pesquisas é descrito na figura &lt;a href=&#34;#fig:graph2&#34;&gt;2&lt;/a&gt;. Cada linha representa o ciclo de vida de um dos processos sendo estudados e as cores representam a sua presença ou ausência nos planos amostrais de cada uma das instituições de pesquisa. A linha tracejada representa a data de corte para a inclusão de processos na amostra da Instituição 2. Pelo gráfico, observa-se que a instituição 2 deixa de fora os processos que ainda não acabaram.&lt;/p&gt;
 &lt;p&gt;As diferenças nas estimativas obtidas está ilustrada na Tabela &lt;a href=&#34;#tab:tab2&#34;&gt;2&lt;/a&gt; e na Figura &lt;a href=&#34;#fig:graph3&#34;&gt;3&lt;/a&gt;. Como se vê, as médias obtidas pela instituição 2 são muito menores e, além disso, a cauda da distribuição do tempo de duração é mais leve do que a verdadeira.&lt;/p&gt;
 &lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:graph2&#34;&gt;&lt;/span&gt;
-&lt;img src=&#34;/blog/2016/12/31/2016-12-31-tempos/figures/graph2-1.png&#34; alt=&#34;Comparação dos processos observados por cada uma das instituições.&#34; width=&#34;672&#34; /&gt;
+&lt;img src=&#34;http://www.abj.org.br/blog/2016/12/31/2016-12-31-tempos/figures/graph2-1.png&#34; alt=&#34;Comparação dos processos observados por cada uma das instituições.&#34; width=&#34;672&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;
 Figure 2: Comparação dos processos observados por cada uma das instituições.
 &lt;/p&gt;
@@ -281,13 +280,13 @@ Figure 2: Comparação dos processos observados por cada uma das instituições.
 &lt;tbody&gt;
 &lt;tr class=&#34;odd&#34;&gt;
 &lt;td align=&#34;left&#34;&gt;Instituição 1&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;453.15&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;414.91&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;398.83&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;549.22&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr class=&#34;even&#34;&gt;
 &lt;td align=&#34;left&#34;&gt;Instituição 2&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;308.35&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;259.31&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;256.00&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;303.07&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr class=&#34;odd&#34;&gt;
 &lt;td align=&#34;left&#34;&gt;Valores reais&lt;/td&gt;
@@ -297,7 +296,7 @@ Figure 2: Comparação dos processos observados por cada uma das instituições.
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:graph3&#34;&gt;&lt;/span&gt;
-&lt;img src=&#34;/blog/2016/12/31/2016-12-31-tempos/figures/graph3-1.png&#34; alt=&#34;Curva de sobrevivência dos tempos acumulados gastos em decisões e despachos (dias).&#34; width=&#34;672&#34; /&gt;
+&lt;img src=&#34;http://www.abj.org.br/blog/2016/12/31/2016-12-31-tempos/figures/graph3-1.png&#34; alt=&#34;Curva de sobrevivência dos tempos acumulados gastos em decisões e despachos (dias).&#34; width=&#34;672&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;
 Figure 3: Curva de sobrevivência dos tempos acumulados gastos em decisões e despachos (dias).
 &lt;/p&gt;

@@ -2,51 +2,51 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>/</loc>
+    <loc>http://www.abj.org.br/</loc>
     <lastmod>2017-02-02T09:23:47-02:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/2017/02/02/2017-02-02-varas/</loc>
+    <loc>http://www.abj.org.br/blog/2017/02/02/2017-02-02-varas/</loc>
     <lastmod>2017-02-02T09:23:47-02:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/2017/01/27/2017-01-28-assuntos/</loc>
+    <loc>http://www.abj.org.br/blog/2017/01/27/2017-01-28-assuntos/</loc>
     <lastmod>2017-01-27T09:23:47-02:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/2017/01/27/2017-01-27-numero-cnj/</loc>
+    <loc>http://www.abj.org.br/blog/2017/01/27/2017-01-27-numero-cnj/</loc>
     <lastmod>2017-01-27T09:23:47-02:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/2017/01/19/importancia-da-administracao-de-dados/</loc>
+    <loc>http://www.abj.org.br/blog/2017/01/19/importancia-da-administracao-de-dados/</loc>
     <lastmod>2017-01-19T09:23:47-02:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/2016/12/31/2016-12-31-tempos/</loc>
+    <loc>http://www.abj.org.br/blog/2016/12/31/2016-12-31-tempos/</loc>
     <lastmod>2016-12-31T09:23:47-02:00</lastmod>
   </url>
   
   <url>
-    <loc>/jurimetrics/</loc>
+    <loc>http://www.abj.org.br/jurimetrics/</loc>
     <lastmod>2016-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/about/</loc>
+    <loc>http://www.abj.org.br/about/</loc>
     <lastmod>2016-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/contact/</loc>
+    <loc>http://www.abj.org.br/contact/</loc>
   </url>
   
   <url>
-    <loc>/faq/</loc>
+    <loc>http://www.abj.org.br/faq/</loc>
   </url>
   
 </urlset>

@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ABJ</title>
-    <link>/tags/divulga%C3%A7%C3%A3o/index.xml</link>
+    <link>http://www.abj.org.br/tags/divulga%C3%A7%C3%A3o/index.xml</link>
     <description>Recent content on ABJ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright (c) 2011 - 2017, ABJ; all rights reserved.</copyright>
-    <atom:link href="/tags/divulga%C3%A7%C3%A3o/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://www.abj.org.br/tags/divulga%C3%A7%C3%A3o/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>A importância da administração de dados</title>
-      <link>/blog/2017/01/19/importancia-da-administracao-de-dados/</link>
+      <link>http://www.abj.org.br/blog/2017/01/19/importancia-da-administracao-de-dados/</link>
       <pubDate>Thu, 19 Jan 2017 09:23:47 -0200</pubDate>
       
-      <guid>/blog/2017/01/19/importancia-da-administracao-de-dados/</guid>
+      <guid>http://www.abj.org.br/blog/2017/01/19/importancia-da-administracao-de-dados/</guid>
       <description>&lt;p&gt;A administração de dados está em todo lugar: é inerente à existência organizacional, independente de sua formação orgânica. Isto acontece porque tudo que é &amp;ldquo;organizado&amp;rdquo; envolve, por conceito, delimitação de informações, sendo algumas tangíveis e outras intangíveis. Neste círculo de informações, é possível diferenciar uma boa de uma má administração com base na utilização dos dados em decisões estratégicas da organização em prol de seus ideais.&lt;/p&gt;
 
 &lt;p&gt;&amp;ldquo;Não é possível gerenciar o que não se mede&amp;rdquo;, afirmou William Edwards Deming, referência em melhoria da qualidade organizacional no século XX. Deming realizava esta divisão entre boa e má administração ao segmentar as organizações entre as que se preocupam em entender o que acontece ao seu redor e as que não se preocupam. Ressaltava também, a incapacidade de sobrevivência das empresas que não medem suas atuações, uma vez que se torna impossível gerir ou competir sem referência alguma.&lt;/p&gt;
