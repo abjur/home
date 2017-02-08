@@ -240,8 +240,8 @@ N = N_A + N_T \times p\text{, onde}
 <p>Uma rede Bayesiana é uma forma gráfica de representar a dependência de variáveis aleatórias. No nosso caso, consideramos como variáveis aleatórias cada um dos níveis da árvore da TPU, digamos, <span class="math inline">\(N_1, N_2, \dots, N_6\)</span>, em que <span class="math inline">\(N_1\)</span> é o nível mais genérico (e.g. Direito do Consumidor) e <span class="math inline">\(N_6\)</span> é o nível mais específico (e.g. Análise de Crédito). Nos casos em que o nível mais específico não ocorre no sexto nível, fazemos cópias do último nível disponível até <span class="math inline">\(N_6\)</span>.</p>
 <p>A rede da Figura <a href="#fig:rb">2</a> representa a hierarquia dos níveis das TPUs. Trata-se de uma rede bastante simples, que pode ser utilizada diretamente para o cálculo dos volumes processuais. Mostraremos como fazer isso na Seção <a href="#rsession"><strong>??</strong></a>.</p>
 <div class="figure"><span id="fig:rb"></span>
-<div id="htmlwidget-69e3cdc94a09c96041cc" style="width:672px;height:192px;" class="grViz html-widget"></div>
-<script type="application/json" data-for="htmlwidget-69e3cdc94a09c96041cc">{"x":{"diagram":"\ndigraph rmarkdown {\nrankdir=LR;\nnode [shape = circle, fixedsize = true, width = 0.9]\nN₁, N₂, N₃, N₄, N₅, N₆ \n\nN₁ -> N₂ -> N₃ -> N₄ -> N₅ -> N₆\n}\n","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-b97fc2659fd127d05040" style="width:672px;height:192px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-b97fc2659fd127d05040">{"x":{"diagram":"\ndigraph rmarkdown {\nrankdir=LR;\nnode [shape = circle, fixedsize = true, width = 0.9]\nN₁, N₂, N₃, N₄, N₅, N₆ \n\nN₁ -> N₂ -> N₃ -> N₄ -> N₅ -> N₆\n}\n","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
 <p class="caption">
 Figure 2: Rede Bayesiana representando a hierarquia dos níveis das TPUs.
 </p>
@@ -252,8 +252,8 @@ Figure 2: Rede Bayesiana representando a hierarquia dos níveis das TPUs.
 <p>No caso MAR, podemos utilizar todos os dados disponíveis dos processos para predizer o assunto real do processo. Para isso, qualquer técnica de modelagem preditiva poderia ser utilizada.</p>
 <p>Uma forma natural de realizar montar esses modelos é estendendo a rede Bayesiana da Figura <a href="#fig:rb">2</a>. Por exemplo, a rede da Figura <a href="#fig:rb2">3</a> considera que a classificação específica ou genérica de determinado assunto processual depende da vara em que o processo é distribuído. Outras variáveis poderiam ser consideradas para construir um modelo mais completo.</p>
 <div class="figure"><span id="fig:rb2"></span>
-<div id="htmlwidget-d709f73e617fccb06f5c" style="width:672px;height:192px;" class="grViz html-widget"></div>
-<script type="application/json" data-for="htmlwidget-d709f73e617fccb06f5c">{"x":{"diagram":"\ndigraph rmarkdown {\nrankdir=LR;\nnode [shape = circle, fixedsize = true, width = 0.9]\nVara, N₁, N₂, N₃, N₄, N₅, N₆ \n\nN₁ -> N₂ -> N₃ -> N₄ -> N₅ -> N₆\nVara -> {N₁, N₂, N₃, N₄, N₅, N₆}\n}\n","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-5c9edc1d453b37d28a6b" style="width:672px;height:192px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-5c9edc1d453b37d28a6b">{"x":{"diagram":"\ndigraph rmarkdown {\nrankdir=LR;\nnode [shape = circle, fixedsize = true, width = 0.9]\nVara, N₁, N₂, N₃, N₄, N₅, N₆ \n\nN₁ -> N₂ -> N₃ -> N₄ -> N₅ -> N₆\nVara -> {N₁, N₂, N₃, N₄, N₅, N₆}\n}\n","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
 <p class="caption">
 Figure 3: Rede Bayesiana representando a hierarquia dos níveis das TPUs, considerando também a vara.
 </p>
@@ -379,6 +379,22 @@ round(sum(result$p))</code></pre>
 
 
 
+<div class="panel panel-default sidebar-menu">
+
+    <div class="panel-heading">
+        <h3 class="panel-title">Categories</h3>
+    </div>
+
+    <div class="panel-body">
+        <ul class="nav nav-pills nav-stacked">
+            
+            <li><a href="http://www.abj.org.br/categories/r">r (1)</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
 
 
 
@@ -403,7 +419,16 @@ round(sum(result$p))</code></pre>
             <li><a href="http://www.abj.org.br/tags/metodologia"><i class="fa fa-tags"></i> metodologia</a>
             </li>
             
+            <li><a href="http://www.abj.org.br/tags/plot"><i class="fa fa-tags"></i> plot</a>
+            </li>
+            
             <li><a href="http://www.abj.org.br/tags/r"><i class="fa fa-tags"></i> r</a>
+            </li>
+            
+            <li><a href="http://www.abj.org.br/tags/r-markdown"><i class="fa fa-tags"></i> r-markdown</a>
+            </li>
+            
+            <li><a href="http://www.abj.org.br/tags/regression"><i class="fa fa-tags"></i> regression</a>
             </li>
             
         </ul>
