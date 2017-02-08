@@ -72,8 +72,8 @@ N = N_A + N_T \times p\text{, onde}
 &lt;p&gt;Uma rede Bayesiana é uma forma gráfica de representar a dependência de variáveis aleatórias. No nosso caso, consideramos como variáveis aleatórias cada um dos níveis da árvore da TPU, digamos, &lt;span class=&#34;math inline&#34;&gt;\(N_1, N_2, \dots, N_6\)&lt;/span&gt;, em que &lt;span class=&#34;math inline&#34;&gt;\(N_1\)&lt;/span&gt; é o nível mais genérico (e.g. Direito do Consumidor) e &lt;span class=&#34;math inline&#34;&gt;\(N_6\)&lt;/span&gt; é o nível mais específico (e.g. Análise de Crédito). Nos casos em que o nível mais específico não ocorre no sexto nível, fazemos cópias do último nível disponível até &lt;span class=&#34;math inline&#34;&gt;\(N_6\)&lt;/span&gt;.&lt;/p&gt;
 &lt;p&gt;A rede da Figura &lt;a href=&#34;#fig:rb&#34;&gt;2&lt;/a&gt; representa a hierarquia dos níveis das TPUs. Trata-se de uma rede bastante simples, que pode ser utilizada diretamente para o cálculo dos volumes processuais. Mostraremos como fazer isso na Seção &lt;a href=&#34;#rsession&#34;&gt;&lt;strong&gt;??&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:rb&#34;&gt;&lt;/span&gt;
-&lt;div id=&#34;htmlwidget-3c1d3b9b733eab21f30f&#34; style=&#34;width:672px;height:192px;&#34; class=&#34;grViz html-widget&#34;&gt;&lt;/div&gt;
-&lt;script type=&#34;application/json&#34; data-for=&#34;htmlwidget-3c1d3b9b733eab21f30f&#34;&gt;{&#34;x&#34;:{&#34;diagram&#34;:&#34;\ndigraph rmarkdown {\nrankdir=LR;\nnode [shape = circle, fixedsize = true, width = 0.9]\nN₁, N₂, N₃, N₄, N₅, N₆ \n\nN₁ -&gt; N₂ -&gt; N₃ -&gt; N₄ -&gt; N₅ -&gt; N₆\n}\n&#34;,&#34;config&#34;:{&#34;engine&#34;:&#34;dot&#34;,&#34;options&#34;:null}},&#34;evals&#34;:[],&#34;jsHooks&#34;:[]}&lt;/script&gt;
+&lt;div id=&#34;htmlwidget-3734944550b850580f63&#34; style=&#34;width:672px;height:192px;&#34; class=&#34;grViz html-widget&#34;&gt;&lt;/div&gt;
+&lt;script type=&#34;application/json&#34; data-for=&#34;htmlwidget-3734944550b850580f63&#34;&gt;{&#34;x&#34;:{&#34;diagram&#34;:&#34;\ndigraph rmarkdown {\nrankdir=LR;\nnode [shape = circle, fixedsize = true, width = 0.9]\nN₁, N₂, N₃, N₄, N₅, N₆ \n\nN₁ -&gt; N₂ -&gt; N₃ -&gt; N₄ -&gt; N₅ -&gt; N₆\n}\n&#34;,&#34;config&#34;:{&#34;engine&#34;:&#34;dot&#34;,&#34;options&#34;:null}},&#34;evals&#34;:[],&#34;jsHooks&#34;:[]}&lt;/script&gt;
 &lt;p class=&#34;caption&#34;&gt;
 Figure 2: Rede Bayesiana representando a hierarquia dos níveis das TPUs.
 &lt;/p&gt;
@@ -84,8 +84,8 @@ Figure 2: Rede Bayesiana representando a hierarquia dos níveis das TPUs.
 &lt;p&gt;No caso MAR, podemos utilizar todos os dados disponíveis dos processos para predizer o assunto real do processo. Para isso, qualquer técnica de modelagem preditiva poderia ser utilizada.&lt;/p&gt;
 &lt;p&gt;Uma forma natural de realizar montar esses modelos é estendendo a rede Bayesiana da Figura &lt;a href=&#34;#fig:rb&#34;&gt;2&lt;/a&gt;. Por exemplo, a rede da Figura &lt;a href=&#34;#fig:rb2&#34;&gt;3&lt;/a&gt; considera que a classificação específica ou genérica de determinado assunto processual depende da vara em que o processo é distribuído. Outras variáveis poderiam ser consideradas para construir um modelo mais completo.&lt;/p&gt;
 &lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:rb2&#34;&gt;&lt;/span&gt;
-&lt;div id=&#34;htmlwidget-1da3a003a5aa86f52a27&#34; style=&#34;width:672px;height:192px;&#34; class=&#34;grViz html-widget&#34;&gt;&lt;/div&gt;
-&lt;script type=&#34;application/json&#34; data-for=&#34;htmlwidget-1da3a003a5aa86f52a27&#34;&gt;{&#34;x&#34;:{&#34;diagram&#34;:&#34;\ndigraph rmarkdown {\nrankdir=LR;\nnode [shape = circle, fixedsize = true, width = 0.9]\nVara, N₁, N₂, N₃, N₄, N₅, N₆ \n\nN₁ -&gt; N₂ -&gt; N₃ -&gt; N₄ -&gt; N₅ -&gt; N₆\nVara -&gt; {N₁, N₂, N₃, N₄, N₅, N₆}\n}\n&#34;,&#34;config&#34;:{&#34;engine&#34;:&#34;dot&#34;,&#34;options&#34;:null}},&#34;evals&#34;:[],&#34;jsHooks&#34;:[]}&lt;/script&gt;
+&lt;div id=&#34;htmlwidget-94ea2adc22a79ab076d1&#34; style=&#34;width:672px;height:192px;&#34; class=&#34;grViz html-widget&#34;&gt;&lt;/div&gt;
+&lt;script type=&#34;application/json&#34; data-for=&#34;htmlwidget-94ea2adc22a79ab076d1&#34;&gt;{&#34;x&#34;:{&#34;diagram&#34;:&#34;\ndigraph rmarkdown {\nrankdir=LR;\nnode [shape = circle, fixedsize = true, width = 0.9]\nVara, N₁, N₂, N₃, N₄, N₅, N₆ \n\nN₁ -&gt; N₂ -&gt; N₃ -&gt; N₄ -&gt; N₅ -&gt; N₆\nVara -&gt; {N₁, N₂, N₃, N₄, N₅, N₆}\n}\n&#34;,&#34;config&#34;:{&#34;engine&#34;:&#34;dot&#34;,&#34;options&#34;:null}},&#34;evals&#34;:[],&#34;jsHooks&#34;:[]}&lt;/script&gt;
 &lt;p class=&#34;caption&#34;&gt;
 Figure 3: Rede Bayesiana representando a hierarquia dos níveis das TPUs, considerando também a vara.
 &lt;/p&gt;
@@ -209,11 +209,11 @@ sample_cnj(n = 5,
 &lt;pre&gt;&lt;code&gt;## # A tibble: 5 × 1
 ##             n_processo
 ##                  &amp;lt;chr&amp;gt;
-## 1 07622293020158260001
-## 2 09266495220158260001
-## 3 03651607120158260001
-## 4 09841482820148260001
-## 5 04274148020158260001&lt;/code&gt;&lt;/pre&gt;
+## 1 05461968020148260001
+## 2 01589534020158260001
+## 3 06492497720148260001
+## 4 02971671120158260001
+## 5 07767199120148260001&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
 
@@ -293,7 +293,7 @@ sample_cnj(n = 5,
 &lt;/div&gt;
 &lt;div id=&#34;conclusao&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Conclusão&lt;/h2&gt;
-&lt;p&gt;Nossas simulações fornecem evidências de que a medição de tempos processuais selecionando obsesrvações de maneira retrospectiva subestima a duração média quando há violação da suposição de estabilidade da distribuição dos processos. Isso ocorre pois estudos retrospectivos medem a duração dos processos que terminam em um determinado período. Por conta disso, no caso de um evento em que o número de distribuições aumenta, estudos retrospectivos analisarão uma quantidade desproporcional de processos com duração pequena.&lt;/p&gt;
+&lt;p&gt;Nossas simulações fornecem evidências de que a medição de tempos processuais selecionando observações de maneira retrospectiva estima incorretamente a duração média quando há violação da suposição de estabilidade da distribuição dos processos. Isso ocorreu pois estudos retrospectivos medem a duração dos processos que terminam em um determinado período. Por conta disso, no caso de um evento em que o número de distribuições aumenta, o estudo retrospectivo analisou uma quantidade desproporcional de processos com duração pequena.&lt;/p&gt;
 &lt;p&gt;Também constatamos que estudos prospectivos protegem-se melhor contra a instabilidade da distribuição de procesos. Mesmo que haja flutuações na taxa diária de processos distribuídos, as estimativa são próximas dos valores verdadeiros contanto que a média da distribuição da duração processual seja constante. Essa suposição é equivalente a considerar que o tempo médio que um processo demora para terminar não varia ao longo do tempo.&lt;/p&gt;
 &lt;p&gt;Por fim, ressaltamos que os resultados obtidos neste texto não buscam desacreditar estudos retrospectivos. O objetivo da nossa argumentação é chamar a atenção para a importância das suposições na modelagem e dos riscos que se corre quando se opta por certos delineamentos de estudo. Toda ferramenta quantitativa é adequada quando as suas hipóteses estão satisfeitas. Em particular, estudos retrospectivos podem ser conduzidos com maior facilidade e eficiência do que estudos prospectivos e isso é uma grande vantagem a seu favor, mas isso não pode nos cegar com relação às suas limitações.&lt;/p&gt;
 &lt;/div&gt;
