@@ -2918,6 +2918,7 @@ fieldset[disabled] .btn-template-primary.active {
   padding: 10px 15px;
   font-size: 18px;
   line-height: 20px;
+  margin-top: 20px;
   height: 62px;
 }
 .navbar-brand:hover,
@@ -2975,8 +2976,8 @@ fieldset[disabled] .btn-template-primary.active {
     float: left;
   }
   .navbar-nav > li > a {
-    padding-top: 29px;
-    padding-bottom: 29px;
+    padding-top: 41px;
+    padding-bottom: 41px;
   }
   .navbar-nav.navbar-right:last-child {
     margin-right: -15px;
