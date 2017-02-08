@@ -2,11 +2,25 @@
 title: "Nuances no cálculo de tempos processuais"
 author: "Fernando Corrêa"
 date: 2016-12-31T09:23:47-02:00
-tags: ['R', 'metodologia']
+tags: ['R', 'metodologia', 'análise de sobrevivência']
 banner: "img/banners/banner-09.png"
 ---
 
 ```{r knit-setup, echo = F}
+
+abj.theme <- function(){
+  
+  ggplot2::theme(text =  ggplot2::element_text(family = "Roboto-Regular",
+                                               size = 14,
+                                               color = '#555555',
+                                               lineheight = 1.42857143),
+                 axis.text.x = ggplot2::element_text(size = 12),
+                 strip.text = ggplot2::element_text(color = 'white', size = 14),
+                 strip.background = ggplot2::element_rect(fill = "#467fbf",
+                                                          color = "#555555"),
+                 panel.border = ggplot2::element_rect(color = "#555555"),
+                 strip.placement = 'bottom')
+}
 
 knitr::opts_chunk$set(echo = F,
                       warning = F,
@@ -17,7 +31,6 @@ final_plot <- readRDS("prosp_versus_resp_plot.rds")
 simulacao <- readRDS("samples_estimates.rds")
 
 tx <- 0.013
-
 
 ```
 
@@ -232,8 +245,9 @@ $$
 
 Uma realização da nossa simulação está ilustrada na figura abaixo. As linhas representam o ciclo de vida dos processos sob estudo e as cores representam a presença ou ausência nos planos amostrais que utilizam cada uma das metodologias. As linhas tracejadas delimitam o escopo temporal dos estudos.
 
-```{r}
-final_plot
+```{r, fig.height=6.5}
+final_plot +
+  abj.theme()
 ```
 
 É importante notar que a curva que representa a distribuição dos processos no cenário 1 é mais íngreme após agosto de 2014. Isso ocorre porque nesse cenário a taxa de distribuição de processos aumentou de $7$% para $17$%. Por conta desse fato, existe uma maior quantidade de processos com baixa duração sendo analisada pelo estudo retrospectivo.
