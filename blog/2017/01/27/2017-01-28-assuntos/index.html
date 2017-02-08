@@ -202,7 +202,7 @@ Figure 1: Árvore de assuntos relacionada ao Direito do Consumidor (parcial). Im
 </p>
 </div>
 <p>O problema enfrentado atualmente é que, na prática, nem sempre os processos são classificados com assuntos específicos. Assim, podemos ter um caso que discute sobre “Análise de Crédito” classificado como “Responsabilidade do Fornecedor”, ou ainda “Direito do Consumidor”.</p>
-<p>A existência de casos de classificados com assuntos genéricos implica num problema para o levantamento do volume processual por assunto. Por exemplo, considere que há interesse em conhecer o volume de processos envolvendo “Análise de Crédito”. Se considerarmos somente os casos classificados corretamente, estaríamos subestimando o real volume de processos, pois estaríamos ignorando os casos classificados em assuntos genéricos. Por outro lado, se considerarmos no levantamento todos os casos, incluindo os genéricos, estaríamos superestimanto o real volume.</p>
+<p>A existência de casos classificados com assuntos genéricos implica num problema para o levantamento do volume processual por assunto. Por exemplo, considere que há interesse em conhecer o volume de processos envolvendo “Análise de Crédito”. Se considerarmos somente os casos classificados corretamente, estaríamos subestimando o real volume de processos, pois estaríamos ignorando os casos classificados em assuntos genéricos. Por outro lado, se considerarmos no levantamento todos os casos, incluindo os genéricos, estaríamos superestimanto o real volume.</p>
 <p>A possibilidade de subestimação do volume real de processos de um certo tipo configura o que chamamos de <strong>cifra oculta</strong>. Dado um assunto específico, esse número pode ser definido como a quantidade de processos com esse assunto, mas classificados em assuntos genéricos.</p>
 </div>
 <div id="estimacao-da-cifra-oculta" class="section level2">
@@ -220,7 +220,8 @@ N = N_A + N_T \times p\text{, onde}
 </div>
 <div id="conclusao" class="section level2">
 <h2>Conclusão</h2>
-<p>Nesse artigo discutimos a existência das TPUs e apresentamos sua estrutura. Também apresentamos o problema da <em>cifra oculta</em>, presente em todos os tribunais, que atrapalha substancialmente o cálculo de volume processual por assunto. Finalmente, apresentamos uma solução para esse problema, que depende de algumas suposições, mas que poderia ser rapidamente implementado em sistemas e relatórios gerenciais. Um caso importante é o próprio Justiça em Números, que até o momento mostra o volume processual somente para os três níveis mais genéricos das TPUs.</p>
+<p>Neste artigo discutimos a existência das TPUs e apresentamos sua estrutura. Também apresentamos o problema da <em>cifra oculta</em>, presente em todos os tribunais, que atrapalha substancialmente o cálculo de volume processual por assunto.</p>
+<p>Finalmente, apresentamos uma solução para esse problema, que depende de algumas suposições, mas que poderia ser rapidamente implementado em sistemas e relatórios gerenciais. Um caso importante é o próprio Justiça em Números, que até o momento mostra o volume processual somente para os três níveis mais genéricos das TPUs.</p>
 <hr />
 </div>
 <div id="stats" class="section level2">
@@ -240,8 +241,8 @@ N = N_A + N_T \times p\text{, onde}
 <p>Uma rede Bayesiana é uma forma gráfica de representar a dependência de variáveis aleatórias. No nosso caso, consideramos como variáveis aleatórias cada um dos níveis da árvore da TPU, digamos, <span class="math inline">\(N_1, N_2, \dots, N_6\)</span>, em que <span class="math inline">\(N_1\)</span> é o nível mais genérico (e.g. Direito do Consumidor) e <span class="math inline">\(N_6\)</span> é o nível mais específico (e.g. Análise de Crédito). Nos casos em que o nível mais específico não ocorre no sexto nível, fazemos cópias do último nível disponível até <span class="math inline">\(N_6\)</span>.</p>
 <p>A rede da Figura <a href="#fig:rb">2</a> representa a hierarquia dos níveis das TPUs. Trata-se de uma rede bastante simples, que pode ser utilizada diretamente para o cálculo dos volumes processuais. Mostraremos como fazer isso na Seção <a href="#rsession"><strong>??</strong></a>.</p>
 <div class="figure"><span id="fig:rb"></span>
-<div id="htmlwidget-3734944550b850580f63" style="width:672px;height:192px;" class="grViz html-widget"></div>
-<script type="application/json" data-for="htmlwidget-3734944550b850580f63">{"x":{"diagram":"\ndigraph rmarkdown {\nrankdir=LR;\nnode [shape = circle, fixedsize = true, width = 0.9]\nN₁, N₂, N₃, N₄, N₅, N₆ \n\nN₁ -> N₂ -> N₃ -> N₄ -> N₅ -> N₆\n}\n","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-8974fd76477ee7eaa480" style="width:672px;height:192px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-8974fd76477ee7eaa480">{"x":{"diagram":"\ndigraph rmarkdown {\nrankdir=LR;\nnode [shape = circle, fixedsize = true, width = 0.9]\nN₁, N₂, N₃, N₄, N₅, N₆ \n\nN₁ -> N₂ -> N₃ -> N₄ -> N₅ -> N₆\n}\n","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
 <p class="caption">
 Figure 2: Rede Bayesiana representando a hierarquia dos níveis das TPUs.
 </p>
@@ -250,10 +251,10 @@ Figure 2: Rede Bayesiana representando a hierarquia dos níveis das TPUs.
 <div id="caso-mar" class="section level3">
 <h3>Caso MAR</h3>
 <p>No caso MAR, podemos utilizar todos os dados disponíveis dos processos para predizer o assunto real do processo. Para isso, qualquer técnica de modelagem preditiva poderia ser utilizada.</p>
-<p>Uma forma natural de realizar montar esses modelos é estendendo a rede Bayesiana da Figura <a href="#fig:rb">2</a>. Por exemplo, a rede da Figura <a href="#fig:rb2">3</a> considera que a classificação específica ou genérica de determinado assunto processual depende da vara em que o processo é distribuído. Outras variáveis poderiam ser consideradas para construir um modelo mais completo.</p>
+Uma forma natural de realizar montar esses modelos é estendendo a rede Bayesiana da Figura <a href="#fig:rb">2</a>. Por exemplo, a rede da Figura <a href="#fig:rb2">3</a> considera que a classificação específica ou genérica de determinado assunto processual depende da vara em que o processo é distribuído. Outras variáveis poderiam ser consideradas para construir um modelo mais completo.
 <div class="figure"><span id="fig:rb2"></span>
-<div id="htmlwidget-94ea2adc22a79ab076d1" style="width:672px;height:192px;" class="grViz html-widget"></div>
-<script type="application/json" data-for="htmlwidget-94ea2adc22a79ab076d1">{"x":{"diagram":"\ndigraph rmarkdown {\nrankdir=LR;\nnode [shape = circle, fixedsize = true, width = 0.9]\nVara, N₁, N₂, N₃, N₄, N₅, N₆ \n\nN₁ -> N₂ -> N₃ -> N₄ -> N₅ -> N₆\nVara -> {N₁, N₂, N₃, N₄, N₅, N₆}\n}\n","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-d16825322c852e13dd9c" style="width:672px;height:192px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-d16825322c852e13dd9c">{"x":{"diagram":"\ndigraph rmarkdown {\nrankdir=LR;\nnode [shape = circle, fixedsize = true, width = 0.9]\nVara, N₁, N₂, N₃, N₄, N₅, N₆ \n\nN₁ -> N₂ -> N₃ -> N₄ -> N₅ -> N₆\nVara -> {N₁, N₂, N₃, N₄, N₅, N₆}\n}\n","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
 <p class="caption">
 Figure 3: Rede Bayesiana representando a hierarquia dos níveis das TPUs, considerando também a vara.
 </p>

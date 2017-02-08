@@ -197,13 +197,13 @@
 </ul>
 <div id="gerando-numeros-aleatorios" class="section level2">
 <h2>Gerando números aleatórios</h2>
-<p>Um aspecto de interesse na especificação do número CNJ é a possibilidade de gerar todos os possíveis números de processos. Para cada configuração de ano, justiça, tribunal e órgão de origem, são exatamente dez milhões de números distintos. Por exemplo, considerando somente processos ajuizados em 2009, nas <a href="http://tjal.jus.br/apmp/jurisdicaocomarcas09102015.pdf">55 comarcas do Tribunal de Justiça de Alagoas</a> e um foro por comarca, teríamos 550 milhões de números distintos. Esses números podem ser utilizados para pesquisar todos os processos de um tribunal.</p>
+<p>Um aspecto interessante na especificação do número CNJ é a possibilidade de gerar todos os possíveis números de processos. Para cada configuração de ano, justiça, tribunal e órgão de origem, são exatamente dez milhões de números distintos. Por exemplo, considerando somente processos ajuizados em 2009, nas <a href="http://tjal.jus.br/apmp/jurisdicaocomarcas09102015.pdf">55 comarcas do Tribunal de Justiça de Alagoas</a> e um foro por comarca, teríamos 550 milhões de números distintos. Esses números podem ser utilizados para pesquisar todos os processos de um tribunal.</p>
 <p>No entanto, pesquisar 550 milhões de números é uma tarefa demorada e onerosa para os tribunais. No exemplo, com 10 pesquisas por segundo, seriam necessários 637 dias para acessar todos os números. Além disso, nem todos os números correspondem a processos de fato, pois são gerados conforme a demanda e apenas uma parcela dos números é realmente manifesta.</p>
 <p>Nessa situação uma alternativa via amostragem se torna viável. Ao invés de pesquisar todos os processos, gera-se uma amostra aleatória de números, acessando diretamente nas ferramentas de pesquisa dos tribunais. A quantidade de processos necessários para isso é definida estudando-se a probabilidade de manifestação de um número de processo. Usualmente isso é feito a partir de uma amostra piloto.</p>
 </div>
 <div id="r-session" class="section level2">
 <h2><code>R session</code></h2>
-<p>No pacote <code>abjutils</code> criado pela ABJ, é possível basta utilizar a função <code>sample_cnj</code> abaixo. É necessário informar a quantidade de processos, os foros, os anos, o segmento de justiça e o tribunal, com os seguintes parâmetros:</p>
+<p>No pacote <code>abjutils</code> criado pela ABJ, é possível utilizar a função <code>sample_cnj</code> abaixo. É necessário informar a quantidade de processos, os foros, os anos, o segmento de justiça e o tribunal, com os seguintes parâmetros:</p>
 <ul>
 <li><code>n</code>: quantidade de processos a ser gerada.</li>
 <li><code>foros</code>: vetor de códigos de foro.</li>
@@ -219,11 +219,11 @@ sample_cnj(n = 5,
 <pre><code>## # A tibble: 5 × 1
 ##             n_processo
 ##                  &lt;chr&gt;
-## 1 05461968020148260001
-## 2 01589534020158260001
-## 3 06492497720148260001
-## 4 02971671120158260001
-## 5 07767199120148260001</code></pre>
+## 1 09314501120158260001
+## 2 07900200820148260001
+## 3 00397967320158260001
+## 4 08949036920158260001
+## 5 09082151520158260001</code></pre>
 </div>
 
 

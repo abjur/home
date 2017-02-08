@@ -23,7 +23,7 @@ A Resolução define o padrão `NNNNNNN-DD.AAAA.J.TR.OOOO`, em que:
 
 ## Gerando números aleatórios
 
-Um aspecto de interesse na especificação do número CNJ é a possibilidade de gerar todos os possíveis números de processos. Para cada configuração de ano, justiça, tribunal e órgão de origem, são exatamente dez milhões de números distintos. Por exemplo, considerando somente processos ajuizados em 2009, nas [55 comarcas do Tribunal de Justiça de Alagoas](http://tjal.jus.br/apmp/jurisdicaocomarcas09102015.pdf) e um foro por comarca, teríamos 550 milhões de números distintos. Esses números podem ser utilizados para pesquisar todos os processos de um tribunal.
+Um aspecto interessante na especificação do número CNJ é a possibilidade de gerar todos os possíveis números de processos. Para cada configuração de ano, justiça, tribunal e órgão de origem, são exatamente dez milhões de números distintos. Por exemplo, considerando somente processos ajuizados em 2009, nas [55 comarcas do Tribunal de Justiça de Alagoas](http://tjal.jus.br/apmp/jurisdicaocomarcas09102015.pdf) e um foro por comarca, teríamos 550 milhões de números distintos. Esses números podem ser utilizados para pesquisar todos os processos de um tribunal.
 
 No entanto, pesquisar 550 milhões de números é uma tarefa demorada e onerosa para os tribunais. No exemplo, com 10 pesquisas por segundo, seriam necessários 637 dias para acessar todos os números. Além disso, nem todos os números correspondem a processos de fato, pois são gerados conforme a demanda e apenas uma parcela dos números é realmente manifesta.
 
@@ -31,7 +31,7 @@ Nessa situação uma alternativa via amostragem se torna viável. Ao invés de p
 
 ## `R session`
 
-No pacote `abjutils` criado pela ABJ, é possível basta utilizar a função `sample_cnj` abaixo. É necessário informar a quantidade de processos, os foros, os anos, o segmento de justiça e o tribunal, com os seguintes parâmetros:
+No pacote `abjutils` criado pela ABJ, é possível utilizar a função `sample_cnj` abaixo. É necessário informar a quantidade de processos, os foros, os anos, o segmento de justiça e o tribunal, com os seguintes parâmetros:
 
 - `n`: quantidade de processos a ser gerada.
 - `foros`: vetor de códigos de foro.
