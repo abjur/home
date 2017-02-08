@@ -294,7 +294,7 @@ $$
 
 ## Conclusão
 
-Nossas simulações fornecem evidências de que a medição de tempos processuais selecionando obsesrvações de maneira retrospectiva subestima a duração média quando há violação da suposição de estabilidade da distribuição dos processos. Isso ocorre pois estudos retrospectivos medem a duração dos processos que terminam em um determinado período. Por conta disso, no caso de um evento em que o número de distribuições aumenta, estudos retrospectivos analisarão uma quantidade desproporcional de processos com duração pequena.
+Nossas simulações fornecem evidências de que a medição de tempos processuais selecionando observações de maneira retrospectiva estima incorretamente a duração média quando há violação da suposição de estabilidade da distribuição dos processos. Isso ocorreu pois estudos retrospectivos medem a duração dos processos que terminam em um determinado período. Por conta disso, no caso de um evento em que o número de distribuições aumenta, o estudo retrospectivo analisou uma quantidade desproporcional de processos com duração pequena.
 
 Também constatamos que estudos prospectivos protegem-se melhor contra a instabilidade da distribuição de procesos. Mesmo que haja flutuações na taxa diária de processos distribuídos, as estimativa são próximas dos valores verdadeiros contanto que a média da distribuição da duração processual seja constante. Essa suposição é equivalente a considerar que o tempo médio que um processo demora para terminar não varia ao longo do tempo.
 
