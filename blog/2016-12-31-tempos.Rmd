@@ -236,7 +236,7 @@ Uma realização da nossa simulação está ilustrada na figura abaixo. As linha
 final_plot
 ```
 
-É importante notar que a curva que representa a distribuição dos processos no cenário 1 é mais íngreme após agosto de 2014. Isso ocorre porque nesse cenário a taxa de distribuição de processos aumentou de $7$% para $17$%. Por conta desse fato, existe uma maior quantidade de processos com baixa duração sendo analisados pelo estudo retrospectivo.
+É importante notar que a curva que representa a distribuição dos processos no cenário 1 é mais íngreme após agosto de 2014. Isso ocorre porque nesse cenário a taxa de distribuição de processos aumentou de $7$% para $17$%. Por conta desse fato, existe uma maior quantidade de processos com baixa duração sendo analisada pelo estudo retrospectivo.
 
 Realizando 1000 simulações, resumimos o desempenho das metodologias como a média das estimativas para a duração média produzidas em cada cenário.
 
