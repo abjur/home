@@ -2975,8 +2975,8 @@ fieldset[disabled] .btn-template-primary.active {
     float: left;
   }
   .navbar-nav > li > a {
-    padding-top: 21px;
-    padding-bottom: 21px;
+    padding-top: 29px;
+    padding-bottom: 29px;
   }
   .navbar-nav.navbar-right:last-child {
     margin-right: -15px;

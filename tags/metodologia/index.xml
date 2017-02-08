@@ -6,7 +6,7 @@
     <description>Recent content on ABJ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Copyright (c) 2011 - 2017, ABJ; all rights reserved.</copyright>
+    <copyright>Copyright (c) 2011 - 2017, ABJ; Todos os direitos reservados.</copyright>
     <atom:link href="http://www.abj.org.br/tags/metodologia/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -73,8 +73,8 @@ N = N_A + N_T \times p\text{, onde}
 &lt;p&gt;Uma rede Bayesiana é uma forma gráfica de representar a dependência de variáveis aleatórias. No nosso caso, consideramos como variáveis aleatórias cada um dos níveis da árvore da TPU, digamos, &lt;span class=&#34;math inline&#34;&gt;\(N_1, N_2, \dots, N_6\)&lt;/span&gt;, em que &lt;span class=&#34;math inline&#34;&gt;\(N_1\)&lt;/span&gt; é o nível mais genérico (e.g. Direito do Consumidor) e &lt;span class=&#34;math inline&#34;&gt;\(N_6\)&lt;/span&gt; é o nível mais específico (e.g. Análise de Crédito). Nos casos em que o nível mais específico não ocorre no sexto nível, fazemos cópias do último nível disponível até &lt;span class=&#34;math inline&#34;&gt;\(N_6\)&lt;/span&gt;.&lt;/p&gt;
 &lt;p&gt;A rede da Figura &lt;a href=&#34;#fig:rb&#34;&gt;2&lt;/a&gt; representa a hierarquia dos níveis das TPUs. Trata-se de uma rede bastante simples, que pode ser utilizada diretamente para o cálculo dos volumes processuais. Mostraremos como fazer isso na Seção &lt;a href=&#34;#rsession&#34;&gt;&lt;strong&gt;??&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:rb&#34;&gt;&lt;/span&gt;
-&lt;div id=&#34;htmlwidget-8974fd76477ee7eaa480&#34; style=&#34;width:672px;height:192px;&#34; class=&#34;grViz html-widget&#34;&gt;&lt;/div&gt;
-&lt;script type=&#34;application/json&#34; data-for=&#34;htmlwidget-8974fd76477ee7eaa480&#34;&gt;{&#34;x&#34;:{&#34;diagram&#34;:&#34;\ndigraph rmarkdown {\nrankdir=LR;\nnode [shape = circle, fixedsize = true, width = 0.9]\nN₁, N₂, N₃, N₄, N₅, N₆ \n\nN₁ -&gt; N₂ -&gt; N₃ -&gt; N₄ -&gt; N₅ -&gt; N₆\n}\n&#34;,&#34;config&#34;:{&#34;engine&#34;:&#34;dot&#34;,&#34;options&#34;:null}},&#34;evals&#34;:[],&#34;jsHooks&#34;:[]}&lt;/script&gt;
+&lt;div id=&#34;htmlwidget-4a1668161da06d5327a4&#34; style=&#34;width:672px;height:192px;&#34; class=&#34;grViz html-widget&#34;&gt;&lt;/div&gt;
+&lt;script type=&#34;application/json&#34; data-for=&#34;htmlwidget-4a1668161da06d5327a4&#34;&gt;{&#34;x&#34;:{&#34;diagram&#34;:&#34;\ndigraph rmarkdown {\nrankdir=LR;\nnode [shape = circle, fixedsize = true, width = 0.9]\nN₁, N₂, N₃, N₄, N₅, N₆ \n\nN₁ -&gt; N₂ -&gt; N₃ -&gt; N₄ -&gt; N₅ -&gt; N₆\n}\n&#34;,&#34;config&#34;:{&#34;engine&#34;:&#34;dot&#34;,&#34;options&#34;:null}},&#34;evals&#34;:[],&#34;jsHooks&#34;:[]}&lt;/script&gt;
 &lt;p class=&#34;caption&#34;&gt;
 Figure 2: Rede Bayesiana representando a hierarquia dos níveis das TPUs.
 &lt;/p&gt;
@@ -85,8 +85,8 @@ Figure 2: Rede Bayesiana representando a hierarquia dos níveis das TPUs.
 &lt;p&gt;No caso MAR, podemos utilizar todos os dados disponíveis dos processos para predizer o assunto real do processo. Para isso, qualquer técnica de modelagem preditiva poderia ser utilizada.&lt;/p&gt;
 Uma forma natural de realizar montar esses modelos é estendendo a rede Bayesiana da Figura &lt;a href=&#34;#fig:rb&#34;&gt;2&lt;/a&gt;. Por exemplo, a rede da Figura &lt;a href=&#34;#fig:rb2&#34;&gt;3&lt;/a&gt; considera que a classificação específica ou genérica de determinado assunto processual depende da vara em que o processo é distribuído. Outras variáveis poderiam ser consideradas para construir um modelo mais completo.
 &lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:rb2&#34;&gt;&lt;/span&gt;
-&lt;div id=&#34;htmlwidget-d16825322c852e13dd9c&#34; style=&#34;width:672px;height:192px;&#34; class=&#34;grViz html-widget&#34;&gt;&lt;/div&gt;
-&lt;script type=&#34;application/json&#34; data-for=&#34;htmlwidget-d16825322c852e13dd9c&#34;&gt;{&#34;x&#34;:{&#34;diagram&#34;:&#34;\ndigraph rmarkdown {\nrankdir=LR;\nnode [shape = circle, fixedsize = true, width = 0.9]\nVara, N₁, N₂, N₃, N₄, N₅, N₆ \n\nN₁ -&gt; N₂ -&gt; N₃ -&gt; N₄ -&gt; N₅ -&gt; N₆\nVara -&gt; {N₁, N₂, N₃, N₄, N₅, N₆}\n}\n&#34;,&#34;config&#34;:{&#34;engine&#34;:&#34;dot&#34;,&#34;options&#34;:null}},&#34;evals&#34;:[],&#34;jsHooks&#34;:[]}&lt;/script&gt;
+&lt;div id=&#34;htmlwidget-4f314b2d751fa6b2480b&#34; style=&#34;width:672px;height:192px;&#34; class=&#34;grViz html-widget&#34;&gt;&lt;/div&gt;
+&lt;script type=&#34;application/json&#34; data-for=&#34;htmlwidget-4f314b2d751fa6b2480b&#34;&gt;{&#34;x&#34;:{&#34;diagram&#34;:&#34;\ndigraph rmarkdown {\nrankdir=LR;\nnode [shape = circle, fixedsize = true, width = 0.9]\nVara, N₁, N₂, N₃, N₄, N₅, N₆ \n\nN₁ -&gt; N₂ -&gt; N₃ -&gt; N₄ -&gt; N₅ -&gt; N₆\nVara -&gt; {N₁, N₂, N₃, N₄, N₅, N₆}\n}\n&#34;,&#34;config&#34;:{&#34;engine&#34;:&#34;dot&#34;,&#34;options&#34;:null}},&#34;evals&#34;:[],&#34;jsHooks&#34;:[]}&lt;/script&gt;
 &lt;p class=&#34;caption&#34;&gt;
 Figure 3: Rede Bayesiana representando a hierarquia dos níveis das TPUs, considerando também a vara.
 &lt;/p&gt;
@@ -102,32 +102,27 @@ Figure 3: Rede Bayesiana representando a hierarquia dos níveis das TPUs, consid
 &lt;li&gt;A partir de uma base de dados de processos, estimar o volume processual de um conjunto de assuntos com base em um modelo de redes Bayesianas.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Observe a estrutura de uma TPU usando o &lt;code&gt;tpur&lt;/code&gt;. As colunas de &lt;code&gt;n1&lt;/code&gt; até &lt;code&gt;n6&lt;/code&gt; mostram os assuntos e as demais mostram informações como código, dispositivo legal por trás do assunto, artigo de lei, informações sobre alterações e glossário. A coluna &lt;code&gt;folha&lt;/code&gt; indica se o assunto é específico (&lt;code&gt;TRUE&lt;/code&gt;) ou genérico (&lt;code&gt;FALSE&lt;/code&gt;).&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(dplyr)
-library(tpur)
-tpu &amp;lt;- build_table(download_table(&amp;#39;assunto&amp;#39;, &amp;#39;estadual&amp;#39;, &amp;#39;1 grau&amp;#39;))
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;tpu &amp;lt;- build_table(download_table(&amp;#39;assunto&amp;#39;, &amp;#39;estadual&amp;#39;, &amp;#39;1 grau&amp;#39;))
 glimpse(tpu)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## Observations: 1,626
-## Variables: 13
-## $ n1                &amp;lt;chr&amp;gt; &amp;quot;DIREITO ADMINISTRATIVO E OUTRAS MATÉRIAS DE...
-## $ n2                &amp;lt;chr&amp;gt; &amp;quot;Agentes Políticos&amp;quot;, &amp;quot;Agentes Políticos&amp;quot;, &amp;quot;A...
-## $ n3                &amp;lt;chr&amp;gt; &amp;quot;Governador&amp;quot;, &amp;quot;Governador&amp;quot;, &amp;quot;Governador&amp;quot;, &amp;quot;G...
-## $ n4                &amp;lt;chr&amp;gt; &amp;quot;Afastamento do Cargo&amp;quot;, &amp;quot;Indisponibilidade d...
-## $ n5                &amp;lt;chr&amp;gt; &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, ...
-## $ n6                &amp;lt;chr&amp;gt; &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, ...
-## $ codigo            &amp;lt;chr&amp;gt; &amp;quot;10208&amp;quot;, &amp;quot;10212&amp;quot;, &amp;quot;10211&amp;quot;, &amp;quot;10210&amp;quot;, &amp;quot;10209&amp;quot;,...
-## $ cod_pai           &amp;lt;chr&amp;gt; &amp;quot;10207&amp;quot;, &amp;quot;10207&amp;quot;, &amp;quot;10207&amp;quot;, &amp;quot;10207&amp;quot;, &amp;quot;10207&amp;quot;,...
-## $ dispositivo_legal &amp;lt;chr&amp;gt; &amp;quot;Lei 8429/92&amp;quot;, &amp;quot;Lei 8429/92&amp;quot;, &amp;quot;CF, Lei 4320,...
-## $ artigo            &amp;lt;chr&amp;gt; &amp;quot;art. 20, parágrafo único&amp;quot;, &amp;quot;art. 7º&amp;quot;, &amp;quot;CF, ...
-## $ alteracoes        &amp;lt;chr&amp;gt; &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, ...
-## $ glossario         &amp;lt;chr&amp;gt; &amp;quot;Afastamento por ordem de autoridade judicia...
-## $ folha             &amp;lt;lgl&amp;gt; TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TR...&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Usando o pacote &lt;code&gt;tjsp&lt;/code&gt; (que será assunto de outro post!), baixamos 1005 processos da Consulta de Julgados de Primeiro Grau do TJSP (CJPG).&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;s &amp;lt;- tjsp::cjpg_session()
 p &amp;lt;- tjsp::cjpg_parms(s, data_inicial = &amp;#39;2016-01-01&amp;#39;, data_final = &amp;#39;2016-12-31&amp;#39;)
 res &amp;lt;- tjsp::cjpg(s, p, max_pag = 100)
 d_tjsp &amp;lt;- tjsp::parse_cjpg(dir(&amp;#39;data-raw/cjpg&amp;#39;, full.names = TRUE))&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;A base apresenta as seguintes informações:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;glimpse(d_tjsp)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(dplyr)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 
+## Attaching package: &amp;#39;dplyr&amp;#39;&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## The following objects are masked from &amp;#39;package:stats&amp;#39;:
+## 
+##     filter, lag&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## The following objects are masked from &amp;#39;package:base&amp;#39;:
+## 
+##     intersect, setdiff, setequal, union&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tpur)
+
+tpu &amp;lt;- readRDS(&amp;quot;tpu.rds&amp;quot;)
+glimpse(d_tjsp)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## Observations: 1,005
 ## Variables: 11
 ## $ arq                      &amp;lt;chr&amp;gt; &amp;quot;data-raw/cjpg/00001.html&amp;quot;, &amp;quot;data-raw...
@@ -144,8 +139,10 @@ d_tjsp &amp;lt;- tjsp::parse_cjpg(dir(&amp;#39;data-raw/cjpg&amp;#39;, full.name
 &lt;p&gt;Digamos que nosso interesse seja estimar o volume de processos relativos aos assuntos “Indenização por Dano Moral” e “Fornecimento de Medicamentos”. Na base de dados baixada, temos exatamente 80 processos classificados com esse assunto.&lt;/p&gt;
 &lt;p&gt;Para isso, utilizamos a função &lt;code&gt;tpu_assunto_prob&lt;/code&gt;. Essa função assume o modelo MCAR como base. Futuramente teremos um pacote próprio para esses cálculos, que acomodarão outras especificações.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;leafs &amp;lt;- c(&amp;#39;Indenização por Dano Moral&amp;#39;, &amp;#39;Fornecimento de Medicamentos&amp;#39;)
-result &amp;lt;- tpu_assunto_prob(d_tjsp, leafs, tpu)
-round(sum(result$p))&lt;/code&gt;&lt;/pre&gt;
+result &amp;lt;- tpu_assunto_prob(d_tjsp, leafs, tpu)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Warning in combine_vars(vars, ind_list): &amp;#39;.Random.seed&amp;#39; is not an integer
+## vector but of type &amp;#39;NULL&amp;#39;, so ignored&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;round(sum(result$p))&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## [1] 90&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Como resultado, observamos uma cifra oculta de 10 processos, um aumento de 12,5% do valor inicial.&lt;/p&gt;
 &lt;/div&gt;
@@ -210,11 +207,11 @@ sample_cnj(n = 5,
 &lt;pre&gt;&lt;code&gt;## # A tibble: 5 × 1
 ##             n_processo
 ##                  &amp;lt;chr&amp;gt;
-## 1 09314501120158260001
-## 2 07900200820148260001
-## 3 00397967320158260001
-## 4 08949036920158260001
-## 5 09082151520158260001&lt;/code&gt;&lt;/pre&gt;
+## 1 02658364520148260001
+## 2 00641743020148260001
+## 3 03850153620158260001
+## 4 04844095020148260001
+## 5 03338179120148260001&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
 
