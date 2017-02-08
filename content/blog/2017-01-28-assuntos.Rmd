@@ -118,9 +118,7 @@ O pacote `tpur`, desenvolvido pela ABJ, pode ser utilizado para executar duas ta
 
 Observe a estrutura de uma TPU usando o `tpur`. As colunas de `n1` até `n6` mostram os assuntos e as demais mostram informações como código, dispositivo legal por trás do assunto, artigo de lei, informações sobre alterações e glossário. A coluna `folha` indica se o assunto é específico (`TRUE`) ou genérico (`FALSE`).
 
-```{r warning=FALSE, message=FALSE}
-library(dplyr)
-library(tpur)
+```{r warning=FALSE, message=FALSE, eval = FALSE}
 tpu <- build_table(download_table('assunto', 'estadual', '1 grau'))
 glimpse(tpu)
 ```
@@ -142,6 +140,10 @@ leafs <- c('Indenização por Dano Moral', 'Fornecimento de Medicamentos')
 A base apresenta as seguintes informações:
 
 ```{r}
+library(dplyr)
+library(tpur)
+
+tpu <- readRDS("tpu.rds")
 glimpse(d_tjsp)
 ```
 
