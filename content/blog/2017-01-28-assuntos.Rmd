@@ -26,7 +26,7 @@ knitr::include_graphics('/blog/tpu.png')
 
 O problema enfrentado atualmente é que, na prática, nem sempre os processos são classificados com assuntos específicos. Assim, podemos ter um caso que discute sobre "Análise de Crédito" classificado como "Responsabilidade do Fornecedor", ou ainda "Direito do Consumidor". 
 
-A existência de casos de classificados com assuntos genéricos implica num problema para o levantamento do volume processual por assunto. Por exemplo, considere que há interesse em conhecer o volume de processos envolvendo "Análise de Crédito". Se considerarmos somente os casos classificados corretamente, estaríamos subestimando o real volume de processos, pois estaríamos ignorando os casos classificados em assuntos genéricos. Por outro lado, se considerarmos no levantamento todos os casos, incluindo os genéricos, estaríamos superestimanto o real volume.
+A existência de casos classificados com assuntos genéricos implica num problema para o levantamento do volume processual por assunto. Por exemplo, considere que há interesse em conhecer o volume de processos envolvendo "Análise de Crédito". Se considerarmos somente os casos classificados corretamente, estaríamos subestimando o real volume de processos, pois estaríamos ignorando os casos classificados em assuntos genéricos. Por outro lado, se considerarmos no levantamento todos os casos, incluindo os genéricos, estaríamos superestimanto o real volume.
 
 A possibilidade de subestimação do volume real de processos de um certo tipo configura o que chamamos de **cifra oculta**. Dado um assunto específico, esse número pode ser definido como a quantidade de processos com esse assunto, mas classificados em assuntos genéricos.
 
@@ -47,7 +47,9 @@ Essa estimativa, no entanto, faz uma suposição forte sobre as classificações
 
 ## Conclusão
 
-Nesse artigo discutimos a existência das TPUs e apresentamos sua estrutura. Também apresentamos o problema da *cifra oculta*, presente em todos os tribunais, que atrapalha substancialmente o cálculo de volume processual por assunto. Finalmente, apresentamos uma solução para esse problema, que depende de algumas suposições, mas que poderia ser rapidamente implementado em sistemas e relatórios gerenciais. Um caso importante é o próprio Justiça em Números, que até o momento mostra o volume processual somente para os três níveis mais genéricos das TPUs.
+Neste artigo discutimos a existência das TPUs e apresentamos sua estrutura. Também apresentamos o problema da *cifra oculta*, presente em todos os tribunais, que atrapalha substancialmente o cálculo de volume processual por assunto.
+
+Finalmente, apresentamos uma solução para esse problema, que depende de algumas suposições, mas que poderia ser rapidamente implementado em sistemas e relatórios gerenciais. Um caso importante é o próprio Justiça em Números, que até o momento mostra o volume processual somente para os três níveis mais genéricos das TPUs.
 
 ---------------------------------------------------------------------
 
@@ -91,7 +93,6 @@ N₁ -> N₂ -> N₃ -> N₄ -> N₅ -> N₆
 No caso MAR, podemos utilizar todos os dados disponíveis dos processos para predizer o assunto real do processo. Para isso, qualquer técnica de modelagem preditiva poderia ser utilizada.
 
 Uma forma natural de realizar montar esses modelos é estendendo a rede Bayesiana da Figura \@ref(fig:rb). Por exemplo, a rede da Figura \@ref(fig:rb2) considera que a classificação específica ou genérica de determinado assunto processual depende da vara em que o processo é distribuído. Outras variáveis poderiam ser consideradas para construir um modelo mais completo. 
-
 ```{r rb2, echo=FALSE, fig.height=2, fig.cap='Rede Bayesiana representando a hierarquia dos níveis das TPUs, considerando também a vara.'}
 library(DiagrammeR)
 DiagrammeR::grViz("
