@@ -3,7 +3,7 @@
 
         {{ if isset .Site.Params "about_us" }}
         <div class="col-md-4 col-sm-6">
-            <h4>About us</h4>
+            <h4>Sobre a ABJ</h4>
 
             {{ .Site.Params.about_us | safeHTML }}
             
@@ -16,7 +16,7 @@
 
         <div class="col-md-4 col-sm-6">
 
-            <h4>Recent posts</h4>
+            <h4>Artigos recenter</h4>
 
             <div class="blog-entries">
                 {{ range first 3 (where .Site.Pages "Type" "blog") }}
