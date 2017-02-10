@@ -1133,7 +1133,7 @@ fieldset[disabled] .btn-template-primary.active {
   line-height: 25px;
   margin: 0 5px 0 0;
   font-size: 18px;
-  color: #467fbf;
+  color: #273E74;
   padding: 0;
   background: #fff;
   border-radius: 13px;
@@ -1146,9 +1146,9 @@ fieldset[disabled] .btn-template-primary.active {
   max-height:380px;
   position: relative;
   /*background: url('../img/banner.png') center center repeat;*/
-  background: #467fbf;
-  margin-left:10%;
-  margin-right:10%;
+  background: #273E74;
+  /*margin-left:10%;
+  margin-right:10%;*/
   color:#fff;
   background-size: cover;
   -webkit-transition: all 0.2s ease-out;
