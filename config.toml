@@ -8,6 +8,7 @@ googleAnalytics = "UA-76479958-2"
 # Define the number of posts per page
 paginate = 8
 
+
 [params]
     viewMorePostLink = "/home/blog/"
     author = "ABJ"
