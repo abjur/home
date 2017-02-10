@@ -1732,7 +1732,7 @@ fieldset[disabled] .btn-template-primary.active {
   border: none;
 }
 #heading-breadcrumbs {
-  background: url('../img/texture-bw.png') center center repeat;
+  background: #f5f5f5; /* url('../img/texture-bw.png') center center repeat;*/
   padding: 20px 0;
   margin-bottom: 40px;
 }
@@ -2143,7 +2143,7 @@ fieldset[disabled] .btn-template-primary.active {
   margin-bottom: 10px;
 }
 #blog-listing-medium .post .read-more {
-  text-align: right;
+  text-align: left;
 }
 .box-image-text.blog .author-category {
   color: #999999;
@@ -2526,7 +2526,7 @@ fieldset[disabled] .btn-template-primary.active {
   color: #eeeeee;
 }
 #footer h4 {
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 800;
   /*text-transform: uppercase;*/
   letter-spacing: 0.08em;
@@ -2980,8 +2980,8 @@ fieldset[disabled] .btn-template-primary.active {
     float: left;
   }
   .navbar-nav > li > a {
-    padding-top: 29px;
-    padding-bottom: 29px;
+    padding-top: 41px;
+    padding-bottom: 41px;
   }
   .navbar-nav.navbar-right:last-child {
     margin-right: -15px;
@@ -3048,10 +3048,13 @@ fieldset[disabled] .btn-template-primary.active {
   margin-bottom: 20px;
 }
 .navbar-text {
-  margin-top: 21px;
-  margin-bottom: 21px;
+  margin-top: 41px;
+  margin-bottom: 41px;
 }
 @media (min-width: 768px) {
+  .navbar-brand img {
+    padding:15px 0px;
+  }
   .navbar-text {
     float: left;
     margin-left: 15px;
@@ -3157,6 +3160,7 @@ fieldset[disabled] .navbar-default .btn-link:hover,
 fieldset[disabled] .navbar-default .btn-link:focus {
   color: #cccccc;
 }
+
 /* scaffolding */
 body {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
