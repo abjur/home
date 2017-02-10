@@ -40,9 +40,9 @@
                             <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
                             <p class="author-category">
                             {{ with .Params.author }}
-                            By <a href="#">{{ . }}</a>
+                            Por <a href="#">{{ . }}</a>
                             {{ end }}
-                            on {{ .Date.Format "January 2, 2006" }}
+                            em {{ .Date.Day }} de {{ index $.Site.Data.mois (printf "%d" .Date.Month) }} de {{ .Date.Year }}
                             </p>
                             <p class="intro">{{ .Summary }}</p>
                             <p class="read-more">
