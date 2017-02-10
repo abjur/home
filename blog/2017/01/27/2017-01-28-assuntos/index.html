@@ -241,8 +241,8 @@ N = N_A + N_T \times p\text{, onde}
 <p>Uma rede Bayesiana é uma forma gráfica de representar a dependência de variáveis aleatórias. No nosso caso, consideramos como variáveis aleatórias cada um dos níveis da árvore da TPU, digamos, <span class="math inline">\(N_1, N_2, \dots, N_6\)</span>, em que <span class="math inline">\(N_1\)</span> é o nível mais genérico (e.g. Direito do Consumidor) e <span class="math inline">\(N_6\)</span> é o nível mais específico (e.g. Análise de Crédito). Nos casos em que o nível mais específico não ocorre no sexto nível, fazemos cópias do último nível disponível até <span class="math inline">\(N_6\)</span>.</p>
 <p>A rede da Figura <a href="#fig:rb">2</a> representa a hierarquia dos níveis das TPUs. Trata-se de uma rede bastante simples, que pode ser utilizada diretamente para o cálculo dos volumes processuais. Mostraremos como fazer isso na Seção <a href="#rsession"><strong>??</strong></a>.</p>
 <div class="figure"><span id="fig:rb"></span>
-<div id="htmlwidget-c428910db369ce9526e9" style="width:672px;height:192px;" class="grViz html-widget"></div>
-<script type="application/json" data-for="htmlwidget-c428910db369ce9526e9">{"x":{"diagram":"\ndigraph rmarkdown {\nrankdir=LR;\nnode [shape = circle, fixedsize = true, width = 0.9]\nN₁, N₂, N₃, N₄, N₅, N₆ \n\nN₁ -> N₂ -> N₃ -> N₄ -> N₅ -> N₆\n}\n","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-d986d493d6fac6b1ac5b" style="width:672px;height:192px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-d986d493d6fac6b1ac5b">{"x":{"diagram":"\ndigraph rmarkdown {\nrankdir=LR;\nnode [shape = circle, fixedsize = true, width = 0.9]\nN₁, N₂, N₃, N₄, N₅, N₆ \n\nN₁ -> N₂ -> N₃ -> N₄ -> N₅ -> N₆\n}\n","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
 <p class="caption">
 Figure 2: Rede Bayesiana representando a hierarquia dos níveis das TPUs.
 </p>
@@ -253,8 +253,8 @@ Figure 2: Rede Bayesiana representando a hierarquia dos níveis das TPUs.
 <p>No caso MAR, podemos utilizar todos os dados disponíveis dos processos para predizer o assunto real do processo. Para isso, qualquer técnica de modelagem preditiva poderia ser utilizada.</p>
 Uma forma natural de realizar montar esses modelos é estendendo a rede Bayesiana da Figura <a href="#fig:rb">2</a>. Por exemplo, a rede da Figura <a href="#fig:rb2">3</a> considera que a classificação específica ou genérica de determinado assunto processual depende da vara em que o processo é distribuído. Outras variáveis poderiam ser consideradas para construir um modelo mais completo.
 <div class="figure"><span id="fig:rb2"></span>
-<div id="htmlwidget-8248a435b379d03031d8" style="width:672px;height:192px;" class="grViz html-widget"></div>
-<script type="application/json" data-for="htmlwidget-8248a435b379d03031d8">{"x":{"diagram":"\ndigraph rmarkdown {\nrankdir=LR;\nnode [shape = circle, fixedsize = true, width = 0.9]\nVara, N₁, N₂, N₃, N₄, N₅, N₆ \n\nN₁ -> N₂ -> N₃ -> N₄ -> N₅ -> N₆\nVara -> {N₁, N₂, N₃, N₄, N₅, N₆}\n}\n","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-27a11ad6d536525cdd61" style="width:672px;height:192px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-27a11ad6d536525cdd61">{"x":{"diagram":"\ndigraph rmarkdown {\nrankdir=LR;\nnode [shape = circle, fixedsize = true, width = 0.9]\nVara, N₁, N₂, N₃, N₄, N₅, N₆ \n\nN₁ -> N₂ -> N₃ -> N₄ -> N₅ -> N₆\nVara -> {N₁, N₂, N₃, N₄, N₅, N₆}\n}\n","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
 <p class="caption">
 Figure 3: Rede Bayesiana representando a hierarquia dos níveis das TPUs, considerando também a vara.
 </p>
@@ -311,7 +311,7 @@ result &lt;- tpu_assunto_prob(d_tjsp, leafs, tpu)</code></pre>
 <pre><code>## Warning in combine_vars(vars, ind_list): &#39;.Random.seed&#39; is not an integer
 ## vector but of type &#39;NULL&#39;, so ignored</code></pre>
 <pre class="r"><code>round(sum(result$p))</code></pre>
-<pre><code>## [1] 90</code></pre>
+<pre><code>## [1] 91</code></pre>
 <p>Como resultado, observamos uma cifra oculta de 10 processos, um aumento de 12,5% do valor inicial.</p>
 </div>
 

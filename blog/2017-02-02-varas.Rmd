@@ -68,19 +68,27 @@ ggsave('static/img/banners/banner-12.png', p1,
        width = 20, height = 15, dpi = 50)
 ```
 
+<div style="max-width:100%;">
 ```{r estadual, echo=FALSE, fig.cap='Mapeamento das varas da Justiça Estadual.'}
 p1
 ```
+
+</div>
 
 A Figura \@ref(fig:trabalho) mostra a localização das varas na Justiça do Trabalho. Nota-se um volume menor de varas, mas com posicionamento similar. 
 
 Os gráficos sugerem a possibilidade de estudar o fenômeno da criação e instalação de varas relacionado ao crescimento populacional e condicionado a fatores socioeconômicos. Este tema é bastante discutido na ABJ e também na *Society of Empirical Legal Studies* (SELS), gerando estudos como a associação entre IDH e a taxa de litigiosidade. Mostraremos alguns resultados sobre isso em posts futuros.
 
+<div style="max-width:100%;">
 ```{r trabalho, echo=FALSE, fig.cap='Mapeamento das varas da Justiça do Trabalho'}
 p2
 ```
 
+</div>
+
 Por último, mostramos na Figura \@ref(fig:leaflet) um mapa interativo das varas eleitorais, onde é possível passear pelas varas e acessar suas informações[^info].
+
+<div style="max-width:100%;">
 
 ```{r leaflet, echo=FALSE, message=FALSE, warning=FALSE, fig.cap='Mapa interativo das varas na Justiça Estadual.'}
 library(leaflet)
@@ -95,6 +103,8 @@ aj %>%
   addMarkers(clusterOptions = markerClusterOptions(), popup = ~lab)
   
 ```
+
+</div>
 
 [^info]: Não garantimos que as informações estão corretas nem atualizadas, pois todos os dados foram extraídos diretamente do Atlas do Acesso à Justiça no ano de 2014.
 
