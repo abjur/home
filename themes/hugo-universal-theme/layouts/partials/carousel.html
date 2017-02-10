@@ -4,7 +4,7 @@
 <section>
     <div class="home-carousel">
         <div class="dark-mask"></div>
-        <div class="container">
+        <div class="container" style="padding-right: 0;padding-left: 0;">
             <div class="homepage owl-carousel" style="padding:0px;height:380px">
                 {{ range sort .Site.Data.carousel "weight" }}
                 <!--<div class="item">-->
@@ -20,9 +20,9 @@
                 </div>
                 {{ end }}
             </div>
-            <!-- /.project owl-slider -->
         </div>
     </div>
+    <!-- /.project owl-slider -->
 </section>
 {{ end }}
 {{ end }}
