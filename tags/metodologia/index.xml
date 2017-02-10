@@ -15,9 +15,19 @@
       <pubDate>Fri, 27 Jan 2017 09:23:47 -0200</pubDate>
       
       <guid>http://www.abj.org.br/blog/2017/01/27/2017-01-28-assuntos/</guid>
-      <description>&lt;!-- BLOGDOWN-BODY-BEFORE
+      <description>&lt;!-- BLOGDOWN-HEAD --&gt;
 
-/BLOGDOWN-BODY-BEFORE --&gt;
+&lt;script src=&#34;#####content/blog/2017-01-28-assuntos_files/htmlwidgets/htmlwidgets.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;#####content/blog/2017-01-28-assuntos_files/viz/viz.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;#####content/blog/2017-01-28-assuntos_files/DiagrammeR-styles/styles.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;#####content/blog/2017-01-28-assuntos_files/grViz-binding/grViz.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;!-- /BLOGDOWN-HEAD --&gt;
+
+&lt;!-- BLOGDOWN-BODY-BEFORE --&gt;
+
+&lt;!-- /BLOGDOWN-BODY-BEFORE --&gt;
 
 &lt;p&gt;O volume de processos judiciais no Brasil é colossal. Segundo o relatório &lt;a href=&#34;http://www.cnj.jus.br/files/conteudo/arquivo/2016/10/b8f46be3dbbff344931a933579915488.pdf&#34;&gt;Justiça em Números 2016&lt;/a&gt;, temos mais de 59 milhões de processos pendentes, somente na Justiça Estadual. Compreender o perfil das demandas é indispensável para a gestão eficiente dos Tribunais. Uma forma natural de identificar esses perfis é classificando os casos em “tipos”, que são grupos de processos com características comuns.&lt;/p&gt;
 &lt;p&gt;Atualmente, a forma mais direta de identificar tipos de processos judiciais é utilizando os chamados &lt;em&gt;assuntos processuais&lt;/em&gt;. Esses assuntos nada mais são do que as matérias discutidas em cada caso. Por exemplo, um caso cível de indenização por dano moral poderia ter um assunto “Indenização por dano moral”, enquanto um processo falimentar de uma empresa em Recuperação Judicial poderia ser classificado como “Convolação de Recuperação Judicial em Falência”.&lt;/p&gt;
@@ -73,8 +83,8 @@ N = N_A + N_T \times p\text{, onde}
 &lt;p&gt;Uma rede Bayesiana é uma forma gráfica de representar a dependência de variáveis aleatórias. No nosso caso, consideramos como variáveis aleatórias cada um dos níveis da árvore da TPU, digamos, &lt;span class=&#34;math inline&#34;&gt;\(N_1, N_2, \dots, N_6\)&lt;/span&gt;, em que &lt;span class=&#34;math inline&#34;&gt;\(N_1\)&lt;/span&gt; é o nível mais genérico (e.g. Direito do Consumidor) e &lt;span class=&#34;math inline&#34;&gt;\(N_6\)&lt;/span&gt; é o nível mais específico (e.g. Análise de Crédito). Nos casos em que o nível mais específico não ocorre no sexto nível, fazemos cópias do último nível disponível até &lt;span class=&#34;math inline&#34;&gt;\(N_6\)&lt;/span&gt;.&lt;/p&gt;
 &lt;p&gt;A rede da Figura &lt;a href=&#34;#fig:rb&#34;&gt;2&lt;/a&gt; representa a hierarquia dos níveis das TPUs. Trata-se de uma rede bastante simples, que pode ser utilizada diretamente para o cálculo dos volumes processuais. Mostraremos como fazer isso na Seção &lt;a href=&#34;#rsession&#34;&gt;&lt;strong&gt;??&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:rb&#34;&gt;&lt;/span&gt;
-&lt;div id=&#34;htmlwidget-0b4bd0340804cf7cc5dd&#34; style=&#34;width:672px;height:192px;&#34; class=&#34;grViz html-widget&#34;&gt;&lt;/div&gt;
-&lt;script type=&#34;application/json&#34; data-for=&#34;htmlwidget-0b4bd0340804cf7cc5dd&#34;&gt;{&#34;x&#34;:{&#34;diagram&#34;:&#34;\ndigraph rmarkdown {\nrankdir=LR;\nnode [shape = circle, fixedsize = true, width = 0.9]\nN₁, N₂, N₃, N₄, N₅, N₆ \n\nN₁ -&gt; N₂ -&gt; N₃ -&gt; N₄ -&gt; N₅ -&gt; N₆\n}\n&#34;,&#34;config&#34;:{&#34;engine&#34;:&#34;dot&#34;,&#34;options&#34;:null}},&#34;evals&#34;:[],&#34;jsHooks&#34;:[]}&lt;/script&gt;
+&lt;div id=&#34;htmlwidget-c428910db369ce9526e9&#34; style=&#34;width:672px;height:192px;&#34; class=&#34;grViz html-widget&#34;&gt;&lt;/div&gt;
+&lt;script type=&#34;application/json&#34; data-for=&#34;htmlwidget-c428910db369ce9526e9&#34;&gt;{&#34;x&#34;:{&#34;diagram&#34;:&#34;\ndigraph rmarkdown {\nrankdir=LR;\nnode [shape = circle, fixedsize = true, width = 0.9]\nN₁, N₂, N₃, N₄, N₅, N₆ \n\nN₁ -&gt; N₂ -&gt; N₃ -&gt; N₄ -&gt; N₅ -&gt; N₆\n}\n&#34;,&#34;config&#34;:{&#34;engine&#34;:&#34;dot&#34;,&#34;options&#34;:null}},&#34;evals&#34;:[],&#34;jsHooks&#34;:[]}&lt;/script&gt;
 &lt;p class=&#34;caption&#34;&gt;
 Figure 2: Rede Bayesiana representando a hierarquia dos níveis das TPUs.
 &lt;/p&gt;
@@ -85,8 +95,8 @@ Figure 2: Rede Bayesiana representando a hierarquia dos níveis das TPUs.
 &lt;p&gt;No caso MAR, podemos utilizar todos os dados disponíveis dos processos para predizer o assunto real do processo. Para isso, qualquer técnica de modelagem preditiva poderia ser utilizada.&lt;/p&gt;
 Uma forma natural de realizar montar esses modelos é estendendo a rede Bayesiana da Figura &lt;a href=&#34;#fig:rb&#34;&gt;2&lt;/a&gt;. Por exemplo, a rede da Figura &lt;a href=&#34;#fig:rb2&#34;&gt;3&lt;/a&gt; considera que a classificação específica ou genérica de determinado assunto processual depende da vara em que o processo é distribuído. Outras variáveis poderiam ser consideradas para construir um modelo mais completo.
 &lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:rb2&#34;&gt;&lt;/span&gt;
-&lt;div id=&#34;htmlwidget-7b2d4feacca2338bbdda&#34; style=&#34;width:672px;height:192px;&#34; class=&#34;grViz html-widget&#34;&gt;&lt;/div&gt;
-&lt;script type=&#34;application/json&#34; data-for=&#34;htmlwidget-7b2d4feacca2338bbdda&#34;&gt;{&#34;x&#34;:{&#34;diagram&#34;:&#34;\ndigraph rmarkdown {\nrankdir=LR;\nnode [shape = circle, fixedsize = true, width = 0.9]\nVara, N₁, N₂, N₃, N₄, N₅, N₆ \n\nN₁ -&gt; N₂ -&gt; N₃ -&gt; N₄ -&gt; N₅ -&gt; N₆\nVara -&gt; {N₁, N₂, N₃, N₄, N₅, N₆}\n}\n&#34;,&#34;config&#34;:{&#34;engine&#34;:&#34;dot&#34;,&#34;options&#34;:null}},&#34;evals&#34;:[],&#34;jsHooks&#34;:[]}&lt;/script&gt;
+&lt;div id=&#34;htmlwidget-8248a435b379d03031d8&#34; style=&#34;width:672px;height:192px;&#34; class=&#34;grViz html-widget&#34;&gt;&lt;/div&gt;
+&lt;script type=&#34;application/json&#34; data-for=&#34;htmlwidget-8248a435b379d03031d8&#34;&gt;{&#34;x&#34;:{&#34;diagram&#34;:&#34;\ndigraph rmarkdown {\nrankdir=LR;\nnode [shape = circle, fixedsize = true, width = 0.9]\nVara, N₁, N₂, N₃, N₄, N₅, N₆ \n\nN₁ -&gt; N₂ -&gt; N₃ -&gt; N₄ -&gt; N₅ -&gt; N₆\nVara -&gt; {N₁, N₂, N₃, N₄, N₅, N₆}\n}\n&#34;,&#34;config&#34;:{&#34;engine&#34;:&#34;dot&#34;,&#34;options&#34;:null}},&#34;evals&#34;:[],&#34;jsHooks&#34;:[]}&lt;/script&gt;
 &lt;p class=&#34;caption&#34;&gt;
 Figure 3: Rede Bayesiana representando a hierarquia dos níveis das TPUs, considerando também a vara.
 &lt;/p&gt;
@@ -146,18 +156,6 @@ result &amp;lt;- tpu_assunto_prob(d_tjsp, leafs, tpu)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## [1] 90&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Como resultado, observamos uma cifra oculta de 10 processos, um aumento de 12,5% do valor inicial.&lt;/p&gt;
 &lt;/div&gt;
-
-
-&lt;!-- BLOGDOWN-HEAD
-
-&lt;script src=&#34;#####content/blog/2017-01-28-assuntos_files/htmlwidgets/htmlwidgets.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;#####content/blog/2017-01-28-assuntos_files/viz/viz.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;#####content/blog/2017-01-28-assuntos_files/DiagrammeR-styles/styles.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;#####content/blog/2017-01-28-assuntos_files/grViz-binding/grViz.js&#34;&gt;&lt;/script&gt;
-
-
-
-/BLOGDOWN-HEAD --&gt;
 </description>
     </item>
     
@@ -167,9 +165,15 @@ result &amp;lt;- tpu_assunto_prob(d_tjsp, leafs, tpu)&lt;/code&gt;&lt;/pre&gt;
       <pubDate>Fri, 27 Jan 2017 09:23:47 -0200</pubDate>
       
       <guid>http://www.abj.org.br/blog/2017/01/27/2017-01-27-numero-cnj/</guid>
-      <description>&lt;!-- BLOGDOWN-BODY-BEFORE
+      <description>&lt;!-- BLOGDOWN-HEAD --&gt;
 
-/BLOGDOWN-BODY-BEFORE --&gt;
+
+
+&lt;!-- /BLOGDOWN-HEAD --&gt;
+
+&lt;!-- BLOGDOWN-BODY-BEFORE --&gt;
+
+&lt;!-- /BLOGDOWN-BODY-BEFORE --&gt;
 
 &lt;p&gt;A definição da &lt;em&gt;unidade amostral&lt;/em&gt; é essencial para a realização de qualquer pesquisa empírica. Trata-se do elemento indivisível de uma amostra, de onde se medem as características que serão utilizadas na análise estatística.&lt;/p&gt;
 &lt;p&gt;Na jurimetria é usual considerar o &lt;em&gt;litígio&lt;/em&gt; como unidade amostral. O litígio é chamado de &lt;em&gt;processo judicial&lt;/em&gt; quando tramita na esfera judicial. Cada processo possui um número identificador cadastrado nos sistemas do Tribunal, o que facilita a busca por casos específicos.&lt;/p&gt;
@@ -207,20 +211,12 @@ sample_cnj(n = 5,
 &lt;pre&gt;&lt;code&gt;## # A tibble: 5 × 1
 ##             n_processo
 ##                  &amp;lt;chr&amp;gt;
-## 1 06332871420148260001
-## 2 04953433320158260001
-## 3 01628683420148260001
-## 4 05465596720148260001
-## 5 04358809720148260001&lt;/code&gt;&lt;/pre&gt;
+## 1 07351727120148260001
+## 2 00187762620158260001
+## 3 09173331520158260001
+## 4 03643916320158260001
+## 5 00857799520158260001&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
-
-
-&lt;!-- BLOGDOWN-HEAD
-
-
-
-
-/BLOGDOWN-HEAD --&gt;
 </description>
     </item>
     
@@ -230,9 +226,15 @@ sample_cnj(n = 5,
       <pubDate>Sat, 31 Dec 2016 09:23:47 -0200</pubDate>
       
       <guid>http://www.abj.org.br/blog/2016/12/31/2016-12-31-tempos/</guid>
-      <description>&lt;!-- BLOGDOWN-BODY-BEFORE
+      <description>&lt;!-- BLOGDOWN-HEAD --&gt;
 
-/BLOGDOWN-BODY-BEFORE --&gt;
+
+
+&lt;!-- /BLOGDOWN-HEAD --&gt;
+
+&lt;!-- BLOGDOWN-BODY-BEFORE --&gt;
+
+&lt;!-- /BLOGDOWN-BODY-BEFORE --&gt;
 
 &lt;p&gt;Caracterizar a duração de processos judiciais é um problema relevante para o Direito. Em Jurimetria, isso normalmente é feito utilizando Análise de Sobrevivência&lt;a href=&#34;#fn1&#34; class=&#34;footnoteRef&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;, mas os textos desse assunto não costumam mencionar a diferença qualitativa entre as estimativas de duração produzidas por estudos prospectivos e retrospectivos&lt;a href=&#34;#fn2&#34; class=&#34;footnoteRef&#34; id=&#34;fnref2&#34;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;A diferença entre as duas metodologias consiste no fato de estudos retrospecivos observarem processos que &lt;strong&gt;terminaram em um determinado período&lt;/strong&gt;, enquanto estudos prospectivos observam processos &lt;strong&gt;distribuídos em um determinado período&lt;/strong&gt;. Por isso, as populações estudadas em cada uma das propostas são diferentes, e isso impacta a forma com que os resultados devem ser interpretados.&lt;/p&gt;
@@ -303,14 +305,6 @@ sample_cnj(n = 5,
 &lt;li id=&#34;fn3&#34;&gt;&lt;p&gt;Em Jurimetria, censura é o nome dado à duração que é observada antes da ocorrência de um evento de interesse. No nosso exemplo, isso corresponde às durações de processos que ainda não chegaram ao fim.&lt;a href=&#34;#fnref3&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
-
-
-&lt;!-- BLOGDOWN-HEAD
-
-
-
-
-/BLOGDOWN-HEAD --&gt;
 </description>
     </item>
     

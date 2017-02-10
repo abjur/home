@@ -15,9 +15,15 @@
       <pubDate>Sat, 31 Dec 2016 09:23:47 -0200</pubDate>
       
       <guid>http://www.abj.org.br/blog/2016/12/31/2016-12-31-tempos/</guid>
-      <description>&lt;!-- BLOGDOWN-BODY-BEFORE
+      <description>&lt;!-- BLOGDOWN-HEAD --&gt;
 
-/BLOGDOWN-BODY-BEFORE --&gt;
+
+
+&lt;!-- /BLOGDOWN-HEAD --&gt;
+
+&lt;!-- BLOGDOWN-BODY-BEFORE --&gt;
+
+&lt;!-- /BLOGDOWN-BODY-BEFORE --&gt;
 
 &lt;p&gt;Caracterizar a duração de processos judiciais é um problema relevante para o Direito. Em Jurimetria, isso normalmente é feito utilizando Análise de Sobrevivência&lt;a href=&#34;#fn1&#34; class=&#34;footnoteRef&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;, mas os textos desse assunto não costumam mencionar a diferença qualitativa entre as estimativas de duração produzidas por estudos prospectivos e retrospectivos&lt;a href=&#34;#fn2&#34; class=&#34;footnoteRef&#34; id=&#34;fnref2&#34;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;A diferença entre as duas metodologias consiste no fato de estudos retrospecivos observarem processos que &lt;strong&gt;terminaram em um determinado período&lt;/strong&gt;, enquanto estudos prospectivos observam processos &lt;strong&gt;distribuídos em um determinado período&lt;/strong&gt;. Por isso, as populações estudadas em cada uma das propostas são diferentes, e isso impacta a forma com que os resultados devem ser interpretados.&lt;/p&gt;
@@ -88,14 +94,6 @@
 &lt;li id=&#34;fn3&#34;&gt;&lt;p&gt;Em Jurimetria, censura é o nome dado à duração que é observada antes da ocorrência de um evento de interesse. No nosso exemplo, isso corresponde às durações de processos que ainda não chegaram ao fim.&lt;a href=&#34;#fnref3&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
-
-
-&lt;!-- BLOGDOWN-HEAD
-
-
-
-
-/BLOGDOWN-HEAD --&gt;
 </description>
     </item>
     
