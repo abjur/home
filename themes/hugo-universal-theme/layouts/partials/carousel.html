@@ -5,18 +5,18 @@
     <div class="home-carousel">
         <div class="dark-mask"></div>
         <div class="container">
-            <div class="homepage owl-carousel">
+            <div class="homepage owl-carousel" style="padding:0px;height:380px">
                 {{ range sort .Site.Data.carousel "weight" }}
-                <div class="item">
+                <!--<div class="item">-->
                     <div class="row">
-                        <div class="col-sm-5 right">
-                            <h1>{{ .title }}</h1>
-                            {{ .description | safeHTML }}
-                        </div>
+                        <!--<div class="col-sm-5 right"> -->
+                        <!--<h1>{{ .title }}</h1>        -->
+                        <!--{{ .description | safeHTML }}-->
+                        <!--</div>                       -->
                         <div class="col-sm-12">
-                            <img class="img-responsive" src="{{ .image }}" alt="">
-                        </div>
-                    </div>
+                            <img class="img-responsive" src="{{ .image }}" alt="" style="max-height:380px;position:relative;margin:0px;padding:0px;">
+                       </div>
+                    <!--</div>-->
                 </div>
                 {{ end }}
             </div>
