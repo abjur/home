@@ -2174,6 +2174,8 @@ fieldset[disabled] .btn-template-primary.active {
 #blog-post #post-content {
   margin-bottom: 20px;
   text-align: justify;
+  color: #000000;
+  font-size: large;
   text-justify: inter-word;
 }
 #blog-post .comment {
