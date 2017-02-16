@@ -1,17 +1,17 @@
 +++
-title = "Sobre Jurimetria"
+title = "Pesquisas realizadas"
 id = "jurimetrics"
 layout = "page" 
 date = "2016-01-01"
 +++
 
-A ABJ já realizou diversos projetos que auxiliaram na elaboração de políticas públicas e no desenvolvimento de novas metodologias de pesquisa no direito. Abaixo, apresentamos uma lista de projetos.
 
-## Adoção 
 
-O relatório apresenta os resultados obtidos através de extrações de bases de dados (do CNA e do Cadastro Nacional de Crianças e Adolescentes Acolhidos, "CNCA"), entrevistas com profissionais e uma pesquisa teórica sobre os problemas supra expostos, bem como propostas de aprimoramento do sistema de adoção. Há ênfase no estudo do tempo dos procedimentos relacionados à adoção (suspensão do poder familiar, perda do poder familiar, habilitação para adoção e adoção) e nos seus efeitos sobre a disponibilização das crianças e adolescentes no CNA. Pesquisas de campo foram conduzidas com o fim de mensurar, por etapa e no total, o tempo gasto em tais procedimentos e de verificar quais intervalos possuem maior influência no retardamento da chegada da criança a uma situação jurídica apta à adoção.
+A ABJ já realizou diversos projetos que auxiliaram na elaboração de políticas públicas e no desenvolvimento de novas metodologias de pesquisa no direito. Abaixo, apresentamos uma lista de projetos realizados e os principais achados.
 
-Os resultados da pesquisa revelam que podem existir diversas formas de aprimorar o sistema de adoção do Brasil. Construímos todo um capítulo de propostas, organizando-as em mais de 10 seções, que poderiam ajudar na celeridade processual, no acompanhamento de crianças em risco, e na melhora da estrutura das varas. As propostas são todas embasadas em evidências empíricas e opiniões de especialistas, e abrangem mudanças administrativas ou tecnológicas, campanhas a serem realizadas e propostas legislativas. Esperamos que, com este estudo, o Poder Judiciário tenha condições de aprimorar as políticas que vem desenvolvendo e que possa, cada vez mais, garantir os direitos fundamentais das crianças e adolescentes no Brasil.
+## Tempo dos processos relacionados à Adoção no Brasil
+
+O relatório, elaborado em parceria com o CNJ, apresenta os resultados obtidos através de extrações de bases de dados (do CNA e do Cadastro Nacional de Crianças e Adolescentes Acolhidos, "CNCA"), entrevistas com profissionais e uma pesquisa teórica sobre os problemas supra expostos, bem como propostas de aprimoramento do sistema de adoção. Há ênfase no estudo do tempo dos procedimentos relacionados à adoção (suspensão do poder familiar, perda do poder familiar, habilitação para adoção e adoção) e nos seus efeitos sobre a disponibilização das crianças e adolescentes no CNA. Pesquisas de campo foram conduzidas com o fim de mensurar, por etapa e no total, o tempo gasto em tais procedimentos e de verificar quais intervalos possuem maior influência no retardamento da chegada da criança a uma situação jurídica apta à adoção. Os resultados da pesquisa revelam que podem existir diversas formas de aprimorar o sistema de adoção do Brasil. Construímos todo um capítulo de propostas, organizando-as em mais de 10 seções, que poderiam ajudar na celeridade processual, no acompanhamento de crianças em risco, e na melhora da estrutura das varas. As propostas são todas embasadas em evidências empíricas e opiniões de especialistas, e abrangem mudanças administrativas ou tecnológicas, campanhas a serem realizadas e propostas legislativas. Esperamos que, com este estudo, o Poder Judiciário tenha condições de aprimorar as políticas que vem desenvolvendo e que possa, cada vez mais, garantir os direitos fundamentais das crianças e adolescentes no Brasil.
 
 ## Conselho Administrativo de Recursos Fiscais
 
