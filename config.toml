@@ -53,6 +53,11 @@ paginate = 8
     weight = 2
 
 [[params.menu]]
+    name = "projetos"
+    url  = "/projects/"
+    weight = 5
+
+[[params.menu]]
     name = "contato"
     url  = "/contact/"
     weight = 5
