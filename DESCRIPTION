@@ -11,7 +11,8 @@ LazyData: true
 Remotes:
     rstudio/blogdown,
     abjur/abjData,
-    abjur/tpur
+    abjur/tpur,
+    adymimos/rWordCloud
 Imports:
     blogdown,
     dplyr,
@@ -24,5 +25,10 @@ Imports:
     leaflet,
     abjData,
     tpur,
-    DiagrammeR
+    DiagrammeR,
+    lubridate,
+    tidytext,
+    tm,
+    rWordCloud,
+    htmlwidgets
 RoxygenNote: 5.0.1
