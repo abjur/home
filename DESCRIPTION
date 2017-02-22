@@ -10,7 +10,6 @@ Encoding: UTF-8
 LazyData: true
 Remotes:
     rstudio/blogdown,
-    jtrecenti/rWordCloud,
     abjur/abjData,
     abjur/tpur
 Imports:
@@ -29,6 +28,5 @@ Imports:
     lubridate,
     tidytext,
     tm,
-    rWordCloud,
     htmlwidgets
 RoxygenNote: 6.0.1
