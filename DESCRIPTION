@@ -10,9 +10,9 @@ Encoding: UTF-8
 LazyData: true
 Remotes:
     rstudio/blogdown,
+    jtrecenti/rWordCloud,
     abjur/abjData,
-    abjur/tpur,
-    jtrecenti/rWordCloud
+    abjur/tpur
 Imports:
     blogdown,
     dplyr,

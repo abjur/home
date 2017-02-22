@@ -22,7 +22,6 @@ library(stringr)
 library(lubridate)
 library(ggplot2)
 library(tidytext)
-library(rWordCloud)
 library(tm)
 ```
 
@@ -95,7 +94,7 @@ d_words <- d_cjsg %>%
          !word %in% banned_words)
 
 d_words %>% 
-  with(rWordCloud::d3Cloud(word, n))
+  with(rWordCloud:::d3Cloud(word, n))
 ```
 
 ### Relatores com mais decisões registradas
