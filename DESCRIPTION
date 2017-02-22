@@ -29,6 +29,6 @@ Imports:
     lubridate,
     tidytext,
     tm,
-    rWordCloud,
-    htmlwidgets
+    htmlwidgets,
+    rWordCloud
 RoxygenNote: 6.0.1

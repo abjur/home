@@ -93,7 +93,7 @@ d_words <- d_cjsg %>%
          !str_detect(word, '^[0-9]+$|^[0-9]+[ao]$'),
          !word %in% banned_words)
 
-# d_words %>% with(rWordCloud:::d3Cloud(word, n))
+d_words %>% with(rWordCloud:::d3Cloud(word, n))
 ```
 
 ### Relatores com mais decisões registradas
