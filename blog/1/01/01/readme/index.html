@@ -7,7 +7,7 @@
   <meta name="googlebot" content="index,follow,snippet,archive">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Número CNJ</title>
+  <title></title>
 
   <meta name="author" content="" />
   <meta name="keywords" content="">
@@ -67,13 +67,10 @@
   <link rel="alternate" href="http://www.abj.org.br/index.xml" type="application/rss+xml" title="ABJ">
 
   
-  <meta property="og:title" content="Número CNJ" />
+  <meta property="og:title" content="" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="/blog/2017/01/27/2017-01-27-numero-cnj//" />
+  <meta property="og:url" content="/blog/1/01/01/readme//" />
   <meta property="og:image" content="img/logo.png" />
-
-
-
 
 </head>
 
@@ -91,9 +88,9 @@
         <div class="container">
             <div class="navbar-header">
                 <a class="navbar-brand home" href="http://www.abj.org.br/">
-                    <img src="http://www.abj.org.br/img/logo.png" alt="Número CNJ logo" class="hidden-xs hidden-sm">
-                    <img src="http://www.abj.org.br/img/logo.png" alt="Número CNJ logo" class="visible-xs visible-sm">
-                    <span class="sr-only">Número CNJ - go to homepage</span>
+                    <img src="http://www.abj.org.br/img/logo.png" alt=" logo" class="hidden-xs hidden-sm">
+                    <img src="http://www.abj.org.br/img/logo.png" alt=" logo" class="visible-xs visible-sm">
+                    <span class="sr-only"> - go to homepage</span>
                 </a>
                 <div class="navbar-buttons">
                     <button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse" data-target="#navigation">
@@ -165,7 +162,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1>Número CNJ</h1>
+                <h1></h1>
             </div>
         </div>
     </div>
@@ -181,54 +178,24 @@
 
                     <div class="col-md-9" id="blog-post">
 
-                        <p class="text-muted text-uppercase mb-small text-right">By <a href="#">Julio Trecenti</a> | January 27, 2017</p>
+                        <p class="text-muted text-uppercase mb-small text-right">January 1, 0001</p>
 
                         <div id="post-content">
+                          
 
+<h1 id="progressive-news-cloud-d3-word-cloud-layout">Progressive-News-Cloud (D3 Word Cloud Layout)</h1>
 
+<p>Word Cloud Visualization of Bloomberg Asia News</p>
 
-<p>A definição da <em>unidade amostral</em> é essencial para a realização de qualquer pesquisa empírica. Trata-se do elemento indivisível de uma amostra, de onde se medem as características que serão utilizadas na análise estatística.</p>
-<p>Na jurimetria é usual considerar o <em>litígio</em> como unidade amostral. O litígio é chamado de <em>processo judicial</em> quando tramita na esfera judicial. Cada processo possui um número identificador cadastrado nos sistemas do Tribunal, o que facilita a busca por casos específicos.</p>
-<p>A <a href="https://goo.gl/IX4PuX">Resolução 65 do CNJ</a> (<em>Número CNJ</em>), é um marco na identificação de processos judiciais. Até 2008, a forma de numeração dos processos era definida pelo Tribunal responsável pela tramitação, o que dava origem a diversos formatos distintos. Com a Resolução, os processos passaram a receber um formato de numeração único para todos os Tribunais nas justiças Estadual, Trabalhista, Federal, Militar, Eleitoral e Superiores.</p>
-<p>A Resolução define o padrão <code>NNNNNNN-DD.AAAA.J.TR.OOOO</code>, em que:</p>
-<ul>
-<li><code>NNNNNNN</code>: Número identificador do processo.</li>
-<li><code>DD</code>: Dígito verificador gerado a partir da aplicação do algoritmo Módulo 97 Base 10, conforme Norma ISO 7064:2003.</li>
-<li><code>AAAA</code>: Ano do ajuizamento do processo.</li>
-<li><code>J</code>: Segmento do poder judiciário. Por exemplo, <code>8</code> indica Justiça Estadual.</li>
-<li><code>TR</code>: Identifica o tribunal. Por exemplo, <code>26</code> indica Tribunal de Justiça de São Paulo.</li>
-<li><code>OOOO</code>: Identifica a unidade de origem (foro) do processo. Na maioria dos casos, o número também identifica a comarca, pois existem poucas comarcas com mais de um foro (ex. a comarca de São Paulo, que possui mais de dez foros regionais).</li>
-</ul>
-<div id="gerando-numeros-aleatorios" class="section level2">
-<h2>Gerando números aleatórios</h2>
-<p>Um aspecto interessante na especificação do número CNJ é a possibilidade de gerar todos os possíveis números de processos. Para cada configuração de ano, justiça, tribunal e órgão de origem, são exatamente dez milhões de números distintos. Por exemplo, considerando somente processos ajuizados em 2009, nas <a href="http://tjal.jus.br/apmp/jurisdicaocomarcas09102015.pdf">55 comarcas do Tribunal de Justiça de Alagoas</a> e um foro por comarca, teríamos 550 milhões de números distintos. Esses números podem ser utilizados para pesquisar todos os processos de um tribunal.</p>
-<p>No entanto, pesquisar 550 milhões de números é uma tarefa demorada e onerosa para os tribunais. No exemplo, com 10 pesquisas por segundo, seriam necessários 637 dias para acessar todos os números. Além disso, nem todos os números correspondem a processos de fato, pois são gerados conforme a demanda e apenas uma parcela dos números é realmente manifesta.</p>
-<p>Nessa situação uma alternativa via amostragem se torna viável. Ao invés de pesquisar todos os processos, gera-se uma amostra aleatória de números, acessando diretamente nas ferramentas de pesquisa dos tribunais. A quantidade de processos necessários para isso é definida estudando-se a probabilidade de manifestação de um número de processo. Usualmente isso é feito a partir de uma amostra piloto.</p>
-</div>
-<div id="r-session" class="section level2">
-<h2><code>R session</code></h2>
-<p>No pacote <code>abjutils</code> criado pela ABJ, é possível utilizar a função <code>sample_cnj</code> abaixo. É necessário informar a quantidade de processos, os foros, os anos, o segmento de justiça e o tribunal, com os seguintes parâmetros:</p>
-<ul>
-<li><code>n</code>: quantidade de processos a ser gerada.</li>
-<li><code>foros</code>: vetor de códigos de foro.</li>
-<li><code>anos</code>: vetor de anos de distribuição dos processos.</li>
-<li><code>orgao</code>: vetor de segmentos de justiça.</li>
-<li><code>tr</code>: vetor de tribunais.</li>
-</ul>
-<p>No exemplo abaixo, geramos cinco processos aleatoriamente.</p>
-<pre class="r"><code>library(abjutils)
-sample_cnj(n = 5, 
-           foros = &quot;0001&quot;, anos = c(2014, 2015), orgao = 8, tr = 26,
-           first_dig = &quot;0&quot;, sample_pars = TRUE, return_df = TRUE)</code></pre>
-<pre><code>## # A tibble: 5 × 1
-##             n_processo
-##                  &lt;chr&gt;
-## 1 00167542920148260001
-## 2 02692147220158260001
-## 3 04110238420148260001
-## 4 00260288020158260001
-## 5 01302096920148260001</code></pre>
-</div>
+<p><a href="http://ywng-d3apps.rhcloud.com/MktInsight/">http://ywng-d3apps.rhcloud.com/MktInsight/</a></p>
+
+<p>It visualises the news articles scrapping from Bloomberg website: <a href="http://www.bloomberg.com/news/asia/">http://www.bloomberg.com/news/asia/</a></p>
+
+<p><img src="https://raw.github.com/ywng/Progressive-News-Cloud/master/screen%20shot%20main.png" alt="alt tag" /></p>
+
+<p>You can click onto the word to see its frequency count and drill down to see a new word cloud vis of those articles containing the clicked word. You can also view the new articles title on the top, or click onto it to see full articles.</p>
+
+<p><img src="https://raw.github.com/ywng/Progressive-News-Cloud/master/screen%20shot%20sub.png" alt="alt tag" /></p>
 
                         </div>
                         
@@ -237,9 +204,9 @@ sample_cnj(n = 5,
                             <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'jurimetria';
-    var disqus_identifier = 'http:\/\/www.abj.org.br\/blog\/2017\/01\/27\/2017-01-27-numero-cnj\/';
-    var disqus_title = 'Número CNJ';
-    var disqus_url = 'http:\/\/www.abj.org.br\/blog\/2017\/01\/27\/2017-01-27-numero-cnj\/';
+    var disqus_identifier = 'http:\/\/www.abj.org.br\/blog\/1\/01\/01\/readme\/';
+    var disqus_title = '';
+    var disqus_url = 'http:\/\/www.abj.org.br\/blog\/1\/01\/01\/readme\/';
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
