@@ -12,7 +12,7 @@ Remotes:
     rstudio/blogdown,
     abjur/abjData,
     abjur/tpur,
-    adymimos/rWordCloud
+    jtrecenti/rWordCloud
 Imports:
     blogdown,
     dplyr,
