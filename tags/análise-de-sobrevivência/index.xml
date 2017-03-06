@@ -15,17 +15,7 @@
       <pubDate>Sat, 31 Dec 2016 09:23:47 -0200</pubDate>
       
       <guid>http://www.abj.org.br/blog/2016/12/31/2016-12-31-tempos/</guid>
-      <description>&lt;!-- BLOGDOWN-HEAD --&gt;
-
-
-
-&lt;!-- /BLOGDOWN-HEAD --&gt;
-
-&lt;!-- BLOGDOWN-BODY-BEFORE --&gt;
-
-&lt;!-- /BLOGDOWN-BODY-BEFORE --&gt;
-
-&lt;p&gt;Caracterizar a duração de processos judiciais é um problema relevante para o Direito. Em Jurimetria, isso normalmente é feito utilizando Análise de Sobrevivência&lt;a href=&#34;#fn1&#34; class=&#34;footnoteRef&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;, mas os textos desse assunto não costumam mencionar a diferença qualitativa entre as estimativas de duração produzidas por estudos prospectivos e retrospectivos&lt;a href=&#34;#fn2&#34; class=&#34;footnoteRef&#34; id=&#34;fnref2&#34;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;.&lt;/p&gt;
+      <description>&lt;p&gt;Caracterizar a duração de processos judiciais é um problema relevante para o Direito. Em Jurimetria, isso normalmente é feito utilizando Análise de Sobrevivência&lt;a href=&#34;#fn1&#34; class=&#34;footnoteRef&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;, mas os textos desse assunto não costumam mencionar a diferença qualitativa entre as estimativas de duração produzidas por estudos prospectivos e retrospectivos&lt;a href=&#34;#fn2&#34; class=&#34;footnoteRef&#34; id=&#34;fnref2&#34;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;A diferença entre as duas metodologias consiste no fato de estudos retrospecivos observarem processos que &lt;strong&gt;terminaram em um determinado período&lt;/strong&gt;, enquanto estudos prospectivos observam processos &lt;strong&gt;distribuídos em um determinado período&lt;/strong&gt;. Por isso, as populações estudadas em cada uma das propostas são diferentes, e isso impacta a forma com que os resultados devem ser interpretados.&lt;/p&gt;
 &lt;p&gt;Neste texto, vamos ilustrar o desempenho e as diferenças dos tipos de estudo através de uma simulação. Durações processuais hipotéticas serão geradas considerando dois cenários, e as estatísticas produzidas por cada metodologia serão comparadas.&lt;/p&gt;
 &lt;ul&gt;
@@ -68,7 +58,7 @@
 &lt;div id=&#34;resultados&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Resultados&lt;/h2&gt;
 &lt;p&gt;Uma realização da nossa simulação está ilustrada na figura abaixo. As linhas representam o ciclo de vida dos processos sob estudo e as cores representam a presença ou ausência nos planos amostrais que utilizam cada uma das metodologias. As linhas tracejadas delimitam o escopo temporal dos estudos.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://www.abj.org.br/blog/2016/12/31/2016-12-31-tempos/figures/unnamed-chunk-1-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://www.abj.org.br/blog/2016-12-31-tempos_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;É importante notar que a curva que representa a distribuição dos processos no cenário 1 é mais íngreme após agosto de 2014. Isso ocorre porque nesse cenário a taxa de distribuição de processos aumentou de &lt;span class=&#34;math inline&#34;&gt;\(7\)&lt;/span&gt;% para &lt;span class=&#34;math inline&#34;&gt;\(17\)&lt;/span&gt;%. Por conta desse fato, existe uma maior quantidade de processos com baixa duração sendo analisada pelo estudo retrospectivo.&lt;/p&gt;
 &lt;p&gt;Realizando 1000 simulações, resumimos o desempenho das metodologias como a média das estimativas para a duração média produzidas em cada cenário.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[

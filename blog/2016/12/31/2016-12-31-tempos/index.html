@@ -72,9 +72,6 @@
   <meta property="og:url" content="/blog/2016/12/31/2016-12-31-tempos//" />
   <meta property="og:image" content="img/logo.png" />
 
-
-
-
 </head>
 
 
@@ -184,10 +181,7 @@
                         <p class="text-muted text-uppercase mb-small text-right">By <a href="#">Fernando Corrêa</a> | December 31, 2016</p>
 
                         <div id="post-content">
-
-
-
-<p>Caracterizar a duração de processos judiciais é um problema relevante para o Direito. Em Jurimetria, isso normalmente é feito utilizando Análise de Sobrevivência<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a>, mas os textos desse assunto não costumam mencionar a diferença qualitativa entre as estimativas de duração produzidas por estudos prospectivos e retrospectivos<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a>.</p>
+                          <p>Caracterizar a duração de processos judiciais é um problema relevante para o Direito. Em Jurimetria, isso normalmente é feito utilizando Análise de Sobrevivência<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a>, mas os textos desse assunto não costumam mencionar a diferença qualitativa entre as estimativas de duração produzidas por estudos prospectivos e retrospectivos<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a>.</p>
 <p>A diferença entre as duas metodologias consiste no fato de estudos retrospecivos observarem processos que <strong>terminaram em um determinado período</strong>, enquanto estudos prospectivos observam processos <strong>distribuídos em um determinado período</strong>. Por isso, as populações estudadas em cada uma das propostas são diferentes, e isso impacta a forma com que os resultados devem ser interpretados.</p>
 <p>Neste texto, vamos ilustrar o desempenho e as diferenças dos tipos de estudo através de uma simulação. Durações processuais hipotéticas serão geradas considerando dois cenários, e as estatísticas produzidas por cada metodologia serão comparadas.</p>
 <ul>
@@ -230,7 +224,7 @@
 <div id="resultados" class="section level2">
 <h2>Resultados</h2>
 <p>Uma realização da nossa simulação está ilustrada na figura abaixo. As linhas representam o ciclo de vida dos processos sob estudo e as cores representam a presença ou ausência nos planos amostrais que utilizam cada uma das metodologias. As linhas tracejadas delimitam o escopo temporal dos estudos.</p>
-<p><img src="figures/unnamed-chunk-1-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="/blog/2016-12-31-tempos_files/figure-html/unnamed-chunk-1-1.png" width="672" style="display: block; margin: auto;" /></p>
 <p>É importante notar que a curva que representa a distribuição dos processos no cenário 1 é mais íngreme após agosto de 2014. Isso ocorre porque nesse cenário a taxa de distribuição de processos aumentou de <span class="math inline">\(7\)</span>% para <span class="math inline">\(17\)</span>%. Por conta desse fato, existe uma maior quantidade de processos com baixa duração sendo analisada pelo estudo retrospectivo.</p>
 <p>Realizando 1000 simulações, resumimos o desempenho das metodologias como a média das estimativas para a duração média produzidas em cada cenário.</p>
 <p><span class="math display">\[
