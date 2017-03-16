@@ -17,7 +17,7 @@ O Tribunal de Justiça de São Paulo (TJSP) divide o estado em três níveis: s�
 
 Temos na ABJ uma base de dados com os nomes de todos os municípios do estado e colunas adicionais indicando as respectivas comarcas, circunscrições e regiões. Com isso é possível fazer os mapas da Figura \@ref(fig:maps). Alguns detalhes interessantes: i) o território de São Paulo é ao mesmo tempo um município, uma comarca e uma circunscrição; ii) quanto menor a população de um município, maior a chance dele fazer parte de uma comarca com vários municípios.
 
-```{r maps, echo=FALSE, message=FALSE, warning=FALSE, fig.cap='Mapa incompleto.'}
+```{r maps, eval=FALSE, echo=FALSE, message=FALSE, warning=FALSE, fig.cap='Mapa incompleto.'}
 library(tidyverse)
 library(leaflet)
 coma_m %>% 
@@ -32,7 +32,7 @@ Agora, algumas regras básicas. Um conjunto de municípios só pode ser comarca 
 
 Outro termo importante nesse contexto é *entrância*. A entrância define classifica uma comarca em três categorias: inicial, intermediária e final. A divisão vai de acordo com sua população total e importância. A Figura \@ref(fig:entrancias) mostra as entrâncias das comarcas do TJSP. As 36 entrâncias finais correspondem às comarcas mais conhecidas do Tribunal, como Campinas, Guarulhos, Santos, São Paulo etc.
 
-```{r entrancias, echo=FALSE, message=FALSE, warning=FALSE, fig.cap='Entrâncias das comarcas do TJSP.'}
+```{r entrancias, eval=FALSE, echo=FALSE, message=FALSE, warning=FALSE, fig.cap='Entrâncias das comarcas do TJSP.'}
 library(tidyverse)
 library(leaflet)
 coma_m %>% 
