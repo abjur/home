@@ -29,5 +29,6 @@ Imports:
     tidytext,
     tm,
     htmlwidgets,
-    rWordCloud
+    rWordCloud,
+    tidyverse
 RoxygenNote: 6.0.1
