@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>ABJ</title>
+    <title>Estratégia on ABJ</title>
     <link>http://www.abj.org.br/tags/estrat%C3%A9gia/index.xml</link>
-    <description>Recent content on ABJ</description>
+    <description>Recent content in Estratégia on ABJ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright (c) 2011 - 2017, ABJ; Todos os direitos reservados.</copyright>
@@ -59,6 +59,21 @@
 &lt;p&gt;Não é difícil pensar como uma estrutura para extração de dados pode ajudar a todos, profissionais do Direito, estatísticos, jurimetristas e a sociedade em geral. Convido o leitor a sugerir soluções e vantagens.&lt;/p&gt;
 &lt;p&gt;A ABJ tem atuado com força na campanha de abertura de dados do judiciário, construindo ferramentas, organizando eventos, ministrando cursos e fazendo contatos políticos. Acreditamos que num futuro próximo o Brasil será referência mundial na abertura de dados do Judiciário.&lt;/p&gt;
 &lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>É possível predizer resultados de processos?</title>
+      <link>http://www.abj.org.br/blog/2017/01/27/2017-02-07-predicao/</link>
+      <pubDate>Fri, 27 Jan 2017 09:23:47 -0200</pubDate>
+      
+      <guid>http://www.abj.org.br/blog/2017/01/27/2017-02-07-predicao/</guid>
+      <description>&lt;!-- BLOGDOWN-HEAD --&gt;
+&lt;!-- /BLOGDOWN-HEAD --&gt;
+
+&lt;!-- BLOGDOWN-BODY-BEFORE --&gt;
+&lt;!-- /BLOGDOWN-BODY-BEFORE --&gt;
+&lt;p&gt;O mundo do Direito é complexo. Não à toa temos, no Brasil, mais de 90 milhões de processos pendentes, mais de um milhão advogados regulares na OAB e&lt;/p&gt;
 </description>
     </item>
     
