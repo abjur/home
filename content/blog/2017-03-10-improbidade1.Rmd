@@ -8,11 +8,11 @@ draft: true
 ---
 
 ```{r message=FALSE, echo=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-library(tidyverse)
-library(stringr)
-library(lubridate)
-library(cnc)
+knitr::opts_chunk$set(echo = FALSE, eval=FALSE)
+# library(tidyverse)
+# library(stringr)
+# library(lubridate)
+# library(cnc)
 ```
 
 A corrupção é um dos temas mais importantes para os brasileiros.
@@ -41,7 +41,7 @@ Em 08/03/2013, o CNCIAI passou a contemplar os atos que ocasionem a inelegibilid
 
 Consideramos em nossa base
 
-```{r}
+```{r, eval=FALSE}
 # Limpeza final da base! ------------------------------------------------------
 
 cnc_vis <- tidy_cnc %>% 
@@ -125,7 +125,7 @@ cnc_vis <- tidy_cnc %>%
 #            convert = TRUE)
 ```
 
-```{r sumarios}
+```{r sumarios, eval=FALSE}
 n_condenacoes <- n_distinct(cnc_vis$id_condenacao)
 n_processos <- n_distinct(cnc_vis$id_processo)
 n_pessoas <- n_distinct(cnc_vis$id_pessoa)
@@ -152,7 +152,7 @@ tab_teves2 <- cnc_vis %>%
   mutate(prop = n/sum(n), prop = scales::percent(prop))
 ```
 
-```{r}
+```{r, eval=FALSE}
 ## META
 ## Cortes
 ## -
@@ -163,7 +163,7 @@ tab_teves2 <- cnc_vis %>%
 
 ## Caracterização
 
-```{r}
+```{r, eval=FALSE}
 knitr::kable(tab_n)
 ```
 
