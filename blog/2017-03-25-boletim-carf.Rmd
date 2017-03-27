@@ -1,0 +1,416 @@
+---
+title: "Boletim CARF 02/2017"
+author: "Julio Trecenti"
+date: 2017-01-27T09:23:47-02:00
+tags: ['CARF', 'boletim']
+banner: "img/banners/banner-10.png"
+draft: true
+---
+
+> Atenção! A partir de abril / 2017, vamos lançar 
+> boletins mensais com análises de alguns órgãos da Justiça.
+> Os relatórios são gerados automaticamente.
+
+```{r echo=F}
+knitr::opts_chunk$set(echo=FALSE, warning=FALSE, message=FALSE, eval=FALSE)
+```
+
+```{r}
+library(dplyr)
+library(ggplot2)
+library(lubridate)
+library(stringr)
+library(dygraphs)
+library(leaflet)
+library(tidyr)
+library(ggvis)
+
+d_vis <- readRDS('/home/jtrecenti/abj/viscarf/data/d_vis.rds') %>% 
+  filter(!is.na(data_pub)) %>% 
+  select(-n)
+load('/home/jtrecenti/abj/viscarf/data/cadmun.rda')
+load('/home/jtrecenti/abj/viscarf/data/coord_uf.RData')
+
+ufs <- c(sort(unique(as.character(cadmun$uf))), 'VAZIO')
+secoes <- c('PRIMEIRA SECAO', 'SEGUNDA SECAO', 'TERCEIRA SECAO', 'CSRF')
+camaras <- c(paste(1:4, 'a CAMARA', sep = ''))
+turmas <- c(paste(1:3, 'a TURMA', sep = ''), 'TURMA ESPECIAL')
+
+quebras <- c('Nada' = 'Nada', 
+             'Seção de julgamento' = 'secao', 
+             'Votacao' = 'votacao',
+             'Tipo de pessoa' = 'tipo_pessoa',
+             'Tipo de relator' = 'tipo')
+
+input <- list(quebra = as.character(quebras[2]))
+
+dados <- function() d_vis
+```
+
+```{r eval=FALSE}
+d <- dados() %>%
+  filter(resultado == 'DESFAVORAVEL') %>%
+  group_by_(.dots = c(input$quebra, 'resultado')) %>%
+  arrange_(.dots = c(input$quebra, 'data_pub')) %>%
+  mutate(um = 1, acu = cumsum(um) / sum(um)) %>%
+  ungroup() %>%
+  select_(.dots = c(input$quebra, 'data_pub', 'acu')) %>%
+  tibble::rownames_to_column() %>%
+  spread_(input$quebra, 'acu') %>%
+  select(-rowname)
+dxts <- xts::xts(d[, -1], d$data_pub)
+p <- dygraph(dxts) %>%
+  dyOptions(drawPoints = FALSE, stepPlot = TRUE,
+            fillGraph = FALSE,
+            stackedGraph = FALSE,
+            strokeWidth = 2, colorValue = .8,
+            includeZero = TRUE,
+            animatedZooms = TRUE,
+            drawGapEdgePoints = TRUE,
+            connectSeparatedPoints = TRUE)
+p
+```
+
+```{r eval=FALSE}
+d <- dados() %>%
+  group_by_(.dots = c('resultado')) %>%
+  arrange_(.dots = c('data_pub')) %>%
+  mutate(um = 1, acu = cumsum(um) / sum(um)) %>%
+  ungroup %>%
+  select_(.dots = c('resultado', 'data_pub', 'acu')) %>%
+  tibble::rownames_to_column() %>%
+  spread_('resultado', 'acu') %>%
+  select(-rowname)
+dxts <- xts::xts(d[, -1], d$data_pub)
+p <- dygraph(dxts) %>%
+  dyOptions(drawPoints = FALSE, stepPlot = TRUE,
+            fillGraph = FALSE,
+            stackedGraph = FALSE,
+            strokeWidth = 2, colorValue = .8,
+            includeZero = TRUE,
+            animatedZooms = TRUE,
+            drawGapEdgePoints = TRUE,
+            connectSeparatedPoints = TRUE)
+p
+```
+
+```{r eval=FALSE}
+#mostrar quebrado por variavel
+d <- dados() %>%
+  group_by_(.dots = c(input$quebra)) %>%
+  arrange_(.dots = c('data_pub')) %>%
+  mutate(um = 1, acu = cumsum(um) / sum(um)) %>%
+  ungroup %>%
+  select_(.dots = c(input$quebra, 'data_pub', 'acu')) %>%
+  tibble::rownames_to_column() %>%
+  spread_(input$quebra, 'acu') %>%
+  select(-rowname)
+
+dxts <- xts::xts(d[, -1], d$data_pub)
+
+p <- dygraph(dxts) %>%
+  dyOptions(drawPoints = FALSE, stepPlot = TRUE,
+            fillGraph = FALSE,
+            stackedGraph = FALSE,
+            strokeWidth = 2, colorValue = .8,
+            includeZero = TRUE,
+            animatedZooms = TRUE,
+            drawGapEdgePoints = TRUE,
+            connectSeparatedPoints = TRUE)
+p
+```
+
+```{r eval=FALSE}
+#mostrar volume
+d <- dados() %>% 
+  arrange(data_pub) %>%
+  mutate(um = 1, acu = cumsum(um)) %>%
+  select(data_pub, acu)
+
+dxts <- xts::xts(d[, -1], d$data_pub)
+
+p <- dxts %>%
+  dygraph() %>%
+  dyOptions(fillGraph = FALSE, 
+            drawPoints = FALSE, 
+            strokeWidth = 2, 
+            colorValue = .8, 
+            includeZero = TRUE,
+            animatedZooms = TRUE, 
+            colors = 'blue')
+p
+```
+
+```{r}
+plotar_mes <- function(input) {
+  d <- dados() %>%
+  mutate(mes_ano = as.Date(sprintf('%04d-%02d-01', 
+                                   year(data_pub), 
+                                   month(data_pub))))
+  if (input$res == 'Resultados') {
+    if (input$quebra != 'Nada') {
+      # quebrar com resultados
+      d <- d %>% 
+        count_(vars = c('mes_ano', input$quebra, 'resultado')) %>%
+        replace_na(setNames(list('VAZIO'), input$quebra)) %>% 
+        mutate(prop = n / sum(n) * 100) %>%
+        ungroup %>%
+        filter(resultado == 'DESFAVORAVEL') %>%
+        select(-resultado, -n) %>%
+        spread_(input$quebra, 'prop')
+      dxts <- xts::xts(d[, -1], d$mes_ano)
+      p <- dygraph(dxts,
+                   main = 'Proporçao de decisoes desfavoráveis') %>%
+        dyOptions(drawPoints = TRUE, 
+                  stackedGraph = input$stack,
+                  strokeWidth = 2, colorValue = .8,
+                  includeZero = TRUE,
+                  animatedZooms = TRUE,
+                  drawGapEdgePoints = TRUE,
+                  connectSeparatedPoints = TRUE)
+    } else {
+      # so resultados (default)
+      d <- d %>% 
+        count(mes_ano, resultado) %>%
+        mutate(prop = n / sum(n) * 100) %>%
+        select(-n) %>%
+        spread(resultado, prop)
+      
+      dxts <- xts::xts(d[, -1], d$mes_ano)
+      
+      p <- dygraph(dxts) %>%
+        dyOptions(drawPoints = TRUE, 
+                  stackedGraph = input$stack,
+                  strokeWidth = 2, colorValue = .8, 
+                  includeZero = TRUE,
+                  animatedZooms = TRUE)
+    }
+  } else {
+    if (input$quebra != 'Nada') {
+      #mostrar quebrado por variavel
+      d <- d %>% 
+        count_(vars = c('mes_ano', input$quebra)) %>%
+        replace_na(setNames(list('VAZIO'), input$quebra)) %>% 
+        mutate(prop = n / sum(n) * 100) %>%
+        select(-prop) %>%
+        spread_(input$quebra, 'n')
+      dxts <- xts::xts(d[, -1], d$mes_ano)
+      p <- dygraph(dxts) %>%
+        dyOptions(drawPoints = TRUE, 
+                  stackedGraph = input$stack,
+                  strokeWidth = 2, colorValue = .8, 
+                  includeZero = TRUE,
+                  animatedZooms = TRUE)
+    } else {
+      #mostrar volume
+      d <- d %>% count(mes_ano)
+      dxts <- xts::xts(d[, -1], d$mes_ano)
+      
+      p <- dxts %>%
+        dygraph() %>%
+        dyOptions(fillGraph = TRUE, drawPoints = TRUE, 
+                  strokeWidth = 2, colorValue = .8, 
+                  includeZero = TRUE,
+                  animatedZooms = TRUE, 
+                  colors = 'blue')
+    }
+  }
+  p %>%
+    dyHighlight(highlightCircleSize = 5, 
+                highlightSeriesBackgroundAlpha = 0.2,
+                hideOnMouseOut = FALSE) %>%
+    dyLegend(show = "onmouseover", 
+             hideOnMouseOut = TRUE,
+             width = 600)
+}
+
+```
+
+```{r}
+all_values <- function(x) {
+  if (is.null(x)) return(NULL)
+  paste(c('Resultado:', 'Tributo:', 'Proporção:'),
+        c(x[1], x[2], round((x[4] - x[3]) * 100, 2)),
+        collapse = '<br />')
+}
+all_barras <- function(x) {
+  if (is.null(x)) return(NULL)
+  paste(c('Resultado:', paste0(names(x)[2], ':'), 'Proporção:'),
+        c(x[1], x[2], round((x[4] - x[3]) * 100, 2)),
+        collapse = '<br />')
+}
+
+all_values2 <- function(x) {
+  if (is.null(x)) return(NULL)
+  paste0(c('', 'n: '), format(x)[-2], collapse = "<br />")
+}
+plotar_barras <- function(input) {
+  if (input$res == 'Resultados') {
+    if (input$quebra != 'Nada') {
+      dados() %>% 
+        count_(vars = c(input$quebra, 'resultado')) %>%
+        replace_na(setNames(list('VAZIO'), input$quebra)) %>% 
+        mutate(prop = n / sum(n)) %>%
+        ggvis(x = as.formula(paste('~', input$quebra)), y = ~prop, 
+              fill = ~resultado,
+              fillOpacity := 0.5) %>% 
+        layer_bars(stack = TRUE, width = 1.0) %>%
+        add_axis("x", properties = axis_props(
+          labels = list(angle = -45, align = "right", fontSize = 15))) %>%
+        # add_tooltip(all_barras, 'hover') %>%
+        hide_legend('fill') %>%
+        set_options(width = '90%')
+    } else {
+      # so resultados (default)
+      dados() %>% 
+        ggvis(x = ~resultado, fillOpacity := 0.5) %>% 
+        layer_bars(width = 1.0) %>%
+        add_axis("x", properties = axis_props(
+          labels = list(angle = -45, align = "right", fontSize = 15))) %>%
+        # add_tooltip(all_values2, 'hover') %>%
+        hide_legend('fill') %>%
+        set_options(width = '90%')
+    }
+  } else {
+    if(input$quebra != 'Nada') {
+      # mostrar quebrado por variavel
+      dados() %>% 
+        ggvis(x = as.formula(paste0('~', input$quebra)), 
+              fillOpacity := 0.5,
+              fill := 'royalblue') %>% 
+        layer_bars(width = 1.0) %>%
+        add_axis("x", properties = axis_props(
+          labels = list(angle = -45, align = "right", fontSize = 15))) %>%
+        # add_tooltip(all_values2, 'hover') %>%
+        hide_legend('fill') %>%
+        set_options(width = '90%')
+    } else {
+      # mostrar volume
+      dados() %>%
+        ggvis(x = ~resultado, fillOpacity := 0.5, fill := 'royalblue') %>% 
+        layer_bars(width = 1.0) %>%
+        add_axis("x", properties = axis_props(
+          labels = list(angle = -45, align = "right", fontSize = 15))) %>%
+        # add_tooltip(all_values2, 'hover') %>%
+        hide_legend('fill') %>%
+        set_options(width = '90%')
+    }
+  }
+}
+```
+
+## Resultados e volume no mês
+
+```{r}
+# plotar_mes(list(res = 'Resultados', quebra = as.character(quebras[2])))
+# plotar_mes(list(res = 'Volume', quebra = as.character(quebras[2])))
+plotar_mes(list(res = 'Resultados', quebra = 'Nada'))
+plotar_mes(list(res = 'Volume', quebra = 'Nada'))
+```
+
+## Resultados
+
+```{r}
+# plotar_barras(list(res = 'Resultados', quebra = as.character(quebras[2])))
+# plotar_barras(list(res = 'Volume', quebra = as.character(quebras[2])))
+plotar_barras(list(res = 'Resultados', quebra = 'Nada'))
+# plotar_barras(list(res = 'Volume', quebra = 'Nada'))
+```
+
+## Mapa da UF de origem dos recursos
+
+```{r}
+d <- dados() %>%
+  count(uf) %>%
+  inner_join(coord_uf, c('uf' = 'id')) %>%
+  mutate(res = sqrt(n / 10)) %>%
+  data.frame()
+tiles <- 'http://{s}.tiles.mapbox.com/v3/jtrecenti.map-oskm8vhn/{z}/{x}/{y}.png'
+attrib <- 'Maps by <a href="http://www.mapbox.com/">Mapbox</a>'
+leaflet(d) %>% 
+  addTiles(urlTemplate = tiles,
+           attribution = attrib) %>%
+  addCircleMarkers(lng = ~lon , lat = ~lat, data = d, radius = ~res, 
+                   popup = ~paste(uf, n, sep = '<br />'))
+
+```
+
+```{r}
+dados() %>% 
+  count(tributos, resultado) %>%
+  mutate(prop = n / sum(n)) %>%
+  ggvis(x = ~tributos, y = ~prop, 
+        fill = ~resultado,
+        fillOpacity := 0.5) %>% 
+  layer_bars(stack = TRUE, width = 1.0) %>%
+  add_axis("x", properties = axis_props(
+    labels = list(angle = -45, align = "right", fontSize = 15))) %>%
+  # add_tooltip(all_values, 'hover') %>%
+  # hide_legend('fill') 
+  identity()
+```
+
+## Resultados por Seção de Julgamento
+
+```{r}
+por_secao <- function(input) {
+  sec <- input$secao
+  # cam <- input$camara
+  # tur <- input$turma
+  if(input$secao == 'CSRF') {
+    cam <- unique(dados()$camara)
+    tur <- unique(dados()$turma)
+  } else {
+    cam <- unique(dados()$camara)
+    tur <- unique(dados()$turma)
+  }
+  d <- filter(dados(), secao %in% sec, camara %in% cam, turma %in% tur)
+  if(nrow(d) > 0) {
+    d %>%
+      ggvis(x = ~resultado, fillOpacity := 0.5) %>% 
+      layer_bars(width = 1.0) %>%
+      add_axis("x", properties = axis_props(
+        labels = list(angle = -45, align = "right", fontSize = 15))) %>%
+      # add_tooltip(all_values2, 'hover') %>%
+      hide_legend('fill') %>%
+      set_options(width = '90%', height = 800)
+  } else {
+    data.frame(x = character()) %>% 
+      ggvis(~x) %>% layer_bars() %>%
+      set_options(width = '90%', height = 800)
+  }
+}
+```
+
+```{r}
+por_secao(list(secao = "PRIMEIRA SECAO"))
+por_secao(list(secao = "SEGUNDA SECAO"))
+por_secao(list(secao = "TERCEIRA SECAO"))
+por_secao(list(secao = "CSRF"))
+```
+
+## Dedo duro dos conselheiros
+
+```{r}
+tabela_conselheiros <- function(input) {
+  d <- dados() %>%
+    group_by(relator) %>%
+    mutate(n_relator = n()) %>%
+    ungroup %>% {
+      dd <- filter(., n_relator > input$cortar)
+      if (nrow(dd) > 0) dd else .
+    } %>%
+    count(relator, n_relator, tipo, resultado) %>%
+    mutate(porc_num = n / sum(n),
+           porc = scales::percent(porc_num)) %>%
+    ungroup %>%
+    select(-n) %>%
+    spread(resultado, porc)
+  DT::datatable(d)
+}
+```
+
+```{r}
+tabela_conselheiros(list(cortar = 100))
+```
+
