@@ -8,3 +8,73 @@
 .box-simple {
   min-height: 230px;
 }
+
+.box-image-text {
+  text-align: left;
+}
+
+.box-image-text .content h4 {
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+.heading .text-center {
+  font-weight: lighter;
+  font-size: 36px;
+}
+
+#heading-breadcrumbs h1 {
+  letter-spacing: normal;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+#blog-post #post-content {
+  text-align: left;
+  color: #666;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.panel.sidebar-menu .panel-heading h3 {
+  border-bottom: none;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.mb-small {
+  margin-bottom: 40px !important;
+}
+
+.navbar-brand {
+  height: auto;
+  padding: 0;
+  margin: 25px 0;
+}
+
+.navbar-brand img {
+  padding: 0;
+}
+
+.heading.text-center h2 {
+  font-size: 36px;
+  font-weight: 200;
+}
+
+.navbar-nav > li {
+  padding-top: 41px;
+  padding-bottom: 41px;
+}
+
+.navbar-nav > li > a {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.navbar ul.nav > li > a {
+  border-top: none;
+}
+
+.navbar ul.nav > li > a:hover {
+  border-top: none;
+}

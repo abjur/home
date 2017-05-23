@@ -33,32 +33,32 @@ paginate = 8
     blog = "/blog/:year/:month/:day/:filename/"
 
 [[params.menu]]
-    name = "home"
+    name = "Home"
     url  = "/"
     weight = 1
 
 [[params.menu]]
-    name = "institucional"
+    name = "Institucional"
     url  = "/about/"
     weight = 3
 
 [[params.menu]]
-    name = "jurimetria"
+    name = "Jurimetria"
     url  = "/jurimetrics/"
     weight = 3
 
 [[params.menu]]
-    name = "blog"
+    name = "Blog"
     url  = "/blog/"
     weight = 2
 
 [[params.menu]]
-    name = "projetos"
+    name = "Projetos"
     url  = "/projects/"
     weight = 5
 
 [[params.menu]]
-    name = "contato"
+    name = "Contato"
     url  = "/contact/"
     weight = 5
 
@@ -76,13 +76,13 @@ paginate = 8
 
 [params.features]
     enable = false
-    # All features are defined in their own files. 
+    # All features are defined in their own files.
     # You can find example items at 'exampleSite/data/features'.
     # For more informtion take a look at the README.
 
 [params.testimonials]
     enable = false
-    # All testimonials are defined in their own files. 
+    # All testimonials are defined in their own files.
     # You can find example items at 'exampleSite/data/testimonials'.
     # For more informtion take a look at the README.
     title = "Testimonials"

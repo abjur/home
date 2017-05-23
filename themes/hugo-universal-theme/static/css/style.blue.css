@@ -307,7 +307,6 @@ ul.list-style-none {
 .navbar ul.nav > li > a {
   /*text-transform: uppercase;*/
   /*text-decoration: underline;*/
-  font-weight: bold;
   letter-spacing: 0.08em;
   border-top: solid 5px transparent;
 }
@@ -1170,7 +1169,8 @@ fieldset[disabled] .btn-template-primary.active {
   padding-bottom: 0px;
 }
 .home-carousel .owl-theme .owl-controls .owl-page span {
-  background: #666;
+  background: #8AE100;
+  opacity: 1;
 }
 .home-carousel .owl-theme .owl-controls .owl-page.active span {
   background: #fff;
@@ -3088,7 +3088,8 @@ fieldset[disabled] .btn-template-primary.active {
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
   color: #555555;
-  background-color: #92b3d9;
+  background-color: rgb(153, 153, 153);
+  /*background-color: #92b3d9;*/
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
@@ -3543,7 +3544,7 @@ a.list-group-item.active > .badge,
 /*!
  * Yamm!3 - Yet another megamenu for Bootstrap 3
  * http://geedmo.github.com/yamm3
- * 
+ *
  * @geedmo - Licensed under the MIT license
  */
 .yamm .nav,

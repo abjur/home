@@ -24,8 +24,7 @@
 
                     <div class="col-md-9" id="blog-post">
 
-                        <p class="text-muted text-uppercase mb-small text-right">{{ if .Params.author }}By <a href="#">{{ .Params.author }}</a> | {{ end }}{{ .Date.Format "January 2, 2006" }}</p>
-
+                        <p class="text-muted text-uppercase mb-small text-left">{{ if .Params.author }}<a href="#">{{ .Params.author }}</a> | {{ end }} {{ index $.Site.Data.mois (printf "%d" .Date.Month) }} {{ .Date.Day }}, {{ .Date.Year }}</p>
                         <div id="post-content">
                           {{ .Content }}
                         </div>
