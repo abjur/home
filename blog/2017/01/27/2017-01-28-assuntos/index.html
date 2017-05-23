@@ -105,27 +105,27 @@
                 <ul class="nav navbar-nav navbar-right">
                     
                     <li class="dropdown">
-                        <a href="/">home</a>
+                        <a href="/">Home</a>
                     </li>
                     
                     <li class="dropdown">
-                        <a href="/about/">institucional</a>
+                        <a href="/about/">Institucional</a>
                     </li>
                     
                     <li class="dropdown">
-                        <a href="/jurimetrics/">jurimetria</a>
+                        <a href="/jurimetrics/">Jurimetria</a>
                     </li>
                     
                     <li class="dropdown">
-                        <a href="/blog/">blog</a>
+                        <a href="/blog/">Blog</a>
                     </li>
                     
                     <li class="dropdown">
-                        <a href="/projects/">projetos</a>
+                        <a href="/projects/">Projetos</a>
                     </li>
                     
                     <li class="dropdown">
-                        <a href="/contact/">contato</a>
+                        <a href="/contact/">Contato</a>
                     </li>
                     
                 </ul>
@@ -178,13 +178,13 @@
 
                     <div class="col-md-9" id="blog-post">
 
-                        <p class="text-muted text-uppercase mb-small text-right">By <a href="#">Julio Trecenti</a> | January 27, 2017</p>
-
+                        <p class="text-muted text-uppercase mb-small text-left"><a href="#">Julio Trecenti</a> |  janeiro 27, 2017</p>
                         <div id="post-content">
                           <script src="/rmarkdown-libs/htmlwidgets/htmlwidgets.js"></script>
 <script src="/rmarkdown-libs/viz/viz.js"></script>
 <link href="/rmarkdown-libs/DiagrammeR-styles/styles.css" rel="stylesheet" />
 <script src="/rmarkdown-libs/grViz-binding/grViz.js"></script>
+
 
 <p>O volume de processos judiciais no Brasil é colossal. Segundo o relatório <a href="http://www.cnj.jus.br/files/conteudo/arquivo/2016/10/b8f46be3dbbff344931a933579915488.pdf">Justiça em Números 2016</a>, temos mais de 59 milhões de processos pendentes, somente na Justiça Estadual. Compreender o perfil das demandas é indispensável para a gestão eficiente dos Tribunais. Uma forma natural de identificar esses perfis é classificando os casos em “tipos”, que são grupos de processos com características comuns.</p>
 <p>Atualmente, a forma mais direta de identificar tipos de processos judiciais é utilizando os chamados <em>assuntos processuais</em>. Esses assuntos nada mais são do que as matérias discutidas em cada caso. Por exemplo, um caso cível de indenização por dano moral poderia ter um assunto “Indenização por dano moral”, enquanto um processo falimentar de uma empresa em Recuperação Judicial poderia ser classificado como “Convolação de Recuperação Judicial em Falência”.</p>
@@ -240,8 +240,8 @@ N = N_A + N_T \times p\text{, onde}
 <p>Uma rede Bayesiana é uma forma gráfica de representar a dependência de variáveis aleatórias. No nosso caso, consideramos como variáveis aleatórias cada um dos níveis da árvore da TPU, digamos, <span class="math inline">\(N_1, N_2, \dots, N_6\)</span>, em que <span class="math inline">\(N_1\)</span> é o nível mais genérico (e.g. Direito do Consumidor) e <span class="math inline">\(N_6\)</span> é o nível mais específico (e.g. Análise de Crédito). Nos casos em que o nível mais específico não ocorre no sexto nível, fazemos cópias do último nível disponível até <span class="math inline">\(N_6\)</span>.</p>
 <p>A rede da Figura <a href="#fig:rb">2</a> representa a hierarquia dos níveis das TPUs. Trata-se de uma rede bastante simples, que pode ser utilizada diretamente para o cálculo dos volumes processuais. Mostraremos como fazer isso na Seção <a href="#rsession"><strong>??</strong></a>.</p>
 <div class="figure"><span id="fig:rb"></span>
-<div id="htmlwidget-80ca4fbee5442ee72e03" style="width:672px;height:192px;" class="grViz html-widget"></div>
-<script type="application/json" data-for="htmlwidget-80ca4fbee5442ee72e03">{"x":{"diagram":"\ndigraph rmarkdown {\nrankdir=LR;\nnode [shape = circle, fixedsize = true, width = 0.9]\nN₁, N₂, N₃, N₄, N₅, N₆ \n\nN₁ -> N₂ -> N₃ -> N₄ -> N₅ -> N₆\n}\n","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-1" style="width:672px;height:192px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-1">{"x":{"diagram":"\ndigraph rmarkdown {\nrankdir=LR;\nnode [shape = circle, fixedsize = true, width = 0.9]\nN₁, N₂, N₃, N₄, N₅, N₆ \n\nN₁ -> N₂ -> N₃ -> N₄ -> N₅ -> N₆\n}\n","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
 <p class="caption">
 Figure 2: Rede Bayesiana representando a hierarquia dos níveis das TPUs.
 </p>
@@ -252,8 +252,8 @@ Figure 2: Rede Bayesiana representando a hierarquia dos níveis das TPUs.
 <p>No caso MAR, podemos utilizar todos os dados disponíveis dos processos para predizer o assunto real do processo. Para isso, qualquer técnica de modelagem preditiva poderia ser utilizada.</p>
 Uma forma natural de realizar montar esses modelos é estendendo a rede Bayesiana da Figura <a href="#fig:rb">2</a>. Por exemplo, a rede da Figura <a href="#fig:rb2">3</a> considera que a classificação específica ou genérica de determinado assunto processual depende da vara em que o processo é distribuído. Outras variáveis poderiam ser consideradas para construir um modelo mais completo.
 <div class="figure"><span id="fig:rb2"></span>
-<div id="htmlwidget-a5e8db400618c7639a7e" style="width:672px;height:192px;" class="grViz html-widget"></div>
-<script type="application/json" data-for="htmlwidget-a5e8db400618c7639a7e">{"x":{"diagram":"\ndigraph rmarkdown {\nrankdir=LR;\nnode [shape = circle, fixedsize = true, width = 0.9]\nVara, N₁, N₂, N₃, N₄, N₅, N₆ \n\nN₁ -> N₂ -> N₃ -> N₄ -> N₅ -> N₆\nVara -> {N₁, N₂, N₃, N₄, N₅, N₆}\n}\n","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-2" style="width:672px;height:192px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-2">{"x":{"diagram":"\ndigraph rmarkdown {\nrankdir=LR;\nnode [shape = circle, fixedsize = true, width = 0.9]\nVara, N₁, N₂, N₃, N₄, N₅, N₆ \n\nN₁ -> N₂ -> N₃ -> N₄ -> N₅ -> N₆\nVara -> {N₁, N₂, N₃, N₄, N₅, N₆}\n}\n","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
 <p class="caption">
 Figure 3: Rede Bayesiana representando a hierarquia dos níveis das TPUs, considerando também a vara.
 </p>
