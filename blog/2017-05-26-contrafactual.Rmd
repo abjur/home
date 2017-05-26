@@ -25,7 +25,6 @@ Há também acionistas que adquiriram e venderam posições antes do ato ilícit
 
 Já o cálculo do valor contrafactual da ação levanta outras questões, tendo em vista a sua abstração, ou seja, a circunstância desse preço não ter se materializado em uma negociação de mercado. Por quanto
 
-Fernando Filho, [26.05.17 16:17]
 essa ação estaria sendo negociada caso o ato ilícito não tivesse ocorrido? Essa pergunta leva a outra indagação, relacionada ao nexo de causalidade e usualmente explorada pela defesa: existiriam outras causas concorrentes capazes de explicar a queda no valor da ação, além da ocorrência do ato ilícito?
 
 O cálculo do valor contrafacutual pode ser realizado através de comparações em três níveis: 1. A companhia com ela própria (auto comparação). 2. A companhia com outras companhias parecidas (comparação com semelhantes). 3. A companhia com o indicadores econômicos (comparação com o mercado). 
