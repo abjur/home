@@ -7,7 +7,7 @@ banner: "img/banners/banner-15.png"
 draft: false
 ---
 
-Diante da profusão de escândalos envolvendo companhias brasileiras de capital aberto e da consequente queda nos valores de negociação de suas ações observada na bolsa de valores, começam a se discutir no Brasil os meios para caracterização e liquidação do prejuízo sofrido pelos acionistas decorrentes de ilícitos praticados no mercado. São as ações de responsabilização por perda de investimento societário, que começam a aparecer nos tribunais judiciais e arbitrais brasileiros, conhecidas nos EUA como "securities fraud lawsuits" ou " Não drop lawsuits".
+Diante da profusão de escândalos envolvendo companhias brasileiras de capital aberto e da consequente queda nos valores de negociação de suas ações observada na bolsa de valores, começam a se discutir no Brasil os meios para caracterização e liquidação do prejuízo sofrido pelos acionistas decorrentes de ilícitos praticados no mercado. São as ações de responsabilização por perda de investimento societário, que começam a aparecer nos tribunais judiciais e arbitrais brasileiros, conhecidas nos EUA como "securities fraud lawsuits" ou "Não stock drop lawsuits".
 
 A questão que pretendo discutir de maneira introdutória aqui é: caracterizados os requisitos legais para a condenação (matéria que tem complexidade suficiente para outro artigo e que por ora deixo de lado), é possível calcular o prejuízo? E em caso positivo, quais são as técnicas aplicáveis na apuração dos danos sofridos pelos acionistas nestes casos?
 
