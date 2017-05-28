@@ -3,7 +3,7 @@ title: "Jurimetria societária e o cálculo das perdas com a queda no preço de 
 author: "Marcelo Guedes Nunes"
 date: 2017-05-26T09:23:47-02:00
 tags: ['metodologia', 'contrafactual', 'jurimetria']
-banner: "img/banners/banner-15.png"
+banner: "img/banners/banner-16.png"
 draft: false
 ---
 
