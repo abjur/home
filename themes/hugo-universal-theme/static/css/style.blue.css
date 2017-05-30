@@ -1169,11 +1169,11 @@ fieldset[disabled] .btn-template-primary.active {
   padding-bottom: 0px;
 }
 .home-carousel .owl-theme .owl-controls .owl-page span {
-  background: #8AE100;
+  background: #666;
   opacity: 1;
 }
 .home-carousel .owl-theme .owl-controls .owl-page.active span {
-  background: #fff;
+  background: #8AE100;
 }
 .home-carousel .owl-theme .owl-controls .owl-page:hover span {
   background: #fff;
@@ -2980,6 +2980,8 @@ fieldset[disabled] .btn-template-primary.active {
   }
   .navbar-nav > li {
     float: left;
+    padding-top: 41px;
+    padding-bottom: 41px;
   }
   .navbar-nav > li > a {
     padding-top: 41px;
@@ -3088,8 +3090,8 @@ fieldset[disabled] .btn-template-primary.active {
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
   color: #555555;
-  background-color: rgb(153, 153, 153);
-  /*background-color: #92b3d9;*/
+  /*background-color: rgb(153, 153, 153);*/
+  background-color: #e5e5e5;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,

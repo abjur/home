@@ -61,11 +61,6 @@
   font-weight: 200;
 }
 
-.navbar-nav > li {
-  padding-top: 41px;
-  padding-bottom: 41px;
-}
-
 .navbar-nav > li > a {
   padding-top: 8px;
   padding-bottom: 8px;
