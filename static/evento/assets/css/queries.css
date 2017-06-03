@@ -196,10 +196,15 @@ body {
 }
 
 @media screen and (max-width: 992px) {
+
 #mainLogo {max-width:480px;}
 
 .imgPatrocinador {
     margin:0;
+}
+
+#mapscroll2 {
+    height:340px;
 }
 
 .navbar-fixed-top .navbar-collapse,
