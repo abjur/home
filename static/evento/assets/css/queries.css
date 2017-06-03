@@ -518,7 +518,7 @@ blockquote p {
 @media screen and (max-width:585px){
 
 .landing-text-pos {
-    top: 29%;
+    top: 20%;
 }
 #title_hr {
     margin: 1em auto 1.2em;
@@ -568,7 +568,7 @@ blockquote p {
     padding: 12px;
 }
 .landing-text-pos {
-    top: 31%;
+    top: 20%;
 }
 .landing-text-pos h1 {
     font-size: 1.8em;
@@ -664,7 +664,7 @@ h1.arrow{
 	font-size:10px;
 }
 .landing-text-pos {
-    top: 30%;
+    top: 20%;
 }
 .landing-text-pos h1 {
     font-size: 2.2em;
