@@ -1290,6 +1290,10 @@ div.avatar {
 	margin-top: 20px;
 }
 
+#swag-p {
+	font-size: 1.2em;
+}
+
 .down-arrow-btn {
 	width: 40px;
 	height: 40px;
@@ -2344,9 +2348,24 @@ ul.legals li:last-child::after {
 }
 
 @media screen and (min-width:1000px) {
+
 .landing-text-pos {
 	top: 15%;
 }
-.navbar-brand {display:none;}
-#middle-fix {text-align:center;margin:0 auto;position:relative;left:25%;width:80%;}
+
+.navbar-brand {
+	display:none;
+}
+
+#middle-fix {
+	text-align:center;
+	margin:0 auto;
+	position:relative;
+	left:25%;
+	width:80%;}
+
+#swag-p {
+	font-size: 1.3em;
+}
+
 }
