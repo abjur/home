@@ -540,6 +540,10 @@ h1.arrow {
     text-transform: uppercase;
 }
 
+#swag h1.arrow {
+	margin-top:1em;
+}
+
 #price-800 {
 	color:#fff;
 }
@@ -1266,7 +1270,6 @@ div.avatar {
 
 
 .swag {
-	.ignite-cta {
 	background-color: #fff;
 }
 
@@ -1291,7 +1294,7 @@ div.avatar {
 }
 
 #swag-p {
-	font-size: 1.2em;
+	font-size: 1.3em;
 }
 
 .down-arrow-btn {
