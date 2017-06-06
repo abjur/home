@@ -244,6 +244,16 @@ hr {
 	overflow: hidden;
 }
 
+#mensagem-agradecimento {
+	padding:0 15%;
+	color: #83a746;
+    display: block;
+    font-size: 1.4em;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    margin-top: 15px;
+}
+
 .home-bg {
 	animation: 60s ease 0s normal none infinite back_animation;
 	background: url('../img/backgrounds/bg1.jpg') no-repeat center center;
