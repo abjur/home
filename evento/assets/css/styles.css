@@ -254,6 +254,17 @@ hr {
     margin-top: 15px;
 }
 
+#encerradas {
+	padding:0 15%;
+	color: rgb(254,81,81);
+    display: block;
+    font-size: 1.4em;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    margin-top: 15px;
+    text-transform: uppercase;
+}
+
 .home-bg {
 	animation: 60s ease 0s normal none infinite back_animation;
 	background: url('../img/backgrounds/bg1.jpg') no-repeat center center;
