@@ -1,6 +1,6 @@
 ---
 title: "Contato"
-id: "contact"
+id: 'contact'
 ---
 
 # Seja um associado
