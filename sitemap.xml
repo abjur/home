@@ -47,18 +47,12 @@
   </url>
   
   <url>
-    <loc>http://www.abj.org.br/projects/</loc>
-    <lastmod>2016-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://www.abj.org.br/jurimetrics/</loc>
     <lastmod>2016-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.abj.org.br/about/</loc>
-    <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    <loc>http://www.abj.org.br/faq/</loc>
   </url>
   
   <url>
@@ -108,10 +102,6 @@
   </url>
   
   <url>
-    <loc>http://www.abj.org.br/faq/</loc>
-  </url>
-  
-  <url>
     <loc>http://www.abj.org.br/tags/jurimetria/</loc>
     <lastmod>2017-05-26T09:23:47-02:00</lastmod>
     <priority>0</priority>
@@ -124,9 +114,17 @@
   </url>
   
   <url>
+    <loc>http://www.abj.org.br/projects/</loc>
+  </url>
+  
+  <url>
     <loc>http://www.abj.org.br/tags/r/</loc>
     <lastmod>2017-02-02T09:23:47-02:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.abj.org.br/about/</loc>
   </url>
   
   <url>

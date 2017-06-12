@@ -372,11 +372,11 @@ sample_cnj(n = 5,
 &lt;pre&gt;&lt;code&gt;## # A tibble: 5 x 1
 ##             n_processo
 ##                  &amp;lt;chr&amp;gt;
-## 1 08575681620158260001
-## 2 09555393520148260001
-## 3 05249875520148260001
-## 4 03450404120148260001
-## 5 02110346320158260001&lt;/code&gt;&lt;/pre&gt;
+## 1 07996508820148260001
+## 2 08465777820158260001
+## 3 02327903120158260001
+## 4 02431298320148260001
+## 5 05472680520148260001&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 </description>
     </item>
@@ -488,84 +488,68 @@ sample_cnj(n = 5,
     </item>
     
     <item>
-      <title>Pesquisas realizadas</title>
-      <link>http://www.abj.org.br/projects/</link>
-      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.abj.org.br/projects/</guid>
-      <description>
-
-&lt;p&gt;A ABJ já realizou diversos projetos que auxiliaram na elaboração de políticas públicas e no desenvolvimento de novas metodologias de pesquisa no direito. Abaixo, apresentamos uma lista de projetos realizados e os principais achados.&lt;/p&gt;
-
-&lt;h2 id=&#34;tempo-dos-processos-relacionados-à-adoção-no-brasil&#34;&gt;Tempo dos processos relacionados à Adoção no Brasil&lt;/h2&gt;
-
-&lt;p&gt;O relatório, elaborado em parceria com o CNJ, apresenta os resultados obtidos através de extrações de bases de dados (do CNA e do Cadastro Nacional de Crianças e Adolescentes Acolhidos, &amp;ldquo;CNCA&amp;rdquo;), entrevistas com profissionais e uma pesquisa teórica sobre os problemas supra expostos, bem como propostas de aprimoramento do sistema de adoção. Há ênfase no estudo do tempo dos procedimentos relacionados à adoção (suspensão do poder familiar, perda do poder familiar, habilitação para adoção e adoção) e nos seus efeitos sobre a disponibilização das crianças e adolescentes no CNA. Pesquisas de campo foram conduzidas com o fim de mensurar, por etapa e no total, o tempo gasto em tais procedimentos e de verificar quais intervalos possuem maior influência no retardamento da chegada da criança a uma situação jurídica apta à adoção. Os resultados da pesquisa revelam que podem existir diversas formas de aprimorar o sistema de adoção do Brasil. Construímos todo um capítulo de propostas, organizando-as em mais de 10 seções, que poderiam ajudar na celeridade processual, no acompanhamento de crianças em risco, e na melhora da estrutura das varas. As propostas são todas embasadas em evidências empíricas e opiniões de especialistas, e abrangem mudanças administrativas ou tecnológicas, campanhas a serem realizadas e propostas legislativas. Esperamos que, com este estudo, o Poder Judiciário tenha condições de aprimorar as políticas que vem desenvolvendo e que possa, cada vez mais, garantir os direitos fundamentais das crianças e adolescentes no Brasil.&lt;/p&gt;
-
-&lt;h2 id=&#34;conselho-administrativo-de-recursos-fiscais&#34;&gt;Conselho Administrativo de Recursos Fiscais&lt;/h2&gt;
-
-&lt;p&gt;Nesse estudo, a ABJ, com auxílio da Confederação Nacional da Indústria (CNI) e do próprio CARF, busca apresentar a primeira análise estatística profunda do funcionamento e do posicionamento do CARF. Para tanto, desde o início de nosso estudo buscamos conseguir a melhor base de dados possível. A pesquisa utilizou metologia mista (extração automática e amostragem) e identificou, entre outros resultados, que não há viés do tipo de relator (com origem no fisco ou no contribuinte) nas decisões dos recursos.&lt;/p&gt;
-
-&lt;h2 id=&#34;câmaras-criminais&#34;&gt;Câmaras criminais&lt;/h2&gt;
-
-&lt;p&gt;Esta pesquisa analisa 157.379 acórdãos das câmaras de direito criminal do Tribunal de Justiça do Estado de São Paulo, proferidas entre 01 de janeiro e 31 de dezembro de 2014. O objetivo foi calcular as taxas de reforma de decisão de acordo com a origem do recurso, tipo de crime, câmara julgadora e relatoria, com a finalidade de fornecer indícios quantitativos capazes de contribuir para o debate sobre o momento apropriado para o início de cumprimento de pena por condenados. Descobrimos que existe uma variabilidade significativa nas taxas de improvimento em relação às câmaras julgadoras, discrepância esta que não pode ser explicada pela distribuição de tipos de crime julgados por cada câmara. O resultado indica a presença de insegurança jurídica na matéria criminal.&lt;/p&gt;
-
-&lt;h2 id=&#34;senasp&#34;&gt;SENASP&lt;/h2&gt;
-
-&lt;p&gt;Desenvolvemos um trabalho em parceria com o Instituto Sou da Paz para a Secretaria Nacional de Segurança Pública a respeito da Estratégia Nacional de Segurança Pública – ENASP e o processamento de homicídios em três unidades da federação: São Paulo, Alagoas e Santa Catarina. A pesquisa identificou os principais gargalos e quais fases processuais demandam mais tempo.&lt;/p&gt;
-
-&lt;h2 id=&#34;criação-de-varas-empresariais&#34;&gt;Criação de varas empresariais&lt;/h2&gt;
-
-&lt;p&gt;Essa pesquisa foi realizada ao longo de 2016, em parceria com a Corregedoria do Estado de São Paulo, com o objetivo auxiliar o tribunal de justiça na criação de varas especializadas em direito empresarial. O estudo serviu de fundamento para a criação de três varas empresariais na capital, manteve as varas de falência e recuperação e inovou ao viabilizar, pela primeira vez, a estimação da carga de trabalho que será direcionada para essas varas.&lt;/p&gt;
-
-&lt;h2 id=&#34;cadastro-nacional-de-condenações-cíveis-por-atos-de-improbibdade-administrativa-e-inelegibilidade&#34;&gt;Cadastro Nacional de Condenações Cíveis por Atos de Improbibdade Administrativa e Inelegibilidade&lt;/h2&gt;
-
-&lt;p&gt;Com o Instituto Não Aceito Corrupção – INAC, foi realizado um estudo na base de dados de condenados por improbidade administrativa do CNJ. Esse estudo é o primeiro passo de uma ampla pesquisa sobre os padrões da corrupção no país e um esforço para municiar os agentes públicos e a sociedade civil de elementos para combater a corrupção.&lt;/p&gt;
-
-&lt;h2 id=&#34;análise-de-pessoas-desaparecidas&#34;&gt;Análise de pessoas Desaparecidas&lt;/h2&gt;
-
-&lt;p&gt;Em parceria com o Programa de Localização e Identificação de Desaparecidos (PLID), do Ministério Público de São Paulo, foi realizado um estudo sobre o perfil das pessoas desaparecidas no estado de São Paulo. Um resultante interessante é que o perfil de idade dos desaparecidos varia conforme o sexo, sendo que as mulheres costumam desaparecer na adolescência e os homens na adolescência e na meia idade. Uma suspeita é o envolvimento com o tráfico.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Sobre Jurimetria</title>
       <link>http://www.abj.org.br/jurimetrics/</link>
       <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
       
       <guid>http://www.abj.org.br/jurimetrics/</guid>
       <description>&lt;p&gt;Podemos definir Jurimetria como a disciplina do conhecimento que utiliza a metodologia estatística para investigar o funcionamento de uma ordem jurídica. A partir dela, fica claro que a Jurimetria se distingue das demais disciplinas jurídicas, tanto pelo objeto como pela metodologia empregada nas análises.&lt;/p&gt;
-
 &lt;p&gt;A Jurimetria tem três pilares operacionais: jurídico, estatístico e computacional. É claro que a reunião dessas especialidades em uma só pessoa é atualmente rara. Por isso, a prática da Jurimetria vem sendo desenvolvida em um ambiente laboratorial em que bacharéis em direito, estatísticos e cientistas da computação unem esforços na resolução de problemas.&lt;/p&gt;
-
 &lt;p&gt;A Jurimetria propõe um giro epistemológico, análogo àquele proposto pelo realismo jurídico, deslocando o centro de interesse da pesquisa do plano abstrato para o plano concreto. O conceito norteador deste giro é que o direito efetivo, aquele capaz de afetar a relação entre sujeitos, correspondente às sentenças, acórdãos, contratos e demais ordens jurídicas produzidas no plano concreto.&lt;/p&gt;
-
 &lt;p&gt;A lei é uma declaração de intenções do legislador, que muitas vezes se mostra plurívoca, contraditória e lacunosa. Para a jurimetria, é no plano concreto que o Direito se revela, sendo a lei apenas um dos fatores - ao lado dos valores pessoais, religião, empatia, experiência pessoal de vida e outros tantos -, capaz de influenciar o processo de concretização das normas do Direito. Por tal razão, o Direito não pode ser reduzido a um conjunto de normas editado por autoridades competentes e deve ser visto, sim, como um aparato de solução de conflitos, no qual a lei desempenha um papel importante, porém não suficiente.&lt;/p&gt;
-
 &lt;p&gt;Estudar de forma concreta significa situar o objeto de estudo no tempo e no espaço. Uma vantagem desse tipo de abordagem é que há clareza na construção do escopo das pesquisas, o que pode levar a conclusões mais diretas. Para tornar os estudos factíveis, no entanto, também é necessário definir claramente o arcabouço de suposições no qual as conclusões são válidas.&lt;/p&gt;
-
 &lt;p&gt;Utilizar a abordagem concreta não significa que pensar de forma abstrata é ruim. Para construção de modelos capazes de mensurar certas quantidades de forma adequada, ou para elaborar soluções para um problema na lei, é necessário desconstruir o fenômeno de maneira ampla, utilizar criatividade e intuição. A concretude ajuda ao direcionar as abstrações e ligá-las a um objetivo pragmático.&lt;/p&gt;
-
 &lt;p&gt;A jurimetria também assume como ponto de partida a possibilidade modelar certos fenômenos do direito como eventos aleatórios. Essa abordagem contrasta com a abordagem clássica, que usa o determinismo fatalista como realidade do direito. As vantagens em assumir aleatoriedade em modelos jurimétricos confundem-se com as vantagens da utilização da metodologia estatística em geral. Ao aceitar que há incerteza nos modelos e que não somos em geral capazes de dar respostas definitivas às nossas perguntas, ganhamos a habilidade de afirmar mais sobre o desconhecido, associando possíveis resultados a suas respectivas verossimilhanças.&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>Sobre a ABJ</title>
-      <link>http://www.abj.org.br/about/</link>
-      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <title></title>
+      <link>http://www.abj.org.br/faq/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.abj.org.br/about/</guid>
-      <description>
-
-&lt;p&gt;A Associação Brasileira de Jurimetria é uma entidade sem fins lucrativos formada por pesquisadores do direito e da estatística, que tem por objetivo investigar e incentivar a aplicação da estatística e da probabilidade no estudo do direito e de suas instituições.&lt;/p&gt;
-
-&lt;p&gt;A ABJ tem três missões principais. A primeira é reunir e incentivar pesquisadores com preocupação em investigar e descrever os processos de decisão em que são criadas as normas individuais e concretas. A segunda é disciplinar a jurimetria como um ramo do conhecimento jurídico, definindo suas premissas, seus fundamentos, seus conceitos e relações essenciais. A terceira é colaborar com entidades públicas e privadas no esforço estratégico de aperfeiçoar os mecanismos de prestação jurisdicional através da elaboração de leis e da administração dos tribunais.&lt;/p&gt;
-
-&lt;h4 id=&#34;diretoria&#34;&gt;Diretoria&lt;/h4&gt;
-
-&lt;h4 id=&#34;conselho-científico&#34;&gt;Conselho Científico&lt;/h4&gt;
-
-&lt;h4 id=&#34;estatuto&#34;&gt;Estatuto&lt;/h4&gt;
+      <guid>http://www.abj.org.br/faq/</guid>
+      <description>&lt;p&gt;+++ title = “FAQ” +++&lt;/p&gt;
+&lt;p&gt;Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.&lt;/p&gt;
+&lt;div id=&#34;what-to-do-if-i-have-still-not-received-the-order&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;1. WHAT TO DO IF I HAVE STILL NOT RECEIVED THE ORDER?&lt;/h2&gt;
+&lt;p&gt;Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit.&lt;/li&gt;
+&lt;li&gt;Aliquam tincidunt mauris eu risus.&lt;/li&gt;
+&lt;li&gt;Vestibulum auctor dapibus neque.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;what-are-the-postal-rates&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;2. WHAT ARE THE POSTAL RATES?&lt;/h2&gt;
+&lt;p&gt;Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven’t heard of them accusamus labore sustainable VHS.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;do-you-send-overseas&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;3. DO YOU SEND OVERSEAS?&lt;/h2&gt;
+&lt;p&gt;Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven’t heard of them accusamus labore sustainable VHS.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;why-are-you-more-expensive-than-others&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;4. WHY ARE YOU MORE EXPENSIVE THAN OTHERS?&lt;/h2&gt;
+&lt;p&gt;Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit.&lt;/li&gt;
+&lt;li&gt;Aliquam tincidunt mauris eu risus.&lt;/li&gt;
+&lt;li&gt;Vestibulum auctor dapibus neque.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;another-important-question&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;5. ANOTHER IMPORTANT QUESTION&lt;/h2&gt;
+&lt;p&gt;Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit.&lt;/li&gt;
+&lt;li&gt;Aliquam tincidunt mauris eu risus.&lt;/li&gt;
+&lt;li&gt;Vestibulum auctor dapibus neque.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;blockquote&gt;
+&lt;p&gt;In case you haven’t found the answer for your question please feel free to contact us, our customer support will be happy to help you.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -575,65 +559,71 @@ sample_cnj(n = 5,
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://www.abj.org.br/contact/</guid>
-      <description>
-
-&lt;h1 id=&#34;seja-um-associado&#34;&gt;Seja um associado&lt;/h1&gt;
+      <description>&lt;div id=&#34;seja-um-associado&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Seja um associado&lt;/h1&gt;
+&lt;/div&gt;
 </description>
     </item>
     
     <item>
-      <title>FAQ</title>
-      <link>http://www.abj.org.br/faq/</link>
+      <title>Pesquisas realizadas</title>
+      <link>http://www.abj.org.br/projects/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.abj.org.br/faq/</guid>
-      <description>
-
-&lt;p&gt;Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.&lt;/p&gt;
-
-&lt;h2 id=&#34;1-what-to-do-if-i-have-still-not-received-the-order&#34;&gt;1. WHAT TO DO IF I HAVE STILL NOT RECEIVED THE ORDER?&lt;/h2&gt;
-
-&lt;p&gt;Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.&lt;/p&gt;
-
+      <guid>http://www.abj.org.br/projects/</guid>
+      <description>&lt;p&gt;A ABJ já realizou diversos projetos que auxiliaram na elaboração de políticas públicas e no desenvolvimento de novas metodologias de pesquisa no direito. Abaixo, apresentamos uma lista de projetos realizados e os principais achados.&lt;/p&gt;
+&lt;div id=&#34;tempo-dos-processos-relacionados-a-adocao-no-brasil&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Tempo dos processos relacionados à Adoção no Brasil&lt;/h2&gt;
+&lt;p&gt;O relatório, elaborado em parceria com o CNJ, apresenta os resultados obtidos através de extrações de bases de dados (do CNA e do Cadastro Nacional de Crianças e Adolescentes Acolhidos, “CNCA”), entrevistas com profissionais e uma pesquisa teórica sobre os problemas supra expostos, bem como propostas de aprimoramento do sistema de adoção. Há ênfase no estudo do tempo dos procedimentos relacionados à adoção (suspensão do poder familiar, perda do poder familiar, habilitação para adoção e adoção) e nos seus efeitos sobre a disponibilização das crianças e adolescentes no CNA. Pesquisas de campo foram conduzidas com o fim de mensurar, por etapa e no total, o tempo gasto em tais procedimentos e de verificar quais intervalos possuem maior influência no retardamento da chegada da criança a uma situação jurídica apta à adoção. Os resultados da pesquisa revelam que podem existir diversas formas de aprimorar o sistema de adoção do Brasil. Construímos todo um capítulo de propostas, organizando-as em mais de 10 seções, que poderiam ajudar na celeridade processual, no acompanhamento de crianças em risco, e na melhora da estrutura das varas. As propostas são todas embasadas em evidências empíricas e opiniões de especialistas, e abrangem mudanças administrativas ou tecnológicas, campanhas a serem realizadas e propostas legislativas. Esperamos que, com este estudo, o Poder Judiciário tenha condições de aprimorar as políticas que vem desenvolvendo e que possa, cada vez mais, garantir os direitos fundamentais das crianças e adolescentes no Brasil.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;conselho-administrativo-de-recursos-fiscais&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Conselho Administrativo de Recursos Fiscais&lt;/h2&gt;
+&lt;p&gt;Nesse estudo, a ABJ, com auxílio da Confederação Nacional da Indústria (CNI) e do próprio CARF, busca apresentar a primeira análise estatística profunda do funcionamento e do posicionamento do CARF. Para tanto, desde o início de nosso estudo buscamos conseguir a melhor base de dados possível. A pesquisa utilizou metologia mista (extração automática e amostragem) e identificou, entre outros resultados, que não há viés do tipo de relator (com origem no fisco ou no contribuinte) nas decisões dos recursos.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;camaras-criminais&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Câmaras criminais&lt;/h2&gt;
+&lt;p&gt;Esta pesquisa analisa 157.379 acórdãos das câmaras de direito criminal do Tribunal de Justiça do Estado de São Paulo, proferidas entre 01 de janeiro e 31 de dezembro de 2014. O objetivo foi calcular as taxas de reforma de decisão de acordo com a origem do recurso, tipo de crime, câmara julgadora e relatoria, com a finalidade de fornecer indícios quantitativos capazes de contribuir para o debate sobre o momento apropriado para o início de cumprimento de pena por condenados. Descobrimos que existe uma variabilidade significativa nas taxas de improvimento em relação às câmaras julgadoras, discrepância esta que não pode ser explicada pela distribuição de tipos de crime julgados por cada câmara. O resultado indica a presença de insegurança jurídica na matéria criminal.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;senasp&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;SENASP&lt;/h2&gt;
+&lt;p&gt;Desenvolvemos um trabalho em parceria com o Instituto Sou da Paz para a Secretaria Nacional de Segurança Pública a respeito da Estratégia Nacional de Segurança Pública – ENASP e o processamento de homicídios em três unidades da federação: São Paulo, Alagoas e Santa Catarina. A pesquisa identificou os principais gargalos e quais fases processuais demandam mais tempo.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;criacao-de-varas-empresariais&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Criação de varas empresariais&lt;/h2&gt;
+&lt;p&gt;Essa pesquisa foi realizada ao longo de 2016, em parceria com a Corregedoria do Estado de São Paulo, com o objetivo auxiliar o tribunal de justiça na criação de varas especializadas em direito empresarial. O estudo serviu de fundamento para a criação de três varas empresariais na capital, manteve as varas de falência e recuperação e inovou ao viabilizar, pela primeira vez, a estimação da carga de trabalho que será direcionada para essas varas.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;cadastro-nacional-de-condenacoes-civeis-por-atos-de-improbibdade-administrativa-e-inelegibilidade&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Cadastro Nacional de Condenações Cíveis por Atos de Improbibdade Administrativa e Inelegibilidade&lt;/h2&gt;
+&lt;p&gt;Com o Instituto Não Aceito Corrupção – INAC, foi realizado um estudo na base de dados de condenados por improbidade administrativa do CNJ. Esse estudo é o primeiro passo de uma ampla pesquisa sobre os padrões da corrupção no país e um esforço para municiar os agentes públicos e a sociedade civil de elementos para combater a corrupção.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;analise-de-pessoas-desaparecidas&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Análise de pessoas Desaparecidas&lt;/h2&gt;
+&lt;p&gt;Em parceria com o Programa de Localização e Identificação de Desaparecidos (PLID), do Ministério Público de São Paulo, foi realizado um estudo sobre o perfil das pessoas desaparecidas no estado de São Paulo. Um resultante interessante é que o perfil de idade dos desaparecidos varia conforme o sexo, sendo que as mulheres costumam desaparecer na adolescência e os homens na adolescência e na meia idade. Uma suspeita é o envolvimento com o tráfico.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Sobre a ABJ</title>
+      <link>http://www.abj.org.br/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.abj.org.br/about/</guid>
+      <description>&lt;p&gt;A Associação Brasileira de Jurimetria é uma entidade sem fins lucrativos formada por pesquisadores do direito e da estatística, que tem por objetivo investigar e incentivar a aplicação da estatística e da probabilidade no estudo do direito e de suas instituições.&lt;/p&gt;
+&lt;p&gt;A ABJ tem três missões principais. A primeira é reunir e incentivar pesquisadores com preocupação em investigar e descrever os processos de decisão em que são criadas as normas individuais e concretas. A segunda é disciplinar a jurimetria como um ramo do conhecimento jurídico, definindo suas premissas, seus fundamentos, seus conceitos e relações essenciais. A terceira é colaborar com entidades públicas e privadas no esforço estratégico de aperfeiçoar os mecanismos de prestação jurisdicional através da elaboração de leis e da administração dos tribunais.&lt;/p&gt;
+&lt;div id=&#34;diretoria&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Diretoria&lt;/h4&gt;
 &lt;ul&gt;
-&lt;li&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit.&lt;/li&gt;
-&lt;li&gt;Aliquam tincidunt mauris eu risus.&lt;/li&gt;
-&lt;li&gt;Vestibulum auctor dapibus neque.&lt;/li&gt;
+&lt;li&gt;Presidente: Marcelo Guedes Nunes&lt;/li&gt;
+&lt;li&gt;Diretor-técnico: Julio Trecenti&lt;/li&gt;
+&lt;li&gt;Diretor-financeiro: Luiz Ernesto Aceturi de Oliveira&lt;/li&gt;
+&lt;li&gt;Coordenador do Laboratório de Jurimetria: Fernando Corrêa&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;h2 id=&#34;2-what-are-the-postal-rates&#34;&gt;2. WHAT ARE THE POSTAL RATES?&lt;/h2&gt;
-
-&lt;p&gt;Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&amp;rsquo;t heard of them accusamus labore sustainable VHS.&lt;/p&gt;
-
-&lt;h2 id=&#34;3-do-you-send-overseas&#34;&gt;3. DO YOU SEND OVERSEAS?&lt;/h2&gt;
-
-&lt;p&gt;Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&amp;rsquo;t heard of them accusamus labore sustainable VHS.&lt;/p&gt;
-
-&lt;h2 id=&#34;4-why-are-you-more-expensive-than-others&#34;&gt;4. WHY ARE YOU MORE EXPENSIVE THAN OTHERS?&lt;/h2&gt;
-
-&lt;p&gt;Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit.&lt;/li&gt;
-&lt;li&gt;Aliquam tincidunt mauris eu risus.&lt;/li&gt;
-&lt;li&gt;Vestibulum auctor dapibus neque.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;5-another-important-question&#34;&gt;5. ANOTHER IMPORTANT QUESTION&lt;/h2&gt;
-
-&lt;p&gt;Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit.&lt;/li&gt;
-&lt;li&gt;Aliquam tincidunt mauris eu risus.&lt;/li&gt;
-&lt;li&gt;Vestibulum auctor dapibus neque.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;In case you haven&amp;rsquo;t found the answer for your question please feel free to contact us, our customer support will be happy to help you.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;/div&gt;
+&lt;div id=&#34;estatuto&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Estatuto&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/abjur/estatutoABJ&#34; class=&#34;uri&#34;&gt;https://github.com/abjur/estatutoABJ&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
 </description>
     </item>
     
