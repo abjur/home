@@ -1,9 +1,7 @@
-+++
-title = "Sobre Jurimetria"
-id = "jurimetrics"
-layout = "page" 
-date = "2016-01-01"
-+++
+---
+title: "Sobre Jurimetria"
+date: "2016-01-01"
+---
 
 Podemos definir Jurimetria como a disciplina do conhecimento que utiliza a metodologia estatística para investigar o funcionamento de uma ordem jurídica. A partir dela, fica claro que a Jurimetria se distingue das demais disciplinas jurídicas, tanto pelo objeto como pela metodologia empregada nas análises.
 

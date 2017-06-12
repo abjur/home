@@ -1,9 +1,6 @@
-+++
-title = "Pesquisas realizadas"
-id = "jurimetrics"
-layout = "page" 
-date = "2016-01-01"
-+++
+---
+title: "Pesquisas realizadas"
+---
 
 
 

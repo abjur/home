@@ -1,6 +1,0 @@
-+++
-title = "Contato"
-id = "contact"
-+++
-
-# Seja um associado
