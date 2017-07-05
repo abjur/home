@@ -73,3 +73,48 @@
 .navbar ul.nav > li > a:hover {
   border-top: none;
 }
+
+.home-carousel .container {
+  width: 100%;
+}
+
+.owl-carousel .owl-controls .owl-buttons {
+  position: absolute;
+  top: 0;
+  width: auto;
+}
+
+.owl-carousel .owl-controls .owl-buttons {
+  width: 100%;
+
+}
+
+.owl-carousel .owl-controls .owl-buttons div {
+  text-align: center !important !important;
+  width: 1em !important;
+  height: 380px !important;
+  background-color: rgba(0, 0, 0, 0.2) !important;
+  position: absolute !important;
+  top: 0 !important;
+  color: rgba(255, 255, 255, 0.7) !important;
+  font-size: 3em !important;
+  line-height: 380px !important;
+  z-index: 999 !important;
+  border-radius: 0;
+  margin: 0;
+}
+
+.owl-carousel .owl-controls .owl-buttons div:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.4) !important;
+  color: rgba(255, 255, 255, 1) !important;
+}
+
+
+div.owl-prev {
+  left: 0 !important;
+}
+
+div.owl-next {
+  right:0 !important;
+}
