@@ -15,21 +15,21 @@
       <pubDate>Thu, 02 Feb 2017 09:23:47 -0200</pubDate>
       
       <guid>http://www.abj.org.br/blog/2017/02/02/2017-02-02-varas/</guid>
-      <description>&lt;script src=&#34;http://www.abj.org.br/rmarkdown-libs/htmlwidgets/htmlwidgets.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;http://www.abj.org.br/rmarkdown-libs/jquery/jquery.min.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;http://www.abj.org.br/rmarkdown-libs/leaflet/leaflet.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;http://www.abj.org.br/rmarkdown-libs/leaflet/leaflet.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;http://www.abj.org.br/rmarkdown-libs/leafletfix/leafletfix.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;link href=&#34;http://www.abj.org.br/rmarkdown-libs/leaflet-label/leaflet.label.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;http://www.abj.org.br/rmarkdown-libs/leaflet-label/leaflet.label.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;http://www.abj.org.br/rmarkdown-libs/Proj4Leaflet/proj4-compressed.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;http://www.abj.org.br/rmarkdown-libs/Proj4Leaflet/proj4leaflet.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;http://www.abj.org.br/rmarkdown-libs/leaflet-binding/leaflet.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;http://www.abj.org.br/rmarkdown-libs/leaflet-markercluster/MarkerCluster.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;link href=&#34;http://www.abj.org.br/rmarkdown-libs/leaflet-markercluster/MarkerCluster.Default.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;http://www.abj.org.br/rmarkdown-libs/leaflet-markercluster/leaflet.markercluster.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;http://www.abj.org.br/rmarkdown-libs/leaflet-markercluster/leaflet.markercluster.layersupport-src.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;http://www.abj.org.br/rmarkdown-libs/leaflet-markercluster/leaflet.markercluster.freezable-src.js&#34;&gt;&lt;/script&gt;
+      <description>&lt;script src=&#34;2017-02-02-varas_files/htmlwidgets/htmlwidgets.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;2017-02-02-varas_files/jquery/jquery.min.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;2017-02-02-varas_files/leaflet/leaflet.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;2017-02-02-varas_files/leaflet/leaflet.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;2017-02-02-varas_files/leafletfix/leafletfix.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;link href=&#34;2017-02-02-varas_files/leaflet-label/leaflet.label.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;2017-02-02-varas_files/leaflet-label/leaflet.label.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;2017-02-02-varas_files/Proj4Leaflet/proj4-compressed.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;2017-02-02-varas_files/Proj4Leaflet/proj4leaflet.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;2017-02-02-varas_files/leaflet-binding/leaflet.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;2017-02-02-varas_files/leaflet-markercluster/MarkerCluster.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;link href=&#34;2017-02-02-varas_files/leaflet-markercluster/MarkerCluster.Default.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;2017-02-02-varas_files/leaflet-markercluster/leaflet.markercluster.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;2017-02-02-varas_files/leaflet-markercluster/leaflet.markercluster.layersupport-src.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;2017-02-02-varas_files/leaflet-markercluster/leaflet.markercluster.freezable-src.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;div id=&#34;varas-estaduais-no-brasil&#34; class=&#34;section level2&#34;&gt;
@@ -38,7 +38,7 @@
 &lt;p&gt;Uma visualização de interesse dessa base de dados é o mapeamento das varas no território brasileiro. A Figura &lt;a href=&#34;#fig:estadual&#34;&gt;1&lt;/a&gt; mostra a localização das varas na Justiça Estadual. É interessante notar a aglomeração de varas próximas às capitais. Além disso, aparentemente o volume de varas cresce de acordo com a urbanização.&lt;/p&gt;
 &lt;div style=&#34;max-width:100%;&#34;&gt;
 &lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:estadual&#34;&gt;&lt;/span&gt;
-&lt;img src=&#34;http://www.abj.org.br/blog/2017-02-02-varas_files/figure-html/estadual-1.png&#34; alt=&#34;Mapeamento das varas da Justiça Estadual.&#34; width=&#34;672&#34; /&gt;
+&lt;img src=&#34;2017-02-02-varas_files/figure-html/estadual-1.png&#34; alt=&#34;Mapeamento das varas da Justiça Estadual.&#34; width=&#34;672&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;
 Figure 1: Mapeamento das varas da Justiça Estadual.
 &lt;/p&gt;
@@ -48,7 +48,7 @@ Figure 1: Mapeamento das varas da Justiça Estadual.
 &lt;p&gt;Os gráficos sugerem a possibilidade de estudar o fenômeno da criação e instalação de varas relacionado ao crescimento populacional e condicionado a fatores socioeconômicos. Este tema é bastante discutido na ABJ e também na &lt;em&gt;Society of Empirical Legal Studies&lt;/em&gt; (SELS), gerando estudos como a associação entre IDH e a taxa de litigiosidade. Mostraremos alguns resultados sobre isso em posts futuros.&lt;/p&gt;
 &lt;div style=&#34;max-width:100%;&#34;&gt;
 &lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:trabalho&#34;&gt;&lt;/span&gt;
-&lt;img src=&#34;http://www.abj.org.br/blog/2017-02-02-varas_files/figure-html/trabalho-1.png&#34; alt=&#34;Mapeamento das varas da Justiça do Trabalho&#34; width=&#34;672&#34; /&gt;
+&lt;img src=&#34;2017-02-02-varas_files/figure-html/trabalho-1.png&#34; alt=&#34;Mapeamento das varas da Justiça do Trabalho&#34; width=&#34;672&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;
 Figure 2: Mapeamento das varas da Justiça do Trabalho
 &lt;/p&gt;
@@ -88,10 +88,10 @@ devtools::install_github(&amp;#39;abjur/abjData&amp;#39;)&lt;/code&gt;&lt;/pre&g
       <pubDate>Fri, 27 Jan 2017 09:23:47 -0200</pubDate>
       
       <guid>http://www.abj.org.br/blog/2017/01/27/2017-01-28-assuntos/</guid>
-      <description>&lt;script src=&#34;http://www.abj.org.br/rmarkdown-libs/htmlwidgets/htmlwidgets.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;http://www.abj.org.br/rmarkdown-libs/viz/viz.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;http://www.abj.org.br/rmarkdown-libs/DiagrammeR-styles/styles.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;http://www.abj.org.br/rmarkdown-libs/grViz-binding/grViz.js&#34;&gt;&lt;/script&gt;
+      <description>&lt;script src=&#34;2017-01-28-assuntos_files/htmlwidgets/htmlwidgets.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;2017-01-28-assuntos_files/viz/viz.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;2017-01-28-assuntos_files/DiagrammeR-styles/styles.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;2017-01-28-assuntos_files/grViz-binding/grViz.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;O volume de processos judiciais no Brasil é colossal. Segundo o relatório &lt;a href=&#34;http://www.cnj.jus.br/files/conteudo/arquivo/2016/10/b8f46be3dbbff344931a933579915488.pdf&#34;&gt;Justiça em Números 2016&lt;/a&gt;, temos mais de 59 milhões de processos pendentes, somente na Justiça Estadual. Compreender o perfil das demandas é indispensável para a gestão eficiente dos Tribunais. Uma forma natural de identificar esses perfis é classificando os casos em “tipos”, que são grupos de processos com características comuns.&lt;/p&gt;
@@ -266,11 +266,11 @@ sample_cnj(n = 5,
 &lt;pre&gt;&lt;code&gt;## # A tibble: 5 x 1
 ##             n_processo
 ##                  &amp;lt;chr&amp;gt;
-## 1 06620213820158260001
-## 2 01172021020148260001
-## 3 01906250320148260001
-## 4 09151674420148260001
-## 5 01493650920158260001&lt;/code&gt;&lt;/pre&gt;
+## 1 07828732820148260001
+## 2 02228663020148260001
+## 3 09246916520148260001
+## 4 05510802120158260001
+## 5 07159017620148260001&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 </description>
     </item>
@@ -324,7 +324,7 @@ sample_cnj(n = 5,
 &lt;div id=&#34;resultados&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Resultados&lt;/h2&gt;
 &lt;p&gt;Uma realização da nossa simulação está ilustrada na figura abaixo. As linhas representam o ciclo de vida dos processos sob estudo e as cores representam a presença ou ausência nos planos amostrais que utilizam cada uma das metodologias. As linhas tracejadas delimitam o escopo temporal dos estudos.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://www.abj.org.br/blog/2016-12-31-tempos_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;2016-12-31-tempos_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;É importante notar que a curva que representa a distribuição dos processos no cenário 1 é mais íngreme após agosto de 2014. Isso ocorre porque nesse cenário a taxa de distribuição de processos aumentou de &lt;span class=&#34;math inline&#34;&gt;\(7\)&lt;/span&gt;% para &lt;span class=&#34;math inline&#34;&gt;\(17\)&lt;/span&gt;%. Por conta desse fato, existe uma maior quantidade de processos com baixa duração sendo analisada pelo estudo retrospectivo.&lt;/p&gt;
 &lt;p&gt;Realizando 1000 simulações, resumimos o desempenho das metodologias como a média das estimativas para a duração média produzidas em cada cenário.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[

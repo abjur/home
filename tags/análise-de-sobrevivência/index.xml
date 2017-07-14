@@ -58,7 +58,7 @@
 &lt;div id=&#34;resultados&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Resultados&lt;/h2&gt;
 &lt;p&gt;Uma realização da nossa simulação está ilustrada na figura abaixo. As linhas representam o ciclo de vida dos processos sob estudo e as cores representam a presença ou ausência nos planos amostrais que utilizam cada uma das metodologias. As linhas tracejadas delimitam o escopo temporal dos estudos.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://www.abj.org.br/blog/2016-12-31-tempos_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;2016-12-31-tempos_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;É importante notar que a curva que representa a distribuição dos processos no cenário 1 é mais íngreme após agosto de 2014. Isso ocorre porque nesse cenário a taxa de distribuição de processos aumentou de &lt;span class=&#34;math inline&#34;&gt;\(7\)&lt;/span&gt;% para &lt;span class=&#34;math inline&#34;&gt;\(17\)&lt;/span&gt;%. Por conta desse fato, existe uma maior quantidade de processos com baixa duração sendo analisada pelo estudo retrospectivo.&lt;/p&gt;
 &lt;p&gt;Realizando 1000 simulações, resumimos o desempenho das metodologias como a média das estimativas para a duração média produzidas em cada cenário.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
