@@ -1,4 +1,5 @@
 weight: 3
-title: ""
-description: ''
+title: "Varas estaduais no Brasil"
+description: 'Em 2014, a ABJ realizou o download das informações de todas as varas do Brasil a partir do Atlas do Acesso à Justiça. A base de dados contém informações gerenciais como nome da vara, município, endereço, telefone e posição geográfica.'
 image: "img/carousel/img1_crop.png"
+link: "http://www.abj.org.br/blog/2017/02/02/2017-02-02-varas/"
