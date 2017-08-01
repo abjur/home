@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.abj.org.br/convocacao/</loc>
+    <lastmod>2017-07-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.abj.org.br/blog/2017/05/26/2017-05-26-contrafactual/</loc>
     <lastmod>2017-05-26T09:23:47-02:00</lastmod>
   </url>
@@ -57,7 +62,7 @@
   
   <url>
     <loc>http://www.abj.org.br/</loc>
-    <lastmod>2017-05-26T09:23:47-02:00</lastmod>
+    <lastmod>2017-07-31T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

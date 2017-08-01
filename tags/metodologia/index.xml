@@ -40,10 +40,10 @@
       <pubDate>Fri, 27 Jan 2017 09:23:47 -0200</pubDate>
       
       <guid>http://www.abj.org.br/blog/2017/01/27/2017-01-28-assuntos/</guid>
-      <description>&lt;script src=&#34;2017-01-28-assuntos_files/htmlwidgets/htmlwidgets.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;2017-01-28-assuntos_files/viz/viz.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;2017-01-28-assuntos_files/DiagrammeR-styles/styles.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;2017-01-28-assuntos_files/grViz-binding/grViz.js&#34;&gt;&lt;/script&gt;
+      <description>&lt;script src=&#34;http://www.abj.org.br/rmarkdown-libs/htmlwidgets/htmlwidgets.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;http://www.abj.org.br/rmarkdown-libs/viz/viz.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;http://www.abj.org.br/rmarkdown-libs/DiagrammeR-styles/styles.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;http://www.abj.org.br/rmarkdown-libs/grViz-binding/grViz.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;O volume de processos judiciais no Brasil é colossal. Segundo o relatório &lt;a href=&#34;http://www.cnj.jus.br/files/conteudo/arquivo/2016/10/b8f46be3dbbff344931a933579915488.pdf&#34;&gt;Justiça em Números 2016&lt;/a&gt;, temos mais de 59 milhões de processos pendentes, somente na Justiça Estadual. Compreender o perfil das demandas é indispensável para a gestão eficiente dos Tribunais. Uma forma natural de identificar esses perfis é classificando os casos em “tipos”, que são grupos de processos com características comuns.&lt;/p&gt;
@@ -218,11 +218,11 @@ sample_cnj(n = 5,
 &lt;pre&gt;&lt;code&gt;## # A tibble: 5 x 1
 ##             n_processo
 ##                  &amp;lt;chr&amp;gt;
-## 1 07828732820148260001
-## 2 02228663020148260001
-## 3 09246916520148260001
-## 4 05510802120158260001
-## 5 07159017620148260001&lt;/code&gt;&lt;/pre&gt;
+## 1 00466268920148260001
+## 2 05048250520158260001
+## 3 01127459520158260001
+## 4 09461242820148260001
+## 5 08384210420158260001&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 </description>
     </item>
@@ -276,7 +276,7 @@ sample_cnj(n = 5,
 &lt;div id=&#34;resultados&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Resultados&lt;/h2&gt;
 &lt;p&gt;Uma realização da nossa simulação está ilustrada na figura abaixo. As linhas representam o ciclo de vida dos processos sob estudo e as cores representam a presença ou ausência nos planos amostrais que utilizam cada uma das metodologias. As linhas tracejadas delimitam o escopo temporal dos estudos.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;2016-12-31-tempos_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://www.abj.org.br/blog/2016-12-31-tempos_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;É importante notar que a curva que representa a distribuição dos processos no cenário 1 é mais íngreme após agosto de 2014. Isso ocorre porque nesse cenário a taxa de distribuição de processos aumentou de &lt;span class=&#34;math inline&#34;&gt;\(7\)&lt;/span&gt;% para &lt;span class=&#34;math inline&#34;&gt;\(17\)&lt;/span&gt;%. Por conta desse fato, existe uma maior quantidade de processos com baixa duração sendo analisada pelo estudo retrospectivo.&lt;/p&gt;
 &lt;p&gt;Realizando 1000 simulações, resumimos o desempenho das metodologias como a média das estimativas para a duração média produzidas em cada cenário.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
