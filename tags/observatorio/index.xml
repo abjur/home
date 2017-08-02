@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Observatorio on ABJ</title>
+    <link>http://www.abj.org.br/tags/observatorio/index.xml</link>
+    <description>Recent content in Observatorio on ABJ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright (c) 2011 - 2017, ABJ; Todos os direitos reservados.</copyright>
+    <atom:link href="http://www.abj.org.br/tags/observatorio/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Observatório da Insolvência: apresentação</title>
+      <link>http://www.abj.org.br/blog/2017/08/02/2017-08-02_observatorio/</link>
+      <pubDate>Wed, 02 Aug 2017 09:23:47 -0200</pubDate>
+      
+      <guid>http://www.abj.org.br/blog/2017/08/02/2017-08-02_observatorio/</guid>
+      <description>&lt;p&gt;Adicionamos abaixo o link de nossa apresentação sobre o Observatório da Insolvência realizada em 13 de junho de 2017. Trata-se da primeira análise exaustiva sobre processos de recuperação judicial da comarca de São Paulo.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;LINK&lt;/strong&gt;: &lt;a href=&#34;rpubs.com/abj/pucrj_pre&#34; class=&#34;uri&#34;&gt;rpubs.com/abj/pucrj_pre&lt;/a&gt;&lt;/p&gt;
+&lt;div id=&#34;objetivos&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Objetivos&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Compreender empiricamente o processo de Recuperação Judicial, incluindo
+&lt;ul&gt;
+&lt;li&gt;O que influencia no deferimento e quanto tempo ele leva?&lt;/li&gt;
+&lt;li&gt;O que acontece entre deferimento e aprovação do plano?&lt;/li&gt;
+&lt;li&gt;Quais são as características gerais dos planos de recuperação aprovados?&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Auxiliar na elaboração e alteração de leis sobre o tema.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;status&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Status&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Projeto: finalizado (06/2017)&lt;/li&gt;
+&lt;li&gt;Relatório executivo: em formato de apresentação (06/2017).&lt;/li&gt;
+&lt;li&gt;Observatório da insolvência 2: em fase de captação.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;equipe&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Equipe&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Fernando Corrêa (ABJ)&lt;/li&gt;
+&lt;li&gt;Ivo Waisberg (PUC-SP)&lt;/li&gt;
+&lt;li&gt;Marcelo Guedes Nunes (ABJ)&lt;/li&gt;
+&lt;li&gt;Marcelo Sacramone (PUC-SP)&lt;/li&gt;
+&lt;li&gt;Pesquisadores: alunos do Núcleo Estudo e Pesquisa sobre Insolvência (NEPI) da PUC-SP.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;metodologia&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Metodologia&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Classificação de 194 recuperações distribuídas entre 01/09/2013 e 30/06/2016 São Paulo - Capital&lt;/li&gt;
+&lt;li&gt;Survey dos processos, alimentado por estudantes no NEPI da PUC-SP&lt;/li&gt;
+&lt;li&gt;Controle de Subjetividade: 2 questionários por processo&lt;/li&gt;
+&lt;li&gt;46 variáveis&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;resultados&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Resultados&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Perícias aumentam a taxa de deferimentos mais do que emendas de petição inicial.&lt;/li&gt;
+&lt;li&gt;Identificam-se aumentos no tempo, mas há muita variabilidade.&lt;/li&gt;
+&lt;li&gt;Tempo até a última Assembleia Geral de Credores (AGC): média 507 dias e mediana 386 dias.&lt;/li&gt;
+&lt;li&gt;29.7% dos deferimentos têm o stay-period prorrogado.&lt;/li&gt;
+&lt;li&gt;6.1% faliram antes da primeira AGC.&lt;/li&gt;
+&lt;li&gt;79.2% das que tiveram alguma AGC têm os planos aprovados.&lt;/li&gt;
+&lt;li&gt;8.47% das que tiveram alguma AGC têm o plano aprovado por cram-down.&lt;/li&gt;
+&lt;li&gt;41.4% das recuperações deferidas são litisconsórcios ativos.&lt;/li&gt;
+&lt;li&gt;Das RJs com planos aprovados
+&lt;ul&gt;
+&lt;li&gt;35.5% têm venda ou aluguel de Unidade Produtiva Isolada (UPI)&lt;/li&gt;
+&lt;li&gt;53.2% têm venda ou aluguel de outros bens que não UPI&lt;/li&gt;
+&lt;li&gt;29% dos planos preveem renúncia de direitos contra terceiros coobrigados&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

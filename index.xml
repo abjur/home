@@ -7,8 +7,77 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright (c) 2011 - 2017, ABJ; Todos os direitos reservados.</copyright>
-    <lastBuildDate>Mon, 31 Jul 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 02 Aug 2017 09:23:47 -0200</lastBuildDate>
     <atom:link href="http://www.abj.org.br/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Observatório da Insolvência: apresentação</title>
+      <link>http://www.abj.org.br/blog/2017/08/02/2017-08-02_observatorio/</link>
+      <pubDate>Wed, 02 Aug 2017 09:23:47 -0200</pubDate>
+      
+      <guid>http://www.abj.org.br/blog/2017/08/02/2017-08-02_observatorio/</guid>
+      <description>&lt;p&gt;Adicionamos abaixo o link de nossa apresentação sobre o Observatório da Insolvência realizada em 13 de junho de 2017. Trata-se da primeira análise exaustiva sobre processos de recuperação judicial da comarca de São Paulo.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;LINK&lt;/strong&gt;: &lt;a href=&#34;rpubs.com/abj/pucrj_pre&#34; class=&#34;uri&#34;&gt;rpubs.com/abj/pucrj_pre&lt;/a&gt;&lt;/p&gt;
+&lt;div id=&#34;objetivos&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Objetivos&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Compreender empiricamente o processo de Recuperação Judicial, incluindo
+&lt;ul&gt;
+&lt;li&gt;O que influencia no deferimento e quanto tempo ele leva?&lt;/li&gt;
+&lt;li&gt;O que acontece entre deferimento e aprovação do plano?&lt;/li&gt;
+&lt;li&gt;Quais são as características gerais dos planos de recuperação aprovados?&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Auxiliar na elaboração e alteração de leis sobre o tema.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;status&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Status&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Projeto: finalizado (06/2017)&lt;/li&gt;
+&lt;li&gt;Relatório executivo: em formato de apresentação (06/2017).&lt;/li&gt;
+&lt;li&gt;Observatório da insolvência 2: em fase de captação.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;equipe&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Equipe&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Fernando Corrêa (ABJ)&lt;/li&gt;
+&lt;li&gt;Ivo Waisberg (PUC-SP)&lt;/li&gt;
+&lt;li&gt;Marcelo Guedes Nunes (ABJ)&lt;/li&gt;
+&lt;li&gt;Marcelo Sacramone (PUC-SP)&lt;/li&gt;
+&lt;li&gt;Pesquisadores: alunos do Núcleo Estudo e Pesquisa sobre Insolvência (NEPI) da PUC-SP.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;metodologia&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Metodologia&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Classificação de 194 recuperações distribuídas entre 01/09/2013 e 30/06/2016 São Paulo - Capital&lt;/li&gt;
+&lt;li&gt;Survey dos processos, alimentado por estudantes no NEPI da PUC-SP&lt;/li&gt;
+&lt;li&gt;Controle de Subjetividade: 2 questionários por processo&lt;/li&gt;
+&lt;li&gt;46 variáveis&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;resultados&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Resultados&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Perícias aumentam a taxa de deferimentos mais do que emendas de petição inicial.&lt;/li&gt;
+&lt;li&gt;Identificam-se aumentos no tempo, mas há muita variabilidade.&lt;/li&gt;
+&lt;li&gt;Tempo até a última Assembleia Geral de Credores (AGC): média 507 dias e mediana 386 dias.&lt;/li&gt;
+&lt;li&gt;29.7% dos deferimentos têm o stay-period prorrogado.&lt;/li&gt;
+&lt;li&gt;6.1% faliram antes da primeira AGC.&lt;/li&gt;
+&lt;li&gt;79.2% das que tiveram alguma AGC têm os planos aprovados.&lt;/li&gt;
+&lt;li&gt;8.47% das que tiveram alguma AGC têm o plano aprovado por cram-down.&lt;/li&gt;
+&lt;li&gt;41.4% das recuperações deferidas são litisconsórcios ativos.&lt;/li&gt;
+&lt;li&gt;Das RJs com planos aprovados
+&lt;ul&gt;
+&lt;li&gt;35.5% têm venda ou aluguel de Unidade Produtiva Isolada (UPI)&lt;/li&gt;
+&lt;li&gt;53.2% têm venda ou aluguel de outros bens que não UPI&lt;/li&gt;
+&lt;li&gt;29% dos planos preveem renúncia de direitos contra terceiros coobrigados&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</description>
+    </item>
     
     <item>
       <title>Convocação para assembleia</title>
@@ -398,11 +467,11 @@ sample_cnj(n = 5,
 &lt;pre&gt;&lt;code&gt;## # A tibble: 5 x 1
 ##             n_processo
 ##                  &amp;lt;chr&amp;gt;
-## 1 00466268920148260001
-## 2 05048250520158260001
-## 3 01127459520158260001
-## 4 09461242820148260001
-## 5 08384210420158260001&lt;/code&gt;&lt;/pre&gt;
+## 1 00430750420148260001
+## 2 08562093120158260001
+## 3 07239787420148260001
+## 4 00955396820158260001
+## 5 01338295520158260001&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 </description>
     </item>
@@ -625,30 +694,6 @@ sample_cnj(n = 5,
 &lt;div id=&#34;analise-de-pessoas-desaparecidas&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Análise de pessoas Desaparecidas&lt;/h2&gt;
 &lt;p&gt;Em parceria com o Programa de Localização e Identificação de Desaparecidos (PLID), do Ministério Público de São Paulo, foi realizado um estudo sobre o perfil das pessoas desaparecidas no estado de São Paulo. Um resultante interessante é que o perfil de idade dos desaparecidos varia conforme o sexo, sendo que as mulheres costumam desaparecer na adolescência e os homens na adolescência e na meia idade. Uma suspeita é o envolvimento com o tráfico.&lt;/p&gt;
-&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Sobre a ABJ</title>
-      <link>http://www.abj.org.br/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.abj.org.br/about/</guid>
-      <description>&lt;p&gt;A Associação Brasileira de Jurimetria é uma entidade sem fins lucrativos formada por pesquisadores do direito e da estatística, que tem por objetivo investigar e incentivar a aplicação da estatística e da probabilidade no estudo do direito e de suas instituições.&lt;/p&gt;
-&lt;p&gt;A ABJ tem três missões principais. A primeira é reunir e incentivar pesquisadores com preocupação em investigar e descrever os processos de decisão em que são criadas as normas individuais e concretas. A segunda é disciplinar a jurimetria como um ramo do conhecimento jurídico, definindo suas premissas, seus fundamentos, seus conceitos e relações essenciais. A terceira é colaborar com entidades públicas e privadas no esforço estratégico de aperfeiçoar os mecanismos de prestação jurisdicional através da elaboração de leis e da administração dos tribunais.&lt;/p&gt;
-&lt;div id=&#34;diretoria&#34; class=&#34;section level4&#34;&gt;
-&lt;h4&gt;Diretoria&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;Presidente: Marcelo Guedes Nunes&lt;/li&gt;
-&lt;li&gt;Diretor-técnico: Julio Trecenti&lt;/li&gt;
-&lt;li&gt;Diretor-financeiro: Luiz Ernesto Aceturi de Oliveira&lt;/li&gt;
-&lt;li&gt;Coordenador do Laboratório de Jurimetria: Fernando Corrêa&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div id=&#34;estatuto&#34; class=&#34;section level4&#34;&gt;
-&lt;h4&gt;Estatuto&lt;/h4&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/abjur/estatutoABJ&#34; class=&#34;uri&#34;&gt;https://github.com/abjur/estatutoABJ&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 </description>
     </item>
