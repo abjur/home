@@ -1,0 +1,55 @@
+---
+title: "Observatório da Insolvência: apresentação"
+author: "Fernando Corrêa"
+date: 2017-08-02T09:23:47-02:00
+tags: ['jurimetria', 'insolvencia', 'observatorio']
+banner: "img/banners/insolvencia.jpg"
+---
+
+Adicionamos abaixo o link de nossa apresentação sobre o Observatório da Insolvência realizada em 13 de junho de 2017. Trata-se da primeira análise exaustiva sobre processos de recuperação judicial da comarca de São Paulo. 
+
+**LINK**: [rpubs.com/abj/pucrj_pre](rpubs.com/abj/pucrj_pre)
+
+## Objetivos
+
+- Compreender empiricamente o processo de Recuperação Judicial, incluindo
+    - O que influencia no deferimento e quanto tempo ele leva?
+    - O que acontece entre deferimento e aprovação do plano?
+    - Quais são as características gerais dos planos de recuperação aprovados?
+- Auxiliar na elaboração e alteração de leis sobre o tema.
+
+## Status
+
+- Projeto: finalizado (06/2017)
+- Relatório executivo: em formato de apresentação (06/2017).
+- Observatório da insolvência 2: em fase de captação.
+
+## Equipe
+
+- Fernando Corrêa (ABJ)
+- Ivo Waisberg (PUC-SP)
+- Marcelo Guedes Nunes (ABJ)
+- Marcelo Sacramone (PUC-SP)
+- Pesquisadores: alunos do Núcleo Estudo e Pesquisa sobre Insolvência (NEPI) da PUC-SP.
+
+## Metodologia
+
+- Classificação de 194 recuperações distribuídas entre 01/09/2013 e 30/06/2016 São Paulo - Capital
+- Survey dos processos, alimentado por estudantes no NEPI da PUC-SP
+- Controle de Subjetividade: 2 questionários por processo
+- 46 variáveis
+
+## Resultados
+
+- Perícias aumentam a taxa de deferimentos mais do que emendas de petição inicial.
+- Identificam-se aumentos no tempo, mas há muita variabilidade.
+- Tempo até a última Assembleia Geral de Credores (AGC): média 507 dias e mediana 386 dias.
+- 29.7% dos deferimentos têm o stay-period prorrogado.
+- 6.1% faliram antes da primeira AGC.
+- 79.2% das que tiveram alguma AGC têm os planos aprovados.
+- 8.47% das que tiveram alguma AGC têm o plano aprovado por cram-down.
+- 41.4% das recuperações deferidas são litisconsórcios ativos.
+- Das RJs com planos aprovados
+    - 35.5% têm venda ou aluguel de Unidade Produtiva Isolada (UPI)
+    - 53.2% têm venda ou aluguel de outros bens que não UPI
+    - 29% dos planos preveem renúncia de direitos contra terceiros coobrigados
