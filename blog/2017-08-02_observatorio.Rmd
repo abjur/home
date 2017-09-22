@@ -8,7 +8,7 @@ banner: "img/banners/insolvencia.jpg"
 
 Adicionamos abaixo o link de nossa apresentação sobre o Observatório da Insolvência realizada em 13 de junho de 2017. Trata-se da primeira análise exaustiva sobre processos de recuperação judicial da comarca de São Paulo. 
 
-**LINK**: [rpubs.com/abj/pucrj_pre](rpubs.com/abj/pucrj_pre)
+**LINK**: [http://rpubs.com/abj/pucrj_pre](http://rpubs.com/abj/pucrj_pre)
 
 ## Objetivos
 
