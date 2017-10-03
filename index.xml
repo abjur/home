@@ -80,32 +80,6 @@
     </item>
     
     <item>
-      <title>Convocação para assembleia</title>
-      <link>http://www.abj.org.br/convocacao/</link>
-      <pubDate>Mon, 31 Jul 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.abj.org.br/convocacao/</guid>
-      <description>&lt;p&gt;ASSOCIAÇÃO BRASILEIRA DE JURIMETRIA - ABJ&lt;/p&gt;
-&lt;p&gt;CNPJ/MF nº 13.612.840/0001-57&lt;/p&gt;
-&lt;p&gt;EDITAL DE CONVOCAÇÃO&lt;/p&gt;
-&lt;p&gt;ASSEMBLEIA GERAL ORDINÁRIA e EXTRAORDINÁRIA&lt;/p&gt;
-&lt;p&gt;Ficam convocados os associados a se reunirem em Assembleia Geral Ordinária e Extraordinária da Associação Brasileira de Jurimetria - ABJ (“ABJ”), que se realizará no dia 15 de agosto de 2017, às 09:00 hrs., em primeira convocação com presença de, no mínimo, mais da metade de associados quites, ou às 09:30hs, em segunda convocação, com presença de qualquer número de associados quites, na sede social da ABJ, na Rua Leopoldo Couto de Magalhães Jr., 146, 12o andar, São Paulo - SP, Brasil, CEP 04542-000, para examinar, discutir e votar a seguinte ordem do dia:&lt;/p&gt;
-&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;Aprovação as contas referente ao exercício de 2016.&lt;/li&gt;
-&lt;li&gt;Eleição da Diretoria e do Conselho Científico da ABJ para o próximo exercício.&lt;/li&gt;
-&lt;li&gt;Alteração da sede da ABJ.&lt;/li&gt;
-&lt;li&gt;Criação da categoria de associados Pessoa Jurídica.&lt;/li&gt;
-&lt;li&gt;Alteração do Estatuto Social, com o objetivo de facilitar a participação em projetos de pesquisa junto ao Governo e entidades privadas.&lt;/li&gt;
-&lt;li&gt;Outros eventuais assuntos de interesse dos associados.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;O Estatuto Social com a consolidação das alterações propostas está disponível para consulta dos associados em versão virtual no site &lt;a href=&#34;https://github.com/abjur/estatutoABJ&#34; class=&#34;uri&#34;&gt;https://github.com/abjur/estatutoABJ&lt;/a&gt; e em versão física na sede da associação.&lt;/p&gt;
-&lt;p&gt;O presente edital será encaminhado aos associados por e-mail, bem como será disponibilizado no site da ABJ (www.abj.org.br), nos termos do Estatuto Social.&lt;/p&gt;
-&lt;p&gt;São Paulo, 31 de julho de 2017.&lt;/p&gt;
-&lt;p&gt;Marcelo Guedes Nunes Presidente&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Jurimetria societária e o cálculo das perdas com a queda no preço de ações negociadas em bolsa</title>
       <link>http://www.abj.org.br/blog/2017/05/26/2017-05-26-contrafactual/</link>
       <pubDate>Fri, 26 May 2017 09:23:47 -0200</pubDate>
@@ -467,11 +441,11 @@ sample_cnj(n = 5,
 &lt;pre&gt;&lt;code&gt;## # A tibble: 5 x 1
 ##             n_processo
 ##                  &amp;lt;chr&amp;gt;
-## 1 09974052320148260001
-## 2 08727126420148260001
-## 3 02392532320148260001
-## 4 01898551020148260001
-## 5 07538474820158260001&lt;/code&gt;&lt;/pre&gt;
+## 1 05709098520158260001
+## 2 01037243220148260001
+## 3 02530815220158260001
+## 4 01048606420148260001
+## 5 04959837020148260001&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 </description>
     </item>
@@ -694,6 +668,30 @@ sample_cnj(n = 5,
 &lt;div id=&#34;analise-de-pessoas-desaparecidas&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Análise de pessoas Desaparecidas&lt;/h2&gt;
 &lt;p&gt;Em parceria com o Programa de Localização e Identificação de Desaparecidos (PLID), do Ministério Público de São Paulo, foi realizado um estudo sobre o perfil das pessoas desaparecidas no estado de São Paulo. Um resultante interessante é que o perfil de idade dos desaparecidos varia conforme o sexo, sendo que as mulheres costumam desaparecer na adolescência e os homens na adolescência e na meia idade. Uma suspeita é o envolvimento com o tráfico.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Sobre a ABJ</title>
+      <link>http://www.abj.org.br/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.abj.org.br/about/</guid>
+      <description>&lt;p&gt;A Associação Brasileira de Jurimetria é uma entidade sem fins lucrativos formada por pesquisadores do direito e da estatística, que tem por objetivo investigar e incentivar a aplicação da estatística e da probabilidade no estudo do direito e de suas instituições.&lt;/p&gt;
+&lt;p&gt;A ABJ tem três missões principais. A primeira é reunir e incentivar pesquisadores com preocupação em investigar e descrever os processos de decisão em que são criadas as normas individuais e concretas. A segunda é disciplinar a jurimetria como um ramo do conhecimento jurídico, definindo suas premissas, seus fundamentos, seus conceitos e relações essenciais. A terceira é colaborar com entidades públicas e privadas no esforço estratégico de aperfeiçoar os mecanismos de prestação jurisdicional através da elaboração de leis e da administração dos tribunais.&lt;/p&gt;
+&lt;div id=&#34;diretoria&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Diretoria&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Presidente: Marcelo Guedes Nunes&lt;/li&gt;
+&lt;li&gt;Diretor-técnico: Julio Trecenti&lt;/li&gt;
+&lt;li&gt;Diretor-financeiro: Luiz Ernesto Aceturi de Oliveira&lt;/li&gt;
+&lt;li&gt;Coordenador do Laboratório de Jurimetria: Fernando Corrêa&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;estatuto&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Estatuto&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/abjur/estatutoABJ&#34; class=&#34;uri&#34;&gt;https://github.com/abjur/estatutoABJ&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 </description>
     </item>
