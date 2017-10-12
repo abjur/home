@@ -1,0 +1,36 @@
+---
+title: "4 dicas para fazer um bom artigo jurimétrico"
+author: "Fernando Corrêa"
+date: 2017-10-12T09:13:13-02:00
+tags: ['jurimetria']
+draft: true
+#banner: "img/banners/insolvencia.jpg"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Hoje começou a 12ª Conferência em Estudos Empíricos de Direito organizada pela _Global Society of Empirical Legal Studies_ (Global SELS). A primeira atividade do evento foi um _Workshop_ sobre os métodos de pesquisa empírica conduzido pelo comitê organizador do evento: Michael Haise, Dawn Chutkow e Martin Wells. Desde 2004 a Global SELS publica um periódico chamado _Journal of Empirical Legal Studies_ (JELS), que é uma das referências mundiais na área.
+
+Para os tupiniquins interessados em publicações internacionais, a Dawn Chutkow deu uma série de dicas de como escrever boas publicações. Com a sua experiência como editora e revisora da revista, ela mencionou vários erros comuns e como resolvê-los.
+
+As dicas podem ser resumidas em quatro pontos principais:
+
+## 1. Conteúdo é mais importante do que método
+
+Esse ponto é polêmico, porque é fácil cometer erros metodológicos que invalidem todos os resultados de uma pesquisa. A mensagem, entretanto, é que é mais interessante chamar atenção para o que _há por trás_ do seu artigo do que os métodos utilizados pra tirar as suas conclusões. 
+
+## 2. Evite distorções
+
+Se você está escrevendo sobre um determinado assunto, provavelmente ele é complicado e exigirá esforço do leitor para entendê-lo. Mesmo que o intuito seja simplificar, evite se distanciar da verdade. Simplificações de conceitos complicados ou resumos devem ser evitados.
+
+## 3. Não diga mais do que os seus dados
+
+Essa dica pode ser enquadrada na dica anterior, mas é tão importante que merece uma seção separada.
+
+A ideia central é que você deve se ater a afirmar o que as sua observações permitem. Num estudo famoso da ABJ, medimos as taxas de reforma em recursos criminais e descobrimos que 79% das apelações que chegam à 4ª Câmara Criminal de São Paulo são julgadas improcedentes. Esse fato, unido ao histórico dos desembargadores em questão, sugere que esta câmara opera sob um viés mais punitivista do que as demais. Entretanto, a menos que coletássemos dados específicos sobre essa questão, estamos atados a conclusão exata da nossa pesquisa: "79% das apelações que chegam à 4ª Câmara Criminal de São Paulo são julgadas improcedentes"
+
+## 4. Engage o leitor
+
+Lembre-se que se você está escrevendo sobre um determinado assunto, provavelmente ele é complicado e exigirá esforço do leitor para entendê-lo. Por isso, manter o leitor interessado é um objetivo importante. Essa tarefa não é fácil, mas a regra de bolso é _keep it simples_: comece seu texto com um gráfico, conte uma história, dê exemplos cotidianos etc.

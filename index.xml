@@ -393,7 +393,7 @@ result &amp;lt;- tpu_assunto_prob(d_tjsp, leafs, tpu)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## Warning in combine_vars(vars, ind_list): &amp;#39;.Random.seed&amp;#39; is not an integer
 ## vector but of type &amp;#39;NULL&amp;#39;, so ignored&lt;/code&gt;&lt;/pre&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;round(sum(result$p))&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## [1] 90&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 91&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Como resultado, observamos uma cifra oculta de 10 processos, um aumento de 12,5% do valor inicial.&lt;/p&gt;
 &lt;/div&gt;
 </description>
@@ -441,11 +441,11 @@ sample_cnj(n = 5,
 &lt;pre&gt;&lt;code&gt;## # A tibble: 5 x 1
 ##             n_processo
 ##                  &amp;lt;chr&amp;gt;
-## 1 05709098520158260001
-## 2 01037243220148260001
-## 3 02530815220158260001
-## 4 01048606420148260001
-## 5 04959837020148260001&lt;/code&gt;&lt;/pre&gt;
+## 1 08901076920148260001
+## 2 09481327520148260001
+## 3 05892794920148260001
+## 4 02715793620148260001
+## 5 08149011520158260001&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 </description>
     </item>
