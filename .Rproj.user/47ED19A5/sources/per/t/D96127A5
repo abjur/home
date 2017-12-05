@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1497288788848.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4030738358",
+    "id" : "D96127A5",
+    "lastKnownWriteTime" : 1501590935,
+    "last_content_update" : 1501590935343,
+    "path" : "~/abjur/home/content/jurimetrics.Rmd",
+    "project_path" : "content/jurimetrics.Rmd",
+    "properties" : {
+        "cursorPosition" : "15,37",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

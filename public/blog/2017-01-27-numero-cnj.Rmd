@@ -1,0 +1,63 @@
+---
+title: "Número CNJ"
+author: "Julio Trecenti"
+date: 2017-01-27T09:23:47-02:00
+tags: ['R', 'metodologia', 'administração']
+banner: "img/banners/banner-10.png"
+---
+
+A definição da *unidade amostral* é essencial para a realização de qualquer pesquisa empírica. Trata-se do elemento indivisível de uma amostra, de onde se medem as características que serão utilizadas na análise estatística.
+
+Na jurimetria é usual considerar o *litígio* como unidade amostral. O litígio é chamado de *processo judicial* quando tramita na esfera judicial. Cada processo possui um número identificador cadastrado nos sistemas do Tribunal, o que facilita a busca por casos específicos.
+
+A [Resolução 65 do CNJ](https://goo.gl/IX4PuX) (*Número CNJ*), é um marco na identificação de processos judiciais. Até 2008, a forma de numeração dos processos era definida pelo Tribunal responsável pela tramitação, o que dava origem a diversos formatos distintos. Com a Resolução, os processos passaram a receber um formato de numeração único para todos os Tribunais nas justiças Estadual, Trabalhista, Federal, Militar, Eleitoral e Superiores.
+
+A Resolução define o padrão `NNNNNNN-DD.AAAA.J.TR.OOOO`, em que:
+
+- `NNNNNNN`: Número identificador do processo.
+- `DD`: Dígito verificador gerado a partir da aplicação do algoritmo Módulo 97 Base 10, conforme Norma ISO 7064:2003.
+- `AAAA`: Ano do ajuizamento do processo.
+- `J`: Segmento do poder judiciário. Por exemplo, `8` indica Justiça Estadual.
+- `TR`: Identifica o tribunal. Por exemplo, `26` indica Tribunal de Justiça de São Paulo.
+- `OOOO`: Identifica a unidade de origem (foro) do processo. Na maioria dos casos, o número também identifica a comarca, pois existem poucas comarcas com mais de um foro (ex. a comarca de São Paulo, que possui mais de dez foros regionais).
+
+## Gerando números aleatórios
+
+Um aspecto interessante na especificação do número CNJ é a possibilidade de gerar todos os possíveis números de processos. Para cada configuração de ano, justiça, tribunal e órgão de origem, são exatamente dez milhões de números distintos. Por exemplo, considerando somente processos ajuizados em 2009, nas [55 comarcas do Tribunal de Justiça de Alagoas](http://tjal.jus.br/apmp/jurisdicaocomarcas09102015.pdf) e um foro por comarca, teríamos 550 milhões de números distintos. Esses números podem ser utilizados para pesquisar todos os processos de um tribunal.
+
+No entanto, pesquisar 550 milhões de números é uma tarefa demorada e onerosa para os tribunais. No exemplo, com 10 pesquisas por segundo, seriam necessários 637 dias para acessar todos os números. Além disso, nem todos os números correspondem a processos de fato, pois são gerados conforme a demanda e apenas uma parcela dos números é realmente manifesta.
+
+Nessa situação uma alternativa via amostragem se torna viável. Ao invés de pesquisar todos os processos, gera-se uma amostra aleatória de números, acessando diretamente nas ferramentas de pesquisa dos tribunais. A quantidade de processos necessários para isso é definida estudando-se a probabilidade de manifestação de um número de processo. Usualmente isso é feito a partir de uma amostra piloto.
+
+## `R session`
+
+No pacote `abjutils` criado pela ABJ, é possível utilizar a função `sample_cnj` abaixo. É necessário informar a quantidade de processos, os foros, os anos, o segmento de justiça e o tribunal, com os seguintes parâmetros:
+
+- `n`: quantidade de processos a ser gerada.
+- `foros`: vetor de códigos de foro.
+- `anos`: vetor de anos de distribuição dos processos.
+- `orgao`: vetor de segmentos de justiça.
+- `tr`: vetor de tribunais.
+
+No exemplo abaixo, geramos cinco processos aleatoriamente.
+
+```{r eval=FALSE, echo=FALSE}
+library(ggplot2)
+lab <- data.frame(lab = "NNNNNNN-DD.AAAA.J.TR.OOOO", cyl = 6, am = .5)
+p <- ggplot(mtcars, aes(x = cyl, y = am)) + 
+  geom_text(aes(label = lab), data = lab, size = 30) +
+  theme_bw() +
+  theme(axis.title = element_blank(),
+        axis.text = element_blank())
+ggsave('static/img/banners/banner-10.png', p, 
+       width = 20, height = 15, dpi = 50)
+```
+
+
+```{r}
+library(abjutils)
+sample_cnj(n = 5, 
+           foros = "0001", anos = c(2014, 2015), orgao = 8, tr = 26,
+           first_dig = "0", sample_pars = TRUE, return_df = TRUE)
+```
+

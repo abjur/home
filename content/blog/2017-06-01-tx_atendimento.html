@@ -1,0 +1,172 @@
+---
+title: "Qual taxa é a correta?"
+author: "Julio Trecenti"
+date: 2017-03-10T09:23:47-02:00
+tags: ['ABJ', 'INAC']
+banner: "img/banners/banner-10.png"
+draft: true
+---
+
+
+
+<p>Uma das pesquisas da ABJ envolve a área de educação infantil. Em nosso estudo, estamos avaliando as metas do Município de São Paulo para abertura de vagas em creches.</p>
+<p>A meta atual do município busca alcançar xx% na taxa de atendimento da população de crianças de zero a três anos. Essa taxa é calculada pela razão entre a quantidade matrículas realizada em um certo ano dividida pela população de crianças de zero a três anos.</p>
+<p>A Meta 1 do PNE é fazer com que 50% das crianças de zero a três anos estejam matriculadas em creches. O monitoramento dessa meta é feito a partir dos dados do PNAD e utiliza essa metodologia.</p>
+<p>Em outro post falaremos sobre índices…</p>
+<p>O problema de utilizar a “taxa de atendimento” como métrica principal é que <strong>nem todas as crianças precisam de creches</strong>. Isso ocorre principalmente na classe alta, onde as crianças são alocadas em outros locais que não creche.</p>
+<p>Dados: defensoria</p>
+<ul>
+<li>Matrículas: total de matrículas realizadas no ano.</li>
+<li>Demanda não atendida: total de demandas não atendidas.</li>
+<li>População: dados da fundação SEADE.</li>
+</ul>
+<div id="mapa-da-taxa-de-atendimento" class="section level1">
+<h1>Mapa da taxa de atendimento</h1>
+<p>Observe a lista dos bairros com menores taxas de atendimento:</p>
+<ul>
+<li>República</li>
+<li>Jardim Paulista</li>
+<li>Sé</li>
+<li>Itaim Bibi</li>
+</ul>
+<p>Será que estamos medindo o que queremos? Por exemplo, sabemos que o Jardim Paulista e do Itaim Bibi são distritos mais ricos.</p>
+<p><span class="math display">\[
+T_{\text{ano}} = \text{população[0-3] na creche} / \text{população[0-3]}
+\]</span></p>
+<p>Estamos adaptando essa taxa usando</p>
+<p><span class="math display">\[
+T&#39;_{\text{ano}} = \text{matrículas em creches} / \text{população[0-3]}
+\]</span></p>
+<p>N_t = nascimentos P_t = população[0-3] no ano t K_t = crianças que atingem 4 anos de idade no ano t M_t = mortes ou pessoas que saíram da cidade no ano t</p>
+<p><span class="math display">\[
+P_t = P_{t-1} + N_t - K_t - M_t
+\]</span></p>
+<p>M_t = matrículas no ano t P^*_t = crianças matriculadas no ano t</p>
+<p><span class="math display">\[
+P^*_t = P^*_{t-1} + M_t - K_t
+\]</span></p>
+<p><span class="math display">\[
+T = \frac{P^*_t}{P_t}
+\]</span></p>
+<pre class="r"><code>d2020 &lt;- d_map %&gt;% 
+  group_by(id) %&gt;% 
+  summarise(long = mean(long), lat = mean(lat), 
+            atendimento = first(matricula) / first(pop)) %&gt;% 
+  arrange(desc(atendimento)) %&gt;% 
+  filter(atendimento &lt; .2) %&gt;% 
+  mutate(tipo = if_else(atendimento &lt; .1, &#39;#FF000095&#39;, &#39;#FF999995&#39;))
+
+p &lt;- d_map %&gt;% 
+  mutate(atendimento = matricula / pop) %&gt;% 
+  mutate(atendimento = cut(
+    x = atendimento, 
+    breaks = c(0, .1, .2, 1.0), 
+    labels = c(&#39;[0, 10%]&#39;, &#39;(10%, 20%]&#39;, &#39;(20%, 100%]&#39;),
+    include.lowest = TRUE, dig.lab = 3
+  ),
+  atendimento = fct_rev(atendimento)
+  ) %&gt;% {
+    ggplot(., aes(x = long, y = lat)) +
+      geom_map(aes(map_id = id, fill = atendimento), 
+               map = ., colour = &#39;black&#39;, size = 0.1) +
+      coord_equal() +
+      scale_fill_brewer(palette = &#39;PuRd&#39;) +
+      geom_label_repel(aes(label = sprintf(&#39;%s\n(%s)&#39;, id,
+                                           scales::percent(atendimento))), 
+                       data = d2020, 
+                       box.padding = unit(.5, &quot;lines&quot;),
+                       fill = d2020$tipo,
+                       force = 10,
+                       size = 2.5,
+                       fontface = &quot;bold&quot;) +
+      geom_point(data = d2020, colour = &#39;black&#39;) +
+      scale_x_continuous(limits = with(d_map, range(long) + c(-2e4, +2e4))) +
+      theme_void() +
+      labs(fill = &#39;&#39;) +
+      theme(legend.position = c(0.69, 0.25)) +
+      ggtitle(&#39;Taxa de atendimento - final de 2016&#39;,
+              &#39;Fonte: Defensoria pública e Fundação SEADE.&#39;)
+  }
+p</code></pre>
+</div>
+<div id="mapa-da-demanda-nao-atendida" class="section level1">
+<h1>Mapa da demanda não atendida</h1>
+<pre class="r"><code>d2020 &lt;- d_map %&gt;% 
+  group_by(id) %&gt;% 
+  summarise(long = mean(long), lat = mean(lat), demanda = first(demanda)) %&gt;% 
+  arrange(desc(demanda)) %&gt;% 
+  filter(demanda &gt; 3000) %&gt;% 
+  mutate(tipo = if_else(demanda &gt; 5000, &#39;#FF000095&#39;, &#39;#FF999995&#39;))
+
+p &lt;- d_map %&gt;% 
+  mutate(atendimento = matricula / pop) %&gt;% 
+  mutate(demanda = cut(
+    x = demanda, 
+    breaks = c(0, 3000, 5000, 8000),
+    include.lowest = TRUE, dig.lab = 10
+  )) %&gt;% {
+    ggplot(., aes(x = long, y = lat)) +
+      geom_map(aes(map_id = id, fill = demanda), 
+               map = ., colour = &#39;black&#39;, size = 0.1) +
+      coord_equal() +
+      scale_fill_brewer(palette = &#39;PuRd&#39;) +
+      geom_label_repel(aes(label = sprintf(&#39;%s\n(%s)&#39;, id, demanda)), 
+                       data = d2020, 
+                       box.padding = unit(.5, &quot;lines&quot;),
+                       fill = d2020$tipo,
+                       force = 10,
+                       size = 2.5,
+                       fontface = &quot;bold&quot;) +
+      geom_point(data = d2020, colour = &#39;black&#39;) +
+      scale_x_continuous(limits = with(d_map, range(long) + c(-2e4, +2e4))) +
+      theme_void() +
+      labs(fill = &#39;&#39;) +
+      theme(legend.position = c(0.69, 0.25)) +
+      ggtitle(&#39;Demanda não atendida - final de 2016&#39;,
+              &#39;Fonte: Defensoria pública. Dados obtidos em 22/04/2017.&#39;)
+  }
+p</code></pre>
+<div id="mapa-da-taxa-de-nao-atendimento" class="section level2">
+<h2>Mapa da taxa de não atendimento</h2>
+<p>Acredito que a melhor taxa é essa: total de demandas não atendidas dividida pela população de 0 a 3 anos.</p>
+<pre class="r"><code>d2020 &lt;- d_map %&gt;% 
+  group_by(id) %&gt;% 
+  summarise(long = mean(long), lat = mean(lat), 
+            atendimento = first(demanda) / first(pop)) %&gt;% 
+  arrange(desc(atendimento)) %&gt;% 
+  filter(atendimento &gt; .3) %&gt;% 
+  mutate(tipo = if_else(atendimento &gt; .4, &#39;#FF000095&#39;, &#39;#FF999995&#39;))
+
+p &lt;- d_map %&gt;% 
+  mutate(atendimento = demanda / pop) %&gt;% 
+  mutate(atendimento = cut(
+    x = atendimento, 
+    breaks = c(0, .3, .4, 1.0), 
+    labels = c(&#39;[0, 30%]&#39;, &#39;(30%, 40%]&#39;, &#39;(40%, 100%]&#39;),
+    include.lowest = TRUE, dig.lab = 3
+  )
+  ) %&gt;% {
+    ggplot(., aes(x = long, y = lat)) +
+      geom_map(aes(map_id = id, fill = atendimento), 
+               map = ., colour = &#39;black&#39;, size = 0.1) +
+      coord_equal() +
+      scale_fill_brewer(palette = &#39;Oranges&#39;) +
+      geom_label_repel(aes(label = sprintf(&#39;%s\n(%s)&#39;, id,
+                                           scales::percent(atendimento))), 
+                       data = d2020, 
+                       box.padding = unit(.5, &quot;lines&quot;),
+                       fill = d2020$tipo,
+                       force = 10,
+                       size = 2.5,
+                       fontface = &quot;bold&quot;) +
+      geom_point(data = d2020, colour = &#39;black&#39;) +
+      scale_x_continuous(limits = with(d_map, range(long) + c(-2e4, +2e4))) +
+      theme_void() +
+      labs(fill = &#39;&#39;) +
+      theme(legend.position = c(0.69, 0.25)) +
+      ggtitle(&#39;Taxa de demanda não atendida - final de 2016&#39;,
+              &#39;Fonte: Defensoria pública e Fundação SEADE.&#39;)
+  }
+p</code></pre>
+</div>
+</div>

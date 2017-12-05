@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Metodologia on ABJ</title>
+    <link>/tags/metodologia/index.xml</link>
+    <description>Recent content in Metodologia on ABJ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright (c) 2011 - 2017, ABJ; Todos os direitos reservados.</copyright>
+    <atom:link href="/tags/metodologia/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Jurimetria societária e o cálculo das perdas com a queda no preço de ações negociadas em bolsa</title>
+      <link>/blog/2017/05/26/2017-05-26-contrafactual/</link>
+      <pubDate>Fri, 26 May 2017 09:23:47 -0200</pubDate>
+      
+      <guid>/blog/2017/05/26/2017-05-26-contrafactual/</guid>
+      <description>&lt;p&gt;Diante da profusão de escândalos envolvendo companhias brasileiras de capital aberto e da consequente queda nos valores de negociação de suas ações observada na bolsa de valores, começam a se discutir no Brasil os meios para caracterização e liquidação do prejuízo sofrido pelos acionistas decorrentes de ilícitos praticados no mercado. São as ações de responsabilização por perda de investimento societário, que começam a aparecer nos tribunais judiciais e arbitrais brasileiros, conhecidas nos EUA como “securities fraud lawsuits” ou “stock drop lawsuits”.&lt;/p&gt;
+&lt;p&gt;A questão que pretendo discutir de maneira introdutória aqui é: caracterizados os requisitos legais para a condenação (matéria que tem complexidade suficiente para outro artigo e que por ora deixo de lado), é possível calcular o prejuízo? E em caso positivo, quais são as técnicas aplicáveis na apuração dos danos sofridos pelos acionistas nestes casos?&lt;/p&gt;
+&lt;p&gt;Minha resposta para a primeira questão é sim, é perfeitamente possível calcular o prejuízo sofrido em bases razoáveis, isolando a parcela do prejuízo causada pelo ato ilícito sobre o preço da ação. O que nos leva à discussão da segunda questão: como esse cálculo deve ser realizado?&lt;/p&gt;
+&lt;p&gt;Os danos sofridos são uma função da diferença entre o valor factual e o valor contrafactual da ação, multiplicado pela quantidade de ações negociadas. O valor factual equivale ao valor bursátil da ação (caso o acionista tenha carregado a posição) ou ao seu preço de venda (caso o acionista tenha vendido a posição), após o efeito do ato ilícito. Já o valor contrafactual é aquele equivalente ao preço pelo qual a ação estaria sendo negociada, caso o ato ilícito não tivesse ocorrido.&lt;/p&gt;
+&lt;p&gt;O valor factual da ação foi concretizado no mercado e, portanto, pode ser verificado através dos registros de negociação. Ainda assim, seu cálculo, em especial nos casos em que o acionista carregou a posição, levanta algumas questões interessantes como, por exemplo, qual data deve ser considerada como referência para sua fixação, ou qual intervalo de tempo deve ser utilizado para cálculo dos valores de negociação do período posterior ao ato ilícito.&lt;/p&gt;
+&lt;p&gt;A ponderação dos preços ao longo de um período razoável de tempo tende a ser uma solução adequada para a maioria dos casos, tendo em vista a sensibilidade do mercado a notícias de fraude e a alta variabilidade dos preços decorrentes de boatos que sucedem à revelação do ato ilícito. Por exemplo, o US Code, título 15, capítulo 2 B, par. 78 U4, estabelece uma limitação para o cálculo do prejuízo com base no preço médio de negociação da ação nos 90 dias posteriores à data em que a informação do ilícito tenha sido disseminada no mercado.&lt;/p&gt;
+&lt;p&gt;Outro ponto diz respeito à metodologia de cálculo do valor factual. O valor médio é a resposta intuitiva imediata. No entanto, o julgador e o perito devem observar o comportamento dos preços, a fim de optar pela melhor maneira de ponderar esses valores e considerar não apenas a média, mas também a mediana, a variância, o desvio padrão ou uma combinação de medidas de posição e de dispersão, que seja capaz de resumir os preços praticados naquele período.&lt;/p&gt;
+&lt;p&gt;Há também acionistas que adquiriram e venderam posições antes do ato ilícito e/ou que, diante da queda abrupta, optaram por comprar mais ações no mercado para melhorar seu preço médio de aquisição. Diante dessas circunstâncias, é importante delimitar não apenas o período de venda posterior ao ato, mas também o período de aquisição anterior ao ato abrangido pelo dever de indenizar. Esse período anterior permite ponderar eventuais ganhos realizados antes da ocorrência do ato ilícito (o acionista pode ter se beneficiado da fraude no passado, vendendo no mercado ações sobrevalorizadas), bem como excluir do multiplicador ações adquiridas após o ilícito.&lt;/p&gt;
+&lt;p&gt;Já o cálculo do valor contrafactual da ação levanta outras questões, tendo em vista a sua abstração, ou seja, a circunstância desse preço não ter se materializado em uma negociação de mercado. Por quanto&lt;/p&gt;
+&lt;p&gt;essa ação estaria sendo negociada caso o ato ilícito não tivesse ocorrido? Essa pergunta leva a outra indagação, relacionada ao nexo de causalidade e usualmente explorada pela defesa: existiriam outras causas concorrentes capazes de explicar a queda no valor da ação, além da ocorrência do ato ilícito?&lt;/p&gt;
+&lt;p&gt;O cálculo do valor contrafacutual pode ser realizado através de comparações em três níveis: 1. A companhia com ela própria (auto comparação). 2. A companhia com outras companhias parecidas (comparação com semelhantes). 3. A companhia com o indicadores econômicos (comparação com o mercado).&lt;/p&gt;
+&lt;p&gt;A auto comparação procura identificar tendências de evolução no preço da ação antes do ato ilícito e projetar qual teria sido aproximadamente o valor contrafactual da ação, caso ele não tivesse ocorrido. A limitação desse método reside na suposição de que todos os demais fatores de mercado observados antes do ato ilícito, bem como as características internas da companhia, permaneceriam constantes, o que pode não ser verdade.&lt;/p&gt;
+&lt;p&gt;A comparação com semelhantes procura associar o preço da ação antes do ato ilícito com o preço de mercado de outras empresas no mesmo período. Se há na bolsa mais companhias que atuam no mesmo segmento, que não sofreram o efeito do ato ilícito e cujo preço de negociação da ação está associado ao preço da ação da companhia sujeita ao processo de indenização, esse preço pode ser utilizado como referência para o cálculo. A limitação aqui é que podem não existir outras companhias no mesmo segmento com ações negociadas na bolsa ou, ainda que existam, esses preços podem ter sido indiretamente contaminados pelo ato ilícito.&lt;/p&gt;
+&lt;p&gt;Por fim, a comparação com o mercado consiste em associar o preço da ação antes do ato ilícito com indicadores de mercado, micro e macroeconômicos, em uma técnica que permite isolar o efeito do ilícito de outros efeitos genéricos do mercado, tais como evolução do produto interno bruto, taxa de desemprego e índice de inflação, para citar os mais notórios.&lt;/p&gt;
+&lt;p&gt;Esses três caminhos não se excluem mutuamente e podem ser combinados em uma solução ótima, que permita obter um valor contrafactual que considere as características próprias da companhia em discussão e, ao mesmo tempo, controle outras possíveis causas de variação do preço, como o comportamento do segmento de mercado em que ela atua e o desempenho geral da economia do país.&lt;/p&gt;
+&lt;p&gt;Quero enfatizar, por fim, que o cálculo é perfeitamente viável de ser realizado. Também ressalto que o mais importante nessa avaliação é admitir a sua contrafactualidade, reconhecer a existência de outras causas para a formação do preço (covariantes explicativas) e, ao final, ao invés de apresentar um número de ouro sem credibilidade, oferecer ao julgador um conjunto de cenários verossímeis, capaz de apresentar um intervalo razoável de valores a ser considerado pelo juiz no momento da fixação da indenização.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Assuntos processuais: a cifra oculta</title>
+      <link>/blog/2017/01/27/2017-01-28-assuntos/</link>
+      <pubDate>Fri, 27 Jan 2017 09:23:47 -0200</pubDate>
+      
+      <guid>/blog/2017/01/27/2017-01-28-assuntos/</guid>
+      <description>&lt;script src=&#34;/rmarkdown-libs/htmlwidgets/htmlwidgets.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;/rmarkdown-libs/viz/viz.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;/rmarkdown-libs/DiagrammeR-styles/styles.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;/rmarkdown-libs/grViz-binding/grViz.js&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;O volume de processos judiciais no Brasil é colossal. Segundo o relatório &lt;a href=&#34;http://www.cnj.jus.br/files/conteudo/arquivo/2016/10/b8f46be3dbbff344931a933579915488.pdf&#34;&gt;Justiça em Números 2016&lt;/a&gt;, temos mais de 59 milhões de processos pendentes, somente na Justiça Estadual. Compreender o perfil das demandas é indispensável para a gestão eficiente dos Tribunais. Uma forma natural de identificar esses perfis é classificando os casos em “tipos”, que são grupos de processos com características comuns.&lt;/p&gt;
+&lt;p&gt;Atualmente, a forma mais direta de identificar tipos de processos judiciais é utilizando os chamados &lt;em&gt;assuntos processuais&lt;/em&gt;. Esses assuntos nada mais são do que as matérias discutidas em cada caso. Por exemplo, um caso cível de indenização por dano moral poderia ter um assunto “Indenização por dano moral”, enquanto um processo falimentar de uma empresa em Recuperação Judicial poderia ser classificado como “Convolação de Recuperação Judicial em Falência”.&lt;/p&gt;
+&lt;p&gt;Nesse contexto, um importante passo foi dado com a &lt;a href=&#34;http://www.cnj.jus.br/images/stories/docs_cnj/resolucao/rescnj_46.pdf&#34;&gt;Resolução 46/2007 do CNJ&lt;/a&gt;, que criou as Tabelas Processuais Unificadas do CNJ (TPUs). As TPUs são uma documentação oficial de todas as classes, assuntos e movimentações dos processos. As TPUs foram implantada em todas as Justiças, o que facilita muito na realização de análises que comparam diferentes tribunais. Por esse motivo, as TPUs podem ser consideradas uma revolução na gestão judiciária.&lt;/p&gt;
+&lt;p&gt;Infelizmente, apenas a definição unificada de assuntos não garante que os processos sejam corretamente classificados. Mas para entender esse problema, precisamos primeiro entender como as TPUs funcionam na prática.&lt;/p&gt;
+&lt;div id=&#34;estrutura-das-tpus&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Estrutura das TPUs&lt;/h2&gt;
+&lt;p&gt;As TPUs são estruturadas em formato de árvore. Isso significa que temos assuntos genéricos e assuntos específicos, sendo que o assunto específico é um “filho” do assunto genérico. As TPUs podem ter até seis níveis hierárquicos de assuntos.&lt;/p&gt;
+&lt;p&gt;A Figura &lt;a href=&#34;#fig:tpu&#34;&gt;1&lt;/a&gt; mostra uma parte da árvore de assuntos relativa ao Direito do Consumidor. Os números da imagem são códigos identificadores dos assuntos. Note que, por exemplo, “Inclusão Indevida em Cadastro de Inadimplentes” é um filho de “Indenização por Dano Moral”, que por sua vez é filho de “Responsabilidade do Fornecedor”.&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:tpu&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;/blog/tpu.png&#34; alt=&#34;Árvore de assuntos relacionada ao Direito do Consumidor (parcial). Imagem obtida [nesse link](https://www.cnj.jus.br/sgt/consulta_publica_assuntos.php).&#34;  /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 1: Árvore de assuntos relacionada ao Direito do Consumidor (parcial). Imagem obtida &lt;a href=&#34;https://www.cnj.jus.br/sgt/consulta_publica_assuntos.php&#34;&gt;nesse link&lt;/a&gt;.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;O problema enfrentado atualmente é que, na prática, nem sempre os processos são classificados com assuntos específicos. Assim, podemos ter um caso que discute sobre “Análise de Crédito” classificado como “Responsabilidade do Fornecedor”, ou ainda “Direito do Consumidor”.&lt;/p&gt;
+&lt;p&gt;A existência de casos classificados com assuntos genéricos implica num problema para o levantamento do volume processual por assunto. Por exemplo, considere que há interesse em conhecer o volume de processos envolvendo “Análise de Crédito”. Se considerarmos somente os casos classificados corretamente, estaríamos subestimando o real volume de processos, pois estaríamos ignorando os casos classificados em assuntos genéricos. Por outro lado, se considerarmos no levantamento todos os casos, incluindo os genéricos, estaríamos superestimanto o real volume.&lt;/p&gt;
+&lt;p&gt;A possibilidade de subestimação do volume real de processos de um certo tipo configura o que chamamos de &lt;strong&gt;cifra oculta&lt;/strong&gt;. Dado um assunto específico, esse número pode ser definido como a quantidade de processos com esse assunto, mas classificados em assuntos genéricos.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;estimacao-da-cifra-oculta&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Estimação da cifra oculta&lt;/h2&gt;
+&lt;p&gt;Felizmente, a cifra oculta pode ser estimada usando jurimetria. Para isso, no entanto, é necessário fazer algumas suposições ou utilizar conhecimentos a priori sobre o tema.&lt;/p&gt;
+&lt;p&gt;A forma mais simples de estimar a cifra oculta é realizando uma espécie de “regra de três”. No exemplo da análise de crédito, considere que temos uma base de dados com todos os casos classificados com assuntos dentro da árvore do Direito do Consumidor. Suponha também que todos os processos de análise de crédito foram classificados ou corretamente, ou incorretamente como “Direito do Consumidor”. Utilizando somente a parte da base que foi classificada com assuntos específicos, calculamos a proporção de casos &lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt; classificados como “Análise de Crédito”. Assim, uma estimativa do volume de processos de análise de crédito é dada por&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+N = N_A + N_T \times p\text{, onde}
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;math inline&#34;&gt;\(N_A\)&lt;/span&gt; é o volume de casos classificados corretamente como “Análise de Crédito”.&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;math inline&#34;&gt;\(N_T\)&lt;/span&gt; é o volume total de casos classificados como “Direito do Consumidor”. &lt;span class=&#34;math inline&#34;&gt;\(N_T \times p\)&lt;/span&gt; é a estimativa da cifra oculta.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Essa estimativa, no entanto, faz uma suposição forte sobre as classificações. Nesse cálculo, assumimos que o fato de um processo ser classificado de forma genérica não tem relação alguma com o fato desse processo tratar de análise de crédito. Esse é um conceito estatístico denominado &lt;em&gt;independência&lt;/em&gt; e pode ou não ser válido nesse exemplo concreto. Na sessão &lt;a href=&#34;#stats&#34;&gt;&lt;strong&gt;??&lt;/strong&gt;&lt;/a&gt; discutimos esse problema em maior detalhe.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;conclusao&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Conclusão&lt;/h2&gt;
+&lt;p&gt;Neste artigo discutimos a existência das TPUs e apresentamos sua estrutura. Também apresentamos o problema da &lt;em&gt;cifra oculta&lt;/em&gt;, presente em todos os tribunais, que atrapalha substancialmente o cálculo de volume processual por assunto.&lt;/p&gt;
+&lt;p&gt;Finalmente, apresentamos uma solução para esse problema, que depende de algumas suposições, mas que poderia ser rapidamente implementado em sistemas e relatórios gerenciais. Um caso importante é o próprio Justiça em Números, que até o momento mostra o volume processual somente para os três níveis mais genéricos das TPUs.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;stats&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;span class=&#34;math inline&#34;&gt;\(Stats\ session\)&lt;/span&gt;&lt;/h2&gt;
+&lt;p&gt;Essa sessão é voltada para nerds em estatística!&lt;/p&gt;
+&lt;p&gt;O problema da cifra oculta é essencialmente um caso de omissão de dados. Quando um estudo envolve omissão, a primeira preocupação que devemos ter é se existe algum mecanismo para a produção dos dados, e se esse mecanismo estaria relacionado com os dados observados ou não observados. Ignorar esse mecanismo pode gerar viés nos resultados.&lt;/p&gt;
+&lt;p&gt;Podemos classificar os dados omissos em três tipos principais:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Missing completamente aleatório (MCAR). Não depende de nenhuma outra variável.&lt;/li&gt;
+&lt;li&gt;Missing aleatório (MAR). A probabilidade de omissão depende somente das informações observadas.&lt;/li&gt;
+&lt;li&gt;Missing não aleatório (MNAR). Outros casos.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Aqui, vamos lidar apenas com MCAR e MAR. Nesses casos, podemos tratar os dados omissos como parâmetros a serem estimados no modelo. Para trabalhar o caso MNAR é necessário utilizar informações a priori sobre o problema específico ou plugar informações de levantamentos anteriores (e.g. uma amostra de processos com assuntos classificados manualmente).&lt;/p&gt;
+&lt;div id=&#34;caso-mcar&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Caso MCAR&lt;/h3&gt;
+&lt;p&gt;O caso MCAR é equivalente à aplicação da “regra de três” definida acima. A única complicação é que o cálculo precisa ser realizado para cada nível de generalização do assunto. Felizmente, é possível estruturar as contas utilizando uma classe de modelos estatísticos denominada &lt;em&gt;rede Bayesiana&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Uma rede Bayesiana é uma forma gráfica de representar a dependência de variáveis aleatórias. No nosso caso, consideramos como variáveis aleatórias cada um dos níveis da árvore da TPU, digamos, &lt;span class=&#34;math inline&#34;&gt;\(N_1, N_2, \dots, N_6\)&lt;/span&gt;, em que &lt;span class=&#34;math inline&#34;&gt;\(N_1\)&lt;/span&gt; é o nível mais genérico (e.g. Direito do Consumidor) e &lt;span class=&#34;math inline&#34;&gt;\(N_6\)&lt;/span&gt; é o nível mais específico (e.g. Análise de Crédito). Nos casos em que o nível mais específico não ocorre no sexto nível, fazemos cópias do último nível disponível até &lt;span class=&#34;math inline&#34;&gt;\(N_6\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;A rede da Figura &lt;a href=&#34;#fig:rb&#34;&gt;2&lt;/a&gt; representa a hierarquia dos níveis das TPUs. Trata-se de uma rede bastante simples, que pode ser utilizada diretamente para o cálculo dos volumes processuais. Mostraremos como fazer isso na Seção &lt;a href=&#34;#rsession&#34;&gt;&lt;strong&gt;??&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:rb&#34;&gt;&lt;/span&gt;
+&lt;div id=&#34;htmlwidget-7a436f3db49044f47b43&#34; style=&#34;width:672px;height:192px;&#34; class=&#34;grViz html-widget&#34;&gt;&lt;/div&gt;
+&lt;script type=&#34;application/json&#34; data-for=&#34;htmlwidget-7a436f3db49044f47b43&#34;&gt;{&#34;x&#34;:{&#34;diagram&#34;:&#34;\ndigraph rmarkdown {\nrankdir=LR;\nnode [shape = circle, fixedsize = true, width = 0.9]\nN₁, N₂, N₃, N₄, N₅, N₆ \n\nN₁ -&gt; N₂ -&gt; N₃ -&gt; N₄ -&gt; N₅ -&gt; N₆\n}\n&#34;,&#34;config&#34;:{&#34;engine&#34;:&#34;dot&#34;,&#34;options&#34;:null}},&#34;evals&#34;:[],&#34;jsHooks&#34;:[]}&lt;/script&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 2: Rede Bayesiana representando a hierarquia dos níveis das TPUs.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;caso-mar&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Caso MAR&lt;/h3&gt;
+&lt;p&gt;No caso MAR, podemos utilizar todos os dados disponíveis dos processos para predizer o assunto real do processo. Para isso, qualquer técnica de modelagem preditiva poderia ser utilizada.&lt;/p&gt;
+Uma forma natural de realizar montar esses modelos é estendendo a rede Bayesiana da Figura &lt;a href=&#34;#fig:rb&#34;&gt;2&lt;/a&gt;. Por exemplo, a rede da Figura &lt;a href=&#34;#fig:rb2&#34;&gt;3&lt;/a&gt; considera que a classificação específica ou genérica de determinado assunto processual depende da vara em que o processo é distribuído. Outras variáveis poderiam ser consideradas para construir um modelo mais completo.
+&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:rb2&#34;&gt;&lt;/span&gt;
+&lt;div id=&#34;htmlwidget-027a686e7b33ea25d4f8&#34; style=&#34;width:672px;height:192px;&#34; class=&#34;grViz html-widget&#34;&gt;&lt;/div&gt;
+&lt;script type=&#34;application/json&#34; data-for=&#34;htmlwidget-027a686e7b33ea25d4f8&#34;&gt;{&#34;x&#34;:{&#34;diagram&#34;:&#34;\ndigraph rmarkdown {\nrankdir=LR;\nnode [shape = circle, fixedsize = true, width = 0.9]\nVara, N₁, N₂, N₃, N₄, N₅, N₆ \n\nN₁ -&gt; N₂ -&gt; N₃ -&gt; N₄ -&gt; N₅ -&gt; N₆\nVara -&gt; {N₁, N₂, N₃, N₄, N₅, N₆}\n}\n&#34;,&#34;config&#34;:{&#34;engine&#34;:&#34;dot&#34;,&#34;options&#34;:null}},&#34;evals&#34;:[],&#34;jsHooks&#34;:[]}&lt;/script&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 3: Rede Bayesiana representando a hierarquia dos níveis das TPUs, considerando também a vara.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;r-session&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;code id=&#34;rsession&#34;&gt;R session&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;Essa sessão é voltada para nerds em R!&lt;/p&gt;
+&lt;p&gt;O pacote &lt;code&gt;tpur&lt;/code&gt;, desenvolvido pela ABJ, pode ser utilizado para executar duas tarefas:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Baixar e estruturar as TPUs diretamente da &lt;a href=&#34;https://www.cnj.jus.br/sgt/versoes.php&#34;&gt;fonte oficial do CNJ&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;A partir de uma base de dados de processos, estimar o volume processual de um conjunto de assuntos com base em um modelo de redes Bayesianas.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Observe a estrutura de uma TPU usando o &lt;code&gt;tpur&lt;/code&gt;. As colunas de &lt;code&gt;n1&lt;/code&gt; até &lt;code&gt;n6&lt;/code&gt; mostram os assuntos e as demais mostram informações como código, dispositivo legal por trás do assunto, artigo de lei, informações sobre alterações e glossário. A coluna &lt;code&gt;folha&lt;/code&gt; indica se o assunto é específico (&lt;code&gt;TRUE&lt;/code&gt;) ou genérico (&lt;code&gt;FALSE&lt;/code&gt;).&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;tpu &amp;lt;- build_table(download_table(&amp;#39;assunto&amp;#39;, &amp;#39;estadual&amp;#39;, &amp;#39;1 grau&amp;#39;))
+glimpse(tpu)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Usando o pacote &lt;code&gt;tjsp&lt;/code&gt; (que será assunto de outro post!), baixamos 1005 processos da Consulta de Julgados de Primeiro Grau do TJSP (CJPG).&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;s &amp;lt;- tjsp::cjpg_session()
+p &amp;lt;- tjsp::cjpg_parms(s, data_inicial = &amp;#39;2016-01-01&amp;#39;, data_final = &amp;#39;2016-12-31&amp;#39;)
+res &amp;lt;- tjsp::cjpg(s, p, max_pag = 100)
+d_tjsp &amp;lt;- tjsp::parse_cjpg(dir(&amp;#39;data-raw/cjpg&amp;#39;, full.names = TRUE))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;A base apresenta as seguintes informações:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(dplyr)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 
+## Attaching package: &amp;#39;dplyr&amp;#39;&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## The following objects are masked from &amp;#39;package:stats&amp;#39;:
+## 
+##     filter, lag&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## The following objects are masked from &amp;#39;package:base&amp;#39;:
+## 
+##     intersect, setdiff, setequal, union&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tpur)
+
+tpu &amp;lt;- readRDS(&amp;quot;tpu.rds&amp;quot;)
+glimpse(d_tjsp)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Observations: 1,005
+## Variables: 11
+## $ arq                      &amp;lt;chr&amp;gt; &amp;quot;data-raw/cjpg/00001.html&amp;quot;, &amp;quot;data-raw...
+## $ n_processo               &amp;lt;chr&amp;gt; &amp;quot;10433988320148260100&amp;quot;, &amp;quot;104070290201...
+## $ id_processo              &amp;lt;chr&amp;gt; &amp;quot;2S000CQSR0000-100-PG5JM-52554000&amp;quot;, &amp;quot;...
+## $ assunto                  &amp;lt;chr&amp;gt; &amp;quot;Seguro&amp;quot;, &amp;quot;Medida Cautelar&amp;quot;, &amp;quot;Valor d...
+## $ classe                   &amp;lt;chr&amp;gt; &amp;quot;Procedimento Comum&amp;quot;, &amp;quot;Protesto&amp;quot;, &amp;quot;Em...
+## $ comarca                  &amp;lt;chr&amp;gt; &amp;quot;SÃO PAULO&amp;quot;, &amp;quot;Guarulhos&amp;quot;, &amp;quot;Guarulhos&amp;quot;...
+## $ data_de_disponibilizacao &amp;lt;chr&amp;gt; &amp;quot;31/12/2016&amp;quot;, &amp;quot;31/12/2016&amp;quot;, &amp;quot;31/12/20...
+## $ foro                     &amp;lt;chr&amp;gt; &amp;quot;Foro Central Cível&amp;quot;, &amp;quot;Foro de Guarul...
+## $ magistrado               &amp;lt;chr&amp;gt; &amp;quot;José Antonio Lavouras Haicki&amp;quot;, &amp;quot;José...
+## $ vara                     &amp;lt;chr&amp;gt; &amp;quot;6ª Vara Cível&amp;quot;, &amp;quot;1ª Vara da Fazenda ...
+## $ result                   &amp;lt;chr&amp;gt; &amp;quot;OK&amp;quot;, &amp;quot;OK&amp;quot;, &amp;quot;OK&amp;quot;, &amp;quot;OK&amp;quot;, &amp;quot;OK&amp;quot;, &amp;quot;OK&amp;quot;, &amp;quot;...&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Digamos que nosso interesse seja estimar o volume de processos relativos aos assuntos “Indenização por Dano Moral” e “Fornecimento de Medicamentos”. Na base de dados baixada, temos exatamente 80 processos classificados com esse assunto.&lt;/p&gt;
+&lt;p&gt;Para isso, utilizamos a função &lt;code&gt;tpu_assunto_prob&lt;/code&gt;. Essa função assume o modelo MCAR como base. Futuramente teremos um pacote próprio para esses cálculos, que acomodarão outras especificações.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;leafs &amp;lt;- c(&amp;#39;Indenização por Dano Moral&amp;#39;, &amp;#39;Fornecimento de Medicamentos&amp;#39;)
+result &amp;lt;- tpu_assunto_prob(d_tjsp, leafs, tpu)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Warning in combine_vars(vars, ind_list): &amp;#39;.Random.seed&amp;#39; is not an integer
+## vector but of type &amp;#39;NULL&amp;#39;, so ignored&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;round(sum(result$p))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 91&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Como resultado, observamos uma cifra oculta de 10 processos, um aumento de 12,5% do valor inicial.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Número CNJ</title>
+      <link>/blog/2017/01/27/2017-01-27-numero-cnj/</link>
+      <pubDate>Fri, 27 Jan 2017 09:23:47 -0200</pubDate>
+      
+      <guid>/blog/2017/01/27/2017-01-27-numero-cnj/</guid>
+      <description>&lt;!-- BLOGDOWN-HEAD --&gt;
+&lt;!-- /BLOGDOWN-HEAD --&gt;
+
+&lt;!-- BLOGDOWN-BODY-BEFORE --&gt;
+&lt;!-- /BLOGDOWN-BODY-BEFORE --&gt;
+&lt;p&gt;A definição da &lt;em&gt;unidade amostral&lt;/em&gt; é essencial para a realização de qualquer pesquisa empírica. Trata-se do elemento indivisível de uma amostra, de onde se medem as características que serão utilizadas na análise estatística.&lt;/p&gt;
+&lt;p&gt;Na jurimetria é usual considerar o &lt;em&gt;litígio&lt;/em&gt; como unidade amostral. O litígio é chamado de &lt;em&gt;processo judicial&lt;/em&gt; quando tramita na esfera judicial. Cada processo possui um número identificador cadastrado nos sistemas do Tribunal, o que facilita a busca por casos específicos.&lt;/p&gt;
+&lt;p&gt;A &lt;a href=&#34;https://goo.gl/IX4PuX&#34;&gt;Resolução 65 do CNJ&lt;/a&gt; (&lt;em&gt;Número CNJ&lt;/em&gt;), é um marco na identificação de processos judiciais. Até 2008, a forma de numeração dos processos era definida pelo Tribunal responsável pela tramitação, o que dava origem a diversos formatos distintos. Com a Resolução, os processos passaram a receber um formato de numeração único para todos os Tribunais nas justiças Estadual, Trabalhista, Federal, Militar, Eleitoral e Superiores.&lt;/p&gt;
+&lt;p&gt;A Resolução define o padrão &lt;code&gt;NNNNNNN-DD.AAAA.J.TR.OOOO&lt;/code&gt;, em que:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;NNNNNNN&lt;/code&gt;: Número identificador do processo.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;DD&lt;/code&gt;: Dígito verificador gerado a partir da aplicação do algoritmo Módulo 97 Base 10, conforme Norma ISO 7064:2003.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;AAAA&lt;/code&gt;: Ano do ajuizamento do processo.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;J&lt;/code&gt;: Segmento do poder judiciário. Por exemplo, &lt;code&gt;8&lt;/code&gt; indica Justiça Estadual.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;TR&lt;/code&gt;: Identifica o tribunal. Por exemplo, &lt;code&gt;26&lt;/code&gt; indica Tribunal de Justiça de São Paulo.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;OOOO&lt;/code&gt;: Identifica a unidade de origem (foro) do processo. Na maioria dos casos, o número também identifica a comarca, pois existem poucas comarcas com mais de um foro (ex. a comarca de São Paulo, que possui mais de dez foros regionais).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div id=&#34;gerando-numeros-aleatorios&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Gerando números aleatórios&lt;/h2&gt;
+&lt;p&gt;Um aspecto interessante na especificação do número CNJ é a possibilidade de gerar todos os possíveis números de processos. Para cada configuração de ano, justiça, tribunal e órgão de origem, são exatamente dez milhões de números distintos. Por exemplo, considerando somente processos ajuizados em 2009, nas &lt;a href=&#34;http://tjal.jus.br/apmp/jurisdicaocomarcas09102015.pdf&#34;&gt;55 comarcas do Tribunal de Justiça de Alagoas&lt;/a&gt; e um foro por comarca, teríamos 550 milhões de números distintos. Esses números podem ser utilizados para pesquisar todos os processos de um tribunal.&lt;/p&gt;
+&lt;p&gt;No entanto, pesquisar 550 milhões de números é uma tarefa demorada e onerosa para os tribunais. No exemplo, com 10 pesquisas por segundo, seriam necessários 637 dias para acessar todos os números. Além disso, nem todos os números correspondem a processos de fato, pois são gerados conforme a demanda e apenas uma parcela dos números é realmente manifesta.&lt;/p&gt;
+&lt;p&gt;Nessa situação uma alternativa via amostragem se torna viável. Ao invés de pesquisar todos os processos, gera-se uma amostra aleatória de números, acessando diretamente nas ferramentas de pesquisa dos tribunais. A quantidade de processos necessários para isso é definida estudando-se a probabilidade de manifestação de um número de processo. Usualmente isso é feito a partir de uma amostra piloto.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;r-session&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;code&gt;R session&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;No pacote &lt;code&gt;abjutils&lt;/code&gt; criado pela ABJ, é possível utilizar a função &lt;code&gt;sample_cnj&lt;/code&gt; abaixo. É necessário informar a quantidade de processos, os foros, os anos, o segmento de justiça e o tribunal, com os seguintes parâmetros:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;n&lt;/code&gt;: quantidade de processos a ser gerada.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;foros&lt;/code&gt;: vetor de códigos de foro.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;anos&lt;/code&gt;: vetor de anos de distribuição dos processos.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;orgao&lt;/code&gt;: vetor de segmentos de justiça.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;tr&lt;/code&gt;: vetor de tribunais.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;No exemplo abaixo, geramos cinco processos aleatoriamente.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(abjutils)
+sample_cnj(n = 5, 
+           foros = &amp;quot;0001&amp;quot;, anos = c(2014, 2015), orgao = 8, tr = 26,
+           first_dig = &amp;quot;0&amp;quot;, sample_pars = TRUE, return_df = TRUE)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 5 × 1
+##             n_processo
+##                  &amp;lt;chr&amp;gt;
+## 1 00799313020158260001
+## 2 01355089020158260001
+## 3 03049618320158260001
+## 4 08177750720148260001
+## 5 01881019620158260001&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Nuances no cálculo de tempos processuais</title>
+      <link>/blog/2016/12/31/2016-12-31-tempos/</link>
+      <pubDate>Sat, 31 Dec 2016 09:23:47 -0200</pubDate>
+      
+      <guid>/blog/2016/12/31/2016-12-31-tempos/</guid>
+      <description>&lt;p&gt;Caracterizar a duração de processos judiciais é um problema relevante para o Direito. Em Jurimetria, isso normalmente é feito utilizando Análise de Sobrevivência&lt;a href=&#34;#fn1&#34; class=&#34;footnoteRef&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;, mas os textos desse assunto não costumam mencionar a diferença qualitativa entre as estimativas de duração produzidas por estudos prospectivos e retrospectivos&lt;a href=&#34;#fn2&#34; class=&#34;footnoteRef&#34; id=&#34;fnref2&#34;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;A diferença entre as duas metodologias consiste no fato de estudos retrospecivos observarem processos que &lt;strong&gt;terminaram em um determinado período&lt;/strong&gt;, enquanto estudos prospectivos observam processos &lt;strong&gt;distribuídos em um determinado período&lt;/strong&gt;. Por isso, as populações estudadas em cada uma das propostas são diferentes, e isso impacta a forma com que os resultados devem ser interpretados.&lt;/p&gt;
+&lt;p&gt;Neste texto, vamos ilustrar o desempenho e as diferenças dos tipos de estudo através de uma simulação. Durações processuais hipotéticas serão geradas considerando dois cenários, e as estatísticas produzidas por cada metodologia serão comparadas.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Metodologia 1&lt;/strong&gt; (retrospectiva): Analisa todos os processos encerrados entre 01/01/2014 e 01/01/2015. O estudo termina em 01/01/2015.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Metodologia 2&lt;/strong&gt; (prospectiva): Analisa todos os processos distribuídos entre 01/01/2014 e 01/01/2015. O estudo termina em 01/01/2015.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;O desempenho dessas pesquisas será estudado nos cenários:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Cenário 1:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Distribuição&lt;/strong&gt;: A probabilidade de distribuição de um processo em um determinado dia é &lt;span class=&#34;math inline&#34;&gt;\(7\)&lt;/span&gt;%.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Duração&lt;/strong&gt;: A quantidade de dias entre a data de distribuição e a data de encerramento dos litígios tem distribuição geométrica de parâmetro &lt;span class=&#34;math inline&#34;&gt;\(1\)&lt;/span&gt;%.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Cenário 2:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Distribuição&lt;/strong&gt;: Antes do dia 01/08/2014, a probabilidade de distribuição de um processo em um determinado dia é &lt;span class=&#34;math inline&#34;&gt;\(7\)&lt;/span&gt;%. Após esse dia, a probabilidade de distribuição de um processo em um determinado dia é &lt;span class=&#34;math inline&#34;&gt;\(17\)&lt;/span&gt;%.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Duração&lt;/strong&gt;: A quantidade de dias entre a data de distribuição e a data de encerramento dos litígios tem distribuição geométrica de parâmetro &lt;span class=&#34;math inline&#34;&gt;\(1%\)&lt;/span&gt;.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div id=&#34;calculos&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Cálculos&lt;/h2&gt;
+&lt;p&gt;No que segue, vamos comparar as médias de duração estimadas por cada estudo e a verdadeira média dos processos: 77 dias. Como as duas metodologias possuem características diferentes, nesta sessão vamos explicitar cada procedimento de cálculo.&lt;/p&gt;
+&lt;p&gt;A propriedade dos estudos que causa a divergência nos cálculos é a presença ou ausência de censuras&lt;a href=&#34;#fn3&#34; class=&#34;footnoteRef&#34; id=&#34;fnref3&#34;&gt;&lt;sup&gt;3&lt;/sup&gt;&lt;/a&gt; nas observações. Em estudos retrospectivos é impossível que haja censuras, pois os processos analisados são apenas aqueles em que já houve o encerramento. Estudos prospectivos, por outro lado, levam em conta processos que ainda não acabaram, mas não levam em conta processos que acabaram há muito tempo.&lt;/p&gt;
+&lt;p&gt;Para proceder com a derivação das fórmulas de cálculo e garantir a mesma base de comparação, admitimos que nos dois estudos as seguintes suposições foram utilizadas:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;As durações de dois processos distintos são independentes.&lt;/li&gt;
+&lt;li&gt;As durações dos processos seguem a distribuição geométrica de probabilidades.&lt;/li&gt;
+&lt;li&gt;A probabilidade de distribuição de processos é constante ao longo do tempo.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Considerando essas hipóteses, o tratamento das censuras será feito utilizando procedimentos usuais de Análise de Sobrevivência. Nesse contexto, as fórmulas associadas ao cálculo da média de cada metodologia encontram-se na tabela abaixo. É importante notar que o numerador é composto pela soma de todas as durações. Isso quer dizer que, no caso de estudos prospectivos, o numerador inclui a duração observada em processos que ainda não acabaram.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+\begin{array}{|c|c|}
+\text{Metodologia de pesquisa} &amp;amp; \text{Fórmula da média} \\
+\hline
+\text{Prospectiva} &amp;amp; \frac{\text{Soma das durações observadas}}{\text{Total de processos} - \text{Total de censuras}} \\
+\text{Retrospectiva} &amp;amp; \frac{\text{Soma das durações observadas}}{\text{Total de processos}}\\
+\end{array}
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;resultados&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Resultados&lt;/h2&gt;
+&lt;p&gt;Uma realização da nossa simulação está ilustrada na figura abaixo. As linhas representam o ciclo de vida dos processos sob estudo e as cores representam a presença ou ausência nos planos amostrais que utilizam cada uma das metodologias. As linhas tracejadas delimitam o escopo temporal dos estudos.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/blog/2016-12-31-tempos_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;É importante notar que a curva que representa a distribuição dos processos no cenário 1 é mais íngreme após agosto de 2014. Isso ocorre porque nesse cenário a taxa de distribuição de processos aumentou de &lt;span class=&#34;math inline&#34;&gt;\(7\)&lt;/span&gt;% para &lt;span class=&#34;math inline&#34;&gt;\(17\)&lt;/span&gt;%. Por conta desse fato, existe uma maior quantidade de processos com baixa duração sendo analisada pelo estudo retrospectivo.&lt;/p&gt;
+&lt;p&gt;Realizando 1000 simulações, resumimos o desempenho das metodologias como a média das estimativas para a duração média produzidas em cada cenário.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+\begin{array}{|c|c|}
+\text{Metodologia de pesquisa} &amp;amp; \text{Cenário 1} &amp;amp; \text{Cenário 2} \\
+\hline
+\text{Prospectiva} &amp;amp; 76.56  &amp;amp; 76.45 \\
+\text{Retrospectiva} &amp;amp; 64.42 &amp;amp; 75.14  \\
+\end{array}
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;conclusao&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Conclusão&lt;/h2&gt;
+&lt;p&gt;Nossas simulações forneceram evidências de que a medição de tempos processuais selecionando observações de maneira retrospectiva estima incorretamente a duração média quando há violação da suposição de estabilidade da distribuição dos processos. Isso ocorreu pois estudos retrospectivos medem a duração dos processos que terminam em um determinado período. Por conta disso, no caso de um evento em que o número de distribuições aumenta, o estudo retrospectivo analisou uma quantidade desproporcional de processos com duração pequena.&lt;/p&gt;
+&lt;p&gt;Também constatamos que estudos prospectivos protegeram-se melhor contra a instabilidade da distribuição de procesos. Mesmo havendo flutuações na taxa diária de processos distribuídos, as estimativas ficaram próximas dos valores verdadeiros. Isso correu pois a média da distribuição da duração processual não mudou ao longo do tempo.&lt;/p&gt;
+&lt;p&gt;Por fim, ressaltamos que os resultados obtidos neste texto não buscam desacreditar estudos retrospectivos. O objetivo da nossa argumentação é chamar a atenção para dois pontos: (i) a importância das suposições na modelagem e (ii) riscos que se corre quando se opta por certos delineamentos de estudo. Toda ferramenta quantitativa é adequada quando as suas hipóteses estão satisfeitas. Em particular, estudos retrospectivos podem ser conduzidos com maior facilidade e eficiência do que estudos prospectivos, e isso é uma grande vantagem. Mas isso não pode nos cegar com relação às suas limitações.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;Análise de Sobrevivência é a área da Estatística historicamente associada ao cálculo de tempos de duração de eventos, com uma ampla gama de aplicações.&lt;a href=&#34;#fnref1&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn2&#34;&gt;&lt;p&gt;Nos estudos de duração de processos existem dois eventos importantes: a data de distribuição e a data de encerramento. A diferença entre estudos retrospectivos e prospectivos é a forma com que escolhem quais processos observar. Estudos restropectivos são aqueles em que os processos são escolhidos pela data de encerramento. Um estudo cujo escopo é “o conjunto de processos terminados no ano de 2015” é retrospectivo, pois filtra os processos apenas pela data de término. Estudos prospectivos são aqueles em que a seleção de processos é feita pela data de distribuição. Um estudo com escopo “processos distribuídos no ano de 2015” é prospectivo.&lt;a href=&#34;#fnref2&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn3&#34;&gt;&lt;p&gt;Em Jurimetria, censura é o nome dado à duração que é observada antes da ocorrência de um evento de interesse. No nosso exemplo, isso corresponde às durações de processos que ainda não chegaram ao fim.&lt;a href=&#34;#fnref3&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

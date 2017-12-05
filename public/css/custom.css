@@ -1,0 +1,136 @@
+/* your styles go here */
+
+.box-image-text .image {
+  min-height: 200px;
+  max-height: 200px;
+}
+
+.box-simple {
+  min-height: 230px;
+}
+
+.box-image-text {
+  text-align: left;
+}
+
+.box-image-text .content h4 {
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+.heading .text-center {
+  font-weight: lighter;
+  font-size: 36px;
+}
+
+#heading-breadcrumbs h1 {
+  letter-spacing: normal;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+#blog-post #post-content {
+  text-align: left;
+  color: #666;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.panel.sidebar-menu .panel-heading h3 {
+  border-bottom: none;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.mb-small {
+  margin-bottom: 40px !important;
+}
+
+.navbar-brand {
+  height: auto;
+  padding: 0;
+  margin: 25px 0;
+}
+
+.navbar-brand img {
+  padding: 0;
+}
+
+.heading.text-center h2 {
+  font-size: 36px;
+  font-weight: 200;
+}
+
+.navbar-nav > li > a {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.navbar ul.nav > li > a {
+  border-top: none;
+}
+
+.navbar ul.nav > li > a:hover {
+  border-top: none;
+}
+
+.home-carousel .container {
+  width: 100%;
+}
+
+.owl-carousel .owl-controls .owl-buttons {
+  position: absolute;
+  top: 0;
+  width: auto;
+}
+
+.owl-carousel .owl-controls .owl-buttons {
+  width: 100%;
+
+}
+
+.owl-carousel .owl-controls .owl-buttons div {
+  text-align: center !important !important;
+  width: 1em !important;
+  height: 380px !important;
+  background-color: rgba(0, 0, 0, 0.2) !important;
+  position: absolute !important;
+  top: 0 !important;
+  color: rgba(255, 255, 255, 0.7) !important;
+  font-size: 3em !important;
+  line-height: 380px !important;
+  z-index: 999 !important;
+  border-radius: 0;
+  margin: 0;
+}
+
+.owl-carousel .owl-controls .owl-buttons div:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.4) !important;
+  color: rgba(255, 255, 255, 1) !important;
+}
+
+.homepage.owl-carousel.owl-theme .col-sm-4.left h3 {
+  font-size: 2.2em;
+}
+
+.homepage.owl-carousel.owl-theme .col-sm-4.left h3 a {
+  color: #FFF;
+}
+
+.homepage.owl-carousel.owl-theme .col-sm-4.left h3 a:hover {
+  text-decoration: none;
+}
+
+.homepage.owl-carousel.owl-theme .col-sm-4.left .description {
+  font-size: 1.3em;
+  color: #8AE100;
+}
+
+div.owl-prev {
+  left: 0 !important;
+}
+
+div.owl-next {
+  right:0 !important;
+}

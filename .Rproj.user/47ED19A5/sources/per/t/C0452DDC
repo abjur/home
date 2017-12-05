@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1506082085455.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2728874481",
+    "id" : "C0452DDC",
+    "lastKnownWriteTime" : 1506082103,
+    "last_content_update" : 1506082103576,
+    "path" : "~/abjur/home/content/blog/2017-08-02_observatorio.Rmd",
+    "project_path" : "content/blog/2017-08-02_observatorio.Rmd",
+    "properties" : {
+        "cursorPosition" : "10,50",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 6,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

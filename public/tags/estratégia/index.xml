@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Estratégia on ABJ</title>
+    <link>/tags/estrat%C3%A9gia/index.xml</link>
+    <description>Recent content in Estratégia on ABJ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright (c) 2011 - 2017, ABJ; Todos os direitos reservados.</copyright>
+    <atom:link href="/tags/estrat%C3%A9gia/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>A importância de APIs públicas no Judiciário</title>
+      <link>/blog/2017/01/27/2017-02-07-api/</link>
+      <pubDate>Fri, 27 Jan 2017 09:23:47 -0200</pubDate>
+      
+      <guid>/blog/2017/01/27/2017-02-07-api/</guid>
+      <description>&lt;!-- BLOGDOWN-HEAD --&gt;
+&lt;!-- /BLOGDOWN-HEAD --&gt;
+
+&lt;!-- BLOGDOWN-BODY-BEFORE --&gt;
+&lt;!-- /BLOGDOWN-BODY-BEFORE --&gt;
+&lt;p&gt;Jurimetristas tentam entender o direito de forma concreta. Remando contra a maré do abstrato, não se contentam em estudar a lei e querem ver o que está acontecendo no mundo.&lt;/p&gt;
+&lt;p&gt;Para aprender mais sobre o direito e seus fenômenos, uma atividade comum é verificar ou invalidar hipóteses a partir de evidências obtidas com dados. Utilizando metodologias adequadas de pesquisa e com os dados em mãos, construímos e ajustamos modelos que buscam explicar a realidade, tomar decisões estratégicas e predizer o que ocorrerá no futuro.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Com os dados em mãos…&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Sim, precisamos de dados. Muitas vezes, nosso objeto de estudo são processos judiciais dentro de um determinado escopo (intervalo de tempo, região geográfica, com determinadas características etc.) Para estudar valores, resultados e tempos de tramitação de processos, precisamos de repositórios de dados onde essas informações estejam disponíveis.&lt;/p&gt;
+&lt;div id=&#34;como-o-profissional-do-direito-acessa-seus-dados&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Como o profissional do Direito acessa seus dados&lt;/h2&gt;
+&lt;p&gt;Suponha que um novo processo chega num escritório de advocacia. Usualmente, entramos no site do tribunal, digitamos o &lt;a href=&#34;http://www.abj.org.br/blog/2017/01/27/2017-01-27-numero-cnj/&#34;&gt;número CNJ&lt;/a&gt; do processo, encontrando as informações que precisamos. Se precisamos de jurisprudência, fazemos uma pesquisa por palavras-chave na consulta de julgados TJ, e encontramos os argumentos que precisamos.&lt;/p&gt;
+&lt;p&gt;Existem inúmeras ferramentas públicas e privadas para busca e recuperação de processos. Os sistemas são eficazese eficientes, mas são todos voltados para a busca de informações individuais. Se uma pessoa tiver o número identificador, ela achará informações do processo. Se quiser uma lista de processos, poderá utilizar ferramentas de busca.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;como-o-estatistico-acessa-seus-dados&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Como o estatístico acessa seus dados&lt;/h2&gt;
+&lt;p&gt;Um estatístico fica contente quando acessa sites como &lt;a href=&#34;http://www.atlasbrasil.org.br/2013/pt/download/&#34;&gt;esse do PNUD&lt;/a&gt;, ou quando tem a possibilidade de exportar para planilhas os dados de acordo com algum corte da população. Existem muitos exemplos de páginas úteis para cientistas de dados, como IpeaData, Datasus, IBGE, entre outros.&lt;/p&gt;
+&lt;p&gt;Os mais corajosos utilizam APIs (Application Programming Interfaces) para obter dados de tweets, posts no facebook, entre outros. O importante é notar que os sistemas voltados para estatísticos são em sua maioria voltados para extração de informações de muitos indivíduos. Os dados são organizados para análise e não para consulta. Muitas vezes é necessário limpar na base, mas isso também é nosso trabalho.&lt;/p&gt;
+&lt;p&gt;O jurimetrista, então, acaba ficando numa situação complicada. Precisa de dados da população toda (ou pelo menos de uma amostra), com linhas e colunas, numa planilha padronizada. Mas tudo o que consegue encontrar são documentos individuais, listagens de processos, páginas web e arquivos PDF.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;tapando-o-sol-com-a-peneira&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Tapando o sol com a peneira&lt;/h2&gt;
+&lt;p&gt;Muitas vezes os dados estão em páginas web, disponíveis, mas é muito demorado buscar manualmente todos os casos que precisamos. Para resolver isso, construímos &lt;em&gt;web scrapers&lt;/em&gt;, que são robôs que baixam as páginas automaticamente e depois as tranformam em dados estruturados.&lt;/p&gt;
+&lt;!-- Os web scrapers são muito mais comuns do que imaginamos. Empresas como o JusBrasil, Digesto, AASP, e muitas outras utilizam essas ferramentas. Mas infelizmente, na maioria dos casos as ferramentas são usadas para indexar as páginas e permitir, mais uma vez, que o usuário faça buscas individuais.  --&gt;
+&lt;p&gt;Na jurimetria é essencial saber utilizar web scrapers, ou ao menos conhecer alguém que sabe usar. As pesquisas realizadas pela ABJ foram fortemente influenciadas por esses brinquedos. Sem eles, não teríamos metade dos dados e estudos que temos hoje.&lt;/p&gt;
+&lt;p&gt;No entanto, são raros os profissionais que dominam esse conhecimento. A ABJ disponibiliza abertamente todo &lt;a href=&#34;https://github.com/abjur&#34;&gt;seu aparato técnico&lt;/a&gt;, mas as ferramentas não são capazes de resolver qualquer problema. E os sistemas dos Tribunais não ajudam: colocam impedimentos técnicos de acesso e captchas (aqueles textos que vêm em imagem para verificar se você não é um robô), que atrapalham e muito o trabalho.&lt;/p&gt;
+&lt;p&gt;São inúmeros os exemplos em que simplesmente não conseguimos as informações que precisamos. Isso é até irônico, já que (quase) todos os processos são públicos. Em muitos casos a única forma de driblar o problema é utilizar a Lei de Acesso à Informação, que é ótima mas nos torna agentes passivos nas pesquisas e congestiona os setores administrativos dos Tribunais.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;solucao-a-longo-prazo&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Solução a longo prazo&lt;/h2&gt;
+&lt;div align=&#34;center&#34;&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://cdn.meme.am/cache/instances/folder117/67584117.jpg&#34; /&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+&lt;p&gt;Mais interessante do que caçar e estruturar dados por toda a eternidade, seria resolver o problema na sua raiz. A solução envolve modificar os sites dos Tribunais, permitindo extrações de dados e disponibilizr APIs que permitam que pesquisadores busquem as informações públicas de maneira segura e organizada.&lt;/p&gt;
+&lt;p&gt;Essas ferramentas são surpreendentemente fáceis de construir e não causariam impactos negativos nos sistemas dos tribunais. Pelo contrário: ao permitir que os dados sejam baixados dessa forma, é possível controlar o volume de dados transferido por unidade de tempo, evitando que os servidores fiquem sobrecarregados.&lt;/p&gt;
+&lt;p&gt;Não é difícil pensar como uma estrutura para extração de dados pode ajudar a todos, profissionais do Direito, estatísticos, jurimetristas e a sociedade em geral. Convido o leitor a sugerir soluções e vantagens.&lt;/p&gt;
+&lt;p&gt;A ABJ tem atuado com força na campanha de abertura de dados do judiciário, construindo ferramentas, organizando eventos, ministrando cursos e fazendo contatos políticos. Acreditamos que num futuro próximo o Brasil será referência mundial na abertura de dados do Judiciário.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>É possível predizer resultados de processos?</title>
+      <link>/blog/2017/01/27/2017-02-07-predicao/</link>
+      <pubDate>Fri, 27 Jan 2017 09:23:47 -0200</pubDate>
+      
+      <guid>/blog/2017/01/27/2017-02-07-predicao/</guid>
+      <description>&lt;!-- BLOGDOWN-HEAD --&gt;
+&lt;!-- /BLOGDOWN-HEAD --&gt;
+
+&lt;!-- BLOGDOWN-BODY-BEFORE --&gt;
+&lt;!-- /BLOGDOWN-BODY-BEFORE --&gt;
+&lt;p&gt;O mundo do Direito é complexo. Não à toa temos, no Brasil, mais de 90 milhões de processos pendentes, mais de um milhão advogados regulares na OAB e&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

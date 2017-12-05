@@ -1,0 +1,122 @@
+---
+title: "Varas do Brasil"
+author: "Julio Trecenti"
+date: 2017-02-02T09:23:47-02:00
+tags: ['R', 'administração']
+banner: "img/banners/banner-12.png"
+---
+
+```{r echo=FALSE, warning=FALSE, message=FALSE}
+library(abjData)
+library(dplyr)
+library(ggplot2)
+library(stringr)
+library(tidyr)
+aj <- dados_aj
+
+aj_uf1 <- aj %>% 
+  filter(tipo == 'Justiça Estadual e DF') %>% 
+  mutate(uf = stringr::str_extract(uf, '[A-Z]{2}')) %>% 
+  count(uf) %>% 
+  mutate(n_varas = cut(n, round(quantile(n, 0:5 / 5)), 
+                       include.lowest = TRUE, dig.lab = 4))
+aj_uf2 <- aj %>% 
+  filter(tipo == 'Justiça do Trabalho') %>% 
+  mutate(uf = stringr::str_extract(uf, '[A-Z]{2}')) %>% 
+  count(uf) %>% 
+  mutate(n_varas = cut(n, round(quantile(n, 0:5 / 5)), 
+                       include.lowest = TRUE, dig.lab = 4))
+
+map1 <- br_uf_map %>% 
+  inner_join(aj_uf1, c('id' = 'uf'))
+
+map2 <- br_uf_map %>% 
+  inner_join(aj_uf2, c('id' = 'uf'))
+
+p1 <- aj %>% 
+  filter(tipo == 'Justiça Estadual e DF') %>% 
+  ggplot(aes(x = long, y = lat)) +
+  geom_map(aes(map_id = id, fill = n_varas), map = map1, 
+           colour = 'gray10', size = .1, data = map1) +
+  scale_fill_brewer() +
+  geom_point(size = 1.5, colour = 'yellow', alpha = .01) +
+  geom_point(size = .001, colour = 'white', alpha = .2) +
+  theme_void() +
+  coord_fixed()
+
+p2 <- aj %>% 
+  filter(tipo == 'Justiça do Trabalho') %>% 
+  ggplot(aes(x = long, y = lat)) +
+  geom_map(aes(map_id = id, fill = n_varas), map = map2, 
+           colour = 'gray10', size = .1, data = map2) +
+  scale_fill_brewer(palette = 'Oranges') +
+  geom_point(size = 1.5, colour = 'yellow', alpha = .2) +
+  geom_point(size = .01, colour = 'white', alpha = .4) +
+  theme_void() +
+  coord_fixed()
+
+```
+
+## Varas estaduais no Brasil
+
+Em 2014, a ABJ realizou o download das informações de todas as varas do Brasil a partir do [Atlas do Acesso à Justiça](http://www.acessoajustica.gov.br/). A base de dados contém informações gerenciais como nome da vara, município, endereço, telefone e posição geográfica.
+
+Uma visualização de interesse dessa base de dados é o mapeamento das varas no território brasileiro. A Figura \@ref(fig:estadual) mostra a localização das varas na Justiça Estadual. É interessante notar a aglomeração de varas próximas às capitais. Além disso, aparentemente o volume de varas cresce de acordo com a urbanização.
+
+```{r echo=FALSE, eval=FALSE}
+ggsave('static/img/banners/banner-12.png', p1, 
+       width = 20, height = 15, dpi = 50)
+```
+
+<div style="max-width:100%;">
+```{r estadual, echo=FALSE, fig.cap='Mapeamento das varas da Justiça Estadual.'}
+p1
+```
+
+</div>
+
+A Figura \@ref(fig:trabalho) mostra a localização das varas na Justiça do Trabalho. Nota-se um volume menor de varas, mas com posicionamento similar. 
+
+Os gráficos sugerem a possibilidade de estudar o fenômeno da criação e instalação de varas relacionado ao crescimento populacional e condicionado a fatores socioeconômicos. Este tema é bastante discutido na ABJ e também na *Society of Empirical Legal Studies* (SELS), gerando estudos como a associação entre IDH e a taxa de litigiosidade. Mostraremos alguns resultados sobre isso em posts futuros.
+
+<div style="max-width:100%;">
+```{r trabalho, echo=FALSE, fig.cap='Mapeamento das varas da Justiça do Trabalho'}
+p2
+```
+
+</div>
+
+Por último, mostramos na Figura \@ref(fig:leaflet) um mapa interativo das varas eleitorais, onde é possível passear pelas varas e acessar suas informações[^info].
+
+<div style="max-width:100%;">
+
+```{r leaflet, echo=FALSE, message=FALSE, warning=FALSE, fig.cap='Mapa interativo das varas na Justiça Estadual.'}
+library(leaflet)
+aj %>%
+  replace_na(list(tel = 'Telefone indisponível')) %>% 
+  filter(tipo == 'Justiça Estadual e DF') %>%
+  mutate(lab = paste(sprintf('<b>%s</b>', nome), 
+                     endereco1, endereco2, municipio_uf, tel,
+                     sep = '<br/>')) %>% 
+  leaflet() %>% 
+  addTiles() %>% 
+  addMarkers(clusterOptions = markerClusterOptions(), popup = ~lab)
+  
+```
+
+</div>
+
+[^info]: Não garantimos que as informações estão corretas nem atualizadas, pois todos os dados foram extraídos diretamente do Atlas do Acesso à Justiça no ano de 2014.
+
+## `R session`
+
+Para montar os gráficos, utilizamos duas bases de dados do pacote do `abjData`, montado pela ABJ. Esse pacote está em fase de construção e contém as bases de dados utilizadas corriqueiramente no Laboratório de Jurimetria.
+
+É possível instalar o `abjData` rodando o comando abaixo:
+
+```{r eval=FALSE}
+if (!require(devtools)) install.packages('devtools')
+devtools::install_github('abjur/abjData')
+```
+
+Os códigos utilizados para gerar os mapas podem ser acessados [aqui](https://github.com/abjur/home/blob/master/content/blog/2017-02-02-varas.Rmd).

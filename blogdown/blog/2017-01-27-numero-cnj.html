@@ -1,0 +1,63 @@
+---
+title: "Número CNJ"
+author: "Julio Trecenti"
+date: 2017-01-27T09:23:47-02:00
+tags: ['R', 'metodologia', 'administração']
+banner: "img/banners/banner-10.png"
+---
+
+
+<!-- BLOGDOWN-BODY-BEFORE
+
+/BLOGDOWN-BODY-BEFORE -->
+
+<p>A definição da <em>unidade amostral</em> é essencial para a realização de qualquer pesquisa empírica. Trata-se do elemento indivisível de uma amostra, de onde se medem as características que serão utilizadas na análise estatística.</p>
+<p>Na jurimetria é usual considerar o <em>litígio</em> como unidade amostral. O litígio é chamado de <em>processo judicial</em> quando tramita na esfera judicial. Cada processo possui um número identificador cadastrado nos sistemas do Tribunal, o que facilita a busca por casos específicos.</p>
+<p>A <a href="https://goo.gl/IX4PuX">Resolução 65 do CNJ</a> (<em>Número CNJ</em>), é um marco na identificação de processos judiciais. Até 2008, a forma de numeração dos processos era definida pelo Tribunal responsável pela tramitação, o que dava origem a diversos formatos distintos. Com a Resolução, os processos passaram a receber um formato de numeração único para todos os Tribunais nas justiças Estadual, Trabalhista, Federal, Militar, Eleitoral e Superiores.</p>
+<p>A Resolução define o padrão <code>NNNNNNN-DD.AAAA.J.TR.OOOO</code>, em que:</p>
+<ul>
+<li><code>NNNNNNN</code>: Número identificador do processo.</li>
+<li><code>DD</code>: Dígito verificador gerado a partir da aplicação do algoritmo Módulo 97 Base 10, conforme Norma ISO 7064:2003.</li>
+<li><code>AAAA</code>: Ano do ajuizamento do processo.</li>
+<li><code>J</code>: Segmento do poder judiciário. Por exemplo, <code>8</code> indica Justiça Estadual.</li>
+<li><code>TR</code>: Identifica o tribunal. Por exemplo, <code>26</code> indica Tribunal de Justiça de São Paulo.</li>
+<li><code>OOOO</code>: Identifica a unidade de origem (foro) do processo. Na maioria dos casos, o número também identifica a comarca, pois existem poucas comarcas com mais de um foro (ex. a comarca de São Paulo, que possui mais de dez foros regionais).</li>
+</ul>
+<div id="gerando-numeros-aleatorios" class="section level2">
+<h2>Gerando números aleatórios</h2>
+<p>Um aspecto interessante na especificação do número CNJ é a possibilidade de gerar todos os possíveis números de processos. Para cada configuração de ano, justiça, tribunal e órgão de origem, são exatamente dez milhões de números distintos. Por exemplo, considerando somente processos ajuizados em 2009, nas <a href="http://tjal.jus.br/apmp/jurisdicaocomarcas09102015.pdf">55 comarcas do Tribunal de Justiça de Alagoas</a> e um foro por comarca, teríamos 550 milhões de números distintos. Esses números podem ser utilizados para pesquisar todos os processos de um tribunal.</p>
+<p>No entanto, pesquisar 550 milhões de números é uma tarefa demorada e onerosa para os tribunais. No exemplo, com 10 pesquisas por segundo, seriam necessários 637 dias para acessar todos os números. Além disso, nem todos os números correspondem a processos de fato, pois são gerados conforme a demanda e apenas uma parcela dos números é realmente manifesta.</p>
+<p>Nessa situação uma alternativa via amostragem se torna viável. Ao invés de pesquisar todos os processos, gera-se uma amostra aleatória de números, acessando diretamente nas ferramentas de pesquisa dos tribunais. A quantidade de processos necessários para isso é definida estudando-se a probabilidade de manifestação de um número de processo. Usualmente isso é feito a partir de uma amostra piloto.</p>
+</div>
+<div id="r-session" class="section level2">
+<h2><code>R session</code></h2>
+<p>No pacote <code>abjutils</code> criado pela ABJ, é possível utilizar a função <code>sample_cnj</code> abaixo. É necessário informar a quantidade de processos, os foros, os anos, o segmento de justiça e o tribunal, com os seguintes parâmetros:</p>
+<ul>
+<li><code>n</code>: quantidade de processos a ser gerada.</li>
+<li><code>foros</code>: vetor de códigos de foro.</li>
+<li><code>anos</code>: vetor de anos de distribuição dos processos.</li>
+<li><code>orgao</code>: vetor de segmentos de justiça.</li>
+<li><code>tr</code>: vetor de tribunais.</li>
+</ul>
+<p>No exemplo abaixo, geramos cinco processos aleatoriamente.</p>
+<pre class="r"><code>library(abjutils)
+sample_cnj(n = 5, 
+           foros = &quot;0001&quot;, anos = c(2014, 2015), orgao = 8, tr = 26,
+           first_dig = &quot;0&quot;, sample_pars = TRUE, return_df = TRUE)</code></pre>
+<pre><code>## # A tibble: 5 × 1
+##             n_processo
+##                  &lt;chr&gt;
+## 1 01030363620158260001
+## 2 01253775620158260001
+## 3 01929175820148260001
+## 4 02050711120148260001
+## 5 09923863620148260001</code></pre>
+</div>
+
+
+<!-- BLOGDOWN-HEAD
+
+
+
+
+/BLOGDOWN-HEAD -->

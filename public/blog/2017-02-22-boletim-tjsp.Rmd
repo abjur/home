@@ -1,0 +1,148 @@
+---
+title: "Boletim TJSP 02/2017"
+author: "Julio Trecenti"
+date: 2017-01-27T09:23:47-02:00
+tags: ['TJSP', 'boletim']
+banner: "img/banners/banner-10.png"
+draft: true
+---
+
+> Atenção! A partir de março / 2017, vamos lançar 
+> boletins mensais com análises de alguns órgãos da Justiça.
+> Os relatórios são gerados automaticamente.
+
+```{r}
+knitr::opts_chunk$set(echo=FALSE, warning=FALSE, message=FALSE)
+```
+
+```{r}
+library(dplyr)
+library(tidyr)
+library(stringr)
+library(lubridate)
+library(ggplot2)
+library(tidytext)
+library(tm)
+```
+
+```{r}
+n_decis <- 1
+n_processos <- 1
+dt_min <- 1
+dt_max <- 1
+d_cjsg <- 'https://www.dropbox.com/s/9bdwjnj5bbs1dpg/d_cjsg.rds?dl=1' %>% 
+  url() %>% 
+  gzcon() %>% 
+  readRDS()
+d_cposg <- 'https://www.dropbox.com/s/igyubvs8py7jflb/d_cposg.rds?dl=1' %>% 
+  url() %>% 
+  gzcon() %>% 
+  readRDS()
+```
+
+## Resultados
+
+### Acórdãos registrados
+
+```{r}
+d_cjsg %>% 
+  mutate(data_registro = dmy(data_registro)) %>% 
+  count(data_registro) %>% 
+  ggplot(aes(x = data_registro, y = n)) +
+  geom_point() +
+  geom_line() +
+  theme_bw()
+```
+
+### Comarca de origem
+
+```{r}
+d_cjsg %>% 
+  count(comarca, sort = TRUE) %>% 
+  mutate(prop = scales::percent(n/sum(n))) %>% 
+  head(10) %>% 
+  knitr::kable()
+```
+
+
+### Tipos de processos
+
+```{r}
+d_cjsg %>% 
+  count(classe_assunto, sort = TRUE) %>% 
+  mutate(prop = scales::percent(n/sum(n))) %>% 
+  head(10) %>% 
+  knitr::kable()
+```
+
+### Word cloud dos textos dos acórdãos
+
+```{r}
+banned_words <- c('data', 'julgamento', 'direito', 'julgador',
+                  'orgao', 'registro', 'comarca', 'relator', 
+                  'camara')
+d_words <- d_cjsg %>% 
+  sample_n(1000) %>% 
+  mutate(txt = txt_ementa %>% 
+           tolower() %>% 
+           abjutils::rm_accent()) %>% 
+  select(cd_acordao, txt) %>% 
+  tidytext::unnest_tokens(word, txt) %>% 
+  count(word, sort = TRUE) %>% 
+  filter(!word %in% abjutils::rm_accent(tm::stopwords('pt-br')),
+         !str_detect(word, '^[0-9]+$|^[0-9]+[ao]$'),
+         !word %in% banned_words)
+
+d_words %>% with(rWordCloud:::d3Cloud(word, n))
+```
+
+### Relatores com mais decisões registradas
+
+```{r}
+d_cjsg %>% 
+  count(relatora, sort = TRUE) %>% 
+  mutate(prop = scales::percent(n/sum(n))) %>% 
+  head(10) %>% 
+  knitr::kable()
+```
+
+### Maiores litigantes
+
+```{r}
+d_cjsg_apelacoes <- d_cjsg %>%
+  select(n_processo, classe_assunto) %>% 
+  mutate(n_processo = stringr::str_replace_all(n_processo, '[^0-9]', '')) %>% 
+  separate(classe_assunto, c('classe', 'assunto'), sep = ' / ',
+           extra = 'merge', fill = 'right') %>% 
+  filter(classe == 'Apelação')
+
+d_cposg %>% 
+  select(arq, partes) %>% 
+  mutate(n_processo = tools::file_path_sans_ext(basename(arq))) %>% 
+  select(n_processo, partes) %>% 
+  unnest(partes) %>% 
+  semi_join(d_cjsg_apelacoes, 'n_processo') %>% 
+  filter(forma %in% c('apelante', 'apelado', 'apelada'),
+         !is.na(forma)) %>% 
+  mutate(forma = if_else(forma == 'apelada', 'apelado', forma)) %>% 
+  separate(parte, c('parte', 'resto'), sep = '\n', extra = 'merge', 
+           fill = 'right') %>% 
+  select(-resto) %>% 
+  mutate(parte = parte %>% 
+           toupper() %>% 
+           abjutils::rm_accent()) %>% 
+  group_by(parte) %>% 
+  summarise(n_processos = n_distinct(n_processo)) %>% 
+  arrange(desc(n_processos)) %>% 
+  head(10) %>% 
+  knitr::kable()
+  
+```
+
+## Metodologia
+
+Para construir esse relatório, realizamos uma extração de dados do Tribunal de Justiça de São Paulo (TJSP) em duas fases. Primeiro, baixamos automaticamente `r n_decis` decisões da [Consulta de Julgados de Segundo Grau (CJSG)](https://esaj.tjsp.jus.br/cjsg/consultaCompleta.do). Para realizar a consulta, incluímos apenas um filtro: decisões registradas entre `r dt_min` e `r dt_max`. Só fizemos o download dos acórdãos, deixando de lado decisões monocráticas e homologações de acordo.
+
+A segunda fase consiste em extrair informações individuais dos processos. Após o download e processamento dos dados da CJSG, identificamos `r n_processos` números de processo distintos. Os números foram consultados na [Consulta de Processos do Segundo Grau (CPOSG)](https://esaj.tjsp.jus.br/cposg). 
+
+A base de dados final foi montada a partir dos resultados das duas fases.
