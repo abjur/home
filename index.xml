@@ -20,13 +20,13 @@
 &lt;h1&gt;Convocações&lt;/h1&gt;
 &lt;div id=&#34;edital-n-012017&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Edital Nº 01/2017&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;http://abj.org.br/edital_01_2018.pdf&#34;&gt;Convocação&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://abj.org.br/edital_01_2017.pdf&#34;&gt;Convocação&lt;/a&gt;&lt;/p&gt;
 &lt;div id=&#34;resultado&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;Resultado&lt;/h3&gt;
 &lt;p&gt;A Associação Brasileira de Jurimetria torna pública a divulgação do resultado do processo seletivo do Edital Nº 01/2017, que visa a contratação temporária e sem vínculo empregatício de profissionais para a prestação de serviços de pesquisador para a etapa de levantamento de informações sobre processos de recuperação judicial do estado de São Paulo.&lt;/p&gt;
 &lt;p&gt;A lista de candidatos selecionados no processo seletivo em ordem alfabética consta abaixo:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Anna Clara&lt;/li&gt;
+&lt;li&gt;Anna Clara Mielmiczuk&lt;/li&gt;
 &lt;li&gt;Beatriz Maldos&lt;/li&gt;
 &lt;li&gt;Bruna Gomes Calimera&lt;/li&gt;
 &lt;li&gt;Danylo Rodrigues&lt;/li&gt;
@@ -470,11 +470,11 @@ sample_cnj(n = 5,
 &lt;pre&gt;&lt;code&gt;## # A tibble: 5 x 1
 ##             n_processo
 ##                  &amp;lt;chr&amp;gt;
-## 1 09195555320158260001
-## 2 03056567120148260001
-## 3 04494996020158260001
-## 4 07677392420158260001
-## 5 08611988020158260001&lt;/code&gt;&lt;/pre&gt;
+## 1 04176760520148260001
+## 2 04530931920148260001
+## 3 04089634120148260001
+## 4 09700183320148260001
+## 5 08104781220158260001&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 </description>
     </item>

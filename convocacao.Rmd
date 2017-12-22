@@ -8,7 +8,7 @@ date: "2017-12-04"
 
 ## Edital Nº 01/2017
 
-[Convocação](http://abj.org.br/edital_01_2018.pdf)
+[Convocação](http://abj.org.br/edital_01_2017.pdf)
 
 ### Resultado
 
@@ -16,7 +16,7 @@ A Associação Brasileira de Jurimetria torna pública a divulgação do resulta
 
 A lista de candidatos selecionados no processo seletivo em ordem alfabética consta abaixo:
 
-- Anna Clara
+- Anna Clara Mielmiczuk
 - Beatriz Maldos
 - Bruna Gomes Calimera
 - Danylo Rodrigues
