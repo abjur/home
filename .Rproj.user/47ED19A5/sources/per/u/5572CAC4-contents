@@ -1,4 +1,0 @@
-library(tjsp)
-s <- cjsg_session()
-parms <- cjsg_parms(s, livre = 'alguma coisa') #ou outros parms
-cjsg(s, parms, max_pag = 2) # baixa
